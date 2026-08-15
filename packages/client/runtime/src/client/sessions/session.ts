@@ -597,18 +597,6 @@ export class Session implements SessionFace {
   // ---- Private ----
 
   /** Requested-frame arrival: the wait enters the pending map under its own key. */
-  /** Pull every earlier history page (the tail is already installed by open).
-   *  Stops on a no-progress page (failure/empty/discontinuity keep the window
-   *  and baseSeq) or a superseded generation — the drain is best-effort and
-   *  never replaces the installed window on a failed page. */
-  private async drainOlderPages(generation: number): Promise<void> {
-    while (this.hasMore && generation === this.openGeneration) {
-      const head = this.baseSeq
-      await this.loadOlder()
-      if (this.baseSeq === head) return
-    }
-  }
-
   private mint(wait: PendingInteraction): void {
     this.pending.set(wait.key, wait)
     this.pendingRev++
@@ -635,7 +623,44 @@ export class Session implements SessionFace {
         this.openError = result.error
         return
       }
-      this.installWindow(result.value.events, result.value.hasMore, result.value.projections)
+      // Full-transcript presentation: collect every earlier page BEFORE the
+      // first render so the whole conversation (and the left rail) appears
+      // at once instead of growing page by page.
+      const olderEvents: SessionEvent[] = []
+      const olderViews: (ToolEventView | undefined)[] = []
+      let head = result.value.events[0]?.event.seq ?? 0
+      let hasMore = result.value.hasMore
+      while (hasMore && generation === this.openGeneration) {
+        const page = (await this.history({ beforeSeq: head, maxMessages: PAGE_MESSAGES })).result
+        if (generation !== this.openGeneration) return
+        if (!page.ok) break // keep the window as-is; open already succeeded
+        const events = page.value.events
+        if (events.length === 0) {
+          hasMore = page.value.hasMore
+          break
+        }
+        const tail = events[events.length - 1]
+        if (tail === undefined || tail.event.seq + 1 !== head) {
+          // Continuity assertion: drop the rest fail-soft rather than render an out-of-order stream.
+          console.error(`[web-runtime] history page discontinuous: tail seq ${tail?.event.seq} vs head ${head}`)
+          hasMore = false
+          break
+        }
+        olderEvents.unshift(...events.map(e => e.event))
+        olderViews.unshift(...events.map(e => e.view))
+        const first = events[0]
+        if (first === undefined) break
+        head = first.event.seq
+        hasMore = page.value.hasMore
+      }
+      const allEntries: HistoryEntry[] = [
+        ...olderEvents.map((event, i) => {
+          const view = olderViews[i]
+          return view === undefined ? { event } : { event, view }
+        }),
+        ...result.value.events,
+      ]
+      this.installWindow(allEntries, hasMore, result.value.projections)
       // Gap detection: baseline past the window tail and liveBuffer did not cover it -> pull the tail page once more.
       const tailSeq = this.windowTailSeq()
       if (this.subscribedLastSeq !== null && tailSeq !== null && this.subscribedLastSeq > tailSeq) {
@@ -644,9 +669,6 @@ export class Session implements SessionFace {
         if (result.ok) this.installWindow(result.value.events, result.value.hasMore, result.value.projections)
       }
       this.openState = 'open'
-      // Full-transcript presentation: the chat view no longer renders a
-      // "load older" control, so drain every earlier page up front.
-      await this.drainOlderPages(generation)
     } catch (error) {
       if (generation !== this.openGeneration) return
       this.openState = 'error'
