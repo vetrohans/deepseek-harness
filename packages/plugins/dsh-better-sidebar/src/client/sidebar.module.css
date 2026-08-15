@@ -17,7 +17,8 @@
    top: 3) whose right end it really squeezes. */
 .toggleCluster {
   position: fixed;
-  top: 3px;
+  /* Centered in the 45px top band: (45 - 28) / 2. */
+  top: calc((45px - 28px) / 2);
   right: 10px;
   z-index: 55;
   display: flex;
@@ -491,7 +492,10 @@
   display: flex;
   align-items: stretch;
   /* Top band height matches the conversation header (45px) so the active
-     tab's gray block bottoms out at the header's underline. */
+     tab's gray block bottoms out at the header's underline; the band is
+     border-box so the 1px hairline sits inside the 45px and stays visible
+     beneath the gray block instead of being swallowed by it. */
+  box-sizing: border-box;
   height: 45px;
   border-bottom: 1px solid var(--dsw-alias-border-l1);
   background: var(--dsw-alias-bg-layer-1);

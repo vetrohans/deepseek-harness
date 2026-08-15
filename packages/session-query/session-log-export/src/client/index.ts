@@ -40,6 +40,8 @@ export function apply(ctx: ClientContext): void {
   ctx.slots.inject('conversation.session.header.utilities', () => ctx.slots.register({
     name: 'conversation.session.header.utilities',
     id: 'session-log-download',
+    /* Renders after the balance capsule (which sorts at the default 0). */
+    order: 1,
     locale: NS,
     inject: (): SessionLogDownloadDialogInjected => ({
       hooks: { sessionLogDownload: controller.store },

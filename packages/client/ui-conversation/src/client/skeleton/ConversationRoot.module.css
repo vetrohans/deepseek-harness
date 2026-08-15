@@ -37,7 +37,10 @@
   content: '';
   position: absolute;
   right: 0;
-  bottom: 1px;
+  /* Flush with the band's bottom edge (over the transparent border): the
+     line lands on the same 1px row as the right sidebar tab strip's hairline
+     so the two top bands share one continuous underline. */
+  bottom: -1px;
   left: 0;
   z-index: 0;
   height: 1px;
