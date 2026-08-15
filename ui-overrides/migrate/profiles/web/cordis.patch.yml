@@ -1,0 +1,10 @@
+# Your patch layer for this dsh profile, applied after every bundle layer:
+# a top-level YAML array of loader patch entries (id-targeted config
+# overrides, disables, and insert lists; `!!js` expressions allowed).
+
+# 右侧分栏预览插件：点击对话中的服务器地址弹浮窗，可选「用 DSH 打开」
+# （右侧分栏）或「用浏览器打开」。插件包位于 ~/.dsh/profiles/node_modules/@local/。
+# 由 ~/.dsh/UI功能改动/dsh-ui.sh 维护（apply / restore / status）。
+- insert:
+    - id: dsh-client-ui-preview
+      name: '@local/dsh-client-ui-preview'

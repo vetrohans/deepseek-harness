@@ -1,0 +1,24 @@
+{
+  "name": "@local/dsh-client-ui-preview",
+  "description": "Sidebar preview panel: embeds an iframe (default http://localhost:3000) in the DSH web GUI, toggled from a sidebar footer action.",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

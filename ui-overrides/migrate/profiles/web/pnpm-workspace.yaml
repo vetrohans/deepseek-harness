@@ -1,0 +1,9 @@
+packages:
+  - .
+
+nodeLinker: hoisted
+autoInstallPeers: false
+allowBuilds:
+  dsh-better-sidebar@https://codeload.github.com/omdsh-dev/DSH-better-sidebar/tar.gz/28d20a46c0b0d910093e934fcc9c98c07b838df6: true
+  node-pty: true
+  protobufjs: true

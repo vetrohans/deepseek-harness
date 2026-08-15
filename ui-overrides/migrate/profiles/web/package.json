@@ -1,0 +1,18 @@
+{
+  "name": "dsh-profile-web",
+  "private": true,
+  "dependencies": {
+    "dsh-better-sidebar": "github:omdsh-dev/DSH-better-sidebar",
+    "dsh-notification": "https://github.com/omdsh-dev/dsh-notification/archive/refs/heads/main.tar.gz"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "dsh-notification",
+        "dsh-better-sidebar"
+      ]
+    }
+  }
+}
