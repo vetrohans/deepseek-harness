@@ -9,7 +9,31 @@
 - 分栏宽度可拖动（280–1200px），对话窗口可被压到 400px；手柄保持原 8px。
 - 分栏内有地址栏（可改 URL、回车跳转）、刷新、新标签页打开、关闭（✕）按钮。
 
-## 位置
+## 当前工作流（源码模式，2026-08 起）
+
+本项目已改为**仓库源码 + 桌面壳**模式（不再直接改已安装 App 的 bundle）：
+
+1. **预览插件（左侧滑条 / 余额胶囊 / 全局 CSS 覆盖）**：唯一可编辑副本是
+   本目录的 `lib/client.js`。改完必须**同步到仓库插件**再构建：
+
+   ```bash
+   cp ui-overrides/lib/client.js packages/plugins/dsh-client-ui-preview/lib/client.js
+   corepack pnpm run build          # 重建 lib + web bundle
+   # 重启桌面壳（desktop/）：corepack pnpm exec electron . --dev
+   ```
+
+2. **布局 / 四列分栏**：已在源码 `packages/client/ui-layout`，直接改源码。
+3. **右侧栏 better-sidebar**：源码在 `packages/plugins/dsh-better-sidebar`（lib 不入库，构建时生成）。
+4. **其它 UI（会话头、统计行、消息面板等）**：改对应 `packages/client/...` 源码。
+5. **上游更新后**：先跑 `node ui-overrides/scripts/remap-css-hashes.mjs`（重映射
+   `lib/client.js` 里被构建改变的 CSS-module 哈希类名），再重新构建。
+6. **Git**：只做本地提交，**绝不 push**（除非用户明确要求）。
+
+> 下面「用法 / 实现原理」描述的是旧版"已安装 App"工作流（`dsh-ui.sh` /
+> `apply-patches.py` / `migrate-to-new-machine.sh`），仅历史遗留，当前源码模式
+> 不需要它们；`remap-css-hashes.mjs` 仍然有效。
+
+## 位置（历史）
 
 维护文件都在本目录：`~/.dsh/UI功能改动/`
 
