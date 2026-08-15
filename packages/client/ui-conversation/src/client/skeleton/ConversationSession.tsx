@@ -100,29 +100,22 @@ export function ConversationSessionHeader({
                 {ancestry.length === 0 && <span className={css.crumbCurrent}>{sessionId}</span>}
               </nav>
               <div className={css.headerActions}>
-                {renderSlot('conversation.session.header.actions', {})}
+                {renderSlot('conversation.session.header.actions', {
+                  setView: (viewId: string) => { actions.setView(viewId) },
+                  activeViewId: active?.id ?? '',
+                })}
               </div>
             </div>
             <div className={css.headerUtilities}>
-              {renderSlot('conversation.session.header.utilities', {})}
+              {renderSlot('conversation.session.header.utilities', {
+                setView: (viewId: string) => { actions.setView(viewId) },
+                activeViewId: active?.id ?? '',
+              })}
             </div>
           </div>
-          {tabs.length > 1 && (
-            <div className={css.tabs} role="tablist">
-              {tabs.map(viewTab => (
-                <button
-                  key={viewTab.id}
-                  type="button"
-                  role="tab"
-                  aria-selected={viewTab.id === active?.id}
-                  className={clsx(css.tab, viewTab.id === active?.id && css.tabActive)}
-                  onClick={() => { actions.setView(viewTab.id) }}
-                >
-                  {viewTab.label}
-                </button>
-              ))}
-            </div>
-          )}
+          {/* View tabs are intentionally not rendered: the conversation view
+              is the default surface; 轨迹 is reached from the header session
+              menu (square-terminal) instead. */}
         </>
       )}
     </header>

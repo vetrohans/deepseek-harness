@@ -29,25 +29,37 @@ function bench() {
     useSessionLogDownload,
     request,
     dismiss,
+    setView: vi.fn(),
+    activeViewId: 'chat',
     t: (key: keyof typeof en): string => en[key],
   } as unknown as SessionLogDownloadDialogProps
   const view = render(<SessionLogDownloadHeaderAction {...props} />)
-  return { controller, request, view }
+  return { controller, request, view, props }
 }
 
 afterEach(cleanup)
 
 describe('Session export Header action', () => {
-  it('renders the 111×32 text capsule and downloads through the shared controller', async () => {
+  it('opens the session menu and downloads through the shared controller', async () => {
     const b = bench()
-    const button = b.view.getByRole('button', { name: 'Session log' })
-    expect(button.querySelector('svg')).not.toBeNull()
-    fireEvent.click(button)
+    const trigger = b.view.getByRole('button', { name: 'Session menu' })
+    expect(trigger.querySelector('svg')).not.toBeNull()
+    fireEvent.click(trigger)
+    // The menu offers the trajectory toggle and the download.
+    expect(b.view.getByRole('menuitem', { name: 'Trajectory' })).toBeTruthy()
+    fireEvent.click(b.view.getByRole('menuitem', { name: 'Download session log' }))
     await waitFor(() => { expect(b.request).toHaveBeenCalledWith(SID) })
     expect(await b.view.findByRole('dialog', { name: 'Session download started' })).toBeTruthy()
   })
 
-  it('disables the capsule while either entry path downloads this Session', async () => {
+  it('switches to the trajectory view from the session menu', () => {
+    const b = bench()
+    fireEvent.click(b.view.getByRole('button', { name: 'Session menu' }))
+    fireEvent.click(b.view.getByRole('menuitem', { name: 'Trajectory' }))
+    expect((b.props.setView as ReturnType<typeof vi.fn>)).toHaveBeenCalledWith('trajectory')
+  })
+
+  it('disables the trigger while either entry path downloads this Session', async () => {
     const b = bench()
     let release!: (response: Response) => void
     const pending = new Promise<Response>((resolve) => { release = resolve })
@@ -58,11 +70,13 @@ describe('Session export Header action', () => {
       useSessionLogDownload,
       request: (sessionId: SessionId) => controller.download(sessionId),
       dismiss: (sessionId: SessionId) => { controller.dismiss(sessionId) },
+      setView: vi.fn(),
+      activeViewId: 'chat',
       t: (key: keyof typeof en): string => en[key],
     } as unknown as SessionLogDownloadDialogProps)} />)
 
     const download = controller.download(SID)
-    const button = b.view.getByRole('button', { name: 'Session log' })
+    const button = b.view.getByRole('button', { name: 'Session menu' })
     await waitFor(() => { expect(button.getAttribute('aria-busy')).toBe('true') })
     expect((button as HTMLButtonElement).disabled).toBe(true)
     release(new Response('zip'))

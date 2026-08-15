@@ -456,8 +456,9 @@ describe('ConversationRoot resident composer', () => {
 
     expect(b.view.getByTestId('view-chat')).toBeTruthy()
     expect(b.view.queryByTestId('view-new-view')).toBeNull()
-    expect(b.view.getByRole('tab', { name: 'Chat' }).getAttribute('aria-selected')).toBe('true')
-    expect(b.view.getByRole('tab', { name: 'New view' }).getAttribute('aria-selected')).toBe('false')
+    // The view tab ring is intentionally not rendered: the conversation view
+    // is the default surface and 轨迹 is reached from the header session menu.
+    expect(b.view.queryByRole('tab')).toBeNull()
   })
 
   it('rolls the pending workspace label back when switching fails', async () => {

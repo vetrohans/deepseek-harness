@@ -263,7 +263,12 @@ export interface ConversationSessionOwnerProps {
 }
 
 /** Header actions derive their state from the standard session/global kit. */
-export interface ConversationHeaderActionOwnerProps {}
+export interface ConversationHeaderActionOwnerProps {
+  /** Switch the active conversation view (chat \u21c4 trajectory). */
+  setView: (viewId: string) => void
+  /** The currently active conversation view id ('' when the ledger is empty). */
+  activeViewId: string
+}
 
 /**
  * The input-region slot currency: dock/left/right entries read

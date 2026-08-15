@@ -10,6 +10,10 @@ export const zh = {
   'dialog.errorTitle': 'Session 导出失败',
   'dialog.close': '关闭',
   'dialog.commandFailed': '无法启动 Session 导出。',
+  'menu.aria': '会话菜单',
+  'menu.downloadSessionLog': 'Session log 下载',
+  'menu.trajectory': '轨迹',
+  'menu.conversation': '对话',
 } as const
 
 /** English Session export strings. */
@@ -21,6 +25,10 @@ export const en: Record<keyof typeof zh, string> = {
   'dialog.errorTitle': 'Session export failed',
   'dialog.close': 'Close',
   'dialog.commandFailed': 'Could not start the Session export.',
+  'menu.aria': 'Session menu',
+  'menu.downloadSessionLog': 'Download session log',
+  'menu.trajectory': 'Trajectory',
+  'menu.conversation': 'Conversation',
 }
 
 /** Stable locale keys consumed by the shared modal. */
