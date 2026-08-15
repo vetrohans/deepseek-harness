@@ -386,38 +386,6 @@ describe('ChatView', () => {
     expect(h.toolOwners[0]).toMatchObject({ callId: 'w1', toolName: '' })
   })
 
-  it('prepend keeps the reader\'s latest pending-request scroll position anchored', () => {
-    const h = makeHarness({ nodes: [user(9, 'first visible'), user(10, 'next visible')], hasMore: true })
-    const view = render(<h.ChatView {...h.props} />)
-    const scroller = view.container.querySelector('[class*="scroll"]') as HTMLDivElement
-    const first = view.container.querySelector('[data-chat-flow-key="fixture:user:9"]') as HTMLDivElement
-    const next = view.container.querySelector('[data-chat-flow-key="fixture:user:10"]') as HTMLDivElement
-    let firstTop = 100
-    let nextTop = 300
-    vi.spyOn(scroller, 'getBoundingClientRect').mockImplementation(
-      () => ({ top: 0, bottom: 200 } as DOMRect),
-    )
-    vi.spyOn(first, 'getBoundingClientRect').mockImplementation(
-      () => ({ top: firstTop, bottom: firstTop + 40 } as DOMRect),
-    )
-    vi.spyOn(next, 'getBoundingClientRect').mockImplementation(
-      () => ({ top: nextTop, bottom: nextTop + 40 } as DOMRect),
-    )
-    Object.defineProperty(scroller, 'scrollHeight', { value: 800, writable: true })
-    Object.defineProperty(scroller, 'clientHeight', { value: 200, writable: true })
-    readerScroll(scroller, 50)
-    fireEvent.click(view.getByText('加载更早'))
-    // The reader moves after the request starts; this, not the click-time
-    // row, is the intent the arriving page must preserve.
-    firstTop = -200
-    nextTop = 60
-    readerScroll(scroller, 90)
-    Object.defineProperty(scroller, 'scrollHeight', { value: 1300, writable: true })
-    nextTop = 560
-    act(() => { h.set({ nodes: [assistant(2, 'older'), user(9, 'first visible'), user(10, 'next visible')] }) })
-    expect(scroller.scrollTop).toBe(590) // latest 90 + the anchored row's 500px prepend shift
-  })
-
   it('renders the fixture main line as independently keyed business nodes', () => {
     const h = makeHarness({
       nodes: [user(1, 'do the thing'), assistant(2, 'running tools'), toolResult(3, 'a'), toolResult(4, 'b')],
@@ -971,45 +939,6 @@ describe('ChatView', () => {
     expect(owner.inspectCall).toBe(h.inspectCall)
   })
 
-  it('prepend preserves a semantic row; a trailing user node force-scrolls', () => {
-    const h = makeHarness({ nodes: [user(5, 'later'), assistant(6, 'a')], hasMore: true })
-    const view = render(<h.ChatView {...h.props} />)
-    const scroller = view.container.querySelector('[class*="scroll"]') as HTMLDivElement
-    // jsdom has no layout: fake the metrics the anchor math reads.
-    Object.defineProperty(scroller, 'scrollHeight', { value: 1000, writable: true })
-    Object.defineProperty(scroller, 'clientHeight', { value: 400, writable: true })
-    const anchored = view.container.querySelector('[data-chat-flow-key="fixture:user:5"]') as HTMLDivElement
-    let anchoredTop = 100
-    vi.spyOn(anchored, 'getBoundingClientRect').mockImplementation(
-      () => ({ top: anchoredTop, bottom: anchoredTop + 40 } as DOMRect),
-    )
-    readerScroll(scroller, 80)
-    // Arm the paging anchor, then deliver an older page (head seq decreases).
-    fireEvent.click(view.getByText('加载更早'))
-    Object.defineProperty(scroller, 'scrollHeight', { value: 1600, writable: true })
-    anchoredTop = 700
-    act(() => { h.set({ nodes: [user(1, 'old'), assistant(2, 'b'), user(5, 'later'), assistant(6, 'a')] }) })
-    expect(scroller.scrollTop).toBe(680) // reader offset 80 + the anchored row's 600px shift
-    // A new trailing user bubble (own words) force-scrolls to the bottom.
-    act(() => { h.set({ nodes: [user(1, 'old'), assistant(2, 'b'), user(5, 'later'), assistant(6, 'a'), user(9, 'mine')] }) })
-    expect(scroller.scrollTop).toBe(1600)
-  })
-
-  it('back-to-bottom cancels an in-flight paging anchor', () => {
-    const h = makeHarness({ nodes: [user(9, 'late')], hasMore: true })
-    const view = render(<h.ChatView {...h.props} />)
-    const scroller = view.container.querySelector('[class*="scroll"]') as HTMLDivElement
-    Object.defineProperty(scroller, 'scrollHeight', { value: 800, writable: true })
-    Object.defineProperty(scroller, 'clientHeight', { value: 200, writable: true })
-    readerScroll(scroller, 50)
-    fireEvent.click(view.getByText('加载更早'))
-    fireEvent.click(view.getByLabelText('回到底部'))
-    Object.defineProperty(scroller, 'scrollHeight', { value: 1_300, writable: true })
-    act(() => { h.set({ nodes: [assistant(2, 'older'), user(9, 'late')] }) })
-    expect(scroller.scrollTop).toBe(1_300)
-    expect(h.chatScroll.read()).toBeNull()
-  })
-
   it('scrolling away disables follow and shows the back-to-bottom button; clicking returns', () => {
     const h = makeHarness({ nodes: [user(1, 'q'), assistant(2, 'a')] })
     const view = render(<h.ChatView {...h.props} />)
@@ -1219,15 +1148,6 @@ describe('ChatView', () => {
     } finally {
       host.remove()
     }
-  })
-
-  it('paging button loads older and shows its busy label', () => {
-    const h = makeHarness({ nodes: [user(5, 'later')], hasMore: true })
-    const view = render(<h.ChatView {...h.props} />)
-    fireEvent.click(view.getByText('加载更早'))
-    expect(h.loadOlder).toHaveBeenCalledTimes(1)
-    act(() => { h.set({ loadingOlder: true }) })
-    expect(view.getByText('加载中…')).toBeTruthy()
   })
 
   it('shows open error and loading states', () => {

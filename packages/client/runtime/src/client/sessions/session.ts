@@ -597,6 +597,18 @@ export class Session implements SessionFace {
   // ---- Private ----
 
   /** Requested-frame arrival: the wait enters the pending map under its own key. */
+  /** Pull every earlier history page (the tail is already installed by open).
+   *  Stops on a no-progress page (failure/empty/discontinuity keep the window
+   *  and baseSeq) or a superseded generation — the drain is best-effort and
+   *  never replaces the installed window on a failed page. */
+  private async drainOlderPages(generation: number): Promise<void> {
+    while (this.hasMore && generation === this.openGeneration) {
+      const head = this.baseSeq
+      await this.loadOlder()
+      if (this.baseSeq === head) return
+    }
+  }
+
   private mint(wait: PendingInteraction): void {
     this.pending.set(wait.key, wait)
     this.pendingRev++
@@ -632,6 +644,9 @@ export class Session implements SessionFace {
         if (result.ok) this.installWindow(result.value.events, result.value.hasMore, result.value.projections)
       }
       this.openState = 'open'
+      // Full-transcript presentation: the chat view no longer renders a
+      // "load older" control, so drain every earlier page up front.
+      await this.drainOlderPages(generation)
     } catch (error) {
       if (generation !== this.openGeneration) return
       this.openState = 'error'

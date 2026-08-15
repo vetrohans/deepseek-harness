@@ -184,18 +184,23 @@ describe('open', () => {
     expect(session.getSnapshot()).toMatchObject({ blank: false, composerPhase: 'active' })
   })
 
-  it('installs the tail page: cold → loading → open with window and nodes in place', async () => {
+  it('installs the tail page then drains every older page: cold → loading → open, full transcript, hasMore cleared', async () => {
     const { api, session } = makeSession()
-    const page = plainTurn(10, 3, '问', '答')
-    api.onHistory = () => histResponse(page, true)
+    const tail = plainTurn(10, 3, '问', '答')
+    const older = plainTurn(4, 0, '旧问', '旧答')
+    api.onHistory = payload => payload.beforeSeq === undefined
+      ? histResponse(tail, true)
+      : histResponse(older, false)
     expect(session.getSnapshot().openState).toBe('cold')
     const opening = session.open()
     expect(session.getSnapshot().openState).toBe('loading')
     await opening
     const snapshot = session.getSnapshot()
     expect(snapshot.openState).toBe('open')
-    expect(snapshot.hasMore).toBe(true)
-    expect(snapshot.nodes.map(n => n.kind)).toEqual(['user', 'assistant'])
+    expect(snapshot.hasMore).toBe(false)
+    expect(api.callsOf('session.history')).toMatchObject([{}, { beforeSeq: 10 }].map(p => ({ sessionId: SID, ...p })))
+    expect(snapshot.nodes.map(n => n.kind)).toEqual(['user', 'assistant', 'user', 'assistant'])
+    expect(snapshot.nodes.map(n => n.seq)).toEqual([5, 7, 11, 13])
     expect(snapshot.turnTimings.get(3)).toEqual({
       startTime: 1_700_000_000_010,
       endTime: 1_700_000_000_015,
@@ -396,7 +401,7 @@ describe('paging', () => {
       ev.compactSummary(80, '窗外范围的摘要', 3, 40),
       ev.compactCheckpoint(81, 80, 3, 40),
       ev.user(82, '压缩后的新问题'),
-    ], true)
+    ], false)
     const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => undefined)
     try {
       await session.open()
@@ -666,7 +671,10 @@ describe('remaining branches', () => {
     const { api, session } = makeSession()
     await session.loadOlder() // cold: no-op, zero calls
     expect(api.calls).toEqual([])
-    api.onHistory = () => histResponse(plainTurn(6, 1, 'x', 'y'), true)
+    // Open keeps hasMore=true: the auto-drain stops on the first err page.
+    api.onHistory = payload => payload.beforeSeq === undefined
+      ? histResponse(plainTurn(6, 1, 'x', 'y'), true)
+      : Promise.resolve(err({ code: 'internal', message: 'x', details: {} }))
     await session.open()
     // err result: window unchanged
     api.onHistory = () => Promise.resolve(err({ code: 'internal', message: 'x', details: {} }))
