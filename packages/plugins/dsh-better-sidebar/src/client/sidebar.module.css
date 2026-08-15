@@ -490,7 +490,9 @@
   flex: none;
   display: flex;
   align-items: stretch;
-  height: 28px;
+  /* Top band height matches the conversation header (45px) so the active
+     tab's gray block bottoms out at the header's underline. */
+  height: 45px;
   border-bottom: 1px solid var(--dsw-alias-border-l1);
   background: var(--dsw-alias-bg-layer-1);
 }
