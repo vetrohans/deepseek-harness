@@ -242,11 +242,30 @@ export class WorkspaceRuntime implements IWorkspaces {
    * Open a filesystem path with the Host operating system's default application.
    * @param path - absolute or host-resolvable path.
    */
-  async openPath(path: string): Promise<void> {
+  /** The one raw host openPath RPC shared by {@link openPath} and {@link revealInOs}. */
+  private async openPathRaw(path: string): Promise<void> {
     const response = await this.api.host.openPath({ path })
     if (!response.result.ok) {
       throw new Error(`path open failed: ${response.result.error.message}`)
     }
+  }
+
+  /**
+   * Open a filesystem path with the Host operating system's default application.
+   * @param path - absolute or host-resolvable path.
+   */
+  async openPath(path: string): Promise<void> {
+    await this.openPathRaw(path)
+  }
+
+  /**
+   * Open a filesystem path with the Host operating system's default
+   * application, bypassing plugin wrappers of {@link openPath}: the workspace
+   * "Show in Finder" action must reach the OS file manager directly.
+   * @param path - absolute or host-resolvable path.
+   */
+  async revealInOs(path: string): Promise<void> {
+    await this.openPathRaw(path)
   }
 
   /**

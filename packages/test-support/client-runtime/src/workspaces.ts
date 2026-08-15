@@ -98,6 +98,16 @@ export class TestWorkspaces implements IWorkspaces {
   }
 
   /**
+   * Open a path directly with the host OS file manager (recorded; default
+   * no-op). Mirrors {@link IWorkspaces.revealInOs}: never intercepted.
+   * @param path - host-resolvable path.
+   */
+  async revealInOs(path: string): Promise<void> {
+    this.calls.push({ method: 'revealInOs', args: [path] })
+    await (this.stubs.get('revealInOs')?.(path) as Promise<void> | undefined)
+  }
+
+  /**
    * Directory picker (recorded). The default cancels (null); stub to select.
    * @returns the picked path, or null.
    */

@@ -59,6 +59,14 @@ export interface IWorkspaces {
    */
   openPath(path: string): Promise<void>
   /**
+   * Open a filesystem path directly with the Host OS file manager (Finder /
+   * Explorer / xdg-open), bypassing any plugin interception of
+   * {@link openPath}. The workspace "Show in Finder" action must always reach
+   * the OS file manager rather than an in-app editor or explorer.
+   * @param path - absolute or host-resolvable path.
+   */
+  revealInOs(path: string): Promise<void>
+  /**
    * Rename a Workspace.
    * @param workspaceId - target workspace.
    * @param title - the new display title.
