@@ -38,6 +38,7 @@ export function SessionLogDownloadHeaderAction(props: SessionLogDownloadDialogPr
       <Menu
         open={menuOpen}
         onClose={() => { setMenuOpen(false) }}
+        align="end"
         items={items}
         onSelect={(id) => {
           setMenuOpen(false)
