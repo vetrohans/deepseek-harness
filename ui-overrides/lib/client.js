@@ -316,7 +316,8 @@ window.__ModuleLoader__.load({
 		* are short grey bars. Hovering the rail applies a fisheye (the bar under
 		* the pointer is longest, neighbours shorten away) and pops a rounded panel
 		* showing that message's text; clicking jumps the scroll body to it. Rows
-		* come from [data-chat-flow-kind="user"] inside [data-conversation-scroll].
+		* come from [data-chat-flow-kind="user"] / [data-chat-flow-kind="steering"]
+		* (both render UserMessageNodeView) inside [data-conversation-scroll].
 		*/
 		function installQuickNavRail() {
 			if (typeof document === "undefined" || document.body === null) return () => {};
@@ -341,7 +342,7 @@ window.__ModuleLoader__.load({
 
 			function sync() {
 				if (sc === null || rail === null) return;
-				const rows = [...sc.querySelectorAll('[data-chat-flow-kind="user"]')];
+				const rows = [...sc.querySelectorAll('[data-chat-flow-kind="user"], [data-chat-flow-kind="steering"]')];
 				const byRow = new Map();
 				for (const m of markers) byRow.set(m.row, m);
 				const nextMarkers = [];
@@ -375,7 +376,7 @@ window.__ModuleLoader__.load({
 					const to = k + 1 < markers.length ? userPos[k + 1] : allRows.length;
 					let reply = null;
 					for (let i = to - 1; i > from; i--) {
-						if (allRows[i].getAttribute("data-chat-flow-kind") === "assistant") {
+						if (allRows[i].getAttribute("data-chat-flow-kind") === "assistant-step") {
 							reply = allRows[i];
 							break;
 						}
