@@ -117,6 +117,11 @@ export type WorkspaceBrowserInjected = DirectoryPickingInjected & {
   /** Delete only a Host Workspace registration; directory and Session logs remain. */
   deleteWorkspace: (workspaceId: WorkspaceId) => Promise<void>
   /**
+   * Open a workspace directory in the OS file manager (Finder / Explorer /
+   * xdg-open hand-off) through the host's native path opener.
+   */
+  revealWorkspace: (cwd: string) => Promise<void>
+  /**
    * Reorder a Workspace in the durable registry display order.
    * Omitted anchor appends to the end.
    */

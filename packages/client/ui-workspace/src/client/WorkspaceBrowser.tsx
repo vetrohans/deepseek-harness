@@ -19,7 +19,7 @@ import type {
   SessionId, SessionListState, SessionSearchResultItem, WorkspaceId, WorkspaceView,
 } from '@deepseek-ai/dsh-client-runtime/client'
 import type { WorkspaceBrowserProps } from './contract/slots.ts'
-import type { SessionNode, SessionOrderBy } from './tree.ts'
+import type { GroupNode, SessionNode, SessionOrderBy } from './tree.ts'
 import { deriveFlat, deriveGroups, deriveSearchResults, UNGROUPED_KEY } from './tree.ts'
 import { ProjectRowItem, SearchResultItem, SessionNodeItem } from './rows/Rows.tsx'
 import { FLAT_SESSION_ORDER_KEY } from './stores.ts'
@@ -237,6 +237,12 @@ type SessionTreeProps = Pick<
   onRenameRequest: (workspaceId: WorkspaceId, currentTitle: string) => void
   /** Open the browser-owned delete-confirmation dialog for a real Workspace group. */
   onDeleteRequest: (workspaceId: WorkspaceId, currentTitle: string) => void
+  /** Pin a real Workspace group to the top of the list. */
+  onPinRequest: (workspaceId: WorkspaceId) => void
+  /** Currently pinned real Workspace ids (drives the pin/unpin menu label). */
+  pinnedWorkspaceIds: readonly string[]
+  /** Reveal a real Workspace's directory in the OS file manager. */
+  onRevealRequest: (cwd: string) => void
   /** Open the browser-owned session rename dialog. */
   onSessionRename: (sessionId: SessionNode['id'], currentTitle: string) => void
   /** Archive a session (row menu action; the row disappears on the state echo). */
@@ -248,8 +254,8 @@ type SessionTreeProps = Pick<
 /** The scrolling session tree; unmounting drops the sessions subscription and expand-all state. */
 function SessionTree({
   useSessions, startSession, open, forkSession, workspaces, archivedSessionIds,
-  onRenameRequest, onDeleteRequest, onSessionRename, onSessionArchive,
-  insertWorkspaceBefore, insertSessionBefore, orderBy,
+  onRenameRequest, onDeleteRequest, onPinRequest, onRevealRequest, pinnedWorkspaceIds,
+  onSessionRename, onSessionArchive, insertWorkspaceBefore, insertSessionBefore, orderBy,
   groupExpansion, setGroupExpanded,
   sessionOrderByAccount, sessionUpdatedAtByAccount, syncSessionOrderAccount, setSessionOrder, t,
 }: SessionTreeProps) {
@@ -319,13 +325,25 @@ function SessionTree({
     [sessionOrderByAccount, ungroupedSessionIds],
   )
   const groups = useMemo(
-    () => deriveGroups(list, orderedWorkspaces, archivedSessionIds, {
-      expandedGroups,
-      ...(sessionOrderByAccount[UNGROUPED_KEY] === undefined
-        ? {}
-        : { ungroupedOrder: sessionOrderByAccount[UNGROUPED_KEY] }),
-    }),
-    [list, orderedWorkspaces, archivedSessionIds, expandedGroups, sessionOrderByAccount],
+    () => {
+      const derived = deriveGroups(list, orderedWorkspaces, archivedSessionIds, {
+        expandedGroups,
+        ...(sessionOrderByAccount[UNGROUPED_KEY] === undefined
+          ? {}
+          : { ungroupedOrder: sessionOrderByAccount[UNGROUPED_KEY] }),
+      })
+      if (pinnedWorkspaceIds.length === 0) return derived
+      // Pinned real Workspaces sort above everything else (ungrouped stays put).
+      const pinnedSet = new Set(pinnedWorkspaceIds)
+      const pinned: GroupNode[] = []
+      const rest: GroupNode[] = []
+      for (const group of derived) {
+        if (group.workspaceId !== undefined && pinnedSet.has(group.workspaceId)) pinned.push(group)
+        else rest.push(group)
+      }
+      return [...pinned, ...rest]
+    },
+    [list, orderedWorkspaces, archivedSessionIds, expandedGroups, sessionOrderByAccount, pinnedWorkspaceIds],
   )
   const now = Date.now()
   const commitSessionDrag = (activeDrag: DragState, over: NonNullable<DragState['over']>): void => {
@@ -474,6 +492,15 @@ function SessionTree({
                     delete: () => {
                     /* v8 ignore next -- narrowing guard: the actions object exists only for real-workspace groups. */
                       if (group.workspaceId !== undefined) onDeleteRequest(group.workspaceId, group.label)
+                    },
+                    pin: () => {
+                    /* v8 ignore next -- narrowing guard: the actions object exists only for real-workspace groups. */
+                      if (group.workspaceId !== undefined) onPinRequest(group.workspaceId)
+                    },
+                    pinned: group.workspaceId !== undefined && pinnedWorkspaceIds.includes(group.workspaceId),
+                    reveal: () => {
+                    /* v8 ignore next -- narrowing guard: the actions object exists only for real-workspace groups. */
+                      if (group.cwd !== undefined) onRevealRequest(group.cwd)
                     },
                   }}
               />
@@ -751,6 +778,7 @@ export function WorkspaceBrowser({
   forkSession,
   renameWorkspace,
   deleteWorkspace,
+  revealWorkspace,
   insertWorkspaceBefore,
   archiveSession,
   insertSessionBefore,
@@ -772,6 +800,7 @@ export function WorkspaceBrowser({
   const groupExpansion = useStore(s => s.groupExpansion)
   const sessionOrderByAccount = useStore(s => s.sessionOrderByAccount)
   const sessionUpdatedAtByAccount = useStore(s => s.sessionUpdatedAtByAccount)
+  const pinnedWorkspaceIds = useStore(s => s.pinnedWorkspaceIds)
   useEffect(() => {
     if (workspacePhase !== 'ready') return
     actions.retainAccountKeys([
@@ -1162,6 +1191,9 @@ export function WorkspaceBrowser({
                   setDeleteTarget({ workspaceId, title })
                   setDeleteError(null)
                 }}
+                onPinRequest={(workspaceId) => { actions.togglePinned(workspaceId) }}
+                onRevealRequest={(cwd) => { void revealWorkspace(cwd) }}
+                pinnedWorkspaceIds={pinnedWorkspaceIds}
               />
             ))}
       </div>

@@ -249,22 +249,41 @@ describe('workspace browser rows', () => {
     expect(screen.getByRole('treeitem').querySelector('[data-state="done"]')).not.toBeNull()
   })
 
-  it('workspace row menu opens on the ellipsis, renames, and shows the danger delete row', () => {
+  it('workspace row menu opens on the ellipsis, pins, reveals, renames, and shows the danger delete row', () => {
     const onRename = vi.fn()
     const onDelete = vi.fn()
+    const onPin = vi.fn()
+    const onReveal = vi.fn()
     const onToggle = vi.fn()
     const group: GroupNode = {
       key: 'project', workspaceId: wid('project'), cwd: '/projects/project', createdAt: 0, label: 'Project',
       sessionCount: 0, expanded: false, containsCurrent: false, sessions: [],
     }
-    render(<ProjectRowItem
+    const { rerender } = render(<ProjectRowItem
       group={group} onToggle={onToggle} onCreate={vi.fn()}
-      actions={{ rename: onRename, delete: onDelete }} t={t}
+      actions={{ rename: onRename, delete: onDelete, pin: onPin, reveal: onReveal, pinned: false }} t={t}
     />)
     fireEvent.click(screen.getByRole('button', { name: '工作区“Project”的操作' }))
-    // Opening the menu neither toggles the group nor renames yet.
+    // Opening the menu neither toggles the group nor acts yet.
     expect(onToggle).not.toHaveBeenCalled()
     expect(screen.getByRole('menuitem', { name: '删除工作区' }).className).toMatch(/danger/)
+    fireEvent.click(screen.getByRole('menuitem', { name: '置顶项目' }))
+    expect(onPin).toHaveBeenCalledOnce()
+    expect(screen.queryByRole('menu')).toBeNull()
+    // Pinned rows offer the unpin entry instead of pin.
+    rerender(<ProjectRowItem
+      group={group} onToggle={onToggle} onCreate={vi.fn()}
+      actions={{ rename: onRename, delete: onDelete, pin: onPin, reveal: onReveal, pinned: true }} t={t}
+    />)
+    fireEvent.click(screen.getByRole('button', { name: '工作区“Project”的操作' }))
+    fireEvent.click(screen.getByRole('menuitem', { name: '取消置顶' }))
+    expect(onPin).toHaveBeenCalledTimes(2)
+    expect(screen.queryByRole('menu')).toBeNull()
+    fireEvent.click(screen.getByRole('button', { name: '工作区“Project”的操作' }))
+    fireEvent.click(screen.getByRole('menuitem', { name: '在Finder中显示' }))
+    expect(onReveal).toHaveBeenCalledOnce()
+    expect(screen.queryByRole('menu')).toBeNull()
+    fireEvent.click(screen.getByRole('button', { name: '工作区“Project”的操作' }))
     fireEvent.click(screen.getByRole('menuitem', { name: '重命名' }))
     expect(onRename).toHaveBeenCalledOnce()
     expect(screen.queryByRole('menu')).toBeNull()

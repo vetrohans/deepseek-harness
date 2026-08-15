@@ -25,6 +25,8 @@ type WorkspaceViewState = {
   sessionOrderByAccount: Record<string, string[]>
   /** Last observed update timestamps per order account for one-time promotion events. */
   sessionUpdatedAtByAccount: Record<string, Record<string, number>>
+  /** Real Workspace ids pinned to the top of the list (persisted, toggleable). */
+  pinnedWorkspaceIds: string[]
 }
 
 /**
@@ -43,6 +45,7 @@ type WorkspaceViewActions = {
     updatedAt: Record<string, number>,
   ) => void
   setSessionOrder: (draft: WorkspaceViewState, accountKey: string, order: string[]) => void
+  togglePinned: (draft: WorkspaceViewState, workspaceId: string) => void
 }
 
 /**
@@ -57,8 +60,9 @@ export function createWorkspaceViewStore(): EngineStoreHandle<WorkspaceViewState
       groupExpansion: {},
       sessionOrderByAccount: {},
       sessionUpdatedAtByAccount: {},
+      pinnedWorkspaceIds: [],
     }),
-    persist: 'dsh.workspace.view.v5',
+    persist: 'dsh.workspace.view.v6',
     actions: {
       setGroupBy: (d, mode: SessionGroupBy) => { d.groupBy = mode },
       setOrderBy: (d, mode: SessionOrderBy) => { d.orderBy = mode },
@@ -74,6 +78,7 @@ export function createWorkspaceViewStore(): EngineStoreHandle<WorkspaceViewState
         d.sessionUpdatedAtByAccount = Object.fromEntries(
           Object.entries(d.sessionUpdatedAtByAccount).filter(([key]) => retained.has(key)),
         )
+        d.pinnedWorkspaceIds = d.pinnedWorkspaceIds.filter(id => retained.has(id))
       },
       syncSessionOrderAccount: (d, accountKey: string, order: string[], updatedAt: Record<string, number>) => {
         d.sessionOrderByAccount[accountKey] = order
@@ -81,6 +86,11 @@ export function createWorkspaceViewStore(): EngineStoreHandle<WorkspaceViewState
       },
       setSessionOrder: (d, accountKey: string, order: string[]) => {
         d.sessionOrderByAccount[accountKey] = order
+      },
+      togglePinned: (d, workspaceId: string) => {
+        d.pinnedWorkspaceIds = d.pinnedWorkspaceIds.includes(workspaceId)
+          ? d.pinnedWorkspaceIds.filter(id => id !== workspaceId)
+          : [...d.pinnedWorkspaceIds, workspaceId]
       },
     },
   })

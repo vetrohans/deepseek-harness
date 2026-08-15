@@ -9,14 +9,28 @@ import { useState } from 'react'
 import clsx from 'clsx'
 import {
   HoverCard, IconArchiveOutline20, IconBranchOutline16, IconEditOutline16,
-  IconEllipsisOutline16, IconFolderClose16, IconFolderOpen16, IconPlusOutline16,
-  IconTrashOutline16, IconTriangleRightFill14, Menu, StateDot,
+  IconEllipsisOutline16, IconFolderClose16, IconFolderOpen16,
+  IconFolderOpenOutline16, IconPlusOutline16, IconTrashOutline16,
+  IconTriangleRightFill14, Menu, StateDot,
 } from '@deepseek-ai/dsh-client-ui-primitives'
 import type { StateDotState } from '@deepseek-ai/dsh-client-ui-primitives'
 import type { WorkspaceBrowserProps } from '../contract/slots.ts'
 import type { GroupNode, SearchResultNode, SessionNode } from '../tree.ts'
 import { relativeTime } from '../tree.ts'
 import css from './Rows.module.css'
+
+/**
+ * Lucide "pin" glyph (the user's pin.svg) as a 16px menu icon: stroke-based,
+ * currentColor, strokeWidth 2 — matches the DSH icon set's visual weight.
+ */
+function PinIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 17v5" />
+      <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
+    </svg>
+  )
+}
 
 /** The standard locale seat, prop-passed from the browser root. */
 type RowTranslate = WorkspaceBrowserProps['t']
@@ -112,7 +126,14 @@ export function ProjectRowItem({ group, onToggle, onCreate, actions, drag, t }: 
   onToggle: () => void
   onCreate: () => void
   /** Real-Workspace actions; absent for the ungrouped bucket (no menu shown). */
-  actions?: { rename: () => void; delete: () => void } | undefined
+  actions?: {
+    rename: () => void
+    delete: () => void
+    pin: () => void
+    reveal: () => void
+    /** Whether this Workspace is currently pinned to the top of the list. */
+    pinned: boolean
+  } | undefined
   /** Present only for real Workspace rows in the grouped view. */
   drag?: WorkspaceRowDragProps | undefined
   t: RowTranslate
@@ -122,7 +143,14 @@ export function ProjectRowItem({ group, onToggle, onCreate, actions, drag, t }: 
   const label = row.workspaceId === undefined ? t('group.ungrouped') : row.label
   const active = group.expanded && group.containsCurrent
   const [menuOpen, setMenuOpen] = useState(false)
+  const pinned = actions?.pinned === true
   const workspaceMenuItems = [
+    {
+      id: pinned ? 'unpin' : 'pin',
+      label: pinned ? t('menu.unpinWorkspace') : t('menu.pinWorkspace'),
+      icon: <PinIcon />,
+    },
+    { id: 'reveal', label: t('menu.revealInFinder'), icon: <IconFolderOpenOutline16 /> },
     { id: 'rename', label: t('rename'), icon: <IconEditOutline16 /> },
     { id: 'delete', label: t('delete.workspace'), icon: <IconTrashOutline16 />, danger: true },
   ]
@@ -161,9 +189,11 @@ export function ProjectRowItem({ group, onToggle, onCreate, actions, drag, t }: 
               setMenuOpen(false)
               // Unknown ids leave before the dispatch: a future menu row must
               // not inherit the destructive branch as an else fallback.
-              /* v8 ignore next -- workspaceMenuItems carries exactly these two rows today. */
-              if (id !== 'rename' && id !== 'delete') return
-              if (id === 'rename') actions.rename()
+              /* v8 ignore next -- workspaceMenuItems carries exactly these five rows today. */
+              if (id !== 'pin' && id !== 'unpin' && id !== 'reveal' && id !== 'rename' && id !== 'delete') return
+              if (id === 'pin' || id === 'unpin') actions.pin()
+              else if (id === 'reveal') actions.reveal()
+              else if (id === 'rename') actions.rename()
               else actions.delete()
             }}
             portal
