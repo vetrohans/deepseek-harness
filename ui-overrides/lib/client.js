@@ -44,6 +44,8 @@ window.__ModuleLoader__.load({
 			// unify ALL hover/pressed/selected grays (light theme only; covers settings,
 			// sidebar nav, floating buttons, solid-hover rows)
 			"body:not([data-ds-dark-theme]){--dsw-alias-interactive-bg-hover:#F3F3F3!important;--dsw-alias-interactive-bg-active:#F3F3F3!important;--dsw-alias-interactive-bg-hover-solid:#F3F3F3!important;--dsw-alias-button-floating-hover:#F3F3F3!important;--dsw-specific-sidebar-nav-item-hover:#F3F3F3!important;--dsw-specific-sidebar-nav-item-active:#F3F3F3!important;--dsw-alias-bg-module-platform:#F3F3F3!important;--dsw-specific-selector:#F3F3F3!important;--dsw-alias-bg-overlay:#F3F3F3!important;--dsw-specific-sidebar-fill:#FCFCFC!important}",
+			// no hand cursors anywhere: interactive elements all use the plain arrow
+			"button,[role='button'],a[href],[role='link'],summary,label[for],input[type='checkbox'],input[type='radio'],select,[role='tab'],[role='menuitem'],[role='option'],[role='treeitem'],[class*='Row'],[class*='row'],[class*='Chip'],[class*='chip'],[class*='Item'],[class*='item']{cursor:default!important}",
 			// settings nav: force active/hover off the blue-gray, same #F3F3F3 as everywhere else (light theme only)
 			"body:not([data-ds-dark-theme]) .ky8sCq_navCell:hover,body:not([data-ds-dark-theme]) .ky8sCq_navCell.ky8sCq_active{background:#F3F3F3!important}",
 			"[data-conversation-scroll]{--dshqn-left:max(64px,calc((100% - var(--dsh-chat-content-width))/2));position:relative!important;--dsw-specific-bubble:#F3F3F3}",
@@ -74,7 +76,7 @@ window.__ModuleLoader__.load({
 			// --- rail (always pinned to the far left) ---
 			".dshqn_rail{position:sticky;top:0;left:0;width:64px;height:0;flex:none;z-index:5;pointer-events:auto}",
 			".dshqn_cluster{position:absolute;top:0;left:28px;transform:translateY(-50%);display:flex;flex-direction:column;align-items:flex-start;gap:3px;pointer-events:auto}",
-			".dshqn_marker{display:block;height:2px;border:0;padding:0;margin:0;border-radius:2px;background:var(--dsw-alias-border-l4,var(--dsw-alias-border-l3));width:8px;transition:width .12s ease-out,background-color .12s ease-out;cursor:pointer}",
+			".dshqn_marker{display:block;height:2px;border:0;padding:0;margin:0;border-radius:2px;background:var(--dsw-alias-border-l4,var(--dsw-alias-border-l3));width:8px;transition:width .12s ease-out,background-color .12s ease-out}",
 			".dshqn_marker[data-current='1']{background:var(--dsw-alias-label-primary)}",
 			".dshqn_panel{position:absolute;left:100%;margin-left:10px;top:0;max-width:280px;min-width:140px;background:var(--dsw-specific-menu,var(--dsw-alias-bg-overlay,#fff));border:1px solid var(--dsw-alias-border-l2);border-radius:12px;box-shadow:var(--dsw-shadow-lv2);padding:9px 12px;pointer-events:none;opacity:0;transform:scale(.97);transform-origin:left center;transition:opacity .12s ease-out,transform .12s ease-out;font-size:11px;line-height:17px;color:var(--dsw-alias-label-tertiary)}",
 			".dshqn_panel[data-show='1']{opacity:1;transform:scale(1)}",
@@ -427,9 +429,19 @@ window.__ModuleLoader__.load({
 
 			function indexAt(clientY) {
 				if (markers.length === 0) return null;
-				const cr = cluster.getBoundingClientRect();
-				const step = cr.height / markers.length;
-				return Math.max(0, Math.min(markers.length - 1, Math.floor((clientY - cr.top) / step)));
+				// Nearest actual marker center — the cluster's flex gaps and the
+				// fisheye width changes make an even split drift from the real rows.
+				let best = 0;
+				let bestDist = Infinity;
+				for (let i = 0; i < markers.length; i++) {
+					const r = markers[i].el.getBoundingClientRect();
+					const d = Math.abs(clientY - (r.top + r.height / 2));
+					if (d < bestDist) {
+						bestDist = d;
+						best = i;
+					}
+				}
+				return best;
 			}
 
 			function showPanel(idx) {
@@ -448,9 +460,8 @@ window.__ModuleLoader__.load({
 				}
 				panel.dataset.show = "1";
 				const railRect = rail.getBoundingClientRect();
-				const cr = cluster.getBoundingClientRect();
-				const step = cr.height / markers.length;
-				const barCenter = cr.top + (idx + 0.5) * step;
+				const mr = markers[idx].el.getBoundingClientRect();
+				const barCenter = mr.top + mr.height / 2;
 				const scrollTop = sc.getBoundingClientRect().top;
 				let top = barCenter - panel.offsetHeight / 2 - railRect.top;
 				const minTop = 8 + scrollTop - railRect.top;
