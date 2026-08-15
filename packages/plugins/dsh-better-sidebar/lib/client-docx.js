@@ -10,14 +10,7 @@ globalThis.__dshChunks__["docx"] = (require) => {
 	var __getOwnPropNames = Object.getOwnPropertyNames;
 	var __getProtoOf = Object.getPrototypeOf;
 	var __hasOwnProp = Object.prototype.hasOwnProperty;
-	var __esmMin = (fn, res, err) => () => {
-		if (err) throw err[0];
-		try {
-			return fn && (res = fn(fn = 0)), res;
-		} catch (e) {
-			throw err = [e], e;
-		}
-	};
+	var __esmMin = (fn, res) => () => (fn && (res = fn(fn = 0)), res);
 	var __commonJSMin = (cb, mod) => () => (mod || (cb((mod = { exports: {} }).exports, mod), cb = null), mod.exports);
 	var __exportAll = (all, no_symbols) => {
 		let target = {};
@@ -38,7 +31,7 @@ globalThis.__dshChunks__["docx"] = (require) => {
 		}
 		return to;
 	};
-	var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule || !__hasOwnProp.call(mod, "default") ? __defProp(target, "default", {
+	var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", {
 		value: mod,
 		enumerable: true
 	}) : target, mod));
@@ -509,8 +502,8 @@ globalThis.__dshChunks__["docx"] = (require) => {
 		return text;
 	}
 	//#endregion
-	//#region \0dsh-css:/Users/yunsheng/.dsh/UI功能改动/dsh-better-sidebar/src/client/sidebar.module.css.mjs
-	const css = ".f7MvrG_toggleCluster{z-index:55;flex-direction:row;gap:4px;display:flex;position:fixed;top:3px;right:10px}.f7MvrG_panel:not(.f7MvrG_panelHidden) .f7MvrG_tabBar{padding-right:72px}.f7MvrG_toggleButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), color var(--ds-transition-duration-slow) var(--ds-ease-in-out);background:0 0;border:none;border-radius:50%;justify-content:center;align-items:center;display:flex}.f7MvrG_toggleButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_toggleButton:disabled{opacity:.4;cursor:default}.f7MvrG_panel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-left:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;top:0;bottom:0;right:0}.f7MvrG_panelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translate(102%)}.f7MvrG_panel[data-dragging]{transition:none}.f7MvrG_panelResize{cursor:col-resize;z-index:2;touch-action:none;width:8px;position:absolute;top:0;bottom:0;left:-4px}.f7MvrG_panelResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_panelBody{flex:1;min-width:0;min-height:0;display:flex}.f7MvrG_bottomPanel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-top:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;bottom:0}.f7MvrG_bottomPanelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translateY(102%)}.f7MvrG_bottomPanel[data-dragging]{transition:none}.f7MvrG_bottomResize{cursor:row-resize;z-index:2;touch-action:none;height:8px;position:absolute;top:-4px;left:0;right:0}.f7MvrG_bottomResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_bottomClose{z-index:4;width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex;position:absolute;top:3px;right:6px}.f7MvrG_bottomClose:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_bottomPanel .f7MvrG_tabBar{padding-right:40px}.f7MvrG_cornerHandle{z-index:52;cursor:nwse-resize;touch-action:none;width:12px;height:12px;position:fixed}.f7MvrG_cornerHandle:hover,.f7MvrG_cornerHandle[data-dragging]{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_iconButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.f7MvrG_iconButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_iconButton:disabled{opacity:.4;cursor:default}.f7MvrG_workbench,.f7MvrG_split{flex:1;min-width:0;min-height:0;display:flex}.f7MvrG_splitRow{flex-direction:row}.f7MvrG_splitCol{flex-direction:column}.f7MvrG_splitChild{display:flex;position:relative;overflow:hidden}.f7MvrG_divider{z-index:3;touch-action:none;flex:none;position:relative}.f7MvrG_dividerRow:after,.f7MvrG_dividerCol:after{content:\"\";background:var(--dsw-alias-border-l2);transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out);position:absolute}.f7MvrG_dividerRow{cursor:col-resize;width:7px;margin:0 -2px}.f7MvrG_dividerRow:after{width:1px;top:0;bottom:0;left:50%;transform:translate(-50%)}.f7MvrG_dividerCol{cursor:row-resize;height:7px;margin:-2px 0}.f7MvrG_dividerCol:after{height:1px;top:50%;left:0;right:0;transform:translateY(-50%)}.f7MvrG_divider:hover:after,.f7MvrG_dividerActive:after{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_pane{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;position:relative}.f7MvrG_paneDrop{outline:1px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.f7MvrG_dropOverlay{z-index:6;pointer-events:none;background:var(--dsw-alias-interactive-bg-hover-accent);opacity:.5;position:absolute}.f7MvrG_dropLeft{width:25%;top:0;bottom:0;left:0}.f7MvrG_dropRight{width:25%;top:0;bottom:0;right:0}.f7MvrG_dropUp{height:25%;top:0;left:0;right:0}.f7MvrG_dropDown{height:25%;bottom:0;left:0;right:0}.f7MvrG_dropCenter{outline:2px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-2px;background:0 0;inset:25%}.f7MvrG_paneContent{flex-direction:column;flex:1;min-height:0;display:flex;overflow:hidden}.f7MvrG_paneTab{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_paneTabHidden{display:none}.f7MvrG_paneEmptyCards{flex-direction:column;flex:1;justify-content:center;gap:2px;min-height:0;padding:8px 10px;display:flex;overflow:hidden}.f7MvrG_paneCard{width:100%;min-width:0;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;text-align:left;background:0 0;border:none;border-radius:6px;align-items:center;gap:10px;padding:8px 10px;display:flex}.f7MvrG_paneCard:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_paneCard:disabled{opacity:.45;cursor:default}.f7MvrG_paneCardIcon{color:var(--dsw-alias-label-secondary);flex:none;align-items:center;display:inline-flex}.f7MvrG_paneCardLabel{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.f7MvrG_paneCardShortcut{color:var(--dsw-alias-label-tertiary);background:var(--dsw-alias-interactive-bg-hover);white-space:nowrap;border-radius:6px;flex:none;padding:1px 7px;font-size:11px;line-height:18px}.f7MvrG_tabBar{border-bottom:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:stretch;height:34px;display:flex}.f7MvrG_tabBarDrop{outline:1px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.f7MvrG_tabList{scrollbar-width:none;flex:1;min-width:0;display:flex;overflow-x:auto}.f7MvrG_tabList::-webkit-scrollbar{display:none}.f7MvrG_tab{min-width:64px;max-width:160px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);border-right:1px solid var(--dsw-alias-border-l1);cursor:pointer;user-select:none;background:0 0;flex:none;align-items:center;gap:4px;padding:0 4px 0 10px;display:flex}.f7MvrG_tab:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_tabActive{color:var(--dsw-alias-label-primary);background:var(--dsw-alias-interactive-bg-active)}.f7MvrG_tabTitle{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.f7MvrG_tabClose{width:18px;height:18px;color:var(--dsw-alias-label-tertiary);cursor:pointer;background:0 0;border:none;border-radius:4px;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.f7MvrG_tabClose:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_tabBarPlus{background:var(--dsw-alias-bg-layer-1);width:22px;height:22px;color:var(--dsw-alias-label-tertiary);cursor:pointer;border:none;border-radius:5px;flex:none;justify-content:center;align-self:center;align-items:center;margin:0 6px;padding:0;display:inline-flex;position:sticky;right:0}.f7MvrG_tabBarPlus:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_explorer{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_explorerHeader{flex:none;justify-content:space-between;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.f7MvrG_explorerRoot{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_explorerBody{flex:1;min-height:0;padding:2px 6px 8px;overflow-y:auto}.f7MvrG_explorerRow{width:100%;height:34px;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);text-align:left;cursor:pointer;white-space:nowrap;animation:f7MvrG_dsh-row-in .15s var(--ds-ease-in-out);background:0 0;border:none;border-radius:8px;align-items:center;gap:6px;padding:0 8px;display:flex}.f7MvrG_explorerRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_explorerDir{font:var(--dsw-font-s-strong-14)}.f7MvrG_explorerHidden{opacity:.45}.f7MvrG_explorerName{text-overflow:ellipsis;overflow:hidden}.f7MvrG_explorerRef{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:20px;color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;align-items:center;padding:0 8px;display:none}.f7MvrG_explorerRef:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_explorerRow:hover .f7MvrG_explorerRef,.f7MvrG_explorerRow:focus-within .f7MvrG_explorerRef{display:inline-flex}.f7MvrG_explorerCopied{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.f7MvrG_explorerError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);cursor:default}@keyframes f7MvrG_dsh-row-in{0%{opacity:0}}.f7MvrG_explorerEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.f7MvrG_editor{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:6px;padding:4px 8px;display:flex}.f7MvrG_editorTitle{min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;flex:1;overflow:hidden}.f7MvrG_editorStatus{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.f7MvrG_editorStatusError{color:var(--dsw-alias-state-error-primary)}.f7MvrG_dirtyDot{background:var(--dsw-alias-state-warn-primary);border-radius:50%;flex:none;width:7px;height:7px}.f7MvrG_editorPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;flex:1;justify-content:center;align-items:center;padding:16px;display:flex}.f7MvrG_orphanedType{opacity:.7;overflow-wrap:anywhere;margin-top:8px;font-size:12px;display:block}.f7MvrG_editorBinary{text-align:center;flex-direction:column;flex:1;justify-content:center;align-items:center;gap:12px;padding:24px 16px;display:flex}.f7MvrG_editorBinaryNotice{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_editorDownloadLink{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), border-color var(--ds-transition-duration-slow) var(--ds-ease-in-out);border-radius:6px;align-items:center;gap:6px;padding:6px 14px;text-decoration:none;display:inline-flex}.f7MvrG_editorDownloadLink:hover{background:var(--dsw-alias-interactive-bg-hover);border-color:var(--dsw-alias-border-l2)}.f7MvrG_editorError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);padding:12px 16px}.f7MvrG_editorBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.f7MvrG_sandboxStatus{font:var(--dsw-font-xxxs-11);flex:none;align-items:center;gap:8px;padding:4px 10px;display:flex}.f7MvrG_sandboxStatusOn{color:var(--dsw-alias-label-secondary);background:var(--dsw-alias-bg-layer-1);border-bottom:1px solid var(--dsw-alias-border-l1)}.f7MvrG_sandboxStatusOff{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 10%, transparent);border-bottom:1px solid color-mix(in srgb, var(--dsw-alias-state-error-primary) 45%, transparent)}.f7MvrG_sandboxDot{background:var(--dsw-alias-state-success-primary);border-radius:50%;flex:none;width:6px;height:6px}.f7MvrG_sandboxStatusOff .f7MvrG_sandboxDot{background:var(--dsw-alias-state-error-primary)}.f7MvrG_sandboxStatusText{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.f7MvrG_sandboxAction{border:1px solid var(--dsw-alias-border-l2);font:inherit;color:inherit;cursor:pointer;background:0 0;border-radius:6px;flex:none;padding:2px 8px}.f7MvrG_sandboxAction:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_editorHtml{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.f7MvrG_browser{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_browserBar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:4px;padding:6px 8px;display:flex}.f7MvrG_browserInput{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);min-width:0;height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 10px}.f7MvrG_browserInput:focus{border-color:var(--dsw-alias-border-l2);outline:none}.f7MvrG_browserMessage{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.f7MvrG_browserFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.f7MvrG_browserStart{text-align:center;min-height:0;font:var(--dsw-font-xs-13);color:var(--dsw-alias-label-tertiary);flex:1;justify-content:center;align-items:center;padding:20px;display:flex}.f7MvrG_browserBlocked{text-align:center;min-height:0;color:var(--dsw-alias-state-warn-primary);flex-direction:column;flex:1;justify-content:center;align-items:center;gap:6px;padding:24px;display:flex}.f7MvrG_browserBlockedTitle{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary)}.f7MvrG_browserBlockedDesc{max-width:280px;font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-secondary)}.f7MvrG_browserBlockedActions{gap:8px;margin-top:6px;display:flex}.f7MvrG_browserBlockedButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-1);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-11);cursor:pointer;border-radius:6px;padding:4px 12px}.f7MvrG_browserBlockedButton:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_editorCm{background:0 0;flex:1;min-height:0;overflow:hidden}.f7MvrG_editorCmHidden{display:none}.f7MvrG_editorCm .cm-editor{height:100%}.f7MvrG_editorCm .cm-editor.cm-focused{outline:none}.f7MvrG_editorModeToggle{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);border-radius:6px;flex:none;align-items:center;gap:2px;padding:2px;display:inline-flex}.f7MvrG_editorModeButton{color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-11);cursor:pointer;background:0 0;border:none;border-radius:4px;padding:2px 8px}.f7MvrG_editorModeButton:hover{color:var(--dsw-alias-label-primary)}.f7MvrG_editorModeActive{background:var(--dsw-alias-bg-base);color:var(--dsw-alias-label-primary)}.f7MvrG_editorImageWrap{flex:1;justify-content:center;align-items:center;min-height:0;padding:12px;display:flex;overflow:auto}.f7MvrG_editorImage{object-fit:contain;max-width:100%;max-height:100%}.f7MvrG_editorMd{min-height:0;font:var(--dsw-font-xs-13);flex:1;padding:10px 14px;overflow-y:auto}.f7MvrG_selectionPopup{z-index:60;border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-strong-11);white-space:nowrap;cursor:pointer;border-radius:6px;align-items:center;padding:0 10px;display:inline-flex;position:fixed;transform:translate(-50%,calc(-100% - 8px))}.f7MvrG_selectionPopup:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_editorDocx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorDocxViewport{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;overflow:auto}.f7MvrG_editorDocxWrap{flex:none;padding:16px}.f7MvrG_editorDocxZoom{border-top:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:center;gap:8px;min-height:34px;padding:4px 10px;display:flex}.f7MvrG_editorDocxZoomHint,.f7MvrG_editorDocxZoomValue{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.f7MvrG_editorDocxZoomValue{text-align:right;width:36px}.f7MvrG_editorDocxZoomRange{min-width:72px;accent-color:var(--dsw-alias-brand-primary);cursor:pointer;flex:1}.f7MvrG_editorPdf{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorPdfToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:flex-end;padding:6px 8px;display:flex}.f7MvrG_editorPdfStage{flex:1;min-height:0;display:flex;position:relative}.f7MvrG_editorPdfFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.f7MvrG_editorPdfFrameBlocked{pointer-events:none}.f7MvrG_editorPdfDragShield{z-index:4;pointer-events:none;background:0 0;position:absolute;inset:0}.f7MvrG_editorPdfDragShieldActive{pointer-events:auto}body[data-dsh-tab-dragging] .f7MvrG_editorPdfFrame{pointer-events:none!important}body[data-dsh-tab-dragging] .f7MvrG_editorPdfDragShield{pointer-events:auto!important}.f7MvrG_editorXlsx{background:var(--dsw-alias-bg-base);flex:1;min-height:0;position:relative;overflow:hidden}.f7MvrG_editorUniverHost{width:100%;min-width:0;height:100%;min-height:0}.f7MvrG_editorOfficeOverlay{z-index:2;background:var(--dsw-alias-bg-base);display:flex;position:absolute;inset:0}.f7MvrG_editorPptx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorPptxToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:center;align-items:center;gap:8px;padding:6px 8px;display:flex}.f7MvrG_editorPptxToolbar .f7MvrG_editorDownloadLink{margin-left:auto}.f7MvrG_editorPptxButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border-radius:6px;padding:0 10px}.f7MvrG_editorPptxButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_editorPptxButton:disabled{opacity:.4;cursor:default}.f7MvrG_editorPptxPosition{text-align:center;min-width:64px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_editorPptxStage{flex:1;min-height:0;position:relative;overflow:hidden}.f7MvrG_editorPptxHost{width:100%;min-width:0;height:100%;min-height:0;overflow:auto}.f7MvrG_terminalWrap{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;position:relative}.f7MvrG_terminal{flex:1;min-height:0;padding:6px 4px 6px 8px}.f7MvrG_terminal .xterm{height:100%}.f7MvrG_terminalBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex-wrap:wrap;flex:none;align-items:center;gap:8px;padding:3px 10px;display:flex}.f7MvrG_terminalBannerUrl{word-break:break-all;opacity:.85;flex-basis:100%;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.f7MvrG_boundaryError{z-index:50;background:var(--dsw-alias-bg-layer-1);border-left:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);flex-direction:column;align-items:flex-start;gap:8px;padding:16px;display:flex;position:fixed;top:0;bottom:0;right:0;overflow:auto}.f7MvrG_terminalRetry{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;padding:1px 8px}.f7MvrG_terminalRetry:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_git{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.f7MvrG_gitHeader{flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.f7MvrG_gitBranchSelect{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-base);min-width:0;height:26px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 6px}.f7MvrG_gitSection{border-top:1px solid var(--dsw-alias-border-l1)}.f7MvrG_gitSectionHeader{font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-tertiary);text-transform:uppercase;justify-content:space-between;align-items:center;padding:6px 12px 4px;display:flex}.f7MvrG_gitLink{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-brand-primary);cursor:pointer;background:0 0;border:none;padding:0}.f7MvrG_gitLink:hover:not(:disabled){text-decoration:underline}.f7MvrG_gitLink:disabled{opacity:.4;cursor:default}.f7MvrG_gitRow{min-height:34px;animation:f7MvrG_dsh-row-in .15s var(--ds-ease-in-out);border-radius:8px;align-items:center;gap:6px;margin:0 6px;padding:0 8px;display:flex}.f7MvrG_gitRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_gitRowSelected{background:var(--dsw-alias-interactive-bg-active)}.f7MvrG_gitRowMain{cursor:pointer;text-align:left;background:0 0;border:none;flex:1;align-items:center;gap:8px;min-width:0;padding:3px 0;display:flex}.f7MvrG_gitBadge{width:20px;height:16px;font:var(--dsw-font-xxxs-strong-11);background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-secondary);border-radius:4px;flex:none;justify-content:center;align-items:center;display:inline-flex}.f7MvrG_gitName{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.f7MvrG_gitEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);padding:4px 12px 8px}.f7MvrG_gitPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.f7MvrG_gitError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);white-space:pre-wrap;padding:8px 12px}.f7MvrG_gitDiff{border-top:1px solid var(--dsw-alias-border-l1);padding:8px}.f7MvrG_gitDiffTab{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.f7MvrG_gitDiffTabHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.f7MvrG_gitDiffTabTitle{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.f7MvrG_gitDiffFile{align-items:baseline;gap:6px;padding:8px 2px 2px;display:flex}.f7MvrG_gitDiffFilePath{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_gitDiffFileOld{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);text-overflow:ellipsis;white-space:nowrap;flex:none;max-width:40%;overflow:hidden}.f7MvrG_gitDiffFileTag{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-secondary);border-radius:999px;flex:none;padding:0 6px}.f7MvrG_gitDiffHunk{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);gap:8px;padding:3px 2px;display:flex}.f7MvrG_gitDiffHunkHeader{color:var(--dsw-alias-label-secondary);flex:none}.f7MvrG_gitDiffHunkSection{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_gitDiffLine{font:var(--dsw-font-markdown-code-block-small);white-space:pre-wrap;overflow-wrap:anywhere;align-items:stretch;min-width:0;line-height:20px;display:flex}.f7MvrG_gitDiffNum{text-align:right;width:36px;color:var(--dsw-alias-label-tertiary);user-select:none;flex:none;padding-right:8px}.f7MvrG_gitDiffCode{flex:1;min-width:0;overflow:visible}.f7MvrG_gitDiffCtx{color:var(--dsw-alias-label-primary)}.f7MvrG_gitDiffDel{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 12%, transparent)}.f7MvrG_gitDiffAdd{color:var(--dsw-alias-state-success-primary);background:color-mix(in srgb, var(--dsw-alias-state-success-primary) 12%, transparent)}.f7MvrG_gitDiffMeta{padding-left:2px}.f7MvrG_gitDiffMetaText{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);font-style:italic}.f7MvrG_gitDiffExpand{width:100%;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-brand-primary);cursor:pointer;text-align:center;background:0 0;border:none;margin:4px 0;display:block}.f7MvrG_gitDiffExpand:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_gitConfirmDesc{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);white-space:pre-wrap;margin:0}.f7MvrG_gitCommit{border-top:1px solid var(--dsw-alias-border-l1);align-items:center;gap:6px;padding:8px 12px;display:flex}.f7MvrG_gitCommitInput{flex:1;min-width:0}.f7MvrG_gitCommitButton{background:var(--dsw-alias-button-primary-fill);height:26px;color:var(--dsw-alias-label-primary-inverted);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border:none;border-radius:6px;flex:none;padding:0 12px}.f7MvrG_gitCommitButton:hover:not(:disabled){background:var(--dsw-alias-button-primary-hover)}.f7MvrG_gitCommitButton:disabled{opacity:.45;cursor:default}.f7MvrG_gitLogRow{cursor:pointer;border-radius:8px;flex-direction:column;gap:2px;padding:5px 12px;display:flex}.f7MvrG_gitLogRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_gitLogLine1{align-items:baseline;gap:8px;min-width:0;display:flex}.f7MvrG_gitLogHash{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);flex:none}.f7MvrG_gitLogLine2{flex-wrap:wrap;align-items:center;gap:6px;min-width:0;display:flex}.f7MvrG_gitLogRef{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-brand-primary);white-space:nowrap;border-radius:999px;flex:none;padding:0 5px}.f7MvrG_gitLogSubject{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.f7MvrG_gitLogMeta{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.f7MvrG_gitLogMore{border:1px solid var(--dsw-alias-border-l2);width:calc(100% - 24px);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border-radius:6px;margin:4px 12px 8px;padding:6px 0;display:block}.f7MvrG_gitLogMore:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_gitLogMore:disabled{opacity:.5;cursor:default}.f7MvrG_producedRow{flex-wrap:wrap;align-items:center;gap:8px;padding:4px 0;display:flex}.f7MvrG_producedLabel{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_producedChip{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);max-width:200px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-12);cursor:pointer;border-radius:999px;align-items:center;gap:4px;padding:2px 8px;display:inline-flex;overflow:hidden}.f7MvrG_producedChip:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_producedChip span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_producedMore{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_toggleButton:focus-visible,.f7MvrG_bottomClose:focus-visible,.f7MvrG_iconButton:focus-visible,.f7MvrG_tab:focus-visible,.f7MvrG_tabClose:focus-visible,.f7MvrG_tabBarPlus:focus-visible,.f7MvrG_paneCard:focus-visible,.f7MvrG_explorerRow:focus-visible,.f7MvrG_explorerRef:focus-visible,.f7MvrG_gitRowMain:focus-visible,.f7MvrG_gitLink:focus-visible,.f7MvrG_gitCommitButton:focus-visible,.f7MvrG_gitLogRow:focus-visible,.f7MvrG_gitLogMore:focus-visible,.f7MvrG_gitDiffExpand:focus-visible,.f7MvrG_terminalRetry:focus-visible,.f7MvrG_editorModeButton:focus-visible,.f7MvrG_editorDownloadLink:focus-visible,.f7MvrG_editorPptxButton:focus-visible,.f7MvrG_editorDocxZoomRange:focus-visible{outline:2px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}@media (prefers-reduced-motion:reduce){.f7MvrG_panel,.f7MvrG_panelHidden,.f7MvrG_bottomPanel,.f7MvrG_bottomPanelHidden,.f7MvrG_toggleCluster,.f7MvrG_toggleButton,.f7MvrG_tab,.f7MvrG_tabBarPlus,.f7MvrG_paneCard,.f7MvrG_explorerRow,.f7MvrG_gitRow,.f7MvrG_divider,.f7MvrG_dividerRow:after,.f7MvrG_dividerCol:after{transition:none;animation:none}}@media (width<=767px){.f7MvrG_panel:not(.f7MvrG_panelHidden) .f7MvrG_tabBar{padding-right:40px}.f7MvrG_tab{min-width:48px;max-width:128px}}";
+	//#region \0dsh-css:/Volumes/资料盘/DSH/packages/plugins/dsh-better-sidebar/src/client/sidebar.module.css.mjs
+	const css = ".TragPW_toggleCluster{z-index:55;flex-direction:row;gap:4px;display:flex;position:fixed;top:3px;right:10px}.TragPW_panel:not(.TragPW_panelHidden) .TragPW_tabBar{padding-right:72px}.TragPW_toggleButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), color var(--ds-transition-duration-slow) var(--ds-ease-in-out);background:0 0;border:none;border-radius:50%;justify-content:center;align-items:center;display:flex}.TragPW_toggleButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_toggleButton:disabled{opacity:.4;cursor:default}.TragPW_panel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-left:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;top:0;bottom:0;right:0}.TragPW_panelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translate(102%)}.TragPW_panel[data-dragging]{transition:none}.TragPW_panelResize{cursor:col-resize;z-index:2;touch-action:none;width:8px;position:absolute;top:0;bottom:0;left:-4px}.TragPW_panelResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_panelBody{flex:1;min-width:0;min-height:0;display:flex}.TragPW_bottomPanel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-top:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;bottom:0}.TragPW_bottomPanelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translateY(102%)}.TragPW_bottomPanel[data-dragging]{transition:none}.TragPW_bottomResize{cursor:row-resize;z-index:2;touch-action:none;height:8px;position:absolute;top:-4px;left:0;right:0}.TragPW_bottomResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_bottomClose{z-index:4;width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex;position:absolute;top:3px;right:6px}.TragPW_bottomClose:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_bottomPanel .TragPW_tabBar{padding-right:40px}.TragPW_cornerHandle{z-index:52;cursor:nwse-resize;touch-action:none;width:12px;height:12px;position:fixed}.TragPW_cornerHandle:hover,.TragPW_cornerHandle[data-dragging]{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_iconButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.TragPW_iconButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_iconButton:disabled{opacity:.4;cursor:default}.TragPW_workbench,.TragPW_split{flex:1;min-width:0;min-height:0;display:flex}.TragPW_splitRow{flex-direction:row}.TragPW_splitCol{flex-direction:column}.TragPW_splitChild{display:flex;position:relative;overflow:hidden}.TragPW_divider{z-index:3;touch-action:none;flex:none;position:relative}.TragPW_dividerRow:after,.TragPW_dividerCol:after{content:\"\";background:var(--dsw-alias-border-l2);transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out);position:absolute}.TragPW_dividerRow{cursor:col-resize;width:7px;margin:0 -2px}.TragPW_dividerRow:after{width:1px;top:0;bottom:0;left:50%;transform:translate(-50%)}.TragPW_dividerCol{cursor:row-resize;height:7px;margin:-2px 0}.TragPW_dividerCol:after{height:1px;top:50%;left:0;right:0;transform:translateY(-50%)}.TragPW_divider:hover:after,.TragPW_dividerActive:after{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_pane{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;position:relative}.TragPW_paneDrop{outline:1px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.TragPW_dropOverlay{z-index:6;pointer-events:none;background:var(--dsw-alias-interactive-bg-hover-accent);opacity:.5;position:absolute}.TragPW_dropLeft{width:25%;top:0;bottom:0;left:0}.TragPW_dropRight{width:25%;top:0;bottom:0;right:0}.TragPW_dropUp{height:25%;top:0;left:0;right:0}.TragPW_dropDown{height:25%;bottom:0;left:0;right:0}.TragPW_dropCenter{outline:2px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-2px;background:0 0;inset:25%}.TragPW_paneContent{flex-direction:column;flex:1;min-height:0;display:flex;overflow:hidden}.TragPW_paneTab{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_paneTabHidden{display:none}.TragPW_paneEmptyCards{flex-direction:column;flex:1;justify-content:center;gap:2px;min-height:0;padding:8px 10px;display:flex;overflow:hidden}.TragPW_paneCard{width:100%;min-width:0;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;text-align:left;background:0 0;border:none;border-radius:6px;align-items:center;gap:10px;padding:8px 10px;display:flex}.TragPW_paneCard:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_paneCard:disabled{opacity:.45;cursor:default}.TragPW_paneCardIcon{color:var(--dsw-alias-label-secondary);flex:none;align-items:center;display:inline-flex}.TragPW_paneCardLabel{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.TragPW_paneCardShortcut{color:var(--dsw-alias-label-tertiary);background:var(--dsw-alias-interactive-bg-hover);white-space:nowrap;border-radius:6px;flex:none;padding:1px 7px;font-size:11px;line-height:18px}.TragPW_tabBar{border-bottom:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:stretch;height:34px;display:flex}.TragPW_tabBarDrop{outline:1px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.TragPW_tabList{scrollbar-width:none;flex:1;min-width:0;display:flex;overflow-x:auto}.TragPW_tabList::-webkit-scrollbar{display:none}.TragPW_tab{min-width:64px;max-width:160px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);border-right:1px solid var(--dsw-alias-border-l1);cursor:pointer;user-select:none;background:0 0;flex:none;align-items:center;gap:4px;padding:0 4px 0 10px;display:flex}.TragPW_tab:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_tabActive{color:var(--dsw-alias-label-primary);background:var(--dsw-alias-interactive-bg-active)}.TragPW_tabTitle{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.TragPW_tabClose{width:18px;height:18px;color:var(--dsw-alias-label-tertiary);cursor:pointer;background:0 0;border:none;border-radius:4px;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.TragPW_tabClose:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_tabBarPlus{background:var(--dsw-alias-bg-layer-1);width:22px;height:22px;color:var(--dsw-alias-label-tertiary);cursor:pointer;border:none;border-radius:5px;flex:none;justify-content:center;align-self:center;align-items:center;margin:0 6px;padding:0;display:inline-flex;position:sticky;right:0}.TragPW_tabBarPlus:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_explorer{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_explorerHeader{flex:none;justify-content:space-between;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.TragPW_explorerRoot{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_explorerBody{flex:1;min-height:0;padding:2px 6px 8px;overflow-y:auto}.TragPW_explorerRow{width:100%;height:34px;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);text-align:left;cursor:pointer;white-space:nowrap;animation:TragPW_dsh-row-in .15s var(--ds-ease-in-out);background:0 0;border:none;border-radius:8px;align-items:center;gap:6px;padding:0 8px;display:flex}.TragPW_explorerRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_explorerDir{font:var(--dsw-font-s-strong-14)}.TragPW_explorerHidden{opacity:.45}.TragPW_explorerName{text-overflow:ellipsis;overflow:hidden}.TragPW_explorerRef{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:20px;color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;align-items:center;padding:0 8px;display:none}.TragPW_explorerRef:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_explorerRow:hover .TragPW_explorerRef,.TragPW_explorerRow:focus-within .TragPW_explorerRef{display:inline-flex}.TragPW_explorerCopied{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.TragPW_explorerError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);cursor:default}@keyframes TragPW_dsh-row-in{0%{opacity:0}}.TragPW_explorerEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.TragPW_editor{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:6px;padding:4px 8px;display:flex}.TragPW_editorTitle{min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;flex:1;overflow:hidden}.TragPW_editorStatus{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.TragPW_editorStatusError{color:var(--dsw-alias-state-error-primary)}.TragPW_dirtyDot{background:var(--dsw-alias-state-warn-primary);border-radius:50%;flex:none;width:7px;height:7px}.TragPW_editorPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;flex:1;justify-content:center;align-items:center;padding:16px;display:flex}.TragPW_orphanedType{opacity:.7;overflow-wrap:anywhere;margin-top:8px;font-size:12px;display:block}.TragPW_editorBinary{text-align:center;flex-direction:column;flex:1;justify-content:center;align-items:center;gap:12px;padding:24px 16px;display:flex}.TragPW_editorBinaryNotice{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_editorDownloadLink{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), border-color var(--ds-transition-duration-slow) var(--ds-ease-in-out);border-radius:6px;align-items:center;gap:6px;padding:6px 14px;text-decoration:none;display:inline-flex}.TragPW_editorDownloadLink:hover{background:var(--dsw-alias-interactive-bg-hover);border-color:var(--dsw-alias-border-l2)}.TragPW_editorError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);padding:12px 16px}.TragPW_editorBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.TragPW_sandboxStatus{font:var(--dsw-font-xxxs-11);flex:none;align-items:center;gap:8px;padding:4px 10px;display:flex}.TragPW_sandboxStatusOn{color:var(--dsw-alias-label-secondary);background:var(--dsw-alias-bg-layer-1);border-bottom:1px solid var(--dsw-alias-border-l1)}.TragPW_sandboxStatusOff{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 10%, transparent);border-bottom:1px solid color-mix(in srgb, var(--dsw-alias-state-error-primary) 45%, transparent)}.TragPW_sandboxDot{background:var(--dsw-alias-state-success-primary);border-radius:50%;flex:none;width:6px;height:6px}.TragPW_sandboxStatusOff .TragPW_sandboxDot{background:var(--dsw-alias-state-error-primary)}.TragPW_sandboxStatusText{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.TragPW_sandboxAction{border:1px solid var(--dsw-alias-border-l2);font:inherit;color:inherit;cursor:pointer;background:0 0;border-radius:6px;flex:none;padding:2px 8px}.TragPW_sandboxAction:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_editorHtml{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.TragPW_browser{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_browserBar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:4px;padding:6px 8px;display:flex}.TragPW_browserInput{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);min-width:0;height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 10px}.TragPW_browserInput:focus{border-color:var(--dsw-alias-border-l2);outline:none}.TragPW_browserMessage{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.TragPW_browserFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.TragPW_browserStart{text-align:center;min-height:0;font:var(--dsw-font-xs-13);color:var(--dsw-alias-label-tertiary);flex:1;justify-content:center;align-items:center;padding:20px;display:flex}.TragPW_browserBlocked{text-align:center;min-height:0;color:var(--dsw-alias-state-warn-primary);flex-direction:column;flex:1;justify-content:center;align-items:center;gap:6px;padding:24px;display:flex}.TragPW_browserBlockedTitle{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary)}.TragPW_browserBlockedDesc{max-width:280px;font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-secondary)}.TragPW_browserBlockedActions{gap:8px;margin-top:6px;display:flex}.TragPW_browserBlockedButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-1);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-11);cursor:pointer;border-radius:6px;padding:4px 12px}.TragPW_browserBlockedButton:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_editorCm{background:0 0;flex:1;min-height:0;overflow:hidden}.TragPW_editorCmHidden{display:none}.TragPW_editorCm .cm-editor{height:100%}.TragPW_editorCm .cm-editor.cm-focused{outline:none}.TragPW_editorModeToggle{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);border-radius:6px;flex:none;align-items:center;gap:2px;padding:2px;display:inline-flex}.TragPW_editorModeButton{color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-11);cursor:pointer;background:0 0;border:none;border-radius:4px;padding:2px 8px}.TragPW_editorModeButton:hover{color:var(--dsw-alias-label-primary)}.TragPW_editorModeActive{background:var(--dsw-alias-bg-base);color:var(--dsw-alias-label-primary)}.TragPW_editorImageWrap{flex:1;justify-content:center;align-items:center;min-height:0;padding:12px;display:flex;overflow:auto}.TragPW_editorImage{object-fit:contain;max-width:100%;max-height:100%}.TragPW_editorMd{min-height:0;font:var(--dsw-font-xs-13);flex:1;padding:10px 14px;overflow-y:auto}.TragPW_selectionPopup{z-index:60;border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-strong-11);white-space:nowrap;cursor:pointer;border-radius:6px;align-items:center;padding:0 10px;display:inline-flex;position:fixed;transform:translate(-50%,calc(-100% - 8px))}.TragPW_selectionPopup:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_editorDocx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorDocxViewport{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;overflow:auto}.TragPW_editorDocxWrap{flex:none;padding:16px}.TragPW_editorDocxZoom{border-top:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:center;gap:8px;min-height:34px;padding:4px 10px;display:flex}.TragPW_editorDocxZoomHint,.TragPW_editorDocxZoomValue{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.TragPW_editorDocxZoomValue{text-align:right;width:36px}.TragPW_editorDocxZoomRange{min-width:72px;accent-color:var(--dsw-alias-brand-primary);cursor:pointer;flex:1}.TragPW_editorPdf{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorPdfToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:flex-end;padding:6px 8px;display:flex}.TragPW_editorPdfStage{flex:1;min-height:0;display:flex;position:relative}.TragPW_editorPdfFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.TragPW_editorPdfFrameBlocked{pointer-events:none}.TragPW_editorPdfDragShield{z-index:4;pointer-events:none;background:0 0;position:absolute;inset:0}.TragPW_editorPdfDragShieldActive{pointer-events:auto}body[data-dsh-tab-dragging] .TragPW_editorPdfFrame{pointer-events:none!important}body[data-dsh-tab-dragging] .TragPW_editorPdfDragShield{pointer-events:auto!important}.TragPW_editorXlsx{background:var(--dsw-alias-bg-base);flex:1;min-height:0;position:relative;overflow:hidden}.TragPW_editorUniverHost{width:100%;min-width:0;height:100%;min-height:0}.TragPW_editorOfficeOverlay{z-index:2;background:var(--dsw-alias-bg-base);display:flex;position:absolute;inset:0}.TragPW_editorPptx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorPptxToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:center;align-items:center;gap:8px;padding:6px 8px;display:flex}.TragPW_editorPptxToolbar .TragPW_editorDownloadLink{margin-left:auto}.TragPW_editorPptxButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border-radius:6px;padding:0 10px}.TragPW_editorPptxButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_editorPptxButton:disabled{opacity:.4;cursor:default}.TragPW_editorPptxPosition{text-align:center;min-width:64px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_editorPptxStage{flex:1;min-height:0;position:relative;overflow:hidden}.TragPW_editorPptxHost{width:100%;min-width:0;height:100%;min-height:0;overflow:auto}.TragPW_terminalWrap{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;position:relative}.TragPW_terminal{flex:1;min-height:0;padding:6px 4px 6px 8px}.TragPW_terminal .xterm{height:100%}.TragPW_terminalBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex-wrap:wrap;flex:none;align-items:center;gap:8px;padding:3px 10px;display:flex}.TragPW_terminalBannerUrl{word-break:break-all;opacity:.85;flex-basis:100%;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.TragPW_boundaryError{z-index:50;background:var(--dsw-alias-bg-layer-1);border-left:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);flex-direction:column;align-items:flex-start;gap:8px;padding:16px;display:flex;position:fixed;top:0;bottom:0;right:0;overflow:auto}.TragPW_terminalRetry{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;padding:1px 8px}.TragPW_terminalRetry:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_git{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.TragPW_gitHeader{flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.TragPW_gitBranchSelect{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-base);min-width:0;height:26px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 6px}.TragPW_gitSection{border-top:1px solid var(--dsw-alias-border-l1)}.TragPW_gitSectionHeader{font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-tertiary);text-transform:uppercase;justify-content:space-between;align-items:center;padding:6px 12px 4px;display:flex}.TragPW_gitLink{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-brand-primary);cursor:pointer;background:0 0;border:none;padding:0}.TragPW_gitLink:hover:not(:disabled){text-decoration:underline}.TragPW_gitLink:disabled{opacity:.4;cursor:default}.TragPW_gitRow{min-height:34px;animation:TragPW_dsh-row-in .15s var(--ds-ease-in-out);border-radius:8px;align-items:center;gap:6px;margin:0 6px;padding:0 8px;display:flex}.TragPW_gitRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_gitRowSelected{background:var(--dsw-alias-interactive-bg-active)}.TragPW_gitRowMain{cursor:pointer;text-align:left;background:0 0;border:none;flex:1;align-items:center;gap:8px;min-width:0;padding:3px 0;display:flex}.TragPW_gitBadge{width:20px;height:16px;font:var(--dsw-font-xxxs-strong-11);background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-secondary);border-radius:4px;flex:none;justify-content:center;align-items:center;display:inline-flex}.TragPW_gitName{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.TragPW_gitEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);padding:4px 12px 8px}.TragPW_gitPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.TragPW_gitError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);white-space:pre-wrap;padding:8px 12px}.TragPW_gitDiff{border-top:1px solid var(--dsw-alias-border-l1);padding:8px}.TragPW_gitDiffTab{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.TragPW_gitDiffTabHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.TragPW_gitDiffTabTitle{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.TragPW_gitDiffFile{align-items:baseline;gap:6px;padding:8px 2px 2px;display:flex}.TragPW_gitDiffFilePath{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_gitDiffFileOld{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);text-overflow:ellipsis;white-space:nowrap;flex:none;max-width:40%;overflow:hidden}.TragPW_gitDiffFileTag{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-secondary);border-radius:999px;flex:none;padding:0 6px}.TragPW_gitDiffHunk{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);gap:8px;padding:3px 2px;display:flex}.TragPW_gitDiffHunkHeader{color:var(--dsw-alias-label-secondary);flex:none}.TragPW_gitDiffHunkSection{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_gitDiffLine{font:var(--dsw-font-markdown-code-block-small);white-space:pre-wrap;overflow-wrap:anywhere;align-items:stretch;min-width:0;line-height:20px;display:flex}.TragPW_gitDiffNum{text-align:right;width:36px;color:var(--dsw-alias-label-tertiary);user-select:none;flex:none;padding-right:8px}.TragPW_gitDiffCode{flex:1;min-width:0;overflow:visible}.TragPW_gitDiffCtx{color:var(--dsw-alias-label-primary)}.TragPW_gitDiffDel{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 12%, transparent)}.TragPW_gitDiffAdd{color:var(--dsw-alias-state-success-primary);background:color-mix(in srgb, var(--dsw-alias-state-success-primary) 12%, transparent)}.TragPW_gitDiffMeta{padding-left:2px}.TragPW_gitDiffMetaText{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);font-style:italic}.TragPW_gitDiffExpand{width:100%;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-brand-primary);cursor:pointer;text-align:center;background:0 0;border:none;margin:4px 0;display:block}.TragPW_gitDiffExpand:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_gitConfirmDesc{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);white-space:pre-wrap;margin:0}.TragPW_gitCommit{border-top:1px solid var(--dsw-alias-border-l1);align-items:center;gap:6px;padding:8px 12px;display:flex}.TragPW_gitCommitInput{flex:1;min-width:0}.TragPW_gitCommitButton{background:var(--dsw-alias-button-primary-fill);height:26px;color:var(--dsw-alias-label-primary-inverted);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border:none;border-radius:6px;flex:none;padding:0 12px}.TragPW_gitCommitButton:hover:not(:disabled){background:var(--dsw-alias-button-primary-hover)}.TragPW_gitCommitButton:disabled{opacity:.45;cursor:default}.TragPW_gitLogRow{cursor:pointer;border-radius:8px;flex-direction:column;gap:2px;padding:5px 12px;display:flex}.TragPW_gitLogRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_gitLogLine1{align-items:baseline;gap:8px;min-width:0;display:flex}.TragPW_gitLogHash{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);flex:none}.TragPW_gitLogLine2{flex-wrap:wrap;align-items:center;gap:6px;min-width:0;display:flex}.TragPW_gitLogRef{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-brand-primary);white-space:nowrap;border-radius:999px;flex:none;padding:0 5px}.TragPW_gitLogSubject{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.TragPW_gitLogMeta{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.TragPW_gitLogMore{border:1px solid var(--dsw-alias-border-l2);width:calc(100% - 24px);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border-radius:6px;margin:4px 12px 8px;padding:6px 0;display:block}.TragPW_gitLogMore:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_gitLogMore:disabled{opacity:.5;cursor:default}.TragPW_producedRow{flex-wrap:wrap;align-items:center;gap:8px;padding:4px 0;display:flex}.TragPW_producedLabel{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_producedChip{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);max-width:200px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-12);cursor:pointer;border-radius:999px;align-items:center;gap:4px;padding:2px 8px;display:inline-flex;overflow:hidden}.TragPW_producedChip:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_producedChip span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_producedMore{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_toggleButton:focus-visible,.TragPW_bottomClose:focus-visible,.TragPW_iconButton:focus-visible,.TragPW_tab:focus-visible,.TragPW_tabClose:focus-visible,.TragPW_tabBarPlus:focus-visible,.TragPW_paneCard:focus-visible,.TragPW_explorerRow:focus-visible,.TragPW_explorerRef:focus-visible,.TragPW_gitRowMain:focus-visible,.TragPW_gitLink:focus-visible,.TragPW_gitCommitButton:focus-visible,.TragPW_gitLogRow:focus-visible,.TragPW_gitLogMore:focus-visible,.TragPW_gitDiffExpand:focus-visible,.TragPW_terminalRetry:focus-visible,.TragPW_editorModeButton:focus-visible,.TragPW_editorDownloadLink:focus-visible,.TragPW_editorPptxButton:focus-visible,.TragPW_editorDocxZoomRange:focus-visible{outline:2px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}@media (prefers-reduced-motion:reduce){.TragPW_panel,.TragPW_panelHidden,.TragPW_bottomPanel,.TragPW_bottomPanelHidden,.TragPW_toggleCluster,.TragPW_toggleButton,.TragPW_tab,.TragPW_tabBarPlus,.TragPW_paneCard,.TragPW_explorerRow,.TragPW_gitRow,.TragPW_divider,.TragPW_dividerRow:after,.TragPW_dividerCol:after{transition:none;animation:none}}@media (width<=767px){.TragPW_panel:not(.TragPW_panelHidden) .TragPW_tabBar{padding-right:40px}.TragPW_tab{min-width:48px;max-width:128px}}";
 	const tagId = "dsh-better-sidebar/sidebar.module.css";
 	if (typeof document !== "undefined" && document.querySelector("style[data-plugin-css=" + JSON.stringify(tagId) + "]") === null) {
 		const tag = document.createElement("style");
@@ -520,185 +513,185 @@ globalThis.__dshChunks__["docx"] = (require) => {
 		document.head.appendChild(tag);
 	}
 	var sidebar_module_css_default = {
-		"gitDiffDel": "f7MvrG_gitDiffDel",
-		"gitDiffHunkSection": "f7MvrG_gitDiffHunkSection",
-		"tabBarPlus": "f7MvrG_tabBarPlus",
-		"editorPdfToolbar": "f7MvrG_editorPdfToolbar",
-		"dropCenter": "f7MvrG_dropCenter",
-		"browser": "f7MvrG_browser",
-		"editorDocxViewport": "f7MvrG_editorDocxViewport",
-		"gitDiffHunk": "f7MvrG_gitDiffHunk",
-		"gitDiffCtx": "f7MvrG_gitDiffCtx",
-		"editorDocxZoomValue": "f7MvrG_editorDocxZoomValue",
-		"gitRowSelected": "f7MvrG_gitRowSelected",
-		"gitDiffTabHeader": "f7MvrG_gitDiffTabHeader",
-		"explorerCopied": "f7MvrG_explorerCopied",
-		"editorPlaceholder": "f7MvrG_editorPlaceholder",
-		"editorHeader": "f7MvrG_editorHeader",
-		"panelHidden": "f7MvrG_panelHidden",
-		"browserInput": "f7MvrG_browserInput",
-		"editorPptxStage": "f7MvrG_editorPptxStage",
-		"paneCardIcon": "f7MvrG_paneCardIcon",
-		"explorerDir": "f7MvrG_explorerDir",
-		"terminalWrap": "f7MvrG_terminalWrap",
-		"editorDocx": "f7MvrG_editorDocx",
-		"editorDocxZoomHint": "f7MvrG_editorDocxZoomHint",
-		"terminalBanner": "f7MvrG_terminalBanner",
-		"gitDiffFilePath": "f7MvrG_gitDiffFilePath",
-		"gitLogRow": "f7MvrG_gitLogRow",
-		"dropUp": "f7MvrG_dropUp",
-		"gitCommitButton": "f7MvrG_gitCommitButton",
-		"gitDiffMeta": "f7MvrG_gitDiffMeta",
-		"explorerEmpty": "f7MvrG_explorerEmpty",
-		"dropOverlay": "f7MvrG_dropOverlay",
-		"editorModeToggle": "f7MvrG_editorModeToggle",
-		"gitBadge": "f7MvrG_gitBadge",
-		"producedRow": "f7MvrG_producedRow",
-		"sandboxStatusText": "f7MvrG_sandboxStatusText",
-		"gitLink": "f7MvrG_gitLink",
-		"gitConfirmDesc": "f7MvrG_gitConfirmDesc",
-		"explorerError": "f7MvrG_explorerError",
-		"divider": "f7MvrG_divider",
-		"editorStatus": "f7MvrG_editorStatus",
-		"gitRow": "f7MvrG_gitRow",
-		"producedChip": "f7MvrG_producedChip",
-		"browserBlockedActions": "f7MvrG_browserBlockedActions",
-		"bottomClose": "f7MvrG_bottomClose",
-		"tabActive": "f7MvrG_tabActive",
-		"boundaryError": "f7MvrG_boundaryError",
-		"paneEmptyCards": "f7MvrG_paneEmptyCards",
-		"editorCm": "f7MvrG_editorCm",
-		"sandboxStatusOn": "f7MvrG_sandboxStatusOn",
-		"editorPptxButton": "f7MvrG_editorPptxButton",
-		"splitRow": "f7MvrG_splitRow",
-		"splitCol": "f7MvrG_splitCol",
-		"gitDiffLine": "f7MvrG_gitDiffLine",
-		"gitHeader": "f7MvrG_gitHeader",
-		"browserBlocked": "f7MvrG_browserBlocked",
-		"gitDiffFileOld": "f7MvrG_gitDiffFileOld",
-		"tabList": "f7MvrG_tabList",
-		"producedLabel": "f7MvrG_producedLabel",
-		"gitLogLine2": "f7MvrG_gitLogLine2",
-		"editorStatusError": "f7MvrG_editorStatusError",
-		"editorDocxZoomRange": "f7MvrG_editorDocxZoomRange",
-		"dirtyDot": "f7MvrG_dirtyDot",
-		"editorPdfFrame": "f7MvrG_editorPdfFrame",
-		"dividerRow": "f7MvrG_dividerRow",
-		"sandboxStatus": "f7MvrG_sandboxStatus",
-		"editorPdfFrameBlocked": "f7MvrG_editorPdfFrameBlocked",
-		"editorBanner": "f7MvrG_editorBanner",
-		"panelBody": "f7MvrG_panelBody",
-		"editorPptxHost": "f7MvrG_editorPptxHost",
-		"paneContent": "f7MvrG_paneContent",
-		"paneCardLabel": "f7MvrG_paneCardLabel",
-		"gitError": "f7MvrG_gitError",
-		"dropRight": "f7MvrG_dropRight",
-		"gitDiffNum": "f7MvrG_gitDiffNum",
-		"gitDiffCode": "f7MvrG_gitDiffCode",
-		"sandboxStatusOff": "f7MvrG_sandboxStatusOff",
-		"producedMore": "f7MvrG_producedMore",
-		"terminalRetry": "f7MvrG_terminalRetry",
-		"tab": "f7MvrG_tab",
-		"editorModeButton": "f7MvrG_editorModeButton",
-		"browserBlockedButton": "f7MvrG_browserBlockedButton",
-		"bottomResizeActive": "f7MvrG_bottomResizeActive",
-		"browserMessage": "f7MvrG_browserMessage",
-		"editorImage": "f7MvrG_editorImage",
-		"editorImageWrap": "f7MvrG_editorImageWrap",
-		"explorerBody": "f7MvrG_explorerBody",
-		"editorBinaryNotice": "f7MvrG_editorBinaryNotice",
-		"editorDownloadLink": "f7MvrG_editorDownloadLink",
-		"explorerRow": "f7MvrG_explorerRow",
-		"dsh-row-in": "f7MvrG_dsh-row-in",
-		"iconButton": "f7MvrG_iconButton",
-		"editorTitle": "f7MvrG_editorTitle",
-		"bottomResize": "f7MvrG_bottomResize",
-		"panelResize": "f7MvrG_panelResize",
-		"gitDiffMetaText": "f7MvrG_gitDiffMetaText",
-		"pane": "f7MvrG_pane",
-		"paneTabHidden": "f7MvrG_paneTabHidden",
-		"editorError": "f7MvrG_editorError",
-		"gitLogRef": "f7MvrG_gitLogRef",
-		"explorerHidden": "f7MvrG_explorerHidden",
-		"editorPptxPosition": "f7MvrG_editorPptxPosition",
-		"gitCommit": "f7MvrG_gitCommit",
-		"editor": "f7MvrG_editor",
-		"editorOfficeOverlay": "f7MvrG_editorOfficeOverlay",
-		"gitLogLine1": "f7MvrG_gitLogLine1",
-		"paneDrop": "f7MvrG_paneDrop",
-		"workbench": "f7MvrG_workbench",
-		"bottomPanel": "f7MvrG_bottomPanel",
-		"editorDocxWrap": "f7MvrG_editorDocxWrap",
-		"editorPdfStage": "f7MvrG_editorPdfStage",
-		"gitDiff": "f7MvrG_gitDiff",
-		"editorUniverHost": "f7MvrG_editorUniverHost",
-		"git": "f7MvrG_git",
-		"terminal": "f7MvrG_terminal",
-		"gitSection": "f7MvrG_gitSection",
-		"selectionPopup": "f7MvrG_selectionPopup",
-		"panel": "f7MvrG_panel",
-		"explorerHeader": "f7MvrG_explorerHeader",
-		"dividerActive": "f7MvrG_dividerActive",
-		"explorerRoot": "f7MvrG_explorerRoot",
-		"explorerName": "f7MvrG_explorerName",
-		"explorerRef": "f7MvrG_explorerRef",
-		"browserBlockedDesc": "f7MvrG_browserBlockedDesc",
-		"gitDiffTab": "f7MvrG_gitDiffTab",
-		"splitChild": "f7MvrG_splitChild",
-		"paneTab": "f7MvrG_paneTab",
-		"editorModeActive": "f7MvrG_editorModeActive",
-		"explorer": "f7MvrG_explorer",
-		"bottomPanelHidden": "f7MvrG_bottomPanelHidden",
-		"tabTitle": "f7MvrG_tabTitle",
-		"tabClose": "f7MvrG_tabClose",
-		"gitCommitInput": "f7MvrG_gitCommitInput",
-		"toggleButton": "f7MvrG_toggleButton",
-		"gitSectionHeader": "f7MvrG_gitSectionHeader",
-		"editorBinary": "f7MvrG_editorBinary",
-		"cornerHandle": "f7MvrG_cornerHandle",
-		"gitDiffAdd": "f7MvrG_gitDiffAdd",
-		"paneCardShortcut": "f7MvrG_paneCardShortcut",
-		"gitLogMore": "f7MvrG_gitLogMore",
-		"dropLeft": "f7MvrG_dropLeft",
-		"editorCmHidden": "f7MvrG_editorCmHidden",
-		"editorHtml": "f7MvrG_editorHtml",
-		"editorPdfDragShieldActive": "f7MvrG_editorPdfDragShieldActive",
-		"gitDiffHunkHeader": "f7MvrG_gitDiffHunkHeader",
-		"tabBar": "f7MvrG_tabBar",
-		"sandboxAction": "f7MvrG_sandboxAction",
-		"gitBranchSelect": "f7MvrG_gitBranchSelect",
-		"editorPdf": "f7MvrG_editorPdf",
-		"orphanedType": "f7MvrG_orphanedType",
-		"gitLogHash": "f7MvrG_gitLogHash",
-		"toggleCluster": "f7MvrG_toggleCluster",
-		"editorXlsx": "f7MvrG_editorXlsx",
-		"gitLogSubject": "f7MvrG_gitLogSubject",
-		"editorPdfDragShield": "f7MvrG_editorPdfDragShield",
-		"gitDiffTabTitle": "f7MvrG_gitDiffTabTitle",
-		"gitEmpty": "f7MvrG_gitEmpty",
-		"gitDiffFile": "f7MvrG_gitDiffFile",
-		"gitDiffFileTag": "f7MvrG_gitDiffFileTag",
-		"tabBarDrop": "f7MvrG_tabBarDrop",
-		"browserStart": "f7MvrG_browserStart",
-		"gitRowMain": "f7MvrG_gitRowMain",
-		"panelResizeActive": "f7MvrG_panelResizeActive",
-		"dividerCol": "f7MvrG_dividerCol",
-		"sandboxDot": "f7MvrG_sandboxDot",
-		"gitLogMeta": "f7MvrG_gitLogMeta",
-		"editorDocxZoom": "f7MvrG_editorDocxZoom",
-		"paneCard": "f7MvrG_paneCard",
-		"editorPptx": "f7MvrG_editorPptx",
-		"split": "f7MvrG_split",
-		"dropDown": "f7MvrG_dropDown",
-		"gitName": "f7MvrG_gitName",
-		"gitDiffExpand": "f7MvrG_gitDiffExpand",
-		"browserBlockedTitle": "f7MvrG_browserBlockedTitle",
-		"browserBar": "f7MvrG_browserBar",
-		"editorPptxToolbar": "f7MvrG_editorPptxToolbar",
-		"browserFrame": "f7MvrG_browserFrame",
-		"terminalBannerUrl": "f7MvrG_terminalBannerUrl",
-		"editorMd": "f7MvrG_editorMd",
-		"gitPlaceholder": "f7MvrG_gitPlaceholder"
+		"dropLeft": "TragPW_dropLeft",
+		"gitDiffMetaText": "TragPW_gitDiffMetaText",
+		"editorDocxViewport": "TragPW_editorDocxViewport",
+		"tab": "TragPW_tab",
+		"explorerName": "TragPW_explorerName",
+		"sandboxStatusOn": "TragPW_sandboxStatusOn",
+		"paneCardIcon": "TragPW_paneCardIcon",
+		"terminalBannerUrl": "TragPW_terminalBannerUrl",
+		"gitDiffHunk": "TragPW_gitDiffHunk",
+		"producedChip": "TragPW_producedChip",
+		"tabList": "TragPW_tabList",
+		"gitCommitInput": "TragPW_gitCommitInput",
+		"browserInput": "TragPW_browserInput",
+		"gitDiffAdd": "TragPW_gitDiffAdd",
+		"workbench": "TragPW_workbench",
+		"editorModeActive": "TragPW_editorModeActive",
+		"browserFrame": "TragPW_browserFrame",
+		"toggleCluster": "TragPW_toggleCluster",
+		"gitDiffCtx": "TragPW_gitDiffCtx",
+		"editorUniverHost": "TragPW_editorUniverHost",
+		"editorDocxWrap": "TragPW_editorDocxWrap",
+		"editorPptxPosition": "TragPW_editorPptxPosition",
+		"gitCommitButton": "TragPW_gitCommitButton",
+		"panelResize": "TragPW_panelResize",
+		"explorerHeader": "TragPW_explorerHeader",
+		"explorerCopied": "TragPW_explorerCopied",
+		"editorStatusError": "TragPW_editorStatusError",
+		"gitName": "TragPW_gitName",
+		"browserMessage": "TragPW_browserMessage",
+		"editorDownloadLink": "TragPW_editorDownloadLink",
+		"dropRight": "TragPW_dropRight",
+		"browserBlocked": "TragPW_browserBlocked",
+		"gitEmpty": "TragPW_gitEmpty",
+		"tabClose": "TragPW_tabClose",
+		"explorer": "TragPW_explorer",
+		"iconButton": "TragPW_iconButton",
+		"gitDiffHunkSection": "TragPW_gitDiffHunkSection",
+		"dropOverlay": "TragPW_dropOverlay",
+		"bottomPanel": "TragPW_bottomPanel",
+		"sandboxStatus": "TragPW_sandboxStatus",
+		"paneEmptyCards": "TragPW_paneEmptyCards",
+		"gitRowSelected": "TragPW_gitRowSelected",
+		"tabBar": "TragPW_tabBar",
+		"browserBar": "TragPW_browserBar",
+		"splitRow": "TragPW_splitRow",
+		"dropCenter": "TragPW_dropCenter",
+		"editorBinaryNotice": "TragPW_editorBinaryNotice",
+		"gitLogHash": "TragPW_gitLogHash",
+		"editorDocxZoomRange": "TragPW_editorDocxZoomRange",
+		"sandboxDot": "TragPW_sandboxDot",
+		"gitDiffMeta": "TragPW_gitDiffMeta",
+		"gitDiffTabHeader": "TragPW_gitDiffTabHeader",
+		"dropUp": "TragPW_dropUp",
+		"gitDiffExpand": "TragPW_gitDiffExpand",
+		"explorerRef": "TragPW_explorerRef",
+		"terminal": "TragPW_terminal",
+		"gitDiffTab": "TragPW_gitDiffTab",
+		"gitDiffFileTag": "TragPW_gitDiffFileTag",
+		"gitLogRef": "TragPW_gitLogRef",
+		"browser": "TragPW_browser",
+		"paneTab": "TragPW_paneTab",
+		"explorerError": "TragPW_explorerError",
+		"editorPptxToolbar": "TragPW_editorPptxToolbar",
+		"gitSection": "TragPW_gitSection",
+		"gitDiffFile": "TragPW_gitDiffFile",
+		"gitLogSubject": "TragPW_gitLogSubject",
+		"gitCommit": "TragPW_gitCommit",
+		"producedLabel": "TragPW_producedLabel",
+		"pane": "TragPW_pane",
+		"editor": "TragPW_editor",
+		"gitDiff": "TragPW_gitDiff",
+		"panelResizeActive": "TragPW_panelResizeActive",
+		"dividerActive": "TragPW_dividerActive",
+		"editorStatus": "TragPW_editorStatus",
+		"editorBanner": "TragPW_editorBanner",
+		"gitDiffFilePath": "TragPW_gitDiffFilePath",
+		"editorPdfFrame": "TragPW_editorPdfFrame",
+		"selectionPopup": "TragPW_selectionPopup",
+		"toggleButton": "TragPW_toggleButton",
+		"splitCol": "TragPW_splitCol",
+		"paneDrop": "TragPW_paneDrop",
+		"editorPdfStage": "TragPW_editorPdfStage",
+		"split": "TragPW_split",
+		"editorModeButton": "TragPW_editorModeButton",
+		"gitDiffDel": "TragPW_gitDiffDel",
+		"editorImage": "TragPW_editorImage",
+		"editorTitle": "TragPW_editorTitle",
+		"browserBlockedTitle": "TragPW_browserBlockedTitle",
+		"producedMore": "TragPW_producedMore",
+		"gitBranchSelect": "TragPW_gitBranchSelect",
+		"gitRow": "TragPW_gitRow",
+		"editorError": "TragPW_editorError",
+		"bottomClose": "TragPW_bottomClose",
+		"editorModeToggle": "TragPW_editorModeToggle",
+		"panelHidden": "TragPW_panelHidden",
+		"explorerDir": "TragPW_explorerDir",
+		"editorPdfFrameBlocked": "TragPW_editorPdfFrameBlocked",
+		"sandboxStatusText": "TragPW_sandboxStatusText",
+		"editorHtml": "TragPW_editorHtml",
+		"paneTabHidden": "TragPW_paneTabHidden",
+		"bottomResizeActive": "TragPW_bottomResizeActive",
+		"tabBarPlus": "TragPW_tabBarPlus",
+		"editorBinary": "TragPW_editorBinary",
+		"editorDocxZoomValue": "TragPW_editorDocxZoomValue",
+		"gitPlaceholder": "TragPW_gitPlaceholder",
+		"gitDiffCode": "TragPW_gitDiffCode",
+		"editorPlaceholder": "TragPW_editorPlaceholder",
+		"producedRow": "TragPW_producedRow",
+		"explorerHidden": "TragPW_explorerHidden",
+		"editorPdfToolbar": "TragPW_editorPdfToolbar",
+		"editorImageWrap": "TragPW_editorImageWrap",
+		"gitDiffNum": "TragPW_gitDiffNum",
+		"paneCardLabel": "TragPW_paneCardLabel",
+		"explorerRoot": "TragPW_explorerRoot",
+		"editorOfficeOverlay": "TragPW_editorOfficeOverlay",
+		"explorerEmpty": "TragPW_explorerEmpty",
+		"paneCard": "TragPW_paneCard",
+		"tabBarDrop": "TragPW_tabBarDrop",
+		"sandboxStatusOff": "TragPW_sandboxStatusOff",
+		"terminalBanner": "TragPW_terminalBanner",
+		"browserStart": "TragPW_browserStart",
+		"gitSectionHeader": "TragPW_gitSectionHeader",
+		"gitRowMain": "TragPW_gitRowMain",
+		"editorMd": "TragPW_editorMd",
+		"dsh-row-in": "TragPW_dsh-row-in",
+		"tabActive": "TragPW_tabActive",
+		"gitError": "TragPW_gitError",
+		"browserBlockedButton": "TragPW_browserBlockedButton",
+		"editorPptxButton": "TragPW_editorPptxButton",
+		"splitChild": "TragPW_splitChild",
+		"gitConfirmDesc": "TragPW_gitConfirmDesc",
+		"gitLink": "TragPW_gitLink",
+		"dropDown": "TragPW_dropDown",
+		"explorerBody": "TragPW_explorerBody",
+		"editorHeader": "TragPW_editorHeader",
+		"gitDiffLine": "TragPW_gitDiffLine",
+		"sandboxAction": "TragPW_sandboxAction",
+		"gitLogLine1": "TragPW_gitLogLine1",
+		"panelBody": "TragPW_panelBody",
+		"editorPptxHost": "TragPW_editorPptxHost",
+		"cornerHandle": "TragPW_cornerHandle",
+		"paneContent": "TragPW_paneContent",
+		"editorPdf": "TragPW_editorPdf",
+		"editorCmHidden": "TragPW_editorCmHidden",
+		"gitLogMore": "TragPW_gitLogMore",
+		"browserBlockedDesc": "TragPW_browserBlockedDesc",
+		"editorCm": "TragPW_editorCm",
+		"browserBlockedActions": "TragPW_browserBlockedActions",
+		"gitBadge": "TragPW_gitBadge",
+		"dividerCol": "TragPW_dividerCol",
+		"gitLogMeta": "TragPW_gitLogMeta",
+		"editorPdfDragShieldActive": "TragPW_editorPdfDragShieldActive",
+		"dividerRow": "TragPW_dividerRow",
+		"editorDocx": "TragPW_editorDocx",
+		"gitHeader": "TragPW_gitHeader",
+		"terminalRetry": "TragPW_terminalRetry",
+		"boundaryError": "TragPW_boundaryError",
+		"bottomResize": "TragPW_bottomResize",
+		"bottomPanelHidden": "TragPW_bottomPanelHidden",
+		"gitDiffFileOld": "TragPW_gitDiffFileOld",
+		"paneCardShortcut": "TragPW_paneCardShortcut",
+		"editorDocxZoom": "TragPW_editorDocxZoom",
+		"tabTitle": "TragPW_tabTitle",
+		"divider": "TragPW_divider",
+		"gitDiffHunkHeader": "TragPW_gitDiffHunkHeader",
+		"gitLogRow": "TragPW_gitLogRow",
+		"gitLogLine2": "TragPW_gitLogLine2",
+		"editorPdfDragShield": "TragPW_editorPdfDragShield",
+		"editorPptx": "TragPW_editorPptx",
+		"dirtyDot": "TragPW_dirtyDot",
+		"terminalWrap": "TragPW_terminalWrap",
+		"editorPptxStage": "TragPW_editorPptxStage",
+		"git": "TragPW_git",
+		"panel": "TragPW_panel",
+		"editorDocxZoomHint": "TragPW_editorDocxZoomHint",
+		"orphanedType": "TragPW_orphanedType",
+		"editorXlsx": "TragPW_editorXlsx",
+		"gitDiffTabTitle": "TragPW_gitDiffTabTitle",
+		"explorerRow": "TragPW_explorerRow"
 	};
 	//#endregion
 	//#region src/client/office-shared.tsx
@@ -730,7 +723,7 @@ globalThis.__dshChunks__["docx"] = (require) => {
 		});
 	}
 	//#endregion
-	//#region node_modules/.pnpm/jszip@3.10.1/node_modules/jszip/dist/jszip.min.js
+	//#region ../../../node_modules/.pnpm/jszip@3.10.1/node_modules/jszip/dist/jszip.min.js
 	var require_jszip_min = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		/*!
 		
@@ -1402,7 +1395,7 @@ globalThis.__dshChunks__["docx"] = (require) => {
 						n.call(this, e);
 					}
 					e("../utils").inherits(i, n), i.prototype.readData = function(e) {
-						if (this.checkOffset(e), 0 === e) return /* @__PURE__ */ new Uint8Array(0);
+						if (this.checkOffset(e), 0 === e) return new Uint8Array(0);
 						var t = this.data.subarray(this.zero + this.index, this.zero + this.index + e);
 						return this.index += e, t;
 					}, t.exports = i;
@@ -1805,7 +1798,7 @@ globalThis.__dshChunks__["docx"] = (require) => {
 						applyCanBeUsed: {
 							uint8array: function() {
 								try {
-									return o.uint8array && 1 === String.fromCharCode.apply(null, /* @__PURE__ */ new Uint8Array(1)).length;
+									return o.uint8array && 1 === String.fromCharCode.apply(null, new Uint8Array(1)).length;
 								} catch (e) {
 									return !1;
 								}
@@ -2496,7 +2489,7 @@ globalThis.__dshChunks__["docx"] = (require) => {
 						i = !1;
 					}
 					try {
-						String.fromCharCode.apply(null, /* @__PURE__ */ new Uint8Array(1));
+						String.fromCharCode.apply(null, new Uint8Array(1));
 					} catch (e) {
 						s = !1;
 					}
@@ -3837,7 +3830,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		});
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/docx-preview@0.4.0/node_modules/docx-preview/dist/docx-preview.mjs
+	//#region ../../../node_modules/.pnpm/docx-preview@0.4.0/node_modules/docx-preview/dist/docx-preview.mjs
 	var docx_preview_exports = /* @__PURE__ */ __exportAll({
 		defaultOptions: () => defaultOptions,
 		parseAsync: () => parseAsync,
@@ -3973,7 +3966,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "embedRegular":
 			case "embedBold":
 			case "embedItalic":
-			case "embedBoldItalic": result.embedFontRefs.push(parseEmbedFontRef(el, xml));
+			case "embedBoldItalic":
+				result.embedFontRefs.push(parseEmbedFontRef(el, xml));
+				break;
 		}
 		return result;
 	}
@@ -4016,7 +4011,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "right":
 				result.right = parseBorder(e, xml);
 				break;
-			case "bottom": result.bottom = parseBorder(e, xml);
+			case "bottom":
+				result.bottom = parseBorder(e, xml);
+				break;
 		}
 		return result;
 	}
@@ -4059,7 +4056,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "pgBorders":
 				section.pageBorders = parseBorders(e, xml);
 				break;
-			case "pgNumType": section.pageNumber = parsePageNumber(e, xml);
+			case "pgNumType":
+				section.pageNumber = parsePageNumber(e, xml);
+				break;
 		}
 		return section;
 	}
@@ -4165,7 +4164,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "numId":
 				result.id = xml.attr(e, "val");
 				break;
-			case "ilvl": result.level = xml.intAttr(e, "val");
+			case "ilvl":
+				result.level = xml.intAttr(e, "val");
+				break;
 		}
 		return result;
 	}
@@ -4182,7 +4183,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "abstractNum":
 				result.abstractNumberings.push(parseAbstractNumbering(e, xml));
 				break;
-			case "numPicBullet": result.bulletPictures.push(parseNumberingBulletPicture(e, xml));
+			case "numPicBullet":
+				result.bulletPictures.push(parseNumberingBulletPicture(e, xml));
+				break;
 		}
 		return result;
 	}
@@ -4195,7 +4198,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "abstractNumId":
 				result.abstractId = xml.attr(e, "val");
 				break;
-			case "lvlOverride": result.overrides.push(parseNumberingLevelOverrride(e, xml));
+			case "lvlOverride":
+				result.overrides.push(parseNumberingLevelOverrride(e, xml));
+				break;
 		}
 		return result;
 	}
@@ -4217,7 +4222,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "styleLink":
 				result.styleLink = xml.attr(e, "val");
 				break;
-			case "lvl": result.levels.push(parseNumberingLevel(e, xml));
+			case "lvl":
+				result.levels.push(parseNumberingLevel(e, xml));
+				break;
 		}
 		return result;
 	}
@@ -4248,7 +4255,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "pPr":
 				result.paragraphProps = parseParagraphProperties(e, xml);
 				break;
-			case "rPr": result.runProps = parseRunProperties(e, xml);
+			case "rPr":
+				result.runProps = parseRunProperties(e, xml);
+				break;
 		}
 		return result;
 	}
@@ -4258,7 +4267,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "startOverride":
 				result.start = xml.intAttr(e, "val");
 				break;
-			case "lvl": result.numberingLevel = parseNumberingLevel(e, xml);
+			case "lvl":
+				result.numberingLevel = parseNumberingLevel(e, xml);
+				break;
 		}
 		return result;
 	}
@@ -4299,7 +4310,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "Company":
 				result.company = el.textContent;
 				break;
-			case "AppVersion": result.appVersion = el.textContent;
+			case "AppVersion":
+				result.appVersion = el.textContent;
+				break;
 		}
 		return result;
 	}
@@ -4331,7 +4344,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "lastModifiedBy":
 				result.lastModifiedBy = el.textContent;
 				break;
-			case "revision": el.textContent && (result.revision = parseInt(el.textContent));
+			case "revision":
+				el.textContent && (result.revision = parseInt(el.textContent));
+				break;
 		}
 		return result;
 	}
@@ -4342,7 +4357,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "clrScheme":
 				result.colorScheme = parseColorScheme(el, xml);
 				break;
-			case "fontScheme": result.fontScheme = parseFontScheme(el, xml);
+			case "fontScheme":
+				result.fontScheme = parseFontScheme(el, xml);
+				break;
 		}
 		return result;
 	}
@@ -4365,7 +4382,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "majorFont":
 				result.majorFont = parseFontInfo(el, xml);
 				break;
-			case "minorFont": result.minorFont = parseFontInfo(el, xml);
+			case "minorFont":
+				result.minorFont = parseFontInfo(el, xml);
+				break;
 		}
 		return result;
 	}
@@ -4388,7 +4407,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "endnotePr":
 				result.endnoteProps = parseNoteProperties(el, xml);
 				break;
-			case "autoHyphenation": result.autoHyphenation = xml.boolAttr(el, "val");
+			case "autoHyphenation":
+				result.autoHyphenation = xml.boolAttr(el, "val");
+				break;
 		}
 		return result;
 	}
@@ -4399,7 +4420,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				result.nummeringFormat = xml.attr(el, "val");
 				break;
 			case "footnote":
-			case "endnote": result.defaultNoteIds.push(xml.attr(el, "id"));
+			case "endnote":
+				result.defaultNoteIds.push(xml.attr(el, "id"));
+				break;
 		}
 		return result;
 	}
@@ -4491,6 +4514,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					x2,
 					y2
 				});
+				break;
 		}
 		for (const el of globalXmlParser.elements(elem)) switch (el.localName) {
 			case "stroke":
@@ -4516,6 +4540,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			default:
 				const child = parseVmlElement(el, parser);
 				child && result.children.push(child);
+				break;
 		}
 		return result;
 	}
@@ -4586,7 +4611,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				break;
 			case "hyphen":
 			case "heavy":
-			case "underscore": elem.style.textDecoration = "underline";
+			case "underscore":
+				elem.style.textDecoration = "underline";
+				break;
 		}
 	}
 	function lengthToPoint(length) {
@@ -4600,10 +4627,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		if (tagName === "#comment") return document.createComment(children[0]);
 		const result = ns ? document.createElementNS(ns, tagName) : document.createElement(tagName);
 		if (className) result.setAttribute("class", className);
-		if (style) {
-			if (isString(style)) result.setAttribute("style", style);
-			else Object.assign(result.style, style);
-		}
+		if (style) if (isString(style)) result.setAttribute("style", style);
+		else Object.assign(result.style, style);
 		if (props) {
 			for (const [key, value] of Object.entries(props)) if (value !== void 0) result[key] = value;
 		}
@@ -4787,8 +4812,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				this._zip.file(path, content);
 			}
 			static async load(input, options) {
-				const zip = await import_jszip_min.default.loadAsync(input);
-				return new OpenXmlPackage(zip, options);
+				return new OpenXmlPackage(await import_jszip_min.default.loadAsync(input), options);
 			}
 			save(type = "blob") {
 				return this._zip.generateAsync({ type });
@@ -5129,7 +5153,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case RelationshipTypes.Comments:
 						this.commentsPart = part = new CommentsPart(this._package, path, this._parser);
 						break;
-					case RelationshipTypes.CommentsExtended: this.commentsExtendedPart = part = new CommentsExtendedPart(this._package, path);
+					case RelationshipTypes.CommentsExtended:
+						this.commentsExtendedPart = part = new CommentsExtendedPart(this._package, path);
+						break;
 				}
 				if (part == null) return Promise.resolve(null);
 				this.partsMap[path] = part;
@@ -5308,7 +5334,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "tbl":
 						children.push(this.parseTable(elem));
 						break;
-					case "sdt": children.push(...this.parseSdt(elem, (e) => this.parseBodyElements(e)));
+					case "sdt":
+						children.push(...this.parseSdt(elem, (e) => this.parseBodyElements(e)));
+						break;
 				}
 				return children;
 			}
@@ -5318,7 +5346,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "style":
 						result.push(this.parseStyle(n));
 						break;
-					case "docDefaults": result.push(this.parseDefaultStyles(n));
+					case "docDefaults":
+						result.push(this.parseDefaultStyles(n));
+						break;
 				}
 				return result;
 			}
@@ -5344,6 +5374,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 							target: "p",
 							values: this.parseDefaultProperties(pPr, {})
 						});
+						break;
 				}
 				return result;
 			}
@@ -5364,7 +5395,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "table":
 						result.target = "table";
 						break;
-					case "character": result.target = "span";
+					case "character":
+						result.target = "span";
+						break;
 				}
 				for (const n of globalXmlParser.elements(node)) switch (n.localName) {
 					case "basedOn":
@@ -5473,11 +5506,13 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						});
 						break;
 					case "tblPr":
-					case "tcPr": result.push({
-						target: selector,
-						mod: modificator,
-						values: this.parseDefaultProperties(n, {})
-					});
+					case "tcPr":
+						result.push({
+							target: selector,
+							mod: modificator,
+							values: this.parseDefaultProperties(n, {})
+						});
+						break;
 				}
 				return result;
 			}
@@ -5492,10 +5527,12 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "numPicBullet":
 						bullets.push(this.parseNumberingPicBullet(n));
 						break;
-					case "num": nums.push({
-						numId: globalXmlParser.attr(n, "numId"),
-						abstractNumId: globalXmlParser.elementAttr(n, "abstractNumId", "val")
-					});
+					case "num":
+						nums.push({
+							numId: globalXmlParser.attr(n, "numId"),
+							abstractNumId: globalXmlParser.elementAttr(n, "abstractNumId", "val")
+						});
+						break;
 				}
 				return nums.flatMap((x) => levels.filter((lvl) => x.abstractNumId == lvl.id).map((lvl) => ({
 					...lvl,
@@ -5516,7 +5553,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				var result = [];
 				var id = globalXmlParser.attr(node, "abstractNumId");
 				for (const n of globalXmlParser.elements(node)) switch (n.localName) {
-					case "lvl": result.push(this.parseNumberingLevel(id, n, bullets));
+					case "lvl":
+						result.push(this.parseNumberingLevel(id, n, bullets));
+						break;
 				}
 				return result;
 			}
@@ -5553,7 +5592,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "numFmt":
 						result.format = globalXmlParser.attr(n, "val");
 						break;
-					case "suff": result.suff = globalXmlParser.attr(n, "val");
+					case "suff":
+						result.suff = globalXmlParser.attr(n, "val");
+						break;
 				}
 				return result;
 			}
@@ -5617,7 +5658,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "ins":
 						result.children.push(this.parseChange(DomType.Inserted, el, (e) => this.parseParagraph(e)));
 						break;
-					case "del": result.children.push(this.parseChange(DomType.Deleted, el, (e) => this.parseParagraph(e)));
+					case "del":
+						result.children.push(this.parseChange(DomType.Deleted, el, (e) => this.parseParagraph(e)));
+						break;
 				}
 				return result;
 			}
@@ -5652,7 +5695,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				result.anchor = globalXmlParser.attr(node, "anchor");
 				result.id = globalXmlParser.attr(node, "id");
 				for (const c of globalXmlParser.elements(node)) switch (c.localName) {
-					case "r": result.children.push(this.parseRun(c, result));
+					case "r":
+						result.children.push(this.parseRun(c, result));
+						break;
 				}
 				return result;
 			}
@@ -5670,7 +5715,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "r":
 						result.children.push(this.parseRun(c, result));
 						break;
-					case "smartTag": result.children.push(this.parseSmartTag(c, result));
+					case "smartTag":
+						result.children.push(this.parseSmartTag(c, result));
+						break;
 				}
 				return result;
 			}
@@ -5766,7 +5813,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						case "pict":
 							result.children.push(this.parseVmlPicture(c));
 							break;
-						case "rPr": this.parseRunProperties(c, result);
+						case "rPr":
+							this.parseRunProperties(c, result);
+							break;
 					}
 				}
 				return result;
@@ -5803,7 +5852,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "begChr":
 						result.beginChar = globalXmlParser.attr(el, "val");
 						break;
-					case "endChr": result.endChar = globalXmlParser.attr(el, "val");
+					case "endChr":
+						result.endChar = globalXmlParser.attr(el, "val");
+						break;
 				}
 				return result;
 			}
@@ -5899,6 +5950,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "graphic":
 						var g = this.parseGraphic(n);
 						if (g) result.children.push(g);
+						break;
 				}
 				if (wrapType == "wrapTopAndBottom") {
 					result.cssStyle["display"] = "block";
@@ -5952,6 +6004,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						case "off":
 							result.cssStyle["left"] = globalXmlParser.lengthAttr(n, "x", LengthUsage.Emu);
 							result.cssStyle["top"] = globalXmlParser.lengthAttr(n, "y", LengthUsage.Emu);
+							break;
 					}
 				}
 				return result;
@@ -5968,14 +6021,18 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "tblGrid":
 						result.columns = this.parseTableColumns(c);
 						break;
-					case "tblPr": this.parseTableProperties(c, result);
+					case "tblPr":
+						this.parseTableProperties(c, result);
+						break;
 				}
 				return result;
 			}
 			parseTableColumns(node) {
 				var result = [];
 				for (const n of globalXmlParser.elements(node)) switch (n.localName) {
-					case "gridCol": result.push({ width: globalXmlParser.lengthAttr(n, "w") });
+					case "gridCol":
+						result.push({ width: globalXmlParser.lengthAttr(n, "w") });
+						break;
 				}
 				return result;
 			}
@@ -6015,6 +6072,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "right":
 						delete table.cssStyle["text-align"];
 						table.cssStyle["margin-left"] = "auto";
+						break;
 				}
 			}
 			parseTablePosition(node, table) {
@@ -6038,7 +6096,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						result.children.push(this.parseTableCell(c));
 						break;
 					case "trPr":
-					case "tblPrEx": this.parseTableRowProperties(c, result);
+					case "tblPrEx":
+						this.parseTableRowProperties(c, result);
+						break;
 				}
 				return result;
 			}
@@ -6074,7 +6134,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "p":
 						result.children.push(this.parseParagraph(c));
 						break;
-					case "tcPr": this.parseTableCellProperties(c, result);
+					case "tcPr":
+						this.parseTableCellProperties(c, result);
+						break;
 				}
 				return result;
 			}
@@ -6238,7 +6300,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						case "keepNext":
 						case "widowControl":
 						case "noProof": break;
-						default: if (this.options.debug) console.warn(`DOCX: Unknown document element: ${elem.localName}.${c.localName}`);
+						default:
+							if (this.options.debug) console.warn(`DOCX: Unknown document element: ${elem.localName}.${c.localName}`);
+							break;
 					}
 				}
 				return style;
@@ -6276,7 +6340,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "words":
 						style["text-decoration"] = "underline";
 						break;
-					case "none": style["text-decoration"] = "none";
+					case "none":
+						style["text-decoration"] = "none";
+						break;
 				}
 				var col = xmlUtil.colorAttr(node, "color");
 				if (col) style["text-decoration-color"] = col;
@@ -6315,7 +6381,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "atLeast":
 						style["line-height"] = `calc(100% + ${line / 20}pt)`;
 						break;
-					default: style["line-height"] = style["min-height"] = `${line / 20}pt`;
+					default:
+						style["line-height"] = style["min-height"] = `${line / 20}pt`;
+						break;
 				}
 			}
 			parseMarginProperties(node, output) {
@@ -6329,7 +6397,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "top":
 						output["padding-top"] = values.valueOfMargin(c);
 						break;
-					case "bottom": output["padding-bottom"] = values.valueOfMargin(c);
+					case "bottom":
+						output["padding-bottom"] = values.valueOfMargin(c);
+						break;
 				}
 			}
 			parseTrHeight(node, output) {
@@ -6337,7 +6407,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "exact":
 						output["height"] = globalXmlParser.lengthAttr(node, "val");
 						break;
-					default: output["height"] = globalXmlParser.lengthAttr(node, "val");
+					default:
+						output["height"] = globalXmlParser.lengthAttr(node, "val");
+						break;
 				}
 			}
 			parseBorderProperties(node, output) {
@@ -6353,7 +6425,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "top":
 						output["border-top"] = values.valueOfBorder(c);
 						break;
-					case "bottom": output["border-bottom"] = values.valueOfBorder(c);
+					case "bottom":
+						output["border-bottom"] = values.valueOfBorder(c);
+						break;
 				}
 			}
 		};
@@ -7392,7 +7466,9 @@ section.${c}>footer { z-index: 1; }
 					case "top":
 						style.textDecoration = "overline";
 						break;
-					case "bottom": style.textDecoration = "underline";
+					case "bottom":
+						style.textDecoration = "underline";
+						break;
 				}
 				return this.renderContainerNS(elem, ns.mathML, "mrow", { style });
 			}

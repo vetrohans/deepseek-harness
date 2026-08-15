@@ -8,7 +8,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 	//#endregion
 	let react = require("react");
 	let react_jsx_runtime = require("react/jsx-runtime");
-	//#region node_modules/.pnpm/xterm@5.3.0/node_modules/xterm/lib/xterm.js
+	//#region ../../../node_modules/.pnpm/xterm@5.3.0/node_modules/xterm/lib/xterm.js
 	var require_xterm = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		(function(e, t) {
 			if ("object" == typeof exports && "object" == typeof module) module.exports = t();
@@ -221,7 +221,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 								}));
 							})), this._activeProviderReplies = /* @__PURE__ */ new Map(), this._activeLine = e.y);
 							let r = !1;
-							for (const [i, n] of this._linkProviders.entries()) t ? null !== (s = this._activeProviderReplies) && void 0 !== s && s.get(i) && (r = this._checkLinkProviderResult(i, e, r)) : n.provideLinks(e.y, ((t) => {
+							for (const [i, n] of this._linkProviders.entries()) t ? !(null === (s = this._activeProviderReplies) || void 0 === s) && s.get(i) && (r = this._checkLinkProviderResult(i, e, r)) : n.provideLinks(e.y, ((t) => {
 								var s, n;
 								if (this._isMouseOut) return;
 								const o = null == t ? void 0 : t.map(((e) => ({ link: e })));
@@ -291,7 +291,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 									},
 									set: (e) => {
 										var t, i;
-										null !== (t = this._currentLink) && void 0 !== t && t.state && this._currentLink.state.decorations.pointerCursor !== e && (this._currentLink.state.decorations.pointerCursor = e, this._currentLink.state.isHovered && (null === (i = this._element) || void 0 === i || i.classList.toggle("xterm-cursor-pointer", e)));
+										!(null === (t = this._currentLink) || void 0 === t) && t.state && this._currentLink.state.decorations.pointerCursor !== e && (this._currentLink.state.decorations.pointerCursor = e, this._currentLink.state.isHovered && (null === (i = this._element) || void 0 === i || i.classList.toggle("xterm-cursor-pointer", e)));
 									}
 								},
 								underline: {
@@ -301,7 +301,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 									},
 									set: (t) => {
 										var i, s, r;
-										null !== (i = this._currentLink) && void 0 !== i && i.state && (null === (r = null === (s = this._currentLink) || void 0 === s ? void 0 : s.state) || void 0 === r ? void 0 : r.decorations.underline) !== t && (this._currentLink.state.decorations.underline = t, this._currentLink.state.isHovered && this._fireUnderlineEvent(e.link, t));
+										!(null === (i = this._currentLink) || void 0 === i) && i.state && (null === (r = null === (s = this._currentLink) || void 0 === s ? void 0 : s.state) || void 0 === r ? void 0 : r.decorations.underline) !== t && (this._currentLink.state.decorations.underline = t, this._currentLink.state.isHovered && this._fireUnderlineEvent(e.link, t));
 									}
 								}
 							}), this._renderService && this._linkCacheDisposables.push(this._renderService.onRenderedViewportChange(((e) => {
@@ -315,7 +315,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 						}
 						_linkHover(e, t, i) {
 							var s;
-							null !== (s = this._currentLink) && void 0 !== s && s.state && (this._currentLink.state.isHovered = !0, this._currentLink.state.decorations.underline && this._fireUnderlineEvent(t, !0), this._currentLink.state.decorations.pointerCursor && e.classList.add("xterm-cursor-pointer")), t.hover && t.hover(i, t.text);
+							!(null === (s = this._currentLink) || void 0 === s) && s.state && (this._currentLink.state.isHovered = !0, this._currentLink.state.decorations.underline && this._fireUnderlineEvent(t, !0), this._currentLink.state.decorations.pointerCursor && e.classList.add("xterm-cursor-pointer")), t.hover && t.hover(i, t.text);
 						}
 						_fireUnderlineEvent(e, t) {
 							const i = e.range, s = this._bufferService.buffer.ydisp, r = this._createLinkUnderlineEvent(i.start.x - 1, i.start.y - s - 1, i.end.x, i.end.y - s - 1, void 0);
@@ -323,7 +323,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 						}
 						_linkLeave(e, t, i) {
 							var s;
-							null !== (s = this._currentLink) && void 0 !== s && s.state && (this._currentLink.state.isHovered = !1, this._currentLink.state.decorations.underline && this._fireUnderlineEvent(t, !1), this._currentLink.state.decorations.pointerCursor && e.classList.remove("xterm-cursor-pointer")), t.leave && t.leave(i, t.text);
+							!(null === (s = this._currentLink) || void 0 === s) && s.state && (this._currentLink.state.isHovered = !1, this._currentLink.state.decorations.underline && this._fireUnderlineEvent(t, !1), this._currentLink.state.decorations.pointerCursor && e.classList.remove("xterm-cursor-pointer")), t.leave && t.leave(i, t.text);
 						}
 						_linkAtPosition(e, t) {
 							const i = e.range.start.y * this._bufferService.cols + e.range.start.x, s = e.range.end.y * this._bufferService.cols + e.range.end.x, r = t.y * this._bufferService.cols + t.x;
@@ -1661,7 +1661,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 				2550: (e, t) => {
 					Object.defineProperty(t, "__esModule", { value: !0 }), t.WidthCache = void 0, t.WidthCache = class {
 						constructor(e) {
-							this._flat = /* @__PURE__ */ new Float32Array(256), this._font = "", this._fontSize = 0, this._weight = "normal", this._weightBold = "bold", this._measureElements = [], this._container = e.createElement("div"), this._container.style.position = "absolute", this._container.style.top = "-50000px", this._container.style.width = "50000px", this._container.style.whiteSpace = "pre", this._container.style.fontKerning = "none";
+							this._flat = new Float32Array(256), this._font = "", this._fontSize = 0, this._weight = "normal", this._weightBold = "bold", this._measureElements = [], this._container = e.createElement("div"), this._container.style.position = "absolute", this._container.style.top = "-50000px", this._container.style.width = "50000px", this._container.style.whiteSpace = "pre", this._container.style.fontKerning = "none";
 							const t = e.createElement("span"), i = e.createElement("span");
 							i.style.fontWeight = "bold";
 							const s = e.createElement("span");
@@ -2975,7 +2975,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 							return this._curAttrData;
 						}
 						constructor(e, t, i, s, r, h, _, f, v = new a.EscapeSequenceParser()) {
-							super(), this._bufferService = e, this._charsetService = t, this._coreService = i, this._logService = s, this._optionsService = r, this._oscLinkService = h, this._coreMouseService = _, this._unicodeService = f, this._parser = v, this._parseBuffer = /* @__PURE__ */ new Uint32Array(4096), this._stringDecoder = new c.StringToUtf32(), this._utf8Decoder = new c.Utf8ToUtf32(), this._workCell = new u.CellData(), this._windowTitle = "", this._iconName = "", this._windowTitleStack = [], this._iconNameStack = [], this._curAttrData = l.DEFAULT_ATTR_DATA.clone(), this._eraseAttrDataInternal = l.DEFAULT_ATTR_DATA.clone(), this._onRequestBell = this.register(new d.EventEmitter()), this.onRequestBell = this._onRequestBell.event, this._onRequestRefreshRows = this.register(new d.EventEmitter()), this.onRequestRefreshRows = this._onRequestRefreshRows.event, this._onRequestReset = this.register(new d.EventEmitter()), this.onRequestReset = this._onRequestReset.event, this._onRequestSendFocus = this.register(new d.EventEmitter()), this.onRequestSendFocus = this._onRequestSendFocus.event, this._onRequestSyncScrollBar = this.register(new d.EventEmitter()), this.onRequestSyncScrollBar = this._onRequestSyncScrollBar.event, this._onRequestWindowsOptionsReport = this.register(new d.EventEmitter()), this.onRequestWindowsOptionsReport = this._onRequestWindowsOptionsReport.event, this._onA11yChar = this.register(new d.EventEmitter()), this.onA11yChar = this._onA11yChar.event, this._onA11yTab = this.register(new d.EventEmitter()), this.onA11yTab = this._onA11yTab.event, this._onCursorMove = this.register(new d.EventEmitter()), this.onCursorMove = this._onCursorMove.event, this._onLineFeed = this.register(new d.EventEmitter()), this.onLineFeed = this._onLineFeed.event, this._onScroll = this.register(new d.EventEmitter()), this.onScroll = this._onScroll.event, this._onTitleChange = this.register(new d.EventEmitter()), this.onTitleChange = this._onTitleChange.event, this._onColor = this.register(new d.EventEmitter()), this.onColor = this._onColor.event, this._parseStack = {
+							super(), this._bufferService = e, this._charsetService = t, this._coreService = i, this._logService = s, this._optionsService = r, this._oscLinkService = h, this._coreMouseService = _, this._unicodeService = f, this._parser = v, this._parseBuffer = new Uint32Array(4096), this._stringDecoder = new c.StringToUtf32(), this._utf8Decoder = new c.Utf8ToUtf32(), this._workCell = new u.CellData(), this._windowTitle = "", this._iconName = "", this._windowTitleStack = [], this._iconNameStack = [], this._curAttrData = l.DEFAULT_ATTR_DATA.clone(), this._eraseAttrDataInternal = l.DEFAULT_ATTR_DATA.clone(), this._onRequestBell = this.register(new d.EventEmitter()), this.onRequestBell = this._onRequestBell.event, this._onRequestRefreshRows = this.register(new d.EventEmitter()), this.onRequestRefreshRows = this._onRequestRefreshRows.event, this._onRequestReset = this.register(new d.EventEmitter()), this.onRequestReset = this._onRequestReset.event, this._onRequestSendFocus = this.register(new d.EventEmitter()), this.onRequestSendFocus = this._onRequestSendFocus.event, this._onRequestSyncScrollBar = this.register(new d.EventEmitter()), this.onRequestSyncScrollBar = this._onRequestSyncScrollBar.event, this._onRequestWindowsOptionsReport = this.register(new d.EventEmitter()), this.onRequestWindowsOptionsReport = this._onRequestWindowsOptionsReport.event, this._onA11yChar = this.register(new d.EventEmitter()), this.onA11yChar = this._onA11yChar.event, this._onA11yTab = this.register(new d.EventEmitter()), this.onA11yTab = this._onA11yTab.event, this._onCursorMove = this.register(new d.EventEmitter()), this.onCursorMove = this._onCursorMove.event, this._onLineFeed = this.register(new d.EventEmitter()), this.onLineFeed = this._onLineFeed.event, this._onScroll = this.register(new d.EventEmitter()), this.onScroll = this._onScroll.event, this._onTitleChange = this.register(new d.EventEmitter()), this.onTitleChange = this._onTitleChange.event, this._onColor = this.register(new d.EventEmitter()), this.onColor = this._onColor.event, this._parseStack = {
 								paused: !1,
 								cursorStartX: 0,
 								cursorStartY: 0,
@@ -5121,7 +5121,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 						}
 					}, t.Utf8ToUtf32 = class {
 						constructor() {
-							this.interim = /* @__PURE__ */ new Uint8Array(3);
+							this.interim = new Uint8Array(3);
 						}
 						clear() {
 							this.interim.fill(0);
@@ -5350,7 +5350,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 					t.UnicodeV6 = class {
 						constructor() {
 							if (this.version = "6", !r) {
-								r = /* @__PURE__ */ new Uint8Array(65536), r.fill(1), r[0] = 0, r.fill(0, 1, 32), r.fill(0, 127, 160), r.fill(2, 4352, 4448), r[9001] = 2, r[9002] = 2, r.fill(2, 11904, 42192), r[12351] = 1, r.fill(2, 44032, 55204), r.fill(2, 63744, 64256), r.fill(2, 65040, 65050), r.fill(2, 65072, 65136), r.fill(2, 65280, 65377), r.fill(2, 65504, 65511);
+								r = new Uint8Array(65536), r.fill(1), r[0] = 0, r.fill(0, 1, 32), r.fill(0, 127, 160), r.fill(2, 4352, 4448), r[9001] = 2, r[9002] = 2, r.fill(2, 11904, 42192), r[12351] = 1, r.fill(2, 44032, 55204), r.fill(2, 63744, 64256), r.fill(2, 65040, 65050), r.fill(2, 65072, 65136), r.fill(2, 65280, 65377), r.fill(2, 65504, 65511);
 								for (let e = 0; e < i.length; ++e) r.fill(0, i[e][0], i[e][1] + 1);
 							}
 						}
@@ -7071,10 +7071,10 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 						return t;
 					}
 					_verifyIntegers(...e) {
-						for (const t of e) if (t === 1 / 0 || isNaN(t) || t % 1 != 0) throw new Error("This API only accepts integers");
+						for (const t of e) if (t === Infinity || isNaN(t) || t % 1 != 0) throw new Error("This API only accepts integers");
 					}
 					_verifyPositiveIntegers(...e) {
-						for (const t of e) if (t && (t === 1 / 0 || isNaN(t) || t % 1 != 0 || t < 0)) throw new Error("This API only accepts positive integers");
+						for (const t of e) if (t && (t === Infinity || isNaN(t) || t % 1 != 0 || t < 0)) throw new Error("This API only accepts positive integers");
 					}
 				}
 				e.Terminal = d;
@@ -7082,7 +7082,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 		})()));
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/@xterm+addon-fit@0.10.0_@xterm+xterm@5.4.0/node_modules/@xterm/addon-fit/lib/addon-fit.js
+	//#region ../../../node_modules/.pnpm/@xterm+addon-fit@0.10.0_@xterm+xterm@5.5.0/node_modules/@xterm/addon-fit/lib/addon-fit.js
 	var require_addon_fit = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		(function(e, t) {
 			"object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.FitAddon = t() : e.FitAddon = t();
@@ -7118,7 +7118,7 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 		})()));
 	}));
 	//#endregion
-	//#region \0dsh-css:/Users/yunsheng/.dsh/UI功能改动/dsh-better-sidebar/node_modules/.pnpm/xterm@5.3.0/node_modules/xterm/css/xterm.css.mjs
+	//#region \0dsh-css:/Volumes/资料盘/DSH/node_modules/.pnpm/xterm@5.3.0/node_modules/xterm/css/xterm.css.mjs
 	var import_xterm = require_xterm();
 	var import_addon_fit = require_addon_fit();
 	const css$1 = "/**\n * Copyright (c) 2014 The xterm.js authors. All rights reserved.\n * Copyright (c) 2012-2013, Christopher Jeffrey (MIT License)\n * https://github.com/chjj/term.js\n * @license MIT\n *\n * Permission is hereby granted, free of charge, to any person obtaining a copy\n * of this software and associated documentation files (the \"Software\"), to deal\n * in the Software without restriction, including without limitation the rights\n * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n * copies of the Software, and to permit persons to whom the Software is\n * furnished to do so, subject to the following conditions:\n *\n * The above copyright notice and this permission notice shall be included in\n * all copies or substantial portions of the Software.\n *\n * THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n * THE SOFTWARE.\n *\n * Originally forked from (with the author's permission):\n *   Fabrice Bellard's javascript vt100 for jslinux:\n *   http://bellard.org/jslinux/\n *   Copyright (c) 2011 Fabrice Bellard\n *   The original design remains. The terminal itself\n *   has been extended to include xterm CSI codes, among\n *   other features.\n */\n\n/**\n *  Default styles for xterm.js\n */\n\n.xterm {\n    cursor: text;\n    position: relative;\n    user-select: none;\n    -ms-user-select: none;\n    -webkit-user-select: none;\n}\n\n.xterm.focus,\n.xterm:focus {\n    outline: none;\n}\n\n.xterm .xterm-helpers {\n    position: absolute;\n    top: 0;\n    /**\n     * The z-index of the helpers must be higher than the canvases in order for\n     * IMEs to appear on top.\n     */\n    z-index: 5;\n}\n\n.xterm .xterm-helper-textarea {\n    padding: 0;\n    border: 0;\n    margin: 0;\n    /* Move textarea out of the screen to the far left, so that the cursor is not visible */\n    position: absolute;\n    opacity: 0;\n    left: -9999em;\n    top: 0;\n    width: 0;\n    height: 0;\n    z-index: -5;\n    /** Prevent wrapping so the IME appears against the textarea at the correct position */\n    white-space: nowrap;\n    overflow: hidden;\n    resize: none;\n}\n\n.xterm .composition-view {\n    /* TODO: Composition position got messed up somewhere */\n    background: #000;\n    color: #FFF;\n    display: none;\n    position: absolute;\n    white-space: nowrap;\n    z-index: 1;\n}\n\n.xterm .composition-view.active {\n    display: block;\n}\n\n.xterm .xterm-viewport {\n    /* On OS X this is required in order for the scroll bar to appear fully opaque */\n    background-color: #000;\n    overflow-y: scroll;\n    cursor: default;\n    position: absolute;\n    right: 0;\n    left: 0;\n    top: 0;\n    bottom: 0;\n}\n\n.xterm .xterm-screen {\n    position: relative;\n}\n\n.xterm .xterm-screen canvas {\n    position: absolute;\n    left: 0;\n    top: 0;\n}\n\n.xterm .xterm-scroll-area {\n    visibility: hidden;\n}\n\n.xterm-char-measure-element {\n    display: inline-block;\n    visibility: hidden;\n    position: absolute;\n    top: 0;\n    left: -9999em;\n    line-height: normal;\n}\n\n.xterm.enable-mouse-events {\n    /* When mouse events are enabled (eg. tmux), revert to the standard pointer cursor */\n    cursor: default;\n}\n\n.xterm.xterm-cursor-pointer,\n.xterm .xterm-cursor-pointer {\n    cursor: pointer;\n}\n\n.xterm.column-select.focus {\n    /* Column selection mode */\n    cursor: crosshair;\n}\n\n.xterm .xterm-accessibility,\n.xterm .xterm-message {\n    position: absolute;\n    left: 0;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    z-index: 10;\n    color: transparent;\n    pointer-events: none;\n}\n\n.xterm .live-region {\n    position: absolute;\n    left: -9999px;\n    width: 1px;\n    height: 1px;\n    overflow: hidden;\n}\n\n.xterm-dim {\n    /* Dim should not apply to background, so the opacity of the foreground color is applied\n     * explicitly in the generated class and reset to 1 here */\n    opacity: 1 !important;\n}\n\n.xterm-underline-1 { text-decoration: underline; }\n.xterm-underline-2 { text-decoration: double underline; }\n.xterm-underline-3 { text-decoration: wavy underline; }\n.xterm-underline-4 { text-decoration: dotted underline; }\n.xterm-underline-5 { text-decoration: dashed underline; }\n\n.xterm-overline {\n    text-decoration: overline;\n}\n\n.xterm-overline.xterm-underline-1 { text-decoration: overline underline; }\n.xterm-overline.xterm-underline-2 { text-decoration: overline double underline; }\n.xterm-overline.xterm-underline-3 { text-decoration: overline wavy underline; }\n.xterm-overline.xterm-underline-4 { text-decoration: overline dotted underline; }\n.xterm-overline.xterm-underline-5 { text-decoration: overline dashed underline; }\n\n.xterm-strikethrough {\n    text-decoration: line-through;\n}\n\n.xterm-screen .xterm-decoration-container .xterm-decoration {\n	z-index: 6;\n	position: absolute;\n}\n\n.xterm-screen .xterm-decoration-container .xterm-decoration.xterm-decoration-top-layer {\n	z-index: 7;\n}\n\n.xterm-decoration-overview-ruler {\n    z-index: 8;\n    position: absolute;\n    top: 0;\n    right: 0;\n    pointer-events: none;\n}\n\n.xterm-decoration-top {\n    z-index: 2;\n    position: relative;\n}\n";
@@ -7707,8 +7707,8 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 		};
 	}
 	//#endregion
-	//#region \0dsh-css:/Users/yunsheng/.dsh/UI功能改动/dsh-better-sidebar/src/client/sidebar.module.css.mjs
-	const css = ".f7MvrG_toggleCluster{z-index:55;flex-direction:row;gap:4px;display:flex;position:fixed;top:3px;right:10px}.f7MvrG_panel:not(.f7MvrG_panelHidden) .f7MvrG_tabBar{padding-right:72px}.f7MvrG_toggleButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), color var(--ds-transition-duration-slow) var(--ds-ease-in-out);background:0 0;border:none;border-radius:50%;justify-content:center;align-items:center;display:flex}.f7MvrG_toggleButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_toggleButton:disabled{opacity:.4;cursor:default}.f7MvrG_panel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-left:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;top:0;bottom:0;right:0}.f7MvrG_panelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translate(102%)}.f7MvrG_panel[data-dragging]{transition:none}.f7MvrG_panelResize{cursor:col-resize;z-index:2;touch-action:none;width:8px;position:absolute;top:0;bottom:0;left:-4px}.f7MvrG_panelResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_panelBody{flex:1;min-width:0;min-height:0;display:flex}.f7MvrG_bottomPanel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-top:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;bottom:0}.f7MvrG_bottomPanelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translateY(102%)}.f7MvrG_bottomPanel[data-dragging]{transition:none}.f7MvrG_bottomResize{cursor:row-resize;z-index:2;touch-action:none;height:8px;position:absolute;top:-4px;left:0;right:0}.f7MvrG_bottomResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_bottomClose{z-index:4;width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex;position:absolute;top:3px;right:6px}.f7MvrG_bottomClose:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_bottomPanel .f7MvrG_tabBar{padding-right:40px}.f7MvrG_cornerHandle{z-index:52;cursor:nwse-resize;touch-action:none;width:12px;height:12px;position:fixed}.f7MvrG_cornerHandle:hover,.f7MvrG_cornerHandle[data-dragging]{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_iconButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.f7MvrG_iconButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_iconButton:disabled{opacity:.4;cursor:default}.f7MvrG_workbench,.f7MvrG_split{flex:1;min-width:0;min-height:0;display:flex}.f7MvrG_splitRow{flex-direction:row}.f7MvrG_splitCol{flex-direction:column}.f7MvrG_splitChild{display:flex;position:relative;overflow:hidden}.f7MvrG_divider{z-index:3;touch-action:none;flex:none;position:relative}.f7MvrG_dividerRow:after,.f7MvrG_dividerCol:after{content:\"\";background:var(--dsw-alias-border-l2);transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out);position:absolute}.f7MvrG_dividerRow{cursor:col-resize;width:7px;margin:0 -2px}.f7MvrG_dividerRow:after{width:1px;top:0;bottom:0;left:50%;transform:translate(-50%)}.f7MvrG_dividerCol{cursor:row-resize;height:7px;margin:-2px 0}.f7MvrG_dividerCol:after{height:1px;top:50%;left:0;right:0;transform:translateY(-50%)}.f7MvrG_divider:hover:after,.f7MvrG_dividerActive:after{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_pane{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;position:relative}.f7MvrG_paneDrop{outline:1px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.f7MvrG_dropOverlay{z-index:6;pointer-events:none;background:var(--dsw-alias-interactive-bg-hover-accent);opacity:.5;position:absolute}.f7MvrG_dropLeft{width:25%;top:0;bottom:0;left:0}.f7MvrG_dropRight{width:25%;top:0;bottom:0;right:0}.f7MvrG_dropUp{height:25%;top:0;left:0;right:0}.f7MvrG_dropDown{height:25%;bottom:0;left:0;right:0}.f7MvrG_dropCenter{outline:2px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-2px;background:0 0;inset:25%}.f7MvrG_paneContent{flex-direction:column;flex:1;min-height:0;display:flex;overflow:hidden}.f7MvrG_paneTab{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_paneTabHidden{display:none}.f7MvrG_paneEmptyCards{flex-direction:column;flex:1;justify-content:center;gap:2px;min-height:0;padding:8px 10px;display:flex;overflow:hidden}.f7MvrG_paneCard{width:100%;min-width:0;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;text-align:left;background:0 0;border:none;border-radius:6px;align-items:center;gap:10px;padding:8px 10px;display:flex}.f7MvrG_paneCard:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_paneCard:disabled{opacity:.45;cursor:default}.f7MvrG_paneCardIcon{color:var(--dsw-alias-label-secondary);flex:none;align-items:center;display:inline-flex}.f7MvrG_paneCardLabel{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.f7MvrG_paneCardShortcut{color:var(--dsw-alias-label-tertiary);background:var(--dsw-alias-interactive-bg-hover);white-space:nowrap;border-radius:6px;flex:none;padding:1px 7px;font-size:11px;line-height:18px}.f7MvrG_tabBar{border-bottom:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:stretch;height:34px;display:flex}.f7MvrG_tabBarDrop{outline:1px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.f7MvrG_tabList{scrollbar-width:none;flex:1;min-width:0;display:flex;overflow-x:auto}.f7MvrG_tabList::-webkit-scrollbar{display:none}.f7MvrG_tab{min-width:64px;max-width:160px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);border-right:1px solid var(--dsw-alias-border-l1);cursor:pointer;user-select:none;background:0 0;flex:none;align-items:center;gap:4px;padding:0 4px 0 10px;display:flex}.f7MvrG_tab:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_tabActive{color:var(--dsw-alias-label-primary);background:var(--dsw-alias-interactive-bg-active)}.f7MvrG_tabTitle{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.f7MvrG_tabClose{width:18px;height:18px;color:var(--dsw-alias-label-tertiary);cursor:pointer;background:0 0;border:none;border-radius:4px;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.f7MvrG_tabClose:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_tabBarPlus{background:var(--dsw-alias-bg-layer-1);width:22px;height:22px;color:var(--dsw-alias-label-tertiary);cursor:pointer;border:none;border-radius:5px;flex:none;justify-content:center;align-self:center;align-items:center;margin:0 6px;padding:0;display:inline-flex;position:sticky;right:0}.f7MvrG_tabBarPlus:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_explorer{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_explorerHeader{flex:none;justify-content:space-between;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.f7MvrG_explorerRoot{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_explorerBody{flex:1;min-height:0;padding:2px 6px 8px;overflow-y:auto}.f7MvrG_explorerRow{width:100%;height:34px;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);text-align:left;cursor:pointer;white-space:nowrap;animation:f7MvrG_dsh-row-in .15s var(--ds-ease-in-out);background:0 0;border:none;border-radius:8px;align-items:center;gap:6px;padding:0 8px;display:flex}.f7MvrG_explorerRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_explorerDir{font:var(--dsw-font-s-strong-14)}.f7MvrG_explorerHidden{opacity:.45}.f7MvrG_explorerName{text-overflow:ellipsis;overflow:hidden}.f7MvrG_explorerRef{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:20px;color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;align-items:center;padding:0 8px;display:none}.f7MvrG_explorerRef:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_explorerRow:hover .f7MvrG_explorerRef,.f7MvrG_explorerRow:focus-within .f7MvrG_explorerRef{display:inline-flex}.f7MvrG_explorerCopied{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.f7MvrG_explorerError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);cursor:default}@keyframes f7MvrG_dsh-row-in{0%{opacity:0}}.f7MvrG_explorerEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.f7MvrG_editor{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:6px;padding:4px 8px;display:flex}.f7MvrG_editorTitle{min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;flex:1;overflow:hidden}.f7MvrG_editorStatus{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.f7MvrG_editorStatusError{color:var(--dsw-alias-state-error-primary)}.f7MvrG_dirtyDot{background:var(--dsw-alias-state-warn-primary);border-radius:50%;flex:none;width:7px;height:7px}.f7MvrG_editorPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;flex:1;justify-content:center;align-items:center;padding:16px;display:flex}.f7MvrG_orphanedType{opacity:.7;overflow-wrap:anywhere;margin-top:8px;font-size:12px;display:block}.f7MvrG_editorBinary{text-align:center;flex-direction:column;flex:1;justify-content:center;align-items:center;gap:12px;padding:24px 16px;display:flex}.f7MvrG_editorBinaryNotice{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_editorDownloadLink{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), border-color var(--ds-transition-duration-slow) var(--ds-ease-in-out);border-radius:6px;align-items:center;gap:6px;padding:6px 14px;text-decoration:none;display:inline-flex}.f7MvrG_editorDownloadLink:hover{background:var(--dsw-alias-interactive-bg-hover);border-color:var(--dsw-alias-border-l2)}.f7MvrG_editorError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);padding:12px 16px}.f7MvrG_editorBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.f7MvrG_sandboxStatus{font:var(--dsw-font-xxxs-11);flex:none;align-items:center;gap:8px;padding:4px 10px;display:flex}.f7MvrG_sandboxStatusOn{color:var(--dsw-alias-label-secondary);background:var(--dsw-alias-bg-layer-1);border-bottom:1px solid var(--dsw-alias-border-l1)}.f7MvrG_sandboxStatusOff{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 10%, transparent);border-bottom:1px solid color-mix(in srgb, var(--dsw-alias-state-error-primary) 45%, transparent)}.f7MvrG_sandboxDot{background:var(--dsw-alias-state-success-primary);border-radius:50%;flex:none;width:6px;height:6px}.f7MvrG_sandboxStatusOff .f7MvrG_sandboxDot{background:var(--dsw-alias-state-error-primary)}.f7MvrG_sandboxStatusText{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.f7MvrG_sandboxAction{border:1px solid var(--dsw-alias-border-l2);font:inherit;color:inherit;cursor:pointer;background:0 0;border-radius:6px;flex:none;padding:2px 8px}.f7MvrG_sandboxAction:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_editorHtml{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.f7MvrG_browser{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_browserBar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:4px;padding:6px 8px;display:flex}.f7MvrG_browserInput{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);min-width:0;height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 10px}.f7MvrG_browserInput:focus{border-color:var(--dsw-alias-border-l2);outline:none}.f7MvrG_browserMessage{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.f7MvrG_browserFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.f7MvrG_browserStart{text-align:center;min-height:0;font:var(--dsw-font-xs-13);color:var(--dsw-alias-label-tertiary);flex:1;justify-content:center;align-items:center;padding:20px;display:flex}.f7MvrG_browserBlocked{text-align:center;min-height:0;color:var(--dsw-alias-state-warn-primary);flex-direction:column;flex:1;justify-content:center;align-items:center;gap:6px;padding:24px;display:flex}.f7MvrG_browserBlockedTitle{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary)}.f7MvrG_browserBlockedDesc{max-width:280px;font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-secondary)}.f7MvrG_browserBlockedActions{gap:8px;margin-top:6px;display:flex}.f7MvrG_browserBlockedButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-1);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-11);cursor:pointer;border-radius:6px;padding:4px 12px}.f7MvrG_browserBlockedButton:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_editorCm{background:0 0;flex:1;min-height:0;overflow:hidden}.f7MvrG_editorCmHidden{display:none}.f7MvrG_editorCm .cm-editor{height:100%}.f7MvrG_editorCm .cm-editor.cm-focused{outline:none}.f7MvrG_editorModeToggle{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);border-radius:6px;flex:none;align-items:center;gap:2px;padding:2px;display:inline-flex}.f7MvrG_editorModeButton{color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-11);cursor:pointer;background:0 0;border:none;border-radius:4px;padding:2px 8px}.f7MvrG_editorModeButton:hover{color:var(--dsw-alias-label-primary)}.f7MvrG_editorModeActive{background:var(--dsw-alias-bg-base);color:var(--dsw-alias-label-primary)}.f7MvrG_editorImageWrap{flex:1;justify-content:center;align-items:center;min-height:0;padding:12px;display:flex;overflow:auto}.f7MvrG_editorImage{object-fit:contain;max-width:100%;max-height:100%}.f7MvrG_editorMd{min-height:0;font:var(--dsw-font-xs-13);flex:1;padding:10px 14px;overflow-y:auto}.f7MvrG_selectionPopup{z-index:60;border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-strong-11);white-space:nowrap;cursor:pointer;border-radius:6px;align-items:center;padding:0 10px;display:inline-flex;position:fixed;transform:translate(-50%,calc(-100% - 8px))}.f7MvrG_selectionPopup:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_editorDocx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorDocxViewport{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;overflow:auto}.f7MvrG_editorDocxWrap{flex:none;padding:16px}.f7MvrG_editorDocxZoom{border-top:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:center;gap:8px;min-height:34px;padding:4px 10px;display:flex}.f7MvrG_editorDocxZoomHint,.f7MvrG_editorDocxZoomValue{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.f7MvrG_editorDocxZoomValue{text-align:right;width:36px}.f7MvrG_editorDocxZoomRange{min-width:72px;accent-color:var(--dsw-alias-brand-primary);cursor:pointer;flex:1}.f7MvrG_editorPdf{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorPdfToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:flex-end;padding:6px 8px;display:flex}.f7MvrG_editorPdfStage{flex:1;min-height:0;display:flex;position:relative}.f7MvrG_editorPdfFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.f7MvrG_editorPdfFrameBlocked{pointer-events:none}.f7MvrG_editorPdfDragShield{z-index:4;pointer-events:none;background:0 0;position:absolute;inset:0}.f7MvrG_editorPdfDragShieldActive{pointer-events:auto}body[data-dsh-tab-dragging] .f7MvrG_editorPdfFrame{pointer-events:none!important}body[data-dsh-tab-dragging] .f7MvrG_editorPdfDragShield{pointer-events:auto!important}.f7MvrG_editorXlsx{background:var(--dsw-alias-bg-base);flex:1;min-height:0;position:relative;overflow:hidden}.f7MvrG_editorUniverHost{width:100%;min-width:0;height:100%;min-height:0}.f7MvrG_editorOfficeOverlay{z-index:2;background:var(--dsw-alias-bg-base);display:flex;position:absolute;inset:0}.f7MvrG_editorPptx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorPptxToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:center;align-items:center;gap:8px;padding:6px 8px;display:flex}.f7MvrG_editorPptxToolbar .f7MvrG_editorDownloadLink{margin-left:auto}.f7MvrG_editorPptxButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border-radius:6px;padding:0 10px}.f7MvrG_editorPptxButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_editorPptxButton:disabled{opacity:.4;cursor:default}.f7MvrG_editorPptxPosition{text-align:center;min-width:64px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_editorPptxStage{flex:1;min-height:0;position:relative;overflow:hidden}.f7MvrG_editorPptxHost{width:100%;min-width:0;height:100%;min-height:0;overflow:auto}.f7MvrG_terminalWrap{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;position:relative}.f7MvrG_terminal{flex:1;min-height:0;padding:6px 4px 6px 8px}.f7MvrG_terminal .xterm{height:100%}.f7MvrG_terminalBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex-wrap:wrap;flex:none;align-items:center;gap:8px;padding:3px 10px;display:flex}.f7MvrG_terminalBannerUrl{word-break:break-all;opacity:.85;flex-basis:100%;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.f7MvrG_boundaryError{z-index:50;background:var(--dsw-alias-bg-layer-1);border-left:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);flex-direction:column;align-items:flex-start;gap:8px;padding:16px;display:flex;position:fixed;top:0;bottom:0;right:0;overflow:auto}.f7MvrG_terminalRetry{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;padding:1px 8px}.f7MvrG_terminalRetry:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_git{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.f7MvrG_gitHeader{flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.f7MvrG_gitBranchSelect{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-base);min-width:0;height:26px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 6px}.f7MvrG_gitSection{border-top:1px solid var(--dsw-alias-border-l1)}.f7MvrG_gitSectionHeader{font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-tertiary);text-transform:uppercase;justify-content:space-between;align-items:center;padding:6px 12px 4px;display:flex}.f7MvrG_gitLink{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-brand-primary);cursor:pointer;background:0 0;border:none;padding:0}.f7MvrG_gitLink:hover:not(:disabled){text-decoration:underline}.f7MvrG_gitLink:disabled{opacity:.4;cursor:default}.f7MvrG_gitRow{min-height:34px;animation:f7MvrG_dsh-row-in .15s var(--ds-ease-in-out);border-radius:8px;align-items:center;gap:6px;margin:0 6px;padding:0 8px;display:flex}.f7MvrG_gitRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_gitRowSelected{background:var(--dsw-alias-interactive-bg-active)}.f7MvrG_gitRowMain{cursor:pointer;text-align:left;background:0 0;border:none;flex:1;align-items:center;gap:8px;min-width:0;padding:3px 0;display:flex}.f7MvrG_gitBadge{width:20px;height:16px;font:var(--dsw-font-xxxs-strong-11);background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-secondary);border-radius:4px;flex:none;justify-content:center;align-items:center;display:inline-flex}.f7MvrG_gitName{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.f7MvrG_gitEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);padding:4px 12px 8px}.f7MvrG_gitPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.f7MvrG_gitError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);white-space:pre-wrap;padding:8px 12px}.f7MvrG_gitDiff{border-top:1px solid var(--dsw-alias-border-l1);padding:8px}.f7MvrG_gitDiffTab{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.f7MvrG_gitDiffTabHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.f7MvrG_gitDiffTabTitle{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.f7MvrG_gitDiffFile{align-items:baseline;gap:6px;padding:8px 2px 2px;display:flex}.f7MvrG_gitDiffFilePath{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_gitDiffFileOld{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);text-overflow:ellipsis;white-space:nowrap;flex:none;max-width:40%;overflow:hidden}.f7MvrG_gitDiffFileTag{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-secondary);border-radius:999px;flex:none;padding:0 6px}.f7MvrG_gitDiffHunk{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);gap:8px;padding:3px 2px;display:flex}.f7MvrG_gitDiffHunkHeader{color:var(--dsw-alias-label-secondary);flex:none}.f7MvrG_gitDiffHunkSection{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_gitDiffLine{font:var(--dsw-font-markdown-code-block-small);white-space:pre-wrap;overflow-wrap:anywhere;align-items:stretch;min-width:0;line-height:20px;display:flex}.f7MvrG_gitDiffNum{text-align:right;width:36px;color:var(--dsw-alias-label-tertiary);user-select:none;flex:none;padding-right:8px}.f7MvrG_gitDiffCode{flex:1;min-width:0;overflow:visible}.f7MvrG_gitDiffCtx{color:var(--dsw-alias-label-primary)}.f7MvrG_gitDiffDel{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 12%, transparent)}.f7MvrG_gitDiffAdd{color:var(--dsw-alias-state-success-primary);background:color-mix(in srgb, var(--dsw-alias-state-success-primary) 12%, transparent)}.f7MvrG_gitDiffMeta{padding-left:2px}.f7MvrG_gitDiffMetaText{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);font-style:italic}.f7MvrG_gitDiffExpand{width:100%;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-brand-primary);cursor:pointer;text-align:center;background:0 0;border:none;margin:4px 0;display:block}.f7MvrG_gitDiffExpand:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_gitConfirmDesc{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);white-space:pre-wrap;margin:0}.f7MvrG_gitCommit{border-top:1px solid var(--dsw-alias-border-l1);align-items:center;gap:6px;padding:8px 12px;display:flex}.f7MvrG_gitCommitInput{flex:1;min-width:0}.f7MvrG_gitCommitButton{background:var(--dsw-alias-button-primary-fill);height:26px;color:var(--dsw-alias-label-primary-inverted);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border:none;border-radius:6px;flex:none;padding:0 12px}.f7MvrG_gitCommitButton:hover:not(:disabled){background:var(--dsw-alias-button-primary-hover)}.f7MvrG_gitCommitButton:disabled{opacity:.45;cursor:default}.f7MvrG_gitLogRow{cursor:pointer;border-radius:8px;flex-direction:column;gap:2px;padding:5px 12px;display:flex}.f7MvrG_gitLogRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_gitLogLine1{align-items:baseline;gap:8px;min-width:0;display:flex}.f7MvrG_gitLogHash{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);flex:none}.f7MvrG_gitLogLine2{flex-wrap:wrap;align-items:center;gap:6px;min-width:0;display:flex}.f7MvrG_gitLogRef{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-brand-primary);white-space:nowrap;border-radius:999px;flex:none;padding:0 5px}.f7MvrG_gitLogSubject{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.f7MvrG_gitLogMeta{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.f7MvrG_gitLogMore{border:1px solid var(--dsw-alias-border-l2);width:calc(100% - 24px);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border-radius:6px;margin:4px 12px 8px;padding:6px 0;display:block}.f7MvrG_gitLogMore:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_gitLogMore:disabled{opacity:.5;cursor:default}.f7MvrG_producedRow{flex-wrap:wrap;align-items:center;gap:8px;padding:4px 0;display:flex}.f7MvrG_producedLabel{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_producedChip{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);max-width:200px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-12);cursor:pointer;border-radius:999px;align-items:center;gap:4px;padding:2px 8px;display:inline-flex;overflow:hidden}.f7MvrG_producedChip:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_producedChip span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_producedMore{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_toggleButton:focus-visible,.f7MvrG_bottomClose:focus-visible,.f7MvrG_iconButton:focus-visible,.f7MvrG_tab:focus-visible,.f7MvrG_tabClose:focus-visible,.f7MvrG_tabBarPlus:focus-visible,.f7MvrG_paneCard:focus-visible,.f7MvrG_explorerRow:focus-visible,.f7MvrG_explorerRef:focus-visible,.f7MvrG_gitRowMain:focus-visible,.f7MvrG_gitLink:focus-visible,.f7MvrG_gitCommitButton:focus-visible,.f7MvrG_gitLogRow:focus-visible,.f7MvrG_gitLogMore:focus-visible,.f7MvrG_gitDiffExpand:focus-visible,.f7MvrG_terminalRetry:focus-visible,.f7MvrG_editorModeButton:focus-visible,.f7MvrG_editorDownloadLink:focus-visible,.f7MvrG_editorPptxButton:focus-visible,.f7MvrG_editorDocxZoomRange:focus-visible{outline:2px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}@media (prefers-reduced-motion:reduce){.f7MvrG_panel,.f7MvrG_panelHidden,.f7MvrG_bottomPanel,.f7MvrG_bottomPanelHidden,.f7MvrG_toggleCluster,.f7MvrG_toggleButton,.f7MvrG_tab,.f7MvrG_tabBarPlus,.f7MvrG_paneCard,.f7MvrG_explorerRow,.f7MvrG_gitRow,.f7MvrG_divider,.f7MvrG_dividerRow:after,.f7MvrG_dividerCol:after{transition:none;animation:none}}@media (width<=767px){.f7MvrG_panel:not(.f7MvrG_panelHidden) .f7MvrG_tabBar{padding-right:40px}.f7MvrG_tab{min-width:48px;max-width:128px}}";
+	//#region \0dsh-css:/Volumes/资料盘/DSH/packages/plugins/dsh-better-sidebar/src/client/sidebar.module.css.mjs
+	const css = ".TragPW_toggleCluster{z-index:55;flex-direction:row;gap:4px;display:flex;position:fixed;top:3px;right:10px}.TragPW_panel:not(.TragPW_panelHidden) .TragPW_tabBar{padding-right:72px}.TragPW_toggleButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), color var(--ds-transition-duration-slow) var(--ds-ease-in-out);background:0 0;border:none;border-radius:50%;justify-content:center;align-items:center;display:flex}.TragPW_toggleButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_toggleButton:disabled{opacity:.4;cursor:default}.TragPW_panel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-left:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;top:0;bottom:0;right:0}.TragPW_panelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translate(102%)}.TragPW_panel[data-dragging]{transition:none}.TragPW_panelResize{cursor:col-resize;z-index:2;touch-action:none;width:8px;position:absolute;top:0;bottom:0;left:-4px}.TragPW_panelResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_panelBody{flex:1;min-width:0;min-height:0;display:flex}.TragPW_bottomPanel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-top:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;bottom:0}.TragPW_bottomPanelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translateY(102%)}.TragPW_bottomPanel[data-dragging]{transition:none}.TragPW_bottomResize{cursor:row-resize;z-index:2;touch-action:none;height:8px;position:absolute;top:-4px;left:0;right:0}.TragPW_bottomResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_bottomClose{z-index:4;width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex;position:absolute;top:3px;right:6px}.TragPW_bottomClose:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_bottomPanel .TragPW_tabBar{padding-right:40px}.TragPW_cornerHandle{z-index:52;cursor:nwse-resize;touch-action:none;width:12px;height:12px;position:fixed}.TragPW_cornerHandle:hover,.TragPW_cornerHandle[data-dragging]{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_iconButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.TragPW_iconButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_iconButton:disabled{opacity:.4;cursor:default}.TragPW_workbench,.TragPW_split{flex:1;min-width:0;min-height:0;display:flex}.TragPW_splitRow{flex-direction:row}.TragPW_splitCol{flex-direction:column}.TragPW_splitChild{display:flex;position:relative;overflow:hidden}.TragPW_divider{z-index:3;touch-action:none;flex:none;position:relative}.TragPW_dividerRow:after,.TragPW_dividerCol:after{content:\"\";background:var(--dsw-alias-border-l2);transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out);position:absolute}.TragPW_dividerRow{cursor:col-resize;width:7px;margin:0 -2px}.TragPW_dividerRow:after{width:1px;top:0;bottom:0;left:50%;transform:translate(-50%)}.TragPW_dividerCol{cursor:row-resize;height:7px;margin:-2px 0}.TragPW_dividerCol:after{height:1px;top:50%;left:0;right:0;transform:translateY(-50%)}.TragPW_divider:hover:after,.TragPW_dividerActive:after{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_pane{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;position:relative}.TragPW_paneDrop{outline:1px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.TragPW_dropOverlay{z-index:6;pointer-events:none;background:var(--dsw-alias-interactive-bg-hover-accent);opacity:.5;position:absolute}.TragPW_dropLeft{width:25%;top:0;bottom:0;left:0}.TragPW_dropRight{width:25%;top:0;bottom:0;right:0}.TragPW_dropUp{height:25%;top:0;left:0;right:0}.TragPW_dropDown{height:25%;bottom:0;left:0;right:0}.TragPW_dropCenter{outline:2px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-2px;background:0 0;inset:25%}.TragPW_paneContent{flex-direction:column;flex:1;min-height:0;display:flex;overflow:hidden}.TragPW_paneTab{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_paneTabHidden{display:none}.TragPW_paneEmptyCards{flex-direction:column;flex:1;justify-content:center;gap:2px;min-height:0;padding:8px 10px;display:flex;overflow:hidden}.TragPW_paneCard{width:100%;min-width:0;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;text-align:left;background:0 0;border:none;border-radius:6px;align-items:center;gap:10px;padding:8px 10px;display:flex}.TragPW_paneCard:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_paneCard:disabled{opacity:.45;cursor:default}.TragPW_paneCardIcon{color:var(--dsw-alias-label-secondary);flex:none;align-items:center;display:inline-flex}.TragPW_paneCardLabel{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.TragPW_paneCardShortcut{color:var(--dsw-alias-label-tertiary);background:var(--dsw-alias-interactive-bg-hover);white-space:nowrap;border-radius:6px;flex:none;padding:1px 7px;font-size:11px;line-height:18px}.TragPW_tabBar{border-bottom:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:stretch;height:34px;display:flex}.TragPW_tabBarDrop{outline:1px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.TragPW_tabList{scrollbar-width:none;flex:1;min-width:0;display:flex;overflow-x:auto}.TragPW_tabList::-webkit-scrollbar{display:none}.TragPW_tab{min-width:64px;max-width:160px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);border-right:1px solid var(--dsw-alias-border-l1);cursor:pointer;user-select:none;background:0 0;flex:none;align-items:center;gap:4px;padding:0 4px 0 10px;display:flex}.TragPW_tab:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_tabActive{color:var(--dsw-alias-label-primary);background:var(--dsw-alias-interactive-bg-active)}.TragPW_tabTitle{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.TragPW_tabClose{width:18px;height:18px;color:var(--dsw-alias-label-tertiary);cursor:pointer;background:0 0;border:none;border-radius:4px;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.TragPW_tabClose:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_tabBarPlus{background:var(--dsw-alias-bg-layer-1);width:22px;height:22px;color:var(--dsw-alias-label-tertiary);cursor:pointer;border:none;border-radius:5px;flex:none;justify-content:center;align-self:center;align-items:center;margin:0 6px;padding:0;display:inline-flex;position:sticky;right:0}.TragPW_tabBarPlus:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_explorer{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_explorerHeader{flex:none;justify-content:space-between;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.TragPW_explorerRoot{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_explorerBody{flex:1;min-height:0;padding:2px 6px 8px;overflow-y:auto}.TragPW_explorerRow{width:100%;height:34px;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);text-align:left;cursor:pointer;white-space:nowrap;animation:TragPW_dsh-row-in .15s var(--ds-ease-in-out);background:0 0;border:none;border-radius:8px;align-items:center;gap:6px;padding:0 8px;display:flex}.TragPW_explorerRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_explorerDir{font:var(--dsw-font-s-strong-14)}.TragPW_explorerHidden{opacity:.45}.TragPW_explorerName{text-overflow:ellipsis;overflow:hidden}.TragPW_explorerRef{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:20px;color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;align-items:center;padding:0 8px;display:none}.TragPW_explorerRef:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_explorerRow:hover .TragPW_explorerRef,.TragPW_explorerRow:focus-within .TragPW_explorerRef{display:inline-flex}.TragPW_explorerCopied{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.TragPW_explorerError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);cursor:default}@keyframes TragPW_dsh-row-in{0%{opacity:0}}.TragPW_explorerEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.TragPW_editor{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:6px;padding:4px 8px;display:flex}.TragPW_editorTitle{min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;flex:1;overflow:hidden}.TragPW_editorStatus{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.TragPW_editorStatusError{color:var(--dsw-alias-state-error-primary)}.TragPW_dirtyDot{background:var(--dsw-alias-state-warn-primary);border-radius:50%;flex:none;width:7px;height:7px}.TragPW_editorPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;flex:1;justify-content:center;align-items:center;padding:16px;display:flex}.TragPW_orphanedType{opacity:.7;overflow-wrap:anywhere;margin-top:8px;font-size:12px;display:block}.TragPW_editorBinary{text-align:center;flex-direction:column;flex:1;justify-content:center;align-items:center;gap:12px;padding:24px 16px;display:flex}.TragPW_editorBinaryNotice{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_editorDownloadLink{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), border-color var(--ds-transition-duration-slow) var(--ds-ease-in-out);border-radius:6px;align-items:center;gap:6px;padding:6px 14px;text-decoration:none;display:inline-flex}.TragPW_editorDownloadLink:hover{background:var(--dsw-alias-interactive-bg-hover);border-color:var(--dsw-alias-border-l2)}.TragPW_editorError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);padding:12px 16px}.TragPW_editorBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.TragPW_sandboxStatus{font:var(--dsw-font-xxxs-11);flex:none;align-items:center;gap:8px;padding:4px 10px;display:flex}.TragPW_sandboxStatusOn{color:var(--dsw-alias-label-secondary);background:var(--dsw-alias-bg-layer-1);border-bottom:1px solid var(--dsw-alias-border-l1)}.TragPW_sandboxStatusOff{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 10%, transparent);border-bottom:1px solid color-mix(in srgb, var(--dsw-alias-state-error-primary) 45%, transparent)}.TragPW_sandboxDot{background:var(--dsw-alias-state-success-primary);border-radius:50%;flex:none;width:6px;height:6px}.TragPW_sandboxStatusOff .TragPW_sandboxDot{background:var(--dsw-alias-state-error-primary)}.TragPW_sandboxStatusText{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.TragPW_sandboxAction{border:1px solid var(--dsw-alias-border-l2);font:inherit;color:inherit;cursor:pointer;background:0 0;border-radius:6px;flex:none;padding:2px 8px}.TragPW_sandboxAction:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_editorHtml{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.TragPW_browser{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_browserBar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:4px;padding:6px 8px;display:flex}.TragPW_browserInput{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);min-width:0;height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 10px}.TragPW_browserInput:focus{border-color:var(--dsw-alias-border-l2);outline:none}.TragPW_browserMessage{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.TragPW_browserFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.TragPW_browserStart{text-align:center;min-height:0;font:var(--dsw-font-xs-13);color:var(--dsw-alias-label-tertiary);flex:1;justify-content:center;align-items:center;padding:20px;display:flex}.TragPW_browserBlocked{text-align:center;min-height:0;color:var(--dsw-alias-state-warn-primary);flex-direction:column;flex:1;justify-content:center;align-items:center;gap:6px;padding:24px;display:flex}.TragPW_browserBlockedTitle{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary)}.TragPW_browserBlockedDesc{max-width:280px;font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-secondary)}.TragPW_browserBlockedActions{gap:8px;margin-top:6px;display:flex}.TragPW_browserBlockedButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-1);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-11);cursor:pointer;border-radius:6px;padding:4px 12px}.TragPW_browserBlockedButton:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_editorCm{background:0 0;flex:1;min-height:0;overflow:hidden}.TragPW_editorCmHidden{display:none}.TragPW_editorCm .cm-editor{height:100%}.TragPW_editorCm .cm-editor.cm-focused{outline:none}.TragPW_editorModeToggle{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);border-radius:6px;flex:none;align-items:center;gap:2px;padding:2px;display:inline-flex}.TragPW_editorModeButton{color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-11);cursor:pointer;background:0 0;border:none;border-radius:4px;padding:2px 8px}.TragPW_editorModeButton:hover{color:var(--dsw-alias-label-primary)}.TragPW_editorModeActive{background:var(--dsw-alias-bg-base);color:var(--dsw-alias-label-primary)}.TragPW_editorImageWrap{flex:1;justify-content:center;align-items:center;min-height:0;padding:12px;display:flex;overflow:auto}.TragPW_editorImage{object-fit:contain;max-width:100%;max-height:100%}.TragPW_editorMd{min-height:0;font:var(--dsw-font-xs-13);flex:1;padding:10px 14px;overflow-y:auto}.TragPW_selectionPopup{z-index:60;border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-strong-11);white-space:nowrap;cursor:pointer;border-radius:6px;align-items:center;padding:0 10px;display:inline-flex;position:fixed;transform:translate(-50%,calc(-100% - 8px))}.TragPW_selectionPopup:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_editorDocx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorDocxViewport{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;overflow:auto}.TragPW_editorDocxWrap{flex:none;padding:16px}.TragPW_editorDocxZoom{border-top:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:center;gap:8px;min-height:34px;padding:4px 10px;display:flex}.TragPW_editorDocxZoomHint,.TragPW_editorDocxZoomValue{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.TragPW_editorDocxZoomValue{text-align:right;width:36px}.TragPW_editorDocxZoomRange{min-width:72px;accent-color:var(--dsw-alias-brand-primary);cursor:pointer;flex:1}.TragPW_editorPdf{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorPdfToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:flex-end;padding:6px 8px;display:flex}.TragPW_editorPdfStage{flex:1;min-height:0;display:flex;position:relative}.TragPW_editorPdfFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.TragPW_editorPdfFrameBlocked{pointer-events:none}.TragPW_editorPdfDragShield{z-index:4;pointer-events:none;background:0 0;position:absolute;inset:0}.TragPW_editorPdfDragShieldActive{pointer-events:auto}body[data-dsh-tab-dragging] .TragPW_editorPdfFrame{pointer-events:none!important}body[data-dsh-tab-dragging] .TragPW_editorPdfDragShield{pointer-events:auto!important}.TragPW_editorXlsx{background:var(--dsw-alias-bg-base);flex:1;min-height:0;position:relative;overflow:hidden}.TragPW_editorUniverHost{width:100%;min-width:0;height:100%;min-height:0}.TragPW_editorOfficeOverlay{z-index:2;background:var(--dsw-alias-bg-base);display:flex;position:absolute;inset:0}.TragPW_editorPptx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorPptxToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:center;align-items:center;gap:8px;padding:6px 8px;display:flex}.TragPW_editorPptxToolbar .TragPW_editorDownloadLink{margin-left:auto}.TragPW_editorPptxButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border-radius:6px;padding:0 10px}.TragPW_editorPptxButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_editorPptxButton:disabled{opacity:.4;cursor:default}.TragPW_editorPptxPosition{text-align:center;min-width:64px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_editorPptxStage{flex:1;min-height:0;position:relative;overflow:hidden}.TragPW_editorPptxHost{width:100%;min-width:0;height:100%;min-height:0;overflow:auto}.TragPW_terminalWrap{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;position:relative}.TragPW_terminal{flex:1;min-height:0;padding:6px 4px 6px 8px}.TragPW_terminal .xterm{height:100%}.TragPW_terminalBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex-wrap:wrap;flex:none;align-items:center;gap:8px;padding:3px 10px;display:flex}.TragPW_terminalBannerUrl{word-break:break-all;opacity:.85;flex-basis:100%;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.TragPW_boundaryError{z-index:50;background:var(--dsw-alias-bg-layer-1);border-left:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);flex-direction:column;align-items:flex-start;gap:8px;padding:16px;display:flex;position:fixed;top:0;bottom:0;right:0;overflow:auto}.TragPW_terminalRetry{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;padding:1px 8px}.TragPW_terminalRetry:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_git{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.TragPW_gitHeader{flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.TragPW_gitBranchSelect{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-base);min-width:0;height:26px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 6px}.TragPW_gitSection{border-top:1px solid var(--dsw-alias-border-l1)}.TragPW_gitSectionHeader{font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-tertiary);text-transform:uppercase;justify-content:space-between;align-items:center;padding:6px 12px 4px;display:flex}.TragPW_gitLink{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-brand-primary);cursor:pointer;background:0 0;border:none;padding:0}.TragPW_gitLink:hover:not(:disabled){text-decoration:underline}.TragPW_gitLink:disabled{opacity:.4;cursor:default}.TragPW_gitRow{min-height:34px;animation:TragPW_dsh-row-in .15s var(--ds-ease-in-out);border-radius:8px;align-items:center;gap:6px;margin:0 6px;padding:0 8px;display:flex}.TragPW_gitRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_gitRowSelected{background:var(--dsw-alias-interactive-bg-active)}.TragPW_gitRowMain{cursor:pointer;text-align:left;background:0 0;border:none;flex:1;align-items:center;gap:8px;min-width:0;padding:3px 0;display:flex}.TragPW_gitBadge{width:20px;height:16px;font:var(--dsw-font-xxxs-strong-11);background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-secondary);border-radius:4px;flex:none;justify-content:center;align-items:center;display:inline-flex}.TragPW_gitName{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.TragPW_gitEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);padding:4px 12px 8px}.TragPW_gitPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.TragPW_gitError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);white-space:pre-wrap;padding:8px 12px}.TragPW_gitDiff{border-top:1px solid var(--dsw-alias-border-l1);padding:8px}.TragPW_gitDiffTab{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.TragPW_gitDiffTabHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.TragPW_gitDiffTabTitle{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.TragPW_gitDiffFile{align-items:baseline;gap:6px;padding:8px 2px 2px;display:flex}.TragPW_gitDiffFilePath{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_gitDiffFileOld{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);text-overflow:ellipsis;white-space:nowrap;flex:none;max-width:40%;overflow:hidden}.TragPW_gitDiffFileTag{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-secondary);border-radius:999px;flex:none;padding:0 6px}.TragPW_gitDiffHunk{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);gap:8px;padding:3px 2px;display:flex}.TragPW_gitDiffHunkHeader{color:var(--dsw-alias-label-secondary);flex:none}.TragPW_gitDiffHunkSection{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_gitDiffLine{font:var(--dsw-font-markdown-code-block-small);white-space:pre-wrap;overflow-wrap:anywhere;align-items:stretch;min-width:0;line-height:20px;display:flex}.TragPW_gitDiffNum{text-align:right;width:36px;color:var(--dsw-alias-label-tertiary);user-select:none;flex:none;padding-right:8px}.TragPW_gitDiffCode{flex:1;min-width:0;overflow:visible}.TragPW_gitDiffCtx{color:var(--dsw-alias-label-primary)}.TragPW_gitDiffDel{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 12%, transparent)}.TragPW_gitDiffAdd{color:var(--dsw-alias-state-success-primary);background:color-mix(in srgb, var(--dsw-alias-state-success-primary) 12%, transparent)}.TragPW_gitDiffMeta{padding-left:2px}.TragPW_gitDiffMetaText{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);font-style:italic}.TragPW_gitDiffExpand{width:100%;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-brand-primary);cursor:pointer;text-align:center;background:0 0;border:none;margin:4px 0;display:block}.TragPW_gitDiffExpand:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_gitConfirmDesc{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);white-space:pre-wrap;margin:0}.TragPW_gitCommit{border-top:1px solid var(--dsw-alias-border-l1);align-items:center;gap:6px;padding:8px 12px;display:flex}.TragPW_gitCommitInput{flex:1;min-width:0}.TragPW_gitCommitButton{background:var(--dsw-alias-button-primary-fill);height:26px;color:var(--dsw-alias-label-primary-inverted);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border:none;border-radius:6px;flex:none;padding:0 12px}.TragPW_gitCommitButton:hover:not(:disabled){background:var(--dsw-alias-button-primary-hover)}.TragPW_gitCommitButton:disabled{opacity:.45;cursor:default}.TragPW_gitLogRow{cursor:pointer;border-radius:8px;flex-direction:column;gap:2px;padding:5px 12px;display:flex}.TragPW_gitLogRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_gitLogLine1{align-items:baseline;gap:8px;min-width:0;display:flex}.TragPW_gitLogHash{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);flex:none}.TragPW_gitLogLine2{flex-wrap:wrap;align-items:center;gap:6px;min-width:0;display:flex}.TragPW_gitLogRef{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-brand-primary);white-space:nowrap;border-radius:999px;flex:none;padding:0 5px}.TragPW_gitLogSubject{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.TragPW_gitLogMeta{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.TragPW_gitLogMore{border:1px solid var(--dsw-alias-border-l2);width:calc(100% - 24px);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border-radius:6px;margin:4px 12px 8px;padding:6px 0;display:block}.TragPW_gitLogMore:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_gitLogMore:disabled{opacity:.5;cursor:default}.TragPW_producedRow{flex-wrap:wrap;align-items:center;gap:8px;padding:4px 0;display:flex}.TragPW_producedLabel{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_producedChip{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);max-width:200px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-12);cursor:pointer;border-radius:999px;align-items:center;gap:4px;padding:2px 8px;display:inline-flex;overflow:hidden}.TragPW_producedChip:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_producedChip span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_producedMore{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_toggleButton:focus-visible,.TragPW_bottomClose:focus-visible,.TragPW_iconButton:focus-visible,.TragPW_tab:focus-visible,.TragPW_tabClose:focus-visible,.TragPW_tabBarPlus:focus-visible,.TragPW_paneCard:focus-visible,.TragPW_explorerRow:focus-visible,.TragPW_explorerRef:focus-visible,.TragPW_gitRowMain:focus-visible,.TragPW_gitLink:focus-visible,.TragPW_gitCommitButton:focus-visible,.TragPW_gitLogRow:focus-visible,.TragPW_gitLogMore:focus-visible,.TragPW_gitDiffExpand:focus-visible,.TragPW_terminalRetry:focus-visible,.TragPW_editorModeButton:focus-visible,.TragPW_editorDownloadLink:focus-visible,.TragPW_editorPptxButton:focus-visible,.TragPW_editorDocxZoomRange:focus-visible{outline:2px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}@media (prefers-reduced-motion:reduce){.TragPW_panel,.TragPW_panelHidden,.TragPW_bottomPanel,.TragPW_bottomPanelHidden,.TragPW_toggleCluster,.TragPW_toggleButton,.TragPW_tab,.TragPW_tabBarPlus,.TragPW_paneCard,.TragPW_explorerRow,.TragPW_gitRow,.TragPW_divider,.TragPW_dividerRow:after,.TragPW_dividerCol:after{transition:none;animation:none}}@media (width<=767px){.TragPW_panel:not(.TragPW_panelHidden) .TragPW_tabBar{padding-right:40px}.TragPW_tab{min-width:48px;max-width:128px}}";
 	const tagId = "dsh-better-sidebar/sidebar.module.css";
 	if (typeof document !== "undefined" && document.querySelector("style[data-plugin-css=" + JSON.stringify(tagId) + "]") === null) {
 		const tag = document.createElement("style");
@@ -7718,185 +7718,185 @@ globalThis.__dshChunks__["terminal"] = (require) => {
 		document.head.appendChild(tag);
 	}
 	var sidebar_module_css_default = {
-		"tabBar": "f7MvrG_tabBar",
-		"gitDiffFileOld": "f7MvrG_gitDiffFileOld",
-		"panelResize": "f7MvrG_panelResize",
-		"editorImage": "f7MvrG_editorImage",
-		"editorDocxViewport": "f7MvrG_editorDocxViewport",
-		"dropLeft": "f7MvrG_dropLeft",
-		"divider": "f7MvrG_divider",
-		"explorerName": "f7MvrG_explorerName",
-		"sandboxStatusOn": "f7MvrG_sandboxStatusOn",
-		"gitDiffCtx": "f7MvrG_gitDiffCtx",
-		"panel": "f7MvrG_panel",
-		"gitCommitInput": "f7MvrG_gitCommitInput",
-		"explorerHidden": "f7MvrG_explorerHidden",
-		"explorerHeader": "f7MvrG_explorerHeader",
-		"paneCardShortcut": "f7MvrG_paneCardShortcut",
-		"browserInput": "f7MvrG_browserInput",
-		"editorMd": "f7MvrG_editorMd",
-		"editorOfficeOverlay": "f7MvrG_editorOfficeOverlay",
-		"gitDiffTabHeader": "f7MvrG_gitDiffTabHeader",
-		"editor": "f7MvrG_editor",
-		"splitCol": "f7MvrG_splitCol",
-		"tabList": "f7MvrG_tabList",
-		"tabBarPlus": "f7MvrG_tabBarPlus",
-		"terminalRetry": "f7MvrG_terminalRetry",
-		"browserBlockedDesc": "f7MvrG_browserBlockedDesc",
-		"explorerError": "f7MvrG_explorerError",
-		"panelBody": "f7MvrG_panelBody",
-		"gitRow": "f7MvrG_gitRow",
-		"bottomPanelHidden": "f7MvrG_bottomPanelHidden",
-		"editorError": "f7MvrG_editorError",
-		"browser": "f7MvrG_browser",
-		"gitEmpty": "f7MvrG_gitEmpty",
-		"gitLogRow": "f7MvrG_gitLogRow",
-		"gitPlaceholder": "f7MvrG_gitPlaceholder",
-		"paneTab": "f7MvrG_paneTab",
-		"editorPdf": "f7MvrG_editorPdf",
-		"editorModeButton": "f7MvrG_editorModeButton",
-		"editorModeToggle": "f7MvrG_editorModeToggle",
-		"terminal": "f7MvrG_terminal",
-		"gitDiffTab": "f7MvrG_gitDiffTab",
-		"iconButton": "f7MvrG_iconButton",
-		"sandboxStatusText": "f7MvrG_sandboxStatusText",
-		"splitChild": "f7MvrG_splitChild",
-		"explorerRoot": "f7MvrG_explorerRoot",
-		"editorDocxWrap": "f7MvrG_editorDocxWrap",
-		"gitDiffFileTag": "f7MvrG_gitDiffFileTag",
-		"tab": "f7MvrG_tab",
-		"gitSectionHeader": "f7MvrG_gitSectionHeader",
-		"gitDiffHunkHeader": "f7MvrG_gitDiffHunkHeader",
-		"editorPdfDragShieldActive": "f7MvrG_editorPdfDragShieldActive",
-		"gitLink": "f7MvrG_gitLink",
-		"gitDiffNum": "f7MvrG_gitDiffNum",
-		"editorModeActive": "f7MvrG_editorModeActive",
-		"bottomResizeActive": "f7MvrG_bottomResizeActive",
-		"paneTabHidden": "f7MvrG_paneTabHidden",
-		"editorImageWrap": "f7MvrG_editorImageWrap",
-		"explorerBody": "f7MvrG_explorerBody",
-		"editorCmHidden": "f7MvrG_editorCmHidden",
-		"selectionPopup": "f7MvrG_selectionPopup",
-		"editorStatus": "f7MvrG_editorStatus",
-		"pane": "f7MvrG_pane",
-		"sandboxStatus": "f7MvrG_sandboxStatus",
-		"gitBadge": "f7MvrG_gitBadge",
-		"editorPdfFrameBlocked": "f7MvrG_editorPdfFrameBlocked",
-		"editorPptxPosition": "f7MvrG_editorPptxPosition",
-		"editorTitle": "f7MvrG_editorTitle",
-		"panelHidden": "f7MvrG_panelHidden",
-		"dropDown": "f7MvrG_dropDown",
-		"gitDiffMeta": "f7MvrG_gitDiffMeta",
-		"editorPptx": "f7MvrG_editorPptx",
-		"editorDocx": "f7MvrG_editorDocx",
-		"panelResizeActive": "f7MvrG_panelResizeActive",
-		"paneDrop": "f7MvrG_paneDrop",
-		"explorer": "f7MvrG_explorer",
-		"editorPdfToolbar": "f7MvrG_editorPdfToolbar",
-		"editorXlsx": "f7MvrG_editorXlsx",
-		"terminalBannerUrl": "f7MvrG_terminalBannerUrl",
-		"editorBinaryNotice": "f7MvrG_editorBinaryNotice",
-		"git": "f7MvrG_git",
-		"gitName": "f7MvrG_gitName",
-		"gitCommitButton": "f7MvrG_gitCommitButton",
-		"gitLogMeta": "f7MvrG_gitLogMeta",
-		"browserBlockedTitle": "f7MvrG_browserBlockedTitle",
-		"editorPptxHost": "f7MvrG_editorPptxHost",
-		"explorerDir": "f7MvrG_explorerDir",
-		"workbench": "f7MvrG_workbench",
-		"bottomPanel": "f7MvrG_bottomPanel",
-		"editorPlaceholder": "f7MvrG_editorPlaceholder",
-		"orphanedType": "f7MvrG_orphanedType",
-		"splitRow": "f7MvrG_splitRow",
-		"explorerRef": "f7MvrG_explorerRef",
-		"paneEmptyCards": "f7MvrG_paneEmptyCards",
-		"editorCm": "f7MvrG_editorCm",
-		"gitDiffExpand": "f7MvrG_gitDiffExpand",
-		"editorStatusError": "f7MvrG_editorStatusError",
-		"gitLogHash": "f7MvrG_gitLogHash",
-		"split": "f7MvrG_split",
-		"explorerCopied": "f7MvrG_explorerCopied",
-		"browserStart": "f7MvrG_browserStart",
-		"gitDiffHunkSection": "f7MvrG_gitDiffHunkSection",
-		"bottomClose": "f7MvrG_bottomClose",
-		"tabClose": "f7MvrG_tabClose",
-		"editorDocxZoom": "f7MvrG_editorDocxZoom",
-		"editorPptxToolbar": "f7MvrG_editorPptxToolbar",
-		"gitError": "f7MvrG_gitError",
-		"editorBinary": "f7MvrG_editorBinary",
-		"gitLogLine1": "f7MvrG_gitLogLine1",
-		"editorHeader": "f7MvrG_editorHeader",
-		"browserBar": "f7MvrG_browserBar",
-		"editorPdfDragShield": "f7MvrG_editorPdfDragShield",
-		"gitLogSubject": "f7MvrG_gitLogSubject",
-		"browserBlockedActions": "f7MvrG_browserBlockedActions",
-		"paneCardLabel": "f7MvrG_paneCardLabel",
-		"terminalBanner": "f7MvrG_terminalBanner",
-		"editorDocxZoomHint": "f7MvrG_editorDocxZoomHint",
-		"gitDiffLine": "f7MvrG_gitDiffLine",
-		"dropCenter": "f7MvrG_dropCenter",
-		"editorHtml": "f7MvrG_editorHtml",
-		"gitLogLine2": "f7MvrG_gitLogLine2",
-		"producedRow": "f7MvrG_producedRow",
-		"explorerEmpty": "f7MvrG_explorerEmpty",
-		"tabBarDrop": "f7MvrG_tabBarDrop",
-		"gitLogMore": "f7MvrG_gitLogMore",
-		"editorDownloadLink": "f7MvrG_editorDownloadLink",
-		"gitDiffDel": "f7MvrG_gitDiffDel",
-		"sandboxDot": "f7MvrG_sandboxDot",
-		"editorPptxButton": "f7MvrG_editorPptxButton",
-		"gitBranchSelect": "f7MvrG_gitBranchSelect",
-		"dsh-row-in": "f7MvrG_dsh-row-in",
-		"producedChip": "f7MvrG_producedChip",
-		"tabActive": "f7MvrG_tabActive",
-		"editorDocxZoomValue": "f7MvrG_editorDocxZoomValue",
-		"dropOverlay": "f7MvrG_dropOverlay",
-		"editorUniverHost": "f7MvrG_editorUniverHost",
-		"browserFrame": "f7MvrG_browserFrame",
-		"dividerActive": "f7MvrG_dividerActive",
-		"gitDiffAdd": "f7MvrG_gitDiffAdd",
-		"tabTitle": "f7MvrG_tabTitle",
-		"editorPdfStage": "f7MvrG_editorPdfStage",
-		"editorPptxStage": "f7MvrG_editorPptxStage",
-		"dropUp": "f7MvrG_dropUp",
-		"dropRight": "f7MvrG_dropRight",
-		"gitHeader": "f7MvrG_gitHeader",
-		"gitDiffHunk": "f7MvrG_gitDiffHunk",
-		"browserBlocked": "f7MvrG_browserBlocked",
-		"paneCard": "f7MvrG_paneCard",
-		"gitDiffMetaText": "f7MvrG_gitDiffMetaText",
-		"gitConfirmDesc": "f7MvrG_gitConfirmDesc",
-		"boundaryError": "f7MvrG_boundaryError",
-		"gitDiffFilePath": "f7MvrG_gitDiffFilePath",
-		"gitDiffTabTitle": "f7MvrG_gitDiffTabTitle",
-		"terminalWrap": "f7MvrG_terminalWrap",
-		"browserMessage": "f7MvrG_browserMessage",
-		"gitSection": "f7MvrG_gitSection",
-		"editorPdfFrame": "f7MvrG_editorPdfFrame",
-		"dividerCol": "f7MvrG_dividerCol",
-		"sandboxStatusOff": "f7MvrG_sandboxStatusOff",
-		"toggleCluster": "f7MvrG_toggleCluster",
-		"explorerRow": "f7MvrG_explorerRow",
-		"dirtyDot": "f7MvrG_dirtyDot",
-		"editorDocxZoomRange": "f7MvrG_editorDocxZoomRange",
-		"gitRowSelected": "f7MvrG_gitRowSelected",
-		"producedLabel": "f7MvrG_producedLabel",
-		"gitCommit": "f7MvrG_gitCommit",
-		"producedMore": "f7MvrG_producedMore",
-		"gitDiff": "f7MvrG_gitDiff",
-		"cornerHandle": "f7MvrG_cornerHandle",
-		"toggleButton": "f7MvrG_toggleButton",
-		"gitDiffCode": "f7MvrG_gitDiffCode",
-		"dividerRow": "f7MvrG_dividerRow",
-		"gitLogRef": "f7MvrG_gitLogRef",
-		"paneCardIcon": "f7MvrG_paneCardIcon",
-		"paneContent": "f7MvrG_paneContent",
-		"editorBanner": "f7MvrG_editorBanner",
-		"gitRowMain": "f7MvrG_gitRowMain",
-		"gitDiffFile": "f7MvrG_gitDiffFile",
-		"bottomResize": "f7MvrG_bottomResize",
-		"browserBlockedButton": "f7MvrG_browserBlockedButton",
-		"sandboxAction": "f7MvrG_sandboxAction"
+		"tabBarDrop": "TragPW_tabBarDrop",
+		"browserBlockedButton": "TragPW_browserBlockedButton",
+		"gitDiffFileTag": "TragPW_gitDiffFileTag",
+		"orphanedType": "TragPW_orphanedType",
+		"bottomPanel": "TragPW_bottomPanel",
+		"terminalBannerUrl": "TragPW_terminalBannerUrl",
+		"gitLink": "TragPW_gitLink",
+		"gitLogRef": "TragPW_gitLogRef",
+		"explorerBody": "TragPW_explorerBody",
+		"panel": "TragPW_panel",
+		"terminalRetry": "TragPW_terminalRetry",
+		"tabActive": "TragPW_tabActive",
+		"explorerRef": "TragPW_explorerRef",
+		"workbench": "TragPW_workbench",
+		"gitBadge": "TragPW_gitBadge",
+		"gitDiffFileOld": "TragPW_gitDiffFileOld",
+		"browserBlocked": "TragPW_browserBlocked",
+		"editorMd": "TragPW_editorMd",
+		"editorPdfDragShieldActive": "TragPW_editorPdfDragShieldActive",
+		"dropOverlay": "TragPW_dropOverlay",
+		"editorDocxZoomHint": "TragPW_editorDocxZoomHint",
+		"editor": "TragPW_editor",
+		"editorPptxHost": "TragPW_editorPptxHost",
+		"paneDrop": "TragPW_paneDrop",
+		"toggleCluster": "TragPW_toggleCluster",
+		"editorPdfFrameBlocked": "TragPW_editorPdfFrameBlocked",
+		"gitDiffTabTitle": "TragPW_gitDiffTabTitle",
+		"paneTabHidden": "TragPW_paneTabHidden",
+		"gitCommit": "TragPW_gitCommit",
+		"editorDownloadLink": "TragPW_editorDownloadLink",
+		"browserFrame": "TragPW_browserFrame",
+		"gitRowMain": "TragPW_gitRowMain",
+		"gitDiffTab": "TragPW_gitDiffTab",
+		"gitRowSelected": "TragPW_gitRowSelected",
+		"pane": "TragPW_pane",
+		"selectionPopup": "TragPW_selectionPopup",
+		"browserInput": "TragPW_browserInput",
+		"producedRow": "TragPW_producedRow",
+		"gitDiffFilePath": "TragPW_gitDiffFilePath",
+		"gitCommitInput": "TragPW_gitCommitInput",
+		"bottomResizeActive": "TragPW_bottomResizeActive",
+		"tabList": "TragPW_tabList",
+		"editorPdfDragShield": "TragPW_editorPdfDragShield",
+		"explorerRow": "TragPW_explorerRow",
+		"gitLogSubject": "TragPW_gitLogSubject",
+		"panelResize": "TragPW_panelResize",
+		"divider": "TragPW_divider",
+		"editorXlsx": "TragPW_editorXlsx",
+		"editorOfficeOverlay": "TragPW_editorOfficeOverlay",
+		"gitDiffDel": "TragPW_gitDiffDel",
+		"paneContent": "TragPW_paneContent",
+		"editorDocxZoom": "TragPW_editorDocxZoom",
+		"gitHeader": "TragPW_gitHeader",
+		"editorModeButton": "TragPW_editorModeButton",
+		"gitDiffMetaText": "TragPW_gitDiffMetaText",
+		"editorHtml": "TragPW_editorHtml",
+		"gitLogRow": "TragPW_gitLogRow",
+		"tabBar": "TragPW_tabBar",
+		"tabTitle": "TragPW_tabTitle",
+		"tabClose": "TragPW_tabClose",
+		"editorError": "TragPW_editorError",
+		"gitBranchSelect": "TragPW_gitBranchSelect",
+		"gitEmpty": "TragPW_gitEmpty",
+		"gitDiffExpand": "TragPW_gitDiffExpand",
+		"gitLogMore": "TragPW_gitLogMore",
+		"explorerRoot": "TragPW_explorerRoot",
+		"editorPdfToolbar": "TragPW_editorPdfToolbar",
+		"editorPdf": "TragPW_editorPdf",
+		"editorPptxStage": "TragPW_editorPptxStage",
+		"terminalBanner": "TragPW_terminalBanner",
+		"gitDiffCtx": "TragPW_gitDiffCtx",
+		"sandboxStatusText": "TragPW_sandboxStatusText",
+		"dividerActive": "TragPW_dividerActive",
+		"dirtyDot": "TragPW_dirtyDot",
+		"browserBlockedDesc": "TragPW_browserBlockedDesc",
+		"splitChild": "TragPW_splitChild",
+		"editorPptx": "TragPW_editorPptx",
+		"sandboxStatusOff": "TragPW_sandboxStatusOff",
+		"terminalWrap": "TragPW_terminalWrap",
+		"gitSectionHeader": "TragPW_gitSectionHeader",
+		"gitName": "TragPW_gitName",
+		"gitDiffAdd": "TragPW_gitDiffAdd",
+		"gitDiffMeta": "TragPW_gitDiffMeta",
+		"dividerCol": "TragPW_dividerCol",
+		"gitPlaceholder": "TragPW_gitPlaceholder",
+		"cornerHandle": "TragPW_cornerHandle",
+		"dividerRow": "TragPW_dividerRow",
+		"gitDiffTabHeader": "TragPW_gitDiffTabHeader",
+		"editorHeader": "TragPW_editorHeader",
+		"editorCmHidden": "TragPW_editorCmHidden",
+		"editorBinaryNotice": "TragPW_editorBinaryNotice",
+		"gitDiffHunkHeader": "TragPW_gitDiffHunkHeader",
+		"splitCol": "TragPW_splitCol",
+		"paneCardIcon": "TragPW_paneCardIcon",
+		"gitDiffFile": "TragPW_gitDiffFile",
+		"explorerHeader": "TragPW_explorerHeader",
+		"explorer": "TragPW_explorer",
+		"gitDiffLine": "TragPW_gitDiffLine",
+		"terminal": "TragPW_terminal",
+		"explorerDir": "TragPW_explorerDir",
+		"paneCard": "TragPW_paneCard",
+		"panelBody": "TragPW_panelBody",
+		"editorTitle": "TragPW_editorTitle",
+		"browserBar": "TragPW_browserBar",
+		"gitDiffNum": "TragPW_gitDiffNum",
+		"gitLogHash": "TragPW_gitLogHash",
+		"panelHidden": "TragPW_panelHidden",
+		"editorDocxViewport": "TragPW_editorDocxViewport",
+		"paneCardShortcut": "TragPW_paneCardShortcut",
+		"gitDiffHunk": "TragPW_gitDiffHunk",
+		"browser": "TragPW_browser",
+		"browserBlockedTitle": "TragPW_browserBlockedTitle",
+		"paneEmptyCards": "TragPW_paneEmptyCards",
+		"editorImageWrap": "TragPW_editorImageWrap",
+		"producedLabel": "TragPW_producedLabel",
+		"browserStart": "TragPW_browserStart",
+		"editorBanner": "TragPW_editorBanner",
+		"iconButton": "TragPW_iconButton",
+		"sandboxAction": "TragPW_sandboxAction",
+		"explorerHidden": "TragPW_explorerHidden",
+		"editorPptxToolbar": "TragPW_editorPptxToolbar",
+		"sandboxDot": "TragPW_sandboxDot",
+		"gitDiffHunkSection": "TragPW_gitDiffHunkSection",
+		"gitConfirmDesc": "TragPW_gitConfirmDesc",
+		"gitLogMeta": "TragPW_gitLogMeta",
+		"gitDiffCode": "TragPW_gitDiffCode",
+		"dsh-row-in": "TragPW_dsh-row-in",
+		"editorDocx": "TragPW_editorDocx",
+		"dropLeft": "TragPW_dropLeft",
+		"editorPptxButton": "TragPW_editorPptxButton",
+		"editorDocxZoomRange": "TragPW_editorDocxZoomRange",
+		"explorerName": "TragPW_explorerName",
+		"editorDocxZoomValue": "TragPW_editorDocxZoomValue",
+		"producedChip": "TragPW_producedChip",
+		"editorBinary": "TragPW_editorBinary",
+		"sandboxStatus": "TragPW_sandboxStatus",
+		"splitRow": "TragPW_splitRow",
+		"explorerEmpty": "TragPW_explorerEmpty",
+		"bottomClose": "TragPW_bottomClose",
+		"editorModeToggle": "TragPW_editorModeToggle",
+		"git": "TragPW_git",
+		"editorDocxWrap": "TragPW_editorDocxWrap",
+		"editorImage": "TragPW_editorImage",
+		"bottomPanelHidden": "TragPW_bottomPanelHidden",
+		"bottomResize": "TragPW_bottomResize",
+		"dropDown": "TragPW_dropDown",
+		"explorerCopied": "TragPW_explorerCopied",
+		"dropUp": "TragPW_dropUp",
+		"editorStatusError": "TragPW_editorStatusError",
+		"editorModeActive": "TragPW_editorModeActive",
+		"editorPptxPosition": "TragPW_editorPptxPosition",
+		"gitSection": "TragPW_gitSection",
+		"gitCommitButton": "TragPW_gitCommitButton",
+		"explorerError": "TragPW_explorerError",
+		"editorStatus": "TragPW_editorStatus",
+		"browserBlockedActions": "TragPW_browserBlockedActions",
+		"dropCenter": "TragPW_dropCenter",
+		"sandboxStatusOn": "TragPW_sandboxStatusOn",
+		"paneCardLabel": "TragPW_paneCardLabel",
+		"split": "TragPW_split",
+		"tab": "TragPW_tab",
+		"gitError": "TragPW_gitError",
+		"boundaryError": "TragPW_boundaryError",
+		"browserMessage": "TragPW_browserMessage",
+		"tabBarPlus": "TragPW_tabBarPlus",
+		"gitLogLine1": "TragPW_gitLogLine1",
+		"gitDiff": "TragPW_gitDiff",
+		"dropRight": "TragPW_dropRight",
+		"editorPdfFrame": "TragPW_editorPdfFrame",
+		"editorPlaceholder": "TragPW_editorPlaceholder",
+		"editorUniverHost": "TragPW_editorUniverHost",
+		"paneTab": "TragPW_paneTab",
+		"editorCm": "TragPW_editorCm",
+		"panelResizeActive": "TragPW_panelResizeActive",
+		"producedMore": "TragPW_producedMore",
+		"gitLogLine2": "TragPW_gitLogLine2",
+		"gitRow": "TragPW_gitRow",
+		"editorPdfStage": "TragPW_editorPdfStage",
+		"toggleButton": "TragPW_toggleButton"
 	};
 	//#endregion
 	//#region src/client/TerminalView.tsx

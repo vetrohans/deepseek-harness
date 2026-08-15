@@ -30,8 +30,8 @@ const SIDEBAR_PREFS_NS = "dsh-better-sidebar";
 */
 /** Schemastery schema for the plugin configuration. */
 const Config = z.object({
-	readLimit: z.number().step(1).min(1).default(524288),
-	mediaLimit: z.number().step(1).min(1).default(20971520),
+	readLimit: z.number().step(1).min(1).default(512 * 1024),
+	mediaLimit: z.number().step(1).min(1).default(20 * 1024 * 1024),
 	listLimit: z.number().step(1).min(1).default(1e3),
 	terminalsPerSession: z.number().step(1).min(1).default(3),
 	reconnectGraceMs: z.number().step(1).min(0).default(3e4)
@@ -44,8 +44,8 @@ const Config = z.object({
 */
 function resolveSidebarConfig(config) {
 	return {
-		readLimit: config?.readLimit ?? 524288,
-		mediaLimit: config?.mediaLimit ?? 20971520,
+		readLimit: config?.readLimit ?? 512 * 1024,
+		mediaLimit: config?.mediaLimit ?? 20 * 1024 * 1024,
 		listLimit: config?.listLimit ?? 1e3,
 		terminalsPerSession: config?.terminalsPerSession ?? 3,
 		reconnectGraceMs: config?.reconnectGraceMs ?? 3e4
@@ -745,8 +745,7 @@ const TRANSCRIPT_LIMIT$1 = 1 << 20;
 function ensureSpawnHelper() {
 	if (process.platform === "win32") return;
 	try {
-		const entry = createRequire(import.meta.url).resolve("node-pty");
-		const packageRoot = dirname(dirname(entry));
+		const packageRoot = dirname(dirname(createRequire(import.meta.url).resolve("node-pty")));
 		const candidates = [join(packageRoot, "prebuilds", `${process.platform}-${process.arch}`, "spawn-helper"), join(packageRoot, "build", "Release", "spawn-helper")];
 		for (const helper of candidates) if (existsSync(helper)) chmodSync(helper, 493);
 	} catch {}
@@ -1251,7 +1250,7 @@ var AgentPtyRegistry = class {
 *   C10 — no UI/transport vocabulary in the canonical value.
 */
 /** Maximum UTF-8 bytes of one `terminal_read` result text. */
-const READ_BYTE_LIMIT = 262144;
+const READ_BYTE_LIMIT = 256 * 1024;
 /**
 * Bound a string to a byte limit, marking truncation. Truncation never
 * splits a multi-byte UTF-8 sequence: when the byte cap lands inside one,
@@ -2042,8 +2041,7 @@ function sessionCwdOf(ctx, sessionId, clientCwd) {
 */
 async function resolveGitPath(cwd, raw) {
 	if (isAbsolute(raw)) return requireAbsolute(raw);
-	const root = await repoRoot(cwd).catch(() => cwd);
-	return requireAbsolute(join(root, raw));
+	return requireAbsolute(join(await repoRoot(cwd).catch(() => cwd), raw));
 }
 /** How many leading bytes a binary read returns for client-side detect sniffing. */
 const READ_HEAD_LIMIT = 4096;
@@ -2530,7 +2528,7 @@ async function attachTerminal(ctx, ptyManager, agentPtyRegistry, ws, req, resolv
 		const handle = ptyManager.open(sessionId, tabId, cwd, 80, 24);
 		if (handle.transcript !== "") ws.send(handle.transcript);
 		const onData = (data) => {
-			if (ws.readyState === WebSocket.OPEN && ws.bufferedAmount < 4194304) ws.send(data);
+			if (ws.readyState === WebSocket.OPEN && ws.bufferedAmount < 4 * 1024 * 1024) ws.send(data);
 		};
 		const onExit = ({ exitCode }) => {
 			onData(`\r\n[process exited with code ${String(exitCode)}]\r\n`);
@@ -2573,7 +2571,7 @@ async function attachTerminal(ctx, ptyManager, agentPtyRegistry, ws, req, resolv
 function pumpAgentTerminal(registry, handle, ws) {
 	if (handle.transcript !== "") ws.send(handle.transcript);
 	const onData = (data) => {
-		if (ws.readyState === WebSocket.OPEN && ws.bufferedAmount < 4194304) ws.send(data);
+		if (ws.readyState === WebSocket.OPEN && ws.bufferedAmount < 4 * 1024 * 1024) ws.send(data);
 	};
 	const onExit = ({ exitCode }) => {
 		onData(`\r\n[process exited with code ${String(exitCode)}]\r\n`);

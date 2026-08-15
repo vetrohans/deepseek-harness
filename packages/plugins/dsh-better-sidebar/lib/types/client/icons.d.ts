@@ -16,9 +16,9 @@ export declare const IconPanelBottomCloseOutline16: ({ size, className }: IconPr
 export declare const IconRefreshCw16: ({ size, className }: IconProps) => import("react").JSX.Element;
 /** Explorer (资源管理器) tab glyph (folders). */
 export declare const IconExplorerOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
-/** Source control (源代码管理) tab glyph (git-merge). */
+/** IconGitOutline16: lucide glyph (user SVG set). */
 export declare const IconGitOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
-/** Jobs / task management (任务管理) tab glyph (calendar-clock). */
+/** IconJobsOutline16: lucide glyph (user SVG set). */
 export declare const IconJobsOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
 /** Terminal tab glyph (square-terminal). */
 export declare const IconTerminalOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
@@ -31,17 +31,21 @@ export declare const IconDiffOutline16: ({ size, className }: IconProps) => impo
  * app's outline scale (16), the universal "halt this work" mark.
  */
 export declare const IconStopOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
-/** Image viewer glyph: a picture frame with a sun and a mountain. */
+/** IconImageOutline16: lucide glyph (user SVG set). */
 export declare const IconImageOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
-/** PDF viewer glyph: a document frame with the "PDF" label. */
+/** IconPdfOutline16: lucide glyph (user SVG set). */
 export declare const IconPdfOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
-/** Word viewer glyph: a document frame with a "W". */
+/** IconDocxOutline16: lucide glyph (user SVG set). */
 export declare const IconDocxOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
-/** Excel viewer glyph: a spreadsheet grid. */
+/** IconXlsxOutline16: lucide glyph (user SVG set). */
 export declare const IconXlsxOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
-/** PowerPoint viewer glyph: a chart with rising bars. */
+/** IconPptxOutline16: lucide glyph (user SVG set). */
 export declare const IconPptxOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
-/** Markdown viewer glyph: the classic "M with a down arrow" badge. */
+/** IconMarkdownOutline16: lucide glyph (user SVG set). */
 export declare const IconMarkdownOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
-/** HTML viewer glyph: a document frame with a "‹/›" tag pair. */
+/** IconHtmlOutline16: lucide glyph (user SVG set). */
 export declare const IconHtmlOutline16: ({ size, className }: IconProps) => import("react").JSX.Element;
+/** Code viewer glyph: lucide file-code (file-code.svg). */
+export declare const IconCodeFile16: ({ size, className }: IconProps) => import("react").JSX.Element;
+/** Binary-download viewer glyph: lucide hard-drive-download. */
+export declare const IconBinaryDownload16: ({ size, className }: IconProps) => import("react").JSX.Element;

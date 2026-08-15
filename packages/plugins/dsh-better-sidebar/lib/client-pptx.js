@@ -10,14 +10,7 @@ globalThis.__dshChunks__["pptx"] = (require) => {
 	var __getOwnPropNames = Object.getOwnPropertyNames;
 	var __getProtoOf = Object.getPrototypeOf;
 	var __hasOwnProp = Object.prototype.hasOwnProperty;
-	var __esmMin = (fn, res, err) => () => {
-		if (err) throw err[0];
-		try {
-			return fn && (res = fn(fn = 0)), res;
-		} catch (e) {
-			throw err = [e], e;
-		}
-	};
+	var __esmMin = (fn, res) => () => (fn && (res = fn(fn = 0)), res);
 	var __commonJSMin = (cb, mod) => () => (mod || (cb((mod = { exports: {} }).exports, mod), cb = null), mod.exports);
 	var __exportAll = (all, no_symbols) => {
 		let target = {};
@@ -38,7 +31,7 @@ globalThis.__dshChunks__["pptx"] = (require) => {
 		}
 		return to;
 	};
-	var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule || !__hasOwnProp.call(mod, "default") ? __defProp(target, "default", {
+	var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", {
 		value: mod,
 		enumerable: true
 	}) : target, mod));
@@ -509,8 +502,8 @@ globalThis.__dshChunks__["pptx"] = (require) => {
 		return text;
 	}
 	//#endregion
-	//#region \0dsh-css:/Users/yunsheng/.dsh/UI功能改动/dsh-better-sidebar/src/client/sidebar.module.css.mjs
-	const css = ".f7MvrG_toggleCluster{z-index:55;flex-direction:row;gap:4px;display:flex;position:fixed;top:3px;right:10px}.f7MvrG_panel:not(.f7MvrG_panelHidden) .f7MvrG_tabBar{padding-right:72px}.f7MvrG_toggleButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), color var(--ds-transition-duration-slow) var(--ds-ease-in-out);background:0 0;border:none;border-radius:50%;justify-content:center;align-items:center;display:flex}.f7MvrG_toggleButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_toggleButton:disabled{opacity:.4;cursor:default}.f7MvrG_panel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-left:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;top:0;bottom:0;right:0}.f7MvrG_panelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translate(102%)}.f7MvrG_panel[data-dragging]{transition:none}.f7MvrG_panelResize{cursor:col-resize;z-index:2;touch-action:none;width:8px;position:absolute;top:0;bottom:0;left:-4px}.f7MvrG_panelResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_panelBody{flex:1;min-width:0;min-height:0;display:flex}.f7MvrG_bottomPanel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-top:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;bottom:0}.f7MvrG_bottomPanelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translateY(102%)}.f7MvrG_bottomPanel[data-dragging]{transition:none}.f7MvrG_bottomResize{cursor:row-resize;z-index:2;touch-action:none;height:8px;position:absolute;top:-4px;left:0;right:0}.f7MvrG_bottomResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_bottomClose{z-index:4;width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex;position:absolute;top:3px;right:6px}.f7MvrG_bottomClose:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_bottomPanel .f7MvrG_tabBar{padding-right:40px}.f7MvrG_cornerHandle{z-index:52;cursor:nwse-resize;touch-action:none;width:12px;height:12px;position:fixed}.f7MvrG_cornerHandle:hover,.f7MvrG_cornerHandle[data-dragging]{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_iconButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.f7MvrG_iconButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_iconButton:disabled{opacity:.4;cursor:default}.f7MvrG_workbench,.f7MvrG_split{flex:1;min-width:0;min-height:0;display:flex}.f7MvrG_splitRow{flex-direction:row}.f7MvrG_splitCol{flex-direction:column}.f7MvrG_splitChild{display:flex;position:relative;overflow:hidden}.f7MvrG_divider{z-index:3;touch-action:none;flex:none;position:relative}.f7MvrG_dividerRow:after,.f7MvrG_dividerCol:after{content:\"\";background:var(--dsw-alias-border-l2);transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out);position:absolute}.f7MvrG_dividerRow{cursor:col-resize;width:7px;margin:0 -2px}.f7MvrG_dividerRow:after{width:1px;top:0;bottom:0;left:50%;transform:translate(-50%)}.f7MvrG_dividerCol{cursor:row-resize;height:7px;margin:-2px 0}.f7MvrG_dividerCol:after{height:1px;top:50%;left:0;right:0;transform:translateY(-50%)}.f7MvrG_divider:hover:after,.f7MvrG_dividerActive:after{background:var(--dsw-alias-interactive-bg-hover-accent)}.f7MvrG_pane{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;position:relative}.f7MvrG_paneDrop{outline:1px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.f7MvrG_dropOverlay{z-index:6;pointer-events:none;background:var(--dsw-alias-interactive-bg-hover-accent);opacity:.5;position:absolute}.f7MvrG_dropLeft{width:25%;top:0;bottom:0;left:0}.f7MvrG_dropRight{width:25%;top:0;bottom:0;right:0}.f7MvrG_dropUp{height:25%;top:0;left:0;right:0}.f7MvrG_dropDown{height:25%;bottom:0;left:0;right:0}.f7MvrG_dropCenter{outline:2px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-2px;background:0 0;inset:25%}.f7MvrG_paneContent{flex-direction:column;flex:1;min-height:0;display:flex;overflow:hidden}.f7MvrG_paneTab{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_paneTabHidden{display:none}.f7MvrG_paneEmptyCards{flex-direction:column;flex:1;justify-content:center;gap:2px;min-height:0;padding:8px 10px;display:flex;overflow:hidden}.f7MvrG_paneCard{width:100%;min-width:0;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;text-align:left;background:0 0;border:none;border-radius:6px;align-items:center;gap:10px;padding:8px 10px;display:flex}.f7MvrG_paneCard:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_paneCard:disabled{opacity:.45;cursor:default}.f7MvrG_paneCardIcon{color:var(--dsw-alias-label-secondary);flex:none;align-items:center;display:inline-flex}.f7MvrG_paneCardLabel{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.f7MvrG_paneCardShortcut{color:var(--dsw-alias-label-tertiary);background:var(--dsw-alias-interactive-bg-hover);white-space:nowrap;border-radius:6px;flex:none;padding:1px 7px;font-size:11px;line-height:18px}.f7MvrG_tabBar{border-bottom:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:stretch;height:34px;display:flex}.f7MvrG_tabBarDrop{outline:1px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.f7MvrG_tabList{scrollbar-width:none;flex:1;min-width:0;display:flex;overflow-x:auto}.f7MvrG_tabList::-webkit-scrollbar{display:none}.f7MvrG_tab{min-width:64px;max-width:160px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);border-right:1px solid var(--dsw-alias-border-l1);cursor:pointer;user-select:none;background:0 0;flex:none;align-items:center;gap:4px;padding:0 4px 0 10px;display:flex}.f7MvrG_tab:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_tabActive{color:var(--dsw-alias-label-primary);background:var(--dsw-alias-interactive-bg-active)}.f7MvrG_tabTitle{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.f7MvrG_tabClose{width:18px;height:18px;color:var(--dsw-alias-label-tertiary);cursor:pointer;background:0 0;border:none;border-radius:4px;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.f7MvrG_tabClose:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_tabBarPlus{background:var(--dsw-alias-bg-layer-1);width:22px;height:22px;color:var(--dsw-alias-label-tertiary);cursor:pointer;border:none;border-radius:5px;flex:none;justify-content:center;align-self:center;align-items:center;margin:0 6px;padding:0;display:inline-flex;position:sticky;right:0}.f7MvrG_tabBarPlus:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_explorer{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_explorerHeader{flex:none;justify-content:space-between;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.f7MvrG_explorerRoot{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_explorerBody{flex:1;min-height:0;padding:2px 6px 8px;overflow-y:auto}.f7MvrG_explorerRow{width:100%;height:34px;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);text-align:left;cursor:pointer;white-space:nowrap;animation:f7MvrG_dsh-row-in .15s var(--ds-ease-in-out);background:0 0;border:none;border-radius:8px;align-items:center;gap:6px;padding:0 8px;display:flex}.f7MvrG_explorerRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_explorerDir{font:var(--dsw-font-s-strong-14)}.f7MvrG_explorerHidden{opacity:.45}.f7MvrG_explorerName{text-overflow:ellipsis;overflow:hidden}.f7MvrG_explorerRef{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:20px;color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;align-items:center;padding:0 8px;display:none}.f7MvrG_explorerRef:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_explorerRow:hover .f7MvrG_explorerRef,.f7MvrG_explorerRow:focus-within .f7MvrG_explorerRef{display:inline-flex}.f7MvrG_explorerCopied{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.f7MvrG_explorerError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);cursor:default}@keyframes f7MvrG_dsh-row-in{0%{opacity:0}}.f7MvrG_explorerEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.f7MvrG_editor{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:6px;padding:4px 8px;display:flex}.f7MvrG_editorTitle{min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;flex:1;overflow:hidden}.f7MvrG_editorStatus{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.f7MvrG_editorStatusError{color:var(--dsw-alias-state-error-primary)}.f7MvrG_dirtyDot{background:var(--dsw-alias-state-warn-primary);border-radius:50%;flex:none;width:7px;height:7px}.f7MvrG_editorPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;flex:1;justify-content:center;align-items:center;padding:16px;display:flex}.f7MvrG_orphanedType{opacity:.7;overflow-wrap:anywhere;margin-top:8px;font-size:12px;display:block}.f7MvrG_editorBinary{text-align:center;flex-direction:column;flex:1;justify-content:center;align-items:center;gap:12px;padding:24px 16px;display:flex}.f7MvrG_editorBinaryNotice{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_editorDownloadLink{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), border-color var(--ds-transition-duration-slow) var(--ds-ease-in-out);border-radius:6px;align-items:center;gap:6px;padding:6px 14px;text-decoration:none;display:inline-flex}.f7MvrG_editorDownloadLink:hover{background:var(--dsw-alias-interactive-bg-hover);border-color:var(--dsw-alias-border-l2)}.f7MvrG_editorError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);padding:12px 16px}.f7MvrG_editorBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.f7MvrG_sandboxStatus{font:var(--dsw-font-xxxs-11);flex:none;align-items:center;gap:8px;padding:4px 10px;display:flex}.f7MvrG_sandboxStatusOn{color:var(--dsw-alias-label-secondary);background:var(--dsw-alias-bg-layer-1);border-bottom:1px solid var(--dsw-alias-border-l1)}.f7MvrG_sandboxStatusOff{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 10%, transparent);border-bottom:1px solid color-mix(in srgb, var(--dsw-alias-state-error-primary) 45%, transparent)}.f7MvrG_sandboxDot{background:var(--dsw-alias-state-success-primary);border-radius:50%;flex:none;width:6px;height:6px}.f7MvrG_sandboxStatusOff .f7MvrG_sandboxDot{background:var(--dsw-alias-state-error-primary)}.f7MvrG_sandboxStatusText{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.f7MvrG_sandboxAction{border:1px solid var(--dsw-alias-border-l2);font:inherit;color:inherit;cursor:pointer;background:0 0;border-radius:6px;flex:none;padding:2px 8px}.f7MvrG_sandboxAction:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_editorHtml{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.f7MvrG_browser{flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_browserBar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:4px;padding:6px 8px;display:flex}.f7MvrG_browserInput{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);min-width:0;height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 10px}.f7MvrG_browserInput:focus{border-color:var(--dsw-alias-border-l2);outline:none}.f7MvrG_browserMessage{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.f7MvrG_browserFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.f7MvrG_browserStart{text-align:center;min-height:0;font:var(--dsw-font-xs-13);color:var(--dsw-alias-label-tertiary);flex:1;justify-content:center;align-items:center;padding:20px;display:flex}.f7MvrG_browserBlocked{text-align:center;min-height:0;color:var(--dsw-alias-state-warn-primary);flex-direction:column;flex:1;justify-content:center;align-items:center;gap:6px;padding:24px;display:flex}.f7MvrG_browserBlockedTitle{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary)}.f7MvrG_browserBlockedDesc{max-width:280px;font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-secondary)}.f7MvrG_browserBlockedActions{gap:8px;margin-top:6px;display:flex}.f7MvrG_browserBlockedButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-1);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-11);cursor:pointer;border-radius:6px;padding:4px 12px}.f7MvrG_browserBlockedButton:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_editorCm{background:0 0;flex:1;min-height:0;overflow:hidden}.f7MvrG_editorCmHidden{display:none}.f7MvrG_editorCm .cm-editor{height:100%}.f7MvrG_editorCm .cm-editor.cm-focused{outline:none}.f7MvrG_editorModeToggle{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);border-radius:6px;flex:none;align-items:center;gap:2px;padding:2px;display:inline-flex}.f7MvrG_editorModeButton{color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-11);cursor:pointer;background:0 0;border:none;border-radius:4px;padding:2px 8px}.f7MvrG_editorModeButton:hover{color:var(--dsw-alias-label-primary)}.f7MvrG_editorModeActive{background:var(--dsw-alias-bg-base);color:var(--dsw-alias-label-primary)}.f7MvrG_editorImageWrap{flex:1;justify-content:center;align-items:center;min-height:0;padding:12px;display:flex;overflow:auto}.f7MvrG_editorImage{object-fit:contain;max-width:100%;max-height:100%}.f7MvrG_editorMd{min-height:0;font:var(--dsw-font-xs-13);flex:1;padding:10px 14px;overflow-y:auto}.f7MvrG_selectionPopup{z-index:60;border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-strong-11);white-space:nowrap;cursor:pointer;border-radius:6px;align-items:center;padding:0 10px;display:inline-flex;position:fixed;transform:translate(-50%,calc(-100% - 8px))}.f7MvrG_selectionPopup:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_editorDocx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorDocxViewport{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;overflow:auto}.f7MvrG_editorDocxWrap{flex:none;padding:16px}.f7MvrG_editorDocxZoom{border-top:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:center;gap:8px;min-height:34px;padding:4px 10px;display:flex}.f7MvrG_editorDocxZoomHint,.f7MvrG_editorDocxZoomValue{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.f7MvrG_editorDocxZoomValue{text-align:right;width:36px}.f7MvrG_editorDocxZoomRange{min-width:72px;accent-color:var(--dsw-alias-brand-primary);cursor:pointer;flex:1}.f7MvrG_editorPdf{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorPdfToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:flex-end;padding:6px 8px;display:flex}.f7MvrG_editorPdfStage{flex:1;min-height:0;display:flex;position:relative}.f7MvrG_editorPdfFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.f7MvrG_editorPdfFrameBlocked{pointer-events:none}.f7MvrG_editorPdfDragShield{z-index:4;pointer-events:none;background:0 0;position:absolute;inset:0}.f7MvrG_editorPdfDragShieldActive{pointer-events:auto}body[data-dsh-tab-dragging] .f7MvrG_editorPdfFrame{pointer-events:none!important}body[data-dsh-tab-dragging] .f7MvrG_editorPdfDragShield{pointer-events:auto!important}.f7MvrG_editorXlsx{background:var(--dsw-alias-bg-base);flex:1;min-height:0;position:relative;overflow:hidden}.f7MvrG_editorUniverHost{width:100%;min-width:0;height:100%;min-height:0}.f7MvrG_editorOfficeOverlay{z-index:2;background:var(--dsw-alias-bg-base);display:flex;position:absolute;inset:0}.f7MvrG_editorPptx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.f7MvrG_editorPptxToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:center;align-items:center;gap:8px;padding:6px 8px;display:flex}.f7MvrG_editorPptxToolbar .f7MvrG_editorDownloadLink{margin-left:auto}.f7MvrG_editorPptxButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border-radius:6px;padding:0 10px}.f7MvrG_editorPptxButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_editorPptxButton:disabled{opacity:.4;cursor:default}.f7MvrG_editorPptxPosition{text-align:center;min-width:64px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_editorPptxStage{flex:1;min-height:0;position:relative;overflow:hidden}.f7MvrG_editorPptxHost{width:100%;min-width:0;height:100%;min-height:0;overflow:auto}.f7MvrG_terminalWrap{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;position:relative}.f7MvrG_terminal{flex:1;min-height:0;padding:6px 4px 6px 8px}.f7MvrG_terminal .xterm{height:100%}.f7MvrG_terminalBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex-wrap:wrap;flex:none;align-items:center;gap:8px;padding:3px 10px;display:flex}.f7MvrG_terminalBannerUrl{word-break:break-all;opacity:.85;flex-basis:100%;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.f7MvrG_boundaryError{z-index:50;background:var(--dsw-alias-bg-layer-1);border-left:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);flex-direction:column;align-items:flex-start;gap:8px;padding:16px;display:flex;position:fixed;top:0;bottom:0;right:0;overflow:auto}.f7MvrG_terminalRetry{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;padding:1px 8px}.f7MvrG_terminalRetry:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_git{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.f7MvrG_gitHeader{flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.f7MvrG_gitBranchSelect{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-base);min-width:0;height:26px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 6px}.f7MvrG_gitSection{border-top:1px solid var(--dsw-alias-border-l1)}.f7MvrG_gitSectionHeader{font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-tertiary);text-transform:uppercase;justify-content:space-between;align-items:center;padding:6px 12px 4px;display:flex}.f7MvrG_gitLink{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-brand-primary);cursor:pointer;background:0 0;border:none;padding:0}.f7MvrG_gitLink:hover:not(:disabled){text-decoration:underline}.f7MvrG_gitLink:disabled{opacity:.4;cursor:default}.f7MvrG_gitRow{min-height:34px;animation:f7MvrG_dsh-row-in .15s var(--ds-ease-in-out);border-radius:8px;align-items:center;gap:6px;margin:0 6px;padding:0 8px;display:flex}.f7MvrG_gitRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_gitRowSelected{background:var(--dsw-alias-interactive-bg-active)}.f7MvrG_gitRowMain{cursor:pointer;text-align:left;background:0 0;border:none;flex:1;align-items:center;gap:8px;min-width:0;padding:3px 0;display:flex}.f7MvrG_gitBadge{width:20px;height:16px;font:var(--dsw-font-xxxs-strong-11);background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-secondary);border-radius:4px;flex:none;justify-content:center;align-items:center;display:inline-flex}.f7MvrG_gitName{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.f7MvrG_gitEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);padding:4px 12px 8px}.f7MvrG_gitPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.f7MvrG_gitError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);white-space:pre-wrap;padding:8px 12px}.f7MvrG_gitDiff{border-top:1px solid var(--dsw-alias-border-l1);padding:8px}.f7MvrG_gitDiffTab{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.f7MvrG_gitDiffTabHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.f7MvrG_gitDiffTabTitle{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.f7MvrG_gitDiffFile{align-items:baseline;gap:6px;padding:8px 2px 2px;display:flex}.f7MvrG_gitDiffFilePath{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_gitDiffFileOld{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);text-overflow:ellipsis;white-space:nowrap;flex:none;max-width:40%;overflow:hidden}.f7MvrG_gitDiffFileTag{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-secondary);border-radius:999px;flex:none;padding:0 6px}.f7MvrG_gitDiffHunk{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);gap:8px;padding:3px 2px;display:flex}.f7MvrG_gitDiffHunkHeader{color:var(--dsw-alias-label-secondary);flex:none}.f7MvrG_gitDiffHunkSection{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_gitDiffLine{font:var(--dsw-font-markdown-code-block-small);white-space:pre-wrap;overflow-wrap:anywhere;align-items:stretch;min-width:0;line-height:20px;display:flex}.f7MvrG_gitDiffNum{text-align:right;width:36px;color:var(--dsw-alias-label-tertiary);user-select:none;flex:none;padding-right:8px}.f7MvrG_gitDiffCode{flex:1;min-width:0;overflow:visible}.f7MvrG_gitDiffCtx{color:var(--dsw-alias-label-primary)}.f7MvrG_gitDiffDel{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 12%, transparent)}.f7MvrG_gitDiffAdd{color:var(--dsw-alias-state-success-primary);background:color-mix(in srgb, var(--dsw-alias-state-success-primary) 12%, transparent)}.f7MvrG_gitDiffMeta{padding-left:2px}.f7MvrG_gitDiffMetaText{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);font-style:italic}.f7MvrG_gitDiffExpand{width:100%;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-brand-primary);cursor:pointer;text-align:center;background:0 0;border:none;margin:4px 0;display:block}.f7MvrG_gitDiffExpand:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_gitConfirmDesc{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);white-space:pre-wrap;margin:0}.f7MvrG_gitCommit{border-top:1px solid var(--dsw-alias-border-l1);align-items:center;gap:6px;padding:8px 12px;display:flex}.f7MvrG_gitCommitInput{flex:1;min-width:0}.f7MvrG_gitCommitButton{background:var(--dsw-alias-button-primary-fill);height:26px;color:var(--dsw-alias-label-primary-inverted);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border:none;border-radius:6px;flex:none;padding:0 12px}.f7MvrG_gitCommitButton:hover:not(:disabled){background:var(--dsw-alias-button-primary-hover)}.f7MvrG_gitCommitButton:disabled{opacity:.45;cursor:default}.f7MvrG_gitLogRow{cursor:pointer;border-radius:8px;flex-direction:column;gap:2px;padding:5px 12px;display:flex}.f7MvrG_gitLogRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.f7MvrG_gitLogLine1{align-items:baseline;gap:8px;min-width:0;display:flex}.f7MvrG_gitLogHash{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);flex:none}.f7MvrG_gitLogLine2{flex-wrap:wrap;align-items:center;gap:6px;min-width:0;display:flex}.f7MvrG_gitLogRef{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-brand-primary);white-space:nowrap;border-radius:999px;flex:none;padding:0 5px}.f7MvrG_gitLogSubject{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.f7MvrG_gitLogMeta{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.f7MvrG_gitLogMore{border:1px solid var(--dsw-alias-border-l2);width:calc(100% - 24px);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border-radius:6px;margin:4px 12px 8px;padding:6px 0;display:block}.f7MvrG_gitLogMore:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_gitLogMore:disabled{opacity:.5;cursor:default}.f7MvrG_producedRow{flex-wrap:wrap;align-items:center;gap:8px;padding:4px 0;display:flex}.f7MvrG_producedLabel{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_producedChip{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);max-width:200px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-12);cursor:pointer;border-radius:999px;align-items:center;gap:4px;padding:2px 8px;display:inline-flex;overflow:hidden}.f7MvrG_producedChip:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.f7MvrG_producedChip span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.f7MvrG_producedMore{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.f7MvrG_toggleButton:focus-visible,.f7MvrG_bottomClose:focus-visible,.f7MvrG_iconButton:focus-visible,.f7MvrG_tab:focus-visible,.f7MvrG_tabClose:focus-visible,.f7MvrG_tabBarPlus:focus-visible,.f7MvrG_paneCard:focus-visible,.f7MvrG_explorerRow:focus-visible,.f7MvrG_explorerRef:focus-visible,.f7MvrG_gitRowMain:focus-visible,.f7MvrG_gitLink:focus-visible,.f7MvrG_gitCommitButton:focus-visible,.f7MvrG_gitLogRow:focus-visible,.f7MvrG_gitLogMore:focus-visible,.f7MvrG_gitDiffExpand:focus-visible,.f7MvrG_terminalRetry:focus-visible,.f7MvrG_editorModeButton:focus-visible,.f7MvrG_editorDownloadLink:focus-visible,.f7MvrG_editorPptxButton:focus-visible,.f7MvrG_editorDocxZoomRange:focus-visible{outline:2px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}@media (prefers-reduced-motion:reduce){.f7MvrG_panel,.f7MvrG_panelHidden,.f7MvrG_bottomPanel,.f7MvrG_bottomPanelHidden,.f7MvrG_toggleCluster,.f7MvrG_toggleButton,.f7MvrG_tab,.f7MvrG_tabBarPlus,.f7MvrG_paneCard,.f7MvrG_explorerRow,.f7MvrG_gitRow,.f7MvrG_divider,.f7MvrG_dividerRow:after,.f7MvrG_dividerCol:after{transition:none;animation:none}}@media (width<=767px){.f7MvrG_panel:not(.f7MvrG_panelHidden) .f7MvrG_tabBar{padding-right:40px}.f7MvrG_tab{min-width:48px;max-width:128px}}";
+	//#region \0dsh-css:/Volumes/资料盘/DSH/packages/plugins/dsh-better-sidebar/src/client/sidebar.module.css.mjs
+	const css = ".TragPW_toggleCluster{z-index:55;flex-direction:row;gap:4px;display:flex;position:fixed;top:3px;right:10px}.TragPW_panel:not(.TragPW_panelHidden) .TragPW_tabBar{padding-right:72px}.TragPW_toggleButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), color var(--ds-transition-duration-slow) var(--ds-ease-in-out);background:0 0;border:none;border-radius:50%;justify-content:center;align-items:center;display:flex}.TragPW_toggleButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_toggleButton:disabled{opacity:.4;cursor:default}.TragPW_panel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-left:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;top:0;bottom:0;right:0}.TragPW_panelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), width var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translate(102%)}.TragPW_panel[data-dragging]{transition:none}.TragPW_panelResize{cursor:col-resize;z-index:2;touch-action:none;width:8px;position:absolute;top:0;bottom:0;left:-4px}.TragPW_panelResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_panelBody{flex:1;min-width:0;min-height:0;display:flex}.TragPW_bottomPanel{z-index:50;background:var(--dsw-specific-sidebar-fill);border-top:1px solid var(--dsw-alias-border-l2);transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out);flex-direction:column;display:flex;position:fixed;bottom:0}.TragPW_bottomPanelHidden{pointer-events:none;visibility:hidden;transition:transform var(--ds-transition-duration-slow) var(--ds-ease-in-out), height var(--ds-transition-duration-slow) var(--ds-ease-in-out), visibility 0s linear var(--ds-transition-duration-slow);transform:translateY(102%)}.TragPW_bottomPanel[data-dragging]{transition:none}.TragPW_bottomResize{cursor:row-resize;z-index:2;touch-action:none;height:8px;position:absolute;top:-4px;left:0;right:0}.TragPW_bottomResizeActive{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_bottomClose{z-index:4;width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex;position:absolute;top:3px;right:6px}.TragPW_bottomClose:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_bottomPanel .TragPW_tabBar{padding-right:40px}.TragPW_cornerHandle{z-index:52;cursor:nwse-resize;touch-action:none;width:12px;height:12px;position:fixed}.TragPW_cornerHandle:hover,.TragPW_cornerHandle[data-dragging]{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_iconButton{width:28px;height:28px;color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border:none;border-radius:50%;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.TragPW_iconButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_iconButton:disabled{opacity:.4;cursor:default}.TragPW_workbench,.TragPW_split{flex:1;min-width:0;min-height:0;display:flex}.TragPW_splitRow{flex-direction:row}.TragPW_splitCol{flex-direction:column}.TragPW_splitChild{display:flex;position:relative;overflow:hidden}.TragPW_divider{z-index:3;touch-action:none;flex:none;position:relative}.TragPW_dividerRow:after,.TragPW_dividerCol:after{content:\"\";background:var(--dsw-alias-border-l2);transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out);position:absolute}.TragPW_dividerRow{cursor:col-resize;width:7px;margin:0 -2px}.TragPW_dividerRow:after{width:1px;top:0;bottom:0;left:50%;transform:translate(-50%)}.TragPW_dividerCol{cursor:row-resize;height:7px;margin:-2px 0}.TragPW_dividerCol:after{height:1px;top:50%;left:0;right:0;transform:translateY(-50%)}.TragPW_divider:hover:after,.TragPW_dividerActive:after{background:var(--dsw-alias-interactive-bg-hover-accent)}.TragPW_pane{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;position:relative}.TragPW_paneDrop{outline:1px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.TragPW_dropOverlay{z-index:6;pointer-events:none;background:var(--dsw-alias-interactive-bg-hover-accent);opacity:.5;position:absolute}.TragPW_dropLeft{width:25%;top:0;bottom:0;left:0}.TragPW_dropRight{width:25%;top:0;bottom:0;right:0}.TragPW_dropUp{height:25%;top:0;left:0;right:0}.TragPW_dropDown{height:25%;bottom:0;left:0;right:0}.TragPW_dropCenter{outline:2px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-2px;background:0 0;inset:25%}.TragPW_paneContent{flex-direction:column;flex:1;min-height:0;display:flex;overflow:hidden}.TragPW_paneTab{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_paneTabHidden{display:none}.TragPW_paneEmptyCards{flex-direction:column;flex:1;justify-content:center;gap:2px;min-height:0;padding:8px 10px;display:flex;overflow:hidden}.TragPW_paneCard{width:100%;min-width:0;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;text-align:left;background:0 0;border:none;border-radius:6px;align-items:center;gap:10px;padding:8px 10px;display:flex}.TragPW_paneCard:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_paneCard:disabled{opacity:.45;cursor:default}.TragPW_paneCardIcon{color:var(--dsw-alias-label-secondary);flex:none;align-items:center;display:inline-flex}.TragPW_paneCardLabel{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.TragPW_paneCardShortcut{color:var(--dsw-alias-label-tertiary);background:var(--dsw-alias-interactive-bg-hover);white-space:nowrap;border-radius:6px;flex:none;padding:1px 7px;font-size:11px;line-height:18px}.TragPW_tabBar{border-bottom:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:stretch;height:34px;display:flex}.TragPW_tabBarDrop{outline:1px dashed var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}.TragPW_tabList{scrollbar-width:none;flex:1;min-width:0;display:flex;overflow-x:auto}.TragPW_tabList::-webkit-scrollbar{display:none}.TragPW_tab{min-width:64px;max-width:160px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);border-right:1px solid var(--dsw-alias-border-l1);cursor:pointer;user-select:none;background:0 0;flex:none;align-items:center;gap:4px;padding:0 4px 0 10px;display:flex}.TragPW_tab:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_tabActive{color:var(--dsw-alias-label-primary);background:var(--dsw-alias-interactive-bg-active)}.TragPW_tabTitle{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.TragPW_tabClose{width:18px;height:18px;color:var(--dsw-alias-label-tertiary);cursor:pointer;background:0 0;border:none;border-radius:4px;flex:none;justify-content:center;align-items:center;padding:0;display:inline-flex}.TragPW_tabClose:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_tabBarPlus{background:var(--dsw-alias-bg-layer-1);width:22px;height:22px;color:var(--dsw-alias-label-tertiary);cursor:pointer;border:none;border-radius:5px;flex:none;justify-content:center;align-self:center;align-items:center;margin:0 6px;padding:0;display:inline-flex;position:sticky;right:0}.TragPW_tabBarPlus:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_explorer{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_explorerHeader{flex:none;justify-content:space-between;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.TragPW_explorerRoot{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_explorerBody{flex:1;min-height:0;padding:2px 6px 8px;overflow-y:auto}.TragPW_explorerRow{width:100%;height:34px;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);text-align:left;cursor:pointer;white-space:nowrap;animation:TragPW_dsh-row-in .15s var(--ds-ease-in-out);background:0 0;border:none;border-radius:8px;align-items:center;gap:6px;padding:0 8px;display:flex}.TragPW_explorerRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_explorerDir{font:var(--dsw-font-s-strong-14)}.TragPW_explorerHidden{opacity:.45}.TragPW_explorerName{text-overflow:ellipsis;overflow:hidden}.TragPW_explorerRef{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:20px;color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;align-items:center;padding:0 8px;display:none}.TragPW_explorerRef:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_explorerRow:hover .TragPW_explorerRef,.TragPW_explorerRow:focus-within .TragPW_explorerRef{display:inline-flex}.TragPW_explorerCopied{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.TragPW_explorerError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);cursor:default}@keyframes TragPW_dsh-row-in{0%{opacity:0}}.TragPW_explorerEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.TragPW_editor{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:6px;padding:4px 8px;display:flex}.TragPW_editorTitle{min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-secondary);text-overflow:ellipsis;white-space:nowrap;flex:1;overflow:hidden}.TragPW_editorStatus{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.TragPW_editorStatusError{color:var(--dsw-alias-state-error-primary)}.TragPW_dirtyDot{background:var(--dsw-alias-state-warn-primary);border-radius:50%;flex:none;width:7px;height:7px}.TragPW_editorPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;flex:1;justify-content:center;align-items:center;padding:16px;display:flex}.TragPW_orphanedType{opacity:.7;overflow-wrap:anywhere;margin-top:8px;font-size:12px;display:block}.TragPW_editorBinary{text-align:center;flex-direction:column;flex:1;justify-content:center;align-items:center;gap:12px;padding:24px 16px;display:flex}.TragPW_editorBinaryNotice{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_editorDownloadLink{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;transition:background var(--ds-transition-duration-slow) var(--ds-ease-in-out), border-color var(--ds-transition-duration-slow) var(--ds-ease-in-out);border-radius:6px;align-items:center;gap:6px;padding:6px 14px;text-decoration:none;display:inline-flex}.TragPW_editorDownloadLink:hover{background:var(--dsw-alias-interactive-bg-hover);border-color:var(--dsw-alias-border-l2)}.TragPW_editorError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);padding:12px 16px}.TragPW_editorBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.TragPW_sandboxStatus{font:var(--dsw-font-xxxs-11);flex:none;align-items:center;gap:8px;padding:4px 10px;display:flex}.TragPW_sandboxStatusOn{color:var(--dsw-alias-label-secondary);background:var(--dsw-alias-bg-layer-1);border-bottom:1px solid var(--dsw-alias-border-l1)}.TragPW_sandboxStatusOff{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 10%, transparent);border-bottom:1px solid color-mix(in srgb, var(--dsw-alias-state-error-primary) 45%, transparent)}.TragPW_sandboxDot{background:var(--dsw-alias-state-success-primary);border-radius:50%;flex:none;width:6px;height:6px}.TragPW_sandboxStatusOff .TragPW_sandboxDot{background:var(--dsw-alias-state-error-primary)}.TragPW_sandboxStatusText{text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0;overflow:hidden}.TragPW_sandboxAction{border:1px solid var(--dsw-alias-border-l2);font:inherit;color:inherit;cursor:pointer;background:0 0;border-radius:6px;flex:none;padding:2px 8px}.TragPW_sandboxAction:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_editorHtml{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.TragPW_browser{flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_browserBar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:4px;padding:6px 8px;display:flex}.TragPW_browserInput{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);min-width:0;height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 10px}.TragPW_browserInput:focus{border-color:var(--dsw-alias-border-l2);outline:none}.TragPW_browserMessage{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex:none;padding:4px 12px}.TragPW_browserFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.TragPW_browserStart{text-align:center;min-height:0;font:var(--dsw-font-xs-13);color:var(--dsw-alias-label-tertiary);flex:1;justify-content:center;align-items:center;padding:20px;display:flex}.TragPW_browserBlocked{text-align:center;min-height:0;color:var(--dsw-alias-state-warn-primary);flex-direction:column;flex:1;justify-content:center;align-items:center;gap:6px;padding:24px;display:flex}.TragPW_browserBlockedTitle{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary)}.TragPW_browserBlockedDesc{max-width:280px;font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-secondary)}.TragPW_browserBlockedActions{gap:8px;margin-top:6px;display:flex}.TragPW_browserBlockedButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-1);color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-11);cursor:pointer;border-radius:6px;padding:4px 12px}.TragPW_browserBlockedButton:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_editorCm{background:0 0;flex:1;min-height:0;overflow:hidden}.TragPW_editorCmHidden{display:none}.TragPW_editorCm .cm-editor{height:100%}.TragPW_editorCm .cm-editor.cm-focused{outline:none}.TragPW_editorModeToggle{border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);border-radius:6px;flex:none;align-items:center;gap:2px;padding:2px;display:inline-flex}.TragPW_editorModeButton{color:var(--dsw-alias-label-tertiary);font:var(--dsw-font-xxxs-11);cursor:pointer;background:0 0;border:none;border-radius:4px;padding:2px 8px}.TragPW_editorModeButton:hover{color:var(--dsw-alias-label-primary)}.TragPW_editorModeActive{background:var(--dsw-alias-bg-base);color:var(--dsw-alias-label-primary)}.TragPW_editorImageWrap{flex:1;justify-content:center;align-items:center;min-height:0;padding:12px;display:flex;overflow:auto}.TragPW_editorImage{object-fit:contain;max-width:100%;max-height:100%}.TragPW_editorMd{min-height:0;font:var(--dsw-font-xs-13);flex:1;padding:10px 14px;overflow-y:auto}.TragPW_selectionPopup{z-index:60;border:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxxs-strong-11);white-space:nowrap;cursor:pointer;border-radius:6px;align-items:center;padding:0 10px;display:inline-flex;position:fixed;transform:translate(-50%,calc(-100% - 8px))}.TragPW_selectionPopup:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_editorDocx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorDocxViewport{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;overflow:auto}.TragPW_editorDocxWrap{flex:none;padding:16px}.TragPW_editorDocxZoom{border-top:1px solid var(--dsw-alias-border-l1);background:var(--dsw-alias-bg-layer-1);flex:none;align-items:center;gap:8px;min-height:34px;padding:4px 10px;display:flex}.TragPW_editorDocxZoomHint,.TragPW_editorDocxZoomValue{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);flex:none}.TragPW_editorDocxZoomValue{text-align:right;width:36px}.TragPW_editorDocxZoomRange{min-width:72px;accent-color:var(--dsw-alias-brand-primary);cursor:pointer;flex:1}.TragPW_editorPdf{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorPdfToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:flex-end;padding:6px 8px;display:flex}.TragPW_editorPdfStage{flex:1;min-height:0;display:flex;position:relative}.TragPW_editorPdfFrame{background:var(--dsw-alias-bg-base);border:none;flex:1;width:100%;min-height:0}.TragPW_editorPdfFrameBlocked{pointer-events:none}.TragPW_editorPdfDragShield{z-index:4;pointer-events:none;background:0 0;position:absolute;inset:0}.TragPW_editorPdfDragShieldActive{pointer-events:auto}body[data-dsh-tab-dragging] .TragPW_editorPdfFrame{pointer-events:none!important}body[data-dsh-tab-dragging] .TragPW_editorPdfDragShield{pointer-events:auto!important}.TragPW_editorXlsx{background:var(--dsw-alias-bg-base);flex:1;min-height:0;position:relative;overflow:hidden}.TragPW_editorUniverHost{width:100%;min-width:0;height:100%;min-height:0}.TragPW_editorOfficeOverlay{z-index:2;background:var(--dsw-alias-bg-base);display:flex;position:absolute;inset:0}.TragPW_editorPptx{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex}.TragPW_editorPptxToolbar{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;justify-content:center;align-items:center;gap:8px;padding:6px 8px;display:flex}.TragPW_editorPptxToolbar .TragPW_editorDownloadLink{margin-left:auto}.TragPW_editorPptxButton{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);height:28px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border-radius:6px;padding:0 10px}.TragPW_editorPptxButton:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_editorPptxButton:disabled{opacity:.4;cursor:default}.TragPW_editorPptxPosition{text-align:center;min-width:64px;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_editorPptxStage{flex:1;min-height:0;position:relative;overflow:hidden}.TragPW_editorPptxHost{width:100%;min-width:0;height:100%;min-height:0;overflow:auto}.TragPW_terminalWrap{background:var(--dsw-alias-bg-base);flex-direction:column;flex:1;min-height:0;display:flex;position:relative}.TragPW_terminal{flex:1;min-height:0;padding:6px 4px 6px 8px}.TragPW_terminal .xterm{height:100%}.TragPW_terminalBanner{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-state-warn-label);background:var(--dsw-alias-state-warn-tertiary);flex-wrap:wrap;flex:none;align-items:center;gap:8px;padding:3px 10px;display:flex}.TragPW_terminalBannerUrl{word-break:break-all;opacity:.85;flex-basis:100%;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.TragPW_boundaryError{z-index:50;background:var(--dsw-alias-bg-layer-1);border-left:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);flex-direction:column;align-items:flex-start;gap:8px;padding:16px;display:flex;position:fixed;top:0;bottom:0;right:0;overflow:auto}.TragPW_terminalRetry{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxxs-strong-11);cursor:pointer;border-radius:999px;flex:none;padding:1px 8px}.TragPW_terminalRetry:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_git{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.TragPW_gitHeader{flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.TragPW_gitBranchSelect{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-base);min-width:0;height:26px;color:var(--dsw-alias-label-primary);font:var(--dsw-font-xxs-12);border-radius:6px;flex:1;padding:0 6px}.TragPW_gitSection{border-top:1px solid var(--dsw-alias-border-l1)}.TragPW_gitSectionHeader{font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-tertiary);text-transform:uppercase;justify-content:space-between;align-items:center;padding:6px 12px 4px;display:flex}.TragPW_gitLink{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-brand-primary);cursor:pointer;background:0 0;border:none;padding:0}.TragPW_gitLink:hover:not(:disabled){text-decoration:underline}.TragPW_gitLink:disabled{opacity:.4;cursor:default}.TragPW_gitRow{min-height:34px;animation:TragPW_dsh-row-in .15s var(--ds-ease-in-out);border-radius:8px;align-items:center;gap:6px;margin:0 6px;padding:0 8px;display:flex}.TragPW_gitRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_gitRowSelected{background:var(--dsw-alias-interactive-bg-active)}.TragPW_gitRowMain{cursor:pointer;text-align:left;background:0 0;border:none;flex:1;align-items:center;gap:8px;min-width:0;padding:3px 0;display:flex}.TragPW_gitBadge{width:20px;height:16px;font:var(--dsw-font-xxxs-strong-11);background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-secondary);border-radius:4px;flex:none;justify-content:center;align-items:center;display:inline-flex}.TragPW_gitName{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.TragPW_gitEmpty{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);padding:4px 12px 8px}.TragPW_gitPlaceholder{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary);text-align:center;padding:16px}.TragPW_gitError{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-state-error-primary);white-space:pre-wrap;padding:8px 12px}.TragPW_gitDiff{border-top:1px solid var(--dsw-alias-border-l1);padding:8px}.TragPW_gitDiffTab{flex-direction:column;flex:1;min-width:0;min-height:0;display:flex;overflow:hidden auto}.TragPW_gitDiffTabHeader{border-bottom:1px solid var(--dsw-alias-border-l1);flex:none;align-items:center;gap:8px;height:36px;padding:0 8px 0 12px;display:flex}.TragPW_gitDiffTabTitle{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.TragPW_gitDiffFile{align-items:baseline;gap:6px;padding:8px 2px 2px;display:flex}.TragPW_gitDiffFilePath{font:var(--dsw-font-xxs-strong-12);color:var(--dsw-alias-label-primary);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_gitDiffFileOld{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);text-overflow:ellipsis;white-space:nowrap;flex:none;max-width:40%;overflow:hidden}.TragPW_gitDiffFileTag{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-label-secondary);border-radius:999px;flex:none;padding:0 6px}.TragPW_gitDiffHunk{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);gap:8px;padding:3px 2px;display:flex}.TragPW_gitDiffHunkHeader{color:var(--dsw-alias-label-secondary);flex:none}.TragPW_gitDiffHunkSection{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_gitDiffLine{font:var(--dsw-font-markdown-code-block-small);white-space:pre-wrap;overflow-wrap:anywhere;align-items:stretch;min-width:0;line-height:20px;display:flex}.TragPW_gitDiffNum{text-align:right;width:36px;color:var(--dsw-alias-label-tertiary);user-select:none;flex:none;padding-right:8px}.TragPW_gitDiffCode{flex:1;min-width:0;overflow:visible}.TragPW_gitDiffCtx{color:var(--dsw-alias-label-primary)}.TragPW_gitDiffDel{color:var(--dsw-alias-state-error-primary);background:color-mix(in srgb, var(--dsw-alias-state-error-primary) 12%, transparent)}.TragPW_gitDiffAdd{color:var(--dsw-alias-state-success-primary);background:color-mix(in srgb, var(--dsw-alias-state-success-primary) 12%, transparent)}.TragPW_gitDiffMeta{padding-left:2px}.TragPW_gitDiffMetaText{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary);font-style:italic}.TragPW_gitDiffExpand{width:100%;font:var(--dsw-font-xxs-12);color:var(--dsw-alias-brand-primary);cursor:pointer;text-align:center;background:0 0;border:none;margin:4px 0;display:block}.TragPW_gitDiffExpand:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_gitConfirmDesc{font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);white-space:pre-wrap;margin:0}.TragPW_gitCommit{border-top:1px solid var(--dsw-alias-border-l1);align-items:center;gap:6px;padding:8px 12px;display:flex}.TragPW_gitCommitInput{flex:1;min-width:0}.TragPW_gitCommitButton{background:var(--dsw-alias-button-primary-fill);height:26px;color:var(--dsw-alias-label-primary-inverted);font:var(--dsw-font-xxs-strong-12);cursor:pointer;border:none;border-radius:6px;flex:none;padding:0 12px}.TragPW_gitCommitButton:hover:not(:disabled){background:var(--dsw-alias-button-primary-hover)}.TragPW_gitCommitButton:disabled{opacity:.45;cursor:default}.TragPW_gitLogRow{cursor:pointer;border-radius:8px;flex-direction:column;gap:2px;padding:5px 12px;display:flex}.TragPW_gitLogRow:hover{background:var(--dsw-alias-interactive-bg-hover)}.TragPW_gitLogLine1{align-items:baseline;gap:8px;min-width:0;display:flex}.TragPW_gitLogHash{font:var(--dsw-font-markdown-code-block-small);color:var(--dsw-alias-label-tertiary);flex:none}.TragPW_gitLogLine2{flex-wrap:wrap;align-items:center;gap:6px;min-width:0;display:flex}.TragPW_gitLogRef{border:1px solid var(--dsw-alias-border-l2);font:var(--dsw-font-xxxs-strong-11);color:var(--dsw-alias-brand-primary);white-space:nowrap;border-radius:999px;flex:none;padding:0 5px}.TragPW_gitLogSubject{text-overflow:ellipsis;white-space:nowrap;min-width:0;font:var(--dsw-font-s-14);color:var(--dsw-alias-label-primary);flex:1;overflow:hidden}.TragPW_gitLogMeta{font:var(--dsw-font-xxxs-11);color:var(--dsw-alias-label-tertiary)}.TragPW_gitLogMore{border:1px solid var(--dsw-alias-border-l2);width:calc(100% - 24px);font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-secondary);cursor:pointer;background:0 0;border-radius:6px;margin:4px 12px 8px;padding:6px 0;display:block}.TragPW_gitLogMore:hover:not(:disabled){background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_gitLogMore:disabled{opacity:.5;cursor:default}.TragPW_producedRow{flex-wrap:wrap;align-items:center;gap:8px;padding:4px 0;display:flex}.TragPW_producedLabel{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_producedChip{border:1px solid var(--dsw-alias-border-l2);background:var(--dsw-alias-bg-layer-2);max-width:200px;color:var(--dsw-alias-label-secondary);font:var(--dsw-font-xxs-12);cursor:pointer;border-radius:999px;align-items:center;gap:4px;padding:2px 8px;display:inline-flex;overflow:hidden}.TragPW_producedChip:hover{background:var(--dsw-alias-interactive-bg-hover);color:var(--dsw-alias-label-primary)}.TragPW_producedChip span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.TragPW_producedMore{font:var(--dsw-font-xxs-12);color:var(--dsw-alias-label-tertiary)}.TragPW_toggleButton:focus-visible,.TragPW_bottomClose:focus-visible,.TragPW_iconButton:focus-visible,.TragPW_tab:focus-visible,.TragPW_tabClose:focus-visible,.TragPW_tabBarPlus:focus-visible,.TragPW_paneCard:focus-visible,.TragPW_explorerRow:focus-visible,.TragPW_explorerRef:focus-visible,.TragPW_gitRowMain:focus-visible,.TragPW_gitLink:focus-visible,.TragPW_gitCommitButton:focus-visible,.TragPW_gitLogRow:focus-visible,.TragPW_gitLogMore:focus-visible,.TragPW_gitDiffExpand:focus-visible,.TragPW_terminalRetry:focus-visible,.TragPW_editorModeButton:focus-visible,.TragPW_editorDownloadLink:focus-visible,.TragPW_editorPptxButton:focus-visible,.TragPW_editorDocxZoomRange:focus-visible{outline:2px solid var(--dsw-alias-interactive-bg-hover-accent);outline-offset:-1px}@media (prefers-reduced-motion:reduce){.TragPW_panel,.TragPW_panelHidden,.TragPW_bottomPanel,.TragPW_bottomPanelHidden,.TragPW_toggleCluster,.TragPW_toggleButton,.TragPW_tab,.TragPW_tabBarPlus,.TragPW_paneCard,.TragPW_explorerRow,.TragPW_gitRow,.TragPW_divider,.TragPW_dividerRow:after,.TragPW_dividerCol:after{transition:none;animation:none}}@media (width<=767px){.TragPW_panel:not(.TragPW_panelHidden) .TragPW_tabBar{padding-right:40px}.TragPW_tab{min-width:48px;max-width:128px}}";
 	const tagId = "dsh-better-sidebar/sidebar.module.css";
 	if (typeof document !== "undefined" && document.querySelector("style[data-plugin-css=" + JSON.stringify(tagId) + "]") === null) {
 		const tag = document.createElement("style");
@@ -520,188 +513,188 @@ globalThis.__dshChunks__["pptx"] = (require) => {
 		document.head.appendChild(tag);
 	}
 	var sidebar_module_css_default = {
-		"gitLogHash": "f7MvrG_gitLogHash",
-		"gitDiffFilePath": "f7MvrG_gitDiffFilePath",
-		"pane": "f7MvrG_pane",
-		"orphanedType": "f7MvrG_orphanedType",
-		"gitDiffMeta": "f7MvrG_gitDiffMeta",
-		"paneCardLabel": "f7MvrG_paneCardLabel",
-		"editorModeButton": "f7MvrG_editorModeButton",
-		"editorCmHidden": "f7MvrG_editorCmHidden",
-		"gitLink": "f7MvrG_gitLink",
-		"explorerHidden": "f7MvrG_explorerHidden",
-		"editorPdfDragShield": "f7MvrG_editorPdfDragShield",
-		"sandboxStatusText": "f7MvrG_sandboxStatusText",
-		"gitLogMore": "f7MvrG_gitLogMore",
-		"splitRow": "f7MvrG_splitRow",
-		"panelResize": "f7MvrG_panelResize",
-		"splitChild": "f7MvrG_splitChild",
-		"dividerCol": "f7MvrG_dividerCol",
-		"editorStatus": "f7MvrG_editorStatus",
-		"editorBanner": "f7MvrG_editorBanner",
-		"browserBlocked": "f7MvrG_browserBlocked",
-		"editorPptxPosition": "f7MvrG_editorPptxPosition",
-		"gitDiffHunk": "f7MvrG_gitDiffHunk",
-		"gitDiffTab": "f7MvrG_gitDiffTab",
-		"gitLogRef": "f7MvrG_gitLogRef",
-		"editorPptxHost": "f7MvrG_editorPptxHost",
-		"explorerEmpty": "f7MvrG_explorerEmpty",
-		"browserInput": "f7MvrG_browserInput",
-		"dividerActive": "f7MvrG_dividerActive",
-		"editorCm": "f7MvrG_editorCm",
-		"gitDiffLine": "f7MvrG_gitDiffLine",
-		"tabBarPlus": "f7MvrG_tabBarPlus",
-		"toggleCluster": "f7MvrG_toggleCluster",
-		"paneCardIcon": "f7MvrG_paneCardIcon",
-		"sandboxStatusOn": "f7MvrG_sandboxStatusOn",
-		"gitDiffExpand": "f7MvrG_gitDiffExpand",
-		"producedRow": "f7MvrG_producedRow",
-		"explorerHeader": "f7MvrG_explorerHeader",
-		"editorPptxButton": "f7MvrG_editorPptxButton",
-		"tabList": "f7MvrG_tabList",
-		"editorModeToggle": "f7MvrG_editorModeToggle",
-		"bottomResize": "f7MvrG_bottomResize",
-		"producedChip": "f7MvrG_producedChip",
-		"bottomClose": "f7MvrG_bottomClose",
-		"editorPdfStage": "f7MvrG_editorPdfStage",
-		"paneTab": "f7MvrG_paneTab",
-		"tabBarDrop": "f7MvrG_tabBarDrop",
-		"panel": "f7MvrG_panel",
-		"split": "f7MvrG_split",
-		"paneTabHidden": "f7MvrG_paneTabHidden",
-		"browserBlockedButton": "f7MvrG_browserBlockedButton",
-		"gitRow": "f7MvrG_gitRow",
-		"editor": "f7MvrG_editor",
-		"git": "f7MvrG_git",
-		"gitDiffCode": "f7MvrG_gitDiffCode",
-		"gitDiffDel": "f7MvrG_gitDiffDel",
-		"paneCardShortcut": "f7MvrG_paneCardShortcut",
-		"editorPlaceholder": "f7MvrG_editorPlaceholder",
-		"editorPptxToolbar": "f7MvrG_editorPptxToolbar",
-		"gitEmpty": "f7MvrG_gitEmpty",
-		"editorDocxZoomHint": "f7MvrG_editorDocxZoomHint",
-		"editorPdf": "f7MvrG_editorPdf",
-		"tabActive": "f7MvrG_tabActive",
-		"explorerCopied": "f7MvrG_explorerCopied",
-		"gitDiffFile": "f7MvrG_gitDiffFile",
-		"tab": "f7MvrG_tab",
-		"editorPdfToolbar": "f7MvrG_editorPdfToolbar",
-		"divider": "f7MvrG_divider",
-		"gitRowSelected": "f7MvrG_gitRowSelected",
-		"bottomPanel": "f7MvrG_bottomPanel",
-		"gitLogSubject": "f7MvrG_gitLogSubject",
-		"gitDiffFileOld": "f7MvrG_gitDiffFileOld",
-		"editorHtml": "f7MvrG_editorHtml",
-		"sandboxAction": "f7MvrG_sandboxAction",
-		"sandboxStatusOff": "f7MvrG_sandboxStatusOff",
-		"gitLogLine2": "f7MvrG_gitLogLine2",
-		"tabBar": "f7MvrG_tabBar",
-		"panelBody": "f7MvrG_panelBody",
-		"editorStatusError": "f7MvrG_editorStatusError",
-		"dividerRow": "f7MvrG_dividerRow",
-		"explorer": "f7MvrG_explorer",
-		"editorPptx": "f7MvrG_editorPptx",
-		"gitDiffTabTitle": "f7MvrG_gitDiffTabTitle",
-		"panelHidden": "f7MvrG_panelHidden",
-		"explorerRow": "f7MvrG_explorerRow",
-		"explorerRef": "f7MvrG_explorerRef",
-		"editorError": "f7MvrG_editorError",
-		"editorOfficeOverlay": "f7MvrG_editorOfficeOverlay",
-		"browserFrame": "f7MvrG_browserFrame",
-		"editorXlsx": "f7MvrG_editorXlsx",
-		"paneEmptyCards": "f7MvrG_paneEmptyCards",
-		"editorUniverHost": "f7MvrG_editorUniverHost",
-		"editorDocxWrap": "f7MvrG_editorDocxWrap",
-		"gitHeader": "f7MvrG_gitHeader",
-		"gitSectionHeader": "f7MvrG_gitSectionHeader",
-		"gitDiffNum": "f7MvrG_gitDiffNum",
-		"gitDiffCtx": "f7MvrG_gitDiffCtx",
-		"paneContent": "f7MvrG_paneContent",
-		"browserBar": "f7MvrG_browserBar",
-		"editorImageWrap": "f7MvrG_editorImageWrap",
-		"dropUp": "f7MvrG_dropUp",
-		"terminalWrap": "f7MvrG_terminalWrap",
-		"gitCommitButton": "f7MvrG_gitCommitButton",
-		"explorerError": "f7MvrG_explorerError",
-		"dropOverlay": "f7MvrG_dropOverlay",
-		"paneCard": "f7MvrG_paneCard",
-		"editorBinaryNotice": "f7MvrG_editorBinaryNotice",
-		"boundaryError": "f7MvrG_boundaryError",
-		"gitPlaceholder": "f7MvrG_gitPlaceholder",
-		"editorDocxZoom": "f7MvrG_editorDocxZoom",
-		"gitDiff": "f7MvrG_gitDiff",
-		"editorDocxZoomRange": "f7MvrG_editorDocxZoomRange",
-		"gitDiffTabHeader": "f7MvrG_gitDiffTabHeader",
-		"gitSection": "f7MvrG_gitSection",
-		"terminalRetry": "f7MvrG_terminalRetry",
-		"gitRowMain": "f7MvrG_gitRowMain",
-		"explorerRoot": "f7MvrG_explorerRoot",
-		"gitConfirmDesc": "f7MvrG_gitConfirmDesc",
-		"explorerBody": "f7MvrG_explorerBody",
-		"browserBlockedActions": "f7MvrG_browserBlockedActions",
-		"terminalBannerUrl": "f7MvrG_terminalBannerUrl",
-		"producedMore": "f7MvrG_producedMore",
-		"paneDrop": "f7MvrG_paneDrop",
-		"panelResizeActive": "f7MvrG_panelResizeActive",
-		"cornerHandle": "f7MvrG_cornerHandle",
-		"editorDocxZoomValue": "f7MvrG_editorDocxZoomValue",
-		"editorPdfDragShieldActive": "f7MvrG_editorPdfDragShieldActive",
-		"toggleButton": "f7MvrG_toggleButton",
-		"terminal": "f7MvrG_terminal",
-		"bottomResizeActive": "f7MvrG_bottomResizeActive",
-		"editorModeActive": "f7MvrG_editorModeActive",
-		"dirtyDot": "f7MvrG_dirtyDot",
-		"editorBinary": "f7MvrG_editorBinary",
-		"editorHeader": "f7MvrG_editorHeader",
-		"editorMd": "f7MvrG_editorMd",
-		"editorImage": "f7MvrG_editorImage",
-		"explorerName": "f7MvrG_explorerName",
-		"iconButton": "f7MvrG_iconButton",
-		"sandboxStatus": "f7MvrG_sandboxStatus",
-		"editorPdfFrameBlocked": "f7MvrG_editorPdfFrameBlocked",
-		"gitName": "f7MvrG_gitName",
-		"gitDiffMetaText": "f7MvrG_gitDiffMetaText",
-		"gitLogLine1": "f7MvrG_gitLogLine1",
-		"gitLogRow": "f7MvrG_gitLogRow",
-		"editorDownloadLink": "f7MvrG_editorDownloadLink",
-		"browserMessage": "f7MvrG_browserMessage",
-		"gitError": "f7MvrG_gitError",
-		"dropDown": "f7MvrG_dropDown",
-		"dsh-row-in": "f7MvrG_dsh-row-in",
-		"browserBlockedDesc": "f7MvrG_browserBlockedDesc",
-		"editorDocxViewport": "f7MvrG_editorDocxViewport",
-		"browserBlockedTitle": "f7MvrG_browserBlockedTitle",
-		"gitDiffAdd": "f7MvrG_gitDiffAdd",
-		"editorPptxStage": "f7MvrG_editorPptxStage",
-		"editorPdfFrame": "f7MvrG_editorPdfFrame",
-		"editorTitle": "f7MvrG_editorTitle",
-		"gitBadge": "f7MvrG_gitBadge",
-		"splitCol": "f7MvrG_splitCol",
-		"gitDiffHunkSection": "f7MvrG_gitDiffHunkSection",
-		"gitCommit": "f7MvrG_gitCommit",
-		"explorerDir": "f7MvrG_explorerDir",
-		"gitCommitInput": "f7MvrG_gitCommitInput",
-		"dropCenter": "f7MvrG_dropCenter",
-		"selectionPopup": "f7MvrG_selectionPopup",
-		"dropRight": "f7MvrG_dropRight",
-		"gitBranchSelect": "f7MvrG_gitBranchSelect",
-		"browserStart": "f7MvrG_browserStart",
-		"workbench": "f7MvrG_workbench",
-		"sandboxDot": "f7MvrG_sandboxDot",
-		"terminalBanner": "f7MvrG_terminalBanner",
-		"dropLeft": "f7MvrG_dropLeft",
-		"browser": "f7MvrG_browser",
-		"gitDiffHunkHeader": "f7MvrG_gitDiffHunkHeader",
-		"gitLogMeta": "f7MvrG_gitLogMeta",
-		"producedLabel": "f7MvrG_producedLabel",
-		"editorDocx": "f7MvrG_editorDocx",
-		"tabClose": "f7MvrG_tabClose",
-		"gitDiffFileTag": "f7MvrG_gitDiffFileTag",
-		"bottomPanelHidden": "f7MvrG_bottomPanelHidden",
-		"tabTitle": "f7MvrG_tabTitle"
+		"editorDownloadLink": "TragPW_editorDownloadLink",
+		"panelResizeActive": "TragPW_panelResizeActive",
+		"editorImageWrap": "TragPW_editorImageWrap",
+		"explorerHeader": "TragPW_explorerHeader",
+		"panelResize": "TragPW_panelResize",
+		"gitDiffTabTitle": "TragPW_gitDiffTabTitle",
+		"tabBar": "TragPW_tabBar",
+		"bottomPanel": "TragPW_bottomPanel",
+		"cornerHandle": "TragPW_cornerHandle",
+		"editorDocxZoomRange": "TragPW_editorDocxZoomRange",
+		"editorUniverHost": "TragPW_editorUniverHost",
+		"gitDiff": "TragPW_gitDiff",
+		"gitLogLine2": "TragPW_gitLogLine2",
+		"paneCardShortcut": "TragPW_paneCardShortcut",
+		"gitDiffHunkSection": "TragPW_gitDiffHunkSection",
+		"git": "TragPW_git",
+		"gitCommitButton": "TragPW_gitCommitButton",
+		"gitDiffFileOld": "TragPW_gitDiffFileOld",
+		"splitChild": "TragPW_splitChild",
+		"gitDiffTab": "TragPW_gitDiffTab",
+		"gitLogRef": "TragPW_gitLogRef",
+		"dropDown": "TragPW_dropDown",
+		"editorCm": "TragPW_editorCm",
+		"gitLogHash": "TragPW_gitLogHash",
+		"editorPdfStage": "TragPW_editorPdfStage",
+		"pane": "TragPW_pane",
+		"explorerRow": "TragPW_explorerRow",
+		"bottomResize": "TragPW_bottomResize",
+		"panel": "TragPW_panel",
+		"gitLogSubject": "TragPW_gitLogSubject",
+		"dropCenter": "TragPW_dropCenter",
+		"sandboxStatusOff": "TragPW_sandboxStatusOff",
+		"gitDiffTabHeader": "TragPW_gitDiffTabHeader",
+		"browserBar": "TragPW_browserBar",
+		"editorDocx": "TragPW_editorDocx",
+		"browserFrame": "TragPW_browserFrame",
+		"gitCommitInput": "TragPW_gitCommitInput",
+		"gitLogLine1": "TragPW_gitLogLine1",
+		"dividerActive": "TragPW_dividerActive",
+		"gitDiffNum": "TragPW_gitDiffNum",
+		"gitBranchSelect": "TragPW_gitBranchSelect",
+		"gitDiffAdd": "TragPW_gitDiffAdd",
+		"gitEmpty": "TragPW_gitEmpty",
+		"gitLogMore": "TragPW_gitLogMore",
+		"editorPptxPosition": "TragPW_editorPptxPosition",
+		"dividerRow": "TragPW_dividerRow",
+		"orphanedType": "TragPW_orphanedType",
+		"browserBlockedTitle": "TragPW_browserBlockedTitle",
+		"editorPptxButton": "TragPW_editorPptxButton",
+		"paneCardLabel": "TragPW_paneCardLabel",
+		"editorPptxToolbar": "TragPW_editorPptxToolbar",
+		"dsh-row-in": "TragPW_dsh-row-in",
+		"editorModeToggle": "TragPW_editorModeToggle",
+		"gitConfirmDesc": "TragPW_gitConfirmDesc",
+		"gitBadge": "TragPW_gitBadge",
+		"panelHidden": "TragPW_panelHidden",
+		"browserMessage": "TragPW_browserMessage",
+		"editorDocxZoom": "TragPW_editorDocxZoom",
+		"editorBinaryNotice": "TragPW_editorBinaryNotice",
+		"gitRow": "TragPW_gitRow",
+		"explorerRoot": "TragPW_explorerRoot",
+		"gitDiffFilePath": "TragPW_gitDiffFilePath",
+		"browserStart": "TragPW_browserStart",
+		"editorPdfToolbar": "TragPW_editorPdfToolbar",
+		"editorImage": "TragPW_editorImage",
+		"gitDiffFile": "TragPW_gitDiffFile",
+		"paneCardIcon": "TragPW_paneCardIcon",
+		"gitLogRow": "TragPW_gitLogRow",
+		"tabBarPlus": "TragPW_tabBarPlus",
+		"editorDocxViewport": "TragPW_editorDocxViewport",
+		"terminal": "TragPW_terminal",
+		"editorModeActive": "TragPW_editorModeActive",
+		"paneContent": "TragPW_paneContent",
+		"editorPdf": "TragPW_editorPdf",
+		"editorBinary": "TragPW_editorBinary",
+		"editorStatus": "TragPW_editorStatus",
+		"sandboxStatus": "TragPW_sandboxStatus",
+		"tabBarDrop": "TragPW_tabBarDrop",
+		"editorPdfDragShield": "TragPW_editorPdfDragShield",
+		"explorerHidden": "TragPW_explorerHidden",
+		"paneDrop": "TragPW_paneDrop",
+		"editorStatusError": "TragPW_editorStatusError",
+		"editorTitle": "TragPW_editorTitle",
+		"tab": "TragPW_tab",
+		"workbench": "TragPW_workbench",
+		"sandboxAction": "TragPW_sandboxAction",
+		"editorOfficeOverlay": "TragPW_editorOfficeOverlay",
+		"gitSection": "TragPW_gitSection",
+		"gitPlaceholder": "TragPW_gitPlaceholder",
+		"gitDiffHunk": "TragPW_gitDiffHunk",
+		"dropOverlay": "TragPW_dropOverlay",
+		"gitDiffCtx": "TragPW_gitDiffCtx",
+		"gitCommit": "TragPW_gitCommit",
+		"split": "TragPW_split",
+		"browserBlockedDesc": "TragPW_browserBlockedDesc",
+		"producedLabel": "TragPW_producedLabel",
+		"terminalWrap": "TragPW_terminalWrap",
+		"editorCmHidden": "TragPW_editorCmHidden",
+		"dropUp": "TragPW_dropUp",
+		"boundaryError": "TragPW_boundaryError",
+		"editorError": "TragPW_editorError",
+		"browserInput": "TragPW_browserInput",
+		"gitError": "TragPW_gitError",
+		"editorPlaceholder": "TragPW_editorPlaceholder",
+		"editorDocxZoomHint": "TragPW_editorDocxZoomHint",
+		"producedRow": "TragPW_producedRow",
+		"editorMd": "TragPW_editorMd",
+		"gitSectionHeader": "TragPW_gitSectionHeader",
+		"iconButton": "TragPW_iconButton",
+		"editorPptx": "TragPW_editorPptx",
+		"editorPptxStage": "TragPW_editorPptxStage",
+		"dropLeft": "TragPW_dropLeft",
+		"editorDocxWrap": "TragPW_editorDocxWrap",
+		"editorModeButton": "TragPW_editorModeButton",
+		"gitDiffDel": "TragPW_gitDiffDel",
+		"explorerError": "TragPW_explorerError",
+		"explorerEmpty": "TragPW_explorerEmpty",
+		"gitRowSelected": "TragPW_gitRowSelected",
+		"panelBody": "TragPW_panelBody",
+		"editorPptxHost": "TragPW_editorPptxHost",
+		"explorer": "TragPW_explorer",
+		"explorerDir": "TragPW_explorerDir",
+		"bottomPanelHidden": "TragPW_bottomPanelHidden",
+		"tabActive": "TragPW_tabActive",
+		"explorerRef": "TragPW_explorerRef",
+		"producedChip": "TragPW_producedChip",
+		"selectionPopup": "TragPW_selectionPopup",
+		"terminalRetry": "TragPW_terminalRetry",
+		"dropRight": "TragPW_dropRight",
+		"dividerCol": "TragPW_dividerCol",
+		"explorerName": "TragPW_explorerName",
+		"editor": "TragPW_editor",
+		"editorPdfFrameBlocked": "TragPW_editorPdfFrameBlocked",
+		"gitLogMeta": "TragPW_gitLogMeta",
+		"browserBlockedActions": "TragPW_browserBlockedActions",
+		"toggleButton": "TragPW_toggleButton",
+		"splitCol": "TragPW_splitCol",
+		"tabList": "TragPW_tabList",
+		"sandboxStatusText": "TragPW_sandboxStatusText",
+		"editorHtml": "TragPW_editorHtml",
+		"tabClose": "TragPW_tabClose",
+		"browserBlockedButton": "TragPW_browserBlockedButton",
+		"explorerCopied": "TragPW_explorerCopied",
+		"producedMore": "TragPW_producedMore",
+		"editorDocxZoomValue": "TragPW_editorDocxZoomValue",
+		"dirtyDot": "TragPW_dirtyDot",
+		"editorPdfDragShieldActive": "TragPW_editorPdfDragShieldActive",
+		"splitRow": "TragPW_splitRow",
+		"editorPdfFrame": "TragPW_editorPdfFrame",
+		"gitDiffLine": "TragPW_gitDiffLine",
+		"sandboxDot": "TragPW_sandboxDot",
+		"paneTabHidden": "TragPW_paneTabHidden",
+		"browser": "TragPW_browser",
+		"gitDiffMeta": "TragPW_gitDiffMeta",
+		"bottomResizeActive": "TragPW_bottomResizeActive",
+		"gitDiffExpand": "TragPW_gitDiffExpand",
+		"gitDiffCode": "TragPW_gitDiffCode",
+		"editorBanner": "TragPW_editorBanner",
+		"editorHeader": "TragPW_editorHeader",
+		"gitDiffMetaText": "TragPW_gitDiffMetaText",
+		"paneCard": "TragPW_paneCard",
+		"bottomClose": "TragPW_bottomClose",
+		"toggleCluster": "TragPW_toggleCluster",
+		"gitLink": "TragPW_gitLink",
+		"gitDiffFileTag": "TragPW_gitDiffFileTag",
+		"terminalBannerUrl": "TragPW_terminalBannerUrl",
+		"gitDiffHunkHeader": "TragPW_gitDiffHunkHeader",
+		"gitRowMain": "TragPW_gitRowMain",
+		"paneTab": "TragPW_paneTab",
+		"divider": "TragPW_divider",
+		"terminalBanner": "TragPW_terminalBanner",
+		"sandboxStatusOn": "TragPW_sandboxStatusOn",
+		"gitHeader": "TragPW_gitHeader",
+		"paneEmptyCards": "TragPW_paneEmptyCards",
+		"explorerBody": "TragPW_explorerBody",
+		"gitName": "TragPW_gitName",
+		"tabTitle": "TragPW_tabTitle",
+		"browserBlocked": "TragPW_browserBlocked",
+		"editorXlsx": "TragPW_editorXlsx"
 	};
 	//#endregion
-	//#region node_modules/.pnpm/jszip@3.10.1/node_modules/jszip/dist/jszip.min.js
+	//#region ../../../node_modules/.pnpm/jszip@3.10.1/node_modules/jszip/dist/jszip.min.js
 	var require_jszip_min = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		/*!
 		
@@ -1373,7 +1366,7 @@ globalThis.__dshChunks__["pptx"] = (require) => {
 						n.call(this, e);
 					}
 					e("../utils").inherits(i, n), i.prototype.readData = function(e) {
-						if (this.checkOffset(e), 0 === e) return /* @__PURE__ */ new Uint8Array(0);
+						if (this.checkOffset(e), 0 === e) return new Uint8Array(0);
 						var t = this.data.subarray(this.zero + this.index, this.zero + this.index + e);
 						return this.index += e, t;
 					}, t.exports = i;
@@ -1776,7 +1769,7 @@ globalThis.__dshChunks__["pptx"] = (require) => {
 						applyCanBeUsed: {
 							uint8array: function() {
 								try {
-									return o.uint8array && 1 === String.fromCharCode.apply(null, /* @__PURE__ */ new Uint8Array(1)).length;
+									return o.uint8array && 1 === String.fromCharCode.apply(null, new Uint8Array(1)).length;
 								} catch (e) {
 									return !1;
 								}
@@ -2467,7 +2460,7 @@ globalThis.__dshChunks__["pptx"] = (require) => {
 						i = !1;
 					}
 					try {
-						String.fromCharCode.apply(null, /* @__PURE__ */ new Uint8Array(1));
+						String.fromCharCode.apply(null, new Uint8Array(1));
 					} catch (e) {
 						s = !1;
 					}
@@ -3808,7 +3801,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		});
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/tslib@2.3.0/node_modules/tslib/tslib.js
+	//#region ../../../node_modules/.pnpm/tslib@2.3.0/node_modules/tslib/tslib.js
 	var require_tslib = /* @__PURE__ */ __commonJSMin(((exports, module) => {
 		/*! *****************************************************************************
 		Copyright (c) Microsoft Corporation.
@@ -3856,10 +3849,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			else if (typeof module === "object" && typeof module.exports === "object") factory(createExporter(root, createExporter(module.exports)));
 			else factory(createExporter(root));
 			function createExporter(exports$2, previous) {
-				if (exports$2 !== root) {
-					if (typeof Object.create === "function") Object.defineProperty(exports$2, "__esModule", { value: true });
-					else exports$2.__esModule = true;
-				}
+				if (exports$2 !== root) if (typeof Object.create === "function") Object.defineProperty(exports$2, "__esModule", { value: true });
+				else exports$2.__esModule = true;
 				return function(id, v) {
 					return exports$2[id] = previous ? previous(id, v) : v;
 				};
@@ -4224,14 +4215,14 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		});
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/tslib@2.3.0/node_modules/tslib/modules/index.js
+	//#region ../../../node_modules/.pnpm/tslib@2.3.0/node_modules/tslib/modules/index.js
 	var import_tslib, __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __createBinding, __values, __read, __spread, __spreadArrays, __spreadArray, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet;
 	var init_modules = __esmMin((() => {
 		import_tslib = /* @__PURE__ */ __toESM(require_tslib());
 		({__extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __createBinding, __values, __read, __spread, __spreadArrays, __spreadArray, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet} = import_tslib.default);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/env.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/env.js
 	function detect(ua, env) {
 		var browser = env.browser;
 		var firefox = ua.match(/Firefox\/([\d.]+)/);
@@ -4299,7 +4290,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		} else detect(navigator.userAgent, env);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/platform.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/platform.js
 	function getTextWidthMap(mapStr) {
 		var map = {};
 		if (typeof JSON === "undefined") return map;
@@ -4360,7 +4351,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/util.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/util.js
 	function guid() {
 		if (idStart >= MAX_SAFE_INTEGER$1) idStart = 0;
 		return idStart++;
@@ -4751,7 +4742,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Number.EPSILON;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/vector.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/vector.js
 	function create$1(x, y) {
 		if (x == null) x = 0;
 		if (y == null) y = 0;
@@ -4836,7 +4827,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		distSquare = distanceSquare;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/mixin/Draggable.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/mixin/Draggable.js
 	var Param, Draggable;
 	var init_Draggable = __esmMin((() => {
 		Param = function() {
@@ -4896,7 +4887,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/Eventful.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/Eventful.js
 	var Eventful;
 	var init_Eventful = __esmMin((() => {
 		Eventful = function() {
@@ -4970,7 +4961,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 							case 2:
 								hItem.h.call(hItem.ctx, args[0], args[1]);
 								break;
-							default: hItem.h.apply(hItem.ctx, args);
+							default:
+								hItem.h.apply(hItem.ctx, args);
+								break;
 						}
 					}
 				}
@@ -5000,7 +4993,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 							case 2:
 								hItem.h.call(ctx, args[0], args[1]);
 								break;
-							default: hItem.h.apply(ctx, args.slice(1, argLen - 1));
+							default:
+								hItem.h.apply(ctx, args.slice(1, argLen - 1));
+								break;
 						}
 					}
 				}
@@ -5011,7 +5006,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/fourPointsTransform.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/fourPointsTransform.js
 	function determinant(rows, rank, rowStart, rowMask, colMask, detCache) {
 		var cacheKey = rowMask + "-" + colMask;
 		var fullRank = rows.length;
@@ -5136,7 +5131,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		LN2 = Math.log(2);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/dom.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/dom.js
 	function transformLocalCoord(out, elFrom, elTarget, inX, inY) {
 		return transformCoordWithViewport(_calcOut$1, elFrom, inX, inY, true) && transformCoordWithViewport(out, elTarget, _calcOut$1[0], _calcOut$1[1]);
 	}
@@ -5241,7 +5236,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/event.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/event.js
 	function clientToLocal(el, e, out, calculate) {
 		out = out || {};
 		if (calculate) calculateZrXY(el, e, out);
@@ -5320,7 +5315,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/GestureMgr.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/GestureMgr.js
 	function dist(pointPair) {
 		var dx = pointPair[1][0] - pointPair[0][0];
 		var dy = pointPair[1][1] - pointPair[0][1];
@@ -5390,7 +5385,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		} };
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/matrix.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/matrix.js
 	function create() {
 		return [
 			1,
@@ -5492,7 +5487,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	}
 	var init_matrix = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/Point.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/Point.js
 	var Point;
 	var init_Point = __esmMin((() => {
 		Point = function() {
@@ -5623,7 +5618,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/BoundingRect.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/BoundingRect.js
 	function intersectOneDim(a0, a1, b0, b1, updateDimIdx, useMTV, outIntersectRect, clamp) {
 		var d0 = mathAbs$4(a1 - b0);
 		var d1 = mathAbs$4(b1 - a0);
@@ -5631,21 +5626,20 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		var updateDim = XY$2[updateDimIdx];
 		var zeroDim = XY$2[1 - updateDimIdx];
 		var wh = WH$2[updateDimIdx];
-		if (a1 < b0 || b1 < a0) {
-			if (d0 < d1) {
-				if (useMTV) _maxTv$1[updateDim] = -d0;
-				if (clamp) {
-					outIntersectRect[updateDim] = a1;
-					outIntersectRect[wh] = 0;
-				}
-			} else {
-				if (useMTV) _maxTv$1[updateDim] = d1;
-				if (clamp) {
-					outIntersectRect[updateDim] = a0;
-					outIntersectRect[wh] = 0;
-				}
+		if (a1 < b0 || b1 < a0) if (d0 < d1) {
+			if (useMTV) _maxTv$1[updateDim] = -d0;
+			if (clamp) {
+				outIntersectRect[updateDim] = a1;
+				outIntersectRect[wh] = 0;
 			}
 		} else {
+			if (useMTV) _maxTv$1[updateDim] = d1;
+			if (clamp) {
+				outIntersectRect[updateDim] = a0;
+				outIntersectRect[wh] = 0;
+			}
+		}
+		else {
 			if (outIntersectRect) {
 				outIntersectRect[updateDim] = mathMax$7(a0, b0);
 				outIntersectRect[wh] = mathMin$7(a1, b1) - outIntersectRect[updateDim];
@@ -5904,7 +5898,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		_tmpCalcTrans = [];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/Handler.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/Handler.js
 	function makeEventPacket(eveType, targetInfo, event) {
 		return {
 			type: eveType,
@@ -6168,7 +6162,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		});
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/timsort.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/timsort.js
 	function minRunLength(n) {
 		var r = 0;
 		while (n >= DEFAULT_MIN_MERGE) {
@@ -6575,10 +6569,10 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		DEFAULT_MIN_GALLOPING = 7;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/constants.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/constants.js
 	var init_constants = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/Storage.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/Storage.js
 	function logInvalidZError() {
 		if (invalidZErrorLogged) return;
 		invalidZErrorLogged = true;
@@ -6703,7 +6697,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/requestAnimationFrame.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/requestAnimationFrame.js
 	var requestAnimationFrame$1;
 	var init_requestAnimationFrame = __esmMin((() => {
 		init_env();
@@ -6712,7 +6706,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/easing.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/easing.js
 	var easingFuncs;
 	var init_easing = __esmMin((() => {
 		easingFuncs = {
@@ -6836,7 +6830,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				return --k * k * ((s + 1) * k + s) + 1;
 			},
 			backInOut: function(k) {
-				var s = 2.5949095;
+				var s = 1.70158 * 1.525;
 				if ((k *= 2) < 1) return .5 * (k * k * ((s + 1) * k - s));
 				return .5 * ((k -= 2) * k * ((s + 1) * k + s) + 2);
 			},
@@ -6856,7 +6850,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/curve.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/curve.js
 	function isAroundZero(val) {
 		return val > -EPSILON$2 && val < EPSILON$2;
 	}
@@ -6880,13 +6874,12 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		var B = b * c - 9 * a * d;
 		var C = c * c - 3 * b * d;
 		var n = 0;
-		if (isAroundZero(A) && isAroundZero(B)) {
-			if (isAroundZero(b)) roots[0] = 0;
-			else {
-				var t1 = -c / b;
-				if (t1 >= 0 && t1 <= 1) roots[n++] = t1;
-			}
-		} else {
+		if (isAroundZero(A) && isAroundZero(B)) if (isAroundZero(b)) roots[0] = 0;
+		else {
+			var t1 = -c / b;
+			if (t1 >= 0 && t1 <= 1) roots[n++] = t1;
+		}
+		else {
 			var disc = B * B - 4 * A * C;
 			if (isAroundZero(disc)) {
 				var K = B / A;
@@ -7142,7 +7135,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		_v2 = create$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/cubicEasing.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/cubicEasing.js
 	function createCubicEasingFunc(cubicEasingStr) {
 		var cubic = cubicEasingStr && regexp.exec(cubicEasingStr);
 		if (cubic) {
@@ -7165,7 +7158,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		regexp = /cubic-bezier\(([0-9,\.e ]+)\)/;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/Clip.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/Clip.js
 	var Clip;
 	var init_Clip = __esmMin((() => {
 		init_easing();
@@ -7202,14 +7195,12 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				var easingFunc = this.easingFunc;
 				var schedule = easingFunc ? easingFunc(percent) : percent;
 				this.onframe(schedule);
-				if (percent === 1) {
-					if (this.loop) {
-						var remainder = elapsedTime % life;
-						this._startTime = globalTime - remainder;
-						this._pausedTime = 0;
-						this.onrestart();
-					} else return true;
-				}
+				if (percent === 1) if (this.loop) {
+					var remainder = elapsedTime % life;
+					this._startTime = globalTime - remainder;
+					this._pausedTime = 0;
+					this.onrestart();
+				} else return true;
 				return false;
 			};
 			Clip.prototype.pause = function() {
@@ -7226,7 +7217,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/LRU.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/LRU.js
 	var Entry, LinkedList, LRU;
 	var init_LRU = __esmMin((() => {
 		Entry = function() {
@@ -7324,7 +7315,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/tool/color.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/tool/color.js
 	function clampCssByte(i) {
 		i = Math.round(i);
 		return i < 0 ? 0 : i > 255 ? 255 : i;
@@ -8467,7 +8458,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		liftedColorCache = new LRU(100);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/svg/helper.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/svg/helper.js
 	function isLinearGradient(val) {
 		return val.type === "linear";
 	}
@@ -8488,7 +8479,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		})();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/Animator.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/Animator.js
 	function interpolateNumber$1(p0, p1, percent) {
 		return (p1 - p0) * percent + p0;
 	}
@@ -8545,10 +8536,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		if (!arr0.push || !arr1.push) return;
 		var arr0Len = arr0.length;
 		var arr1Len = arr1.length;
-		if (arr0Len !== arr1Len) {
-			if (arr0Len > arr1Len) arr0.length = arr1Len;
-			else for (var i = arr0Len; i < arr1Len; i++) arr0.push(arrDim === 1 ? arr1[i] : arraySlice.call(arr1[i]));
-		}
+		if (arr0Len !== arr1Len) if (arr0Len > arr1Len) arr0.length = arr1Len;
+		else for (var i = arr0Len; i < arr1Len; i++) arr0.push(arrDim === 1 ? arr1[i] : arraySlice.call(arr1[i]));
 		var len2 = arr0[0] && arr0[0].length;
 		for (var i = 0; i < arr0.length; i++) if (arrDim === 1) {
 			if (isNaN(arr0[i])) arr0[i] = arr1[i];
@@ -8639,16 +8628,15 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					valType = arrayDim;
 					if (arrayDim === 1 && !isNumber(rawValue[0]) || arrayDim === 2 && !isNumber(rawValue[0][0])) discrete = true;
 				} else if (isNumber(rawValue) && !eqNaN(rawValue)) valType = VALUE_TYPE_NUMBER;
-				else if (isString(rawValue)) {
-					if (!isNaN(+rawValue)) valType = VALUE_TYPE_NUMBER;
-					else {
-						var colorArray = parse(rawValue);
-						if (colorArray) {
-							value = colorArray;
-							valType = VALUE_TYPE_COLOR;
-						}
+				else if (isString(rawValue)) if (!isNaN(+rawValue)) valType = VALUE_TYPE_NUMBER;
+				else {
+					var colorArray = parse(rawValue);
+					if (colorArray) {
+						value = colorArray;
+						valType = VALUE_TYPE_COLOR;
 					}
-				} else if (isGradientObject(rawValue)) {
+				}
+				else if (isGradientObject(rawValue)) {
 					var parsedGradient = extend({}, value);
 					parsedGradient.colorStops = map$1(rawValue.colorStops, function(colorStop) {
 						return {
@@ -8906,13 +8894,11 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					var kfs = track.keyframes;
 					var kfsNum = kfs.length;
 					track.prepare(maxTime, additiveTrack);
-					if (track.needsAnimate()) {
-						if (!this._allowDiscrete && track.discrete) {
-							var lastKf = kfs[kfsNum - 1];
-							if (lastKf) self._target[track.propName] = lastKf.rawValue;
-							track.setFinished();
-						} else tracks.push(track);
-					}
+					if (track.needsAnimate()) if (!this._allowDiscrete && track.discrete) {
+						var lastKf = kfs[kfsNum - 1];
+						if (lastKf) self._target[track.propName] = lastKf.rawValue;
+						track.setFinished();
+					} else tracks.push(track);
 				}
 				if (tracks.length || this._force) {
 					var clip = new Clip({
@@ -9037,7 +9023,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/Animation.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/animation/Animation.js
 	function getTime() {
 		return (/* @__PURE__ */ new Date()).getTime();
 	}
@@ -9164,7 +9150,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Eventful);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/dom/HandlerProxy.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/dom/HandlerProxy.js
 	function isPointerFromTouch(event) {
 		var pointerType = event.pointerType;
 		return pointerType === "pen" || pointerType === "touch";
@@ -9437,7 +9423,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Eventful);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/config.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/config.js
 	var dpr, devicePixelRatio, DARK_MODE_THRESHOLD, DARK_LABEL_COLOR, LIGHT_LABEL_COLOR, LIGHTER_LABEL_COLOR;
 	var init_config = __esmMin((() => {
 		init_env();
@@ -9450,7 +9436,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		LIGHTER_LABEL_COLOR = "#eee";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/Transformable.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/Transformable.js
 	function isNotAroundZero(val) {
 		return val > EPSILON$1 || val < -EPSILON$1;
 	}
@@ -9509,10 +9495,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				m = m || create();
 				if (needLocalTransform) this.getLocalTransform(m);
 				else mIdentity(m);
-				if (parentTransform) {
-					if (needLocalTransform) mul(m, parentTransform, m);
-					else copy(m, parentTransform);
-				}
+				if (parentTransform) if (needLocalTransform) mul(m, parentTransform, m);
+				else copy(m, parentTransform);
 				this.transform = m;
 				this._resolveGlobalScaleRatio(m);
 				this.invTransform = this.invTransform || create();
@@ -9665,7 +9649,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/text.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/text.js
 	function ensureFontMeasureInfo(font) {
 		if (!_fontMeasureInfoCache) _fontMeasureInfoCache = new LRU(100);
 		font = font || "12px sans-serif";
@@ -9713,9 +9697,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	function innerGetBoundingRect(text, font, textAlign, textBaseline) {
 		var width = measureWidth(ensureFontMeasureInfo(font), text);
 		var height = getLineHeight(font);
-		var x = adjustTextX(0, width, textAlign);
-		var y = adjustTextY(0, height, textBaseline);
-		return new BoundingRect(x, y, width, height);
+		return new BoundingRect(adjustTextX(0, width, textAlign), adjustTextY(0, height, textBaseline), width, height);
 	}
 	function getBoundingRect(text, font, textAlign, textBaseline) {
 		var textLines = ((text || "") + "").split("\n");
@@ -9834,6 +9816,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				y += height - distance;
 				textAlign = "right";
 				textVerticalAlign = "bottom";
+				break;
 		}
 		out = out || {};
 		out.x = x;
@@ -9851,7 +9834,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		GET_ASCII_WIDTH_LONG_COUNT_MAX = 5;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/Element.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/Element.js
 	function animateTo(animatable, target, cfg, animationProps, reverse) {
 		cfg = cfg || {};
 		var animators = [];
@@ -9931,18 +9914,17 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		for (var k = 0; k < targetKeys.length; k++) {
 			var innerKey = targetKeys[k];
 			var targetVal = target[innerKey];
-			if (targetVal != null && animateObj[innerKey] != null && (animateAll || animationProps[innerKey])) {
-				if (isObject$2(targetVal) && !isArrayLike(targetVal) && !isGradientObject(targetVal)) {
-					if (topKey) {
-						if (!reverse) {
-							animateObj[innerKey] = targetVal;
-							animatable.updateDuringAnimation(topKey);
-						}
-						continue;
+			if (targetVal != null && animateObj[innerKey] != null && (animateAll || animationProps[innerKey])) if (isObject$2(targetVal) && !isArrayLike(targetVal) && !isGradientObject(targetVal)) {
+				if (topKey) {
+					if (!reverse) {
+						animateObj[innerKey] = targetVal;
+						animatable.updateDuringAnimation(topKey);
 					}
-					animateToShallow(animatable, innerKey, animateObj[innerKey], targetVal, cfg, animationProps && animationProps[innerKey], animators, reverse);
-				} else animationKeys.push(innerKey);
-			} else if (!reverse) {
+					continue;
+				}
+				animateToShallow(animatable, innerKey, animateObj[innerKey], targetVal, cfg, animationProps && animationProps[innerKey], animators, reverse);
+			} else animationKeys.push(innerKey);
+			else if (!reverse) {
 				animateObj[innerKey] = targetVal;
 				animatable.updateDuringAnimation(topKey);
 				animationKeys.push(innerKey);
@@ -10043,7 +10025,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					case "horizontal":
 						dy = 0;
 						break;
-					case "vertical": dx = 0;
+					case "vertical":
+						dx = 0;
+						break;
 				}
 				var m = this.transform;
 				if (!m) m = this.transform = [
@@ -10360,10 +10344,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				var currentStates = this.currentStates.slice();
 				var idx = indexOf(currentStates, oldState);
 				var newStateExists = indexOf(currentStates, newState) >= 0;
-				if (idx >= 0) {
-					if (!newStateExists) currentStates[idx] = newState;
-					else currentStates.splice(idx, 1);
-				} else if (forceAdd && !newStateExists) currentStates.push(newState);
+				if (idx >= 0) if (!newStateExists) currentStates[idx] = newState;
+				else currentStates.splice(idx, 1);
+				else if (forceAdd && !newStateExists) currentStates.push(newState);
 				this.useStates(currentStates);
 			};
 			Element.prototype.toggleState = function(state, enable) {
@@ -10398,18 +10381,15 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				for (var i = 0; i < PRIMARY_STATES_KEYS$1.length; i++) {
 					var key = PRIMARY_STATES_KEYS$1[i];
 					var propNeedsTransition = transition && DEFAULT_ANIMATABLE_MAP[key];
-					if (state && state[key] != null) {
-						if (propNeedsTransition) {
+					if (state && state[key] != null) if (propNeedsTransition) {
+						hasTransition = true;
+						transitionTarget[key] = state[key];
+					} else this[key] = state[key];
+					else if (needsRestoreToNormal) {
+						if (normalState[key] != null) if (propNeedsTransition) {
 							hasTransition = true;
-							transitionTarget[key] = state[key];
-						} else this[key] = state[key];
-					} else if (needsRestoreToNormal) {
-						if (normalState[key] != null) {
-							if (propNeedsTransition) {
-								hasTransition = true;
-								transitionTarget[key] = normalState[key];
-							} else this[key] = normalState[key];
-						}
+							transitionTarget[key] = normalState[key];
+						} else this[key] = normalState[key];
 					}
 				}
 				if (!transition) for (var i = 0; i < this.animators.length; i++) {
@@ -10500,10 +10480,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			Element.prototype.markRedraw = function() {
 				this.__dirty |= 1;
 				var zr = this.__zr;
-				if (zr) {
-					if (this.__inHover) zr.refreshHover();
-					else zr.refresh();
-				}
+				if (zr) if (this.__inHover) zr.refreshHover();
+				else zr.refresh();
 				if (this.__hostTarget) this.__hostTarget.markRedraw();
 			};
 			Element.prototype.dirty = function() {
@@ -10528,8 +10506,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				if (this._textGuide) this._textGuide.removeSelfFromZr(zr);
 			};
 			Element.prototype.animate = function(key, loop, allowDiscreteAnimation) {
-				var target = key ? this[key] : this;
-				var animator = new Animator(target, loop, allowDiscreteAnimation);
+				var animator = new Animator(key ? this[key] : this, loop, allowDiscreteAnimation);
 				key && (animator.targetName = key);
 				this.addAnimator(animator, key);
 				return animator;
@@ -10633,7 +10610,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		mixin(Element, Transformable);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Group.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Group.js
 	var Group$2;
 	var init_Group = __esmMin((() => {
 		init_modules();
@@ -10781,7 +10758,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Group$2.prototype.type = "group";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/zrender.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/zrender.js
 	/*!
 	* ZRender, a high performance 2d drawing library.
 	*
@@ -11022,7 +10999,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/number.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/number.js
 	function _trim(str) {
 		return str.replace(/^\s+|\s+$/g, "");
 	}
@@ -11068,7 +11045,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				option = "0%";
 				break;
 			case "right":
-			case "bottom": option = "100%";
+			case "bottom":
+				option = "100%";
+				break;
 		}
 		return parsePositionSizeOption(option, percentBase, percentOffset);
 	}
@@ -11296,13 +11275,12 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		var f = val / exp10;
 		var nf;
 		if (mode === 2) nf = 1;
-		else if (mode) {
-			if (f < 1.5) nf = 1;
-			else if (f < 2.5) nf = 2;
-			else if (f < 4) nf = 3;
-			else if (f < 7) nf = 5;
-			else nf = 10;
-		} else if (f < 1) nf = 1;
+		else if (mode) if (f < 1.5) nf = 1;
+		else if (f < 2.5) nf = 2;
+		else if (f < 4) nf = 3;
+		else if (f < 7) nf = 5;
+		else nf = 10;
+		else if (f < 1) nf = 1;
 		else if (f < 2) nf = 2;
 		else if (f < 3) nf = 3;
 		else if (f < 5) nf = 5;
@@ -11395,7 +11373,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		TIME_REG = /^(?:(\d{4})(?:[-\/](\d{1,2})(?:[-\/](\d{1,2})(?:[T ](\d{1,2})(?::(\d{1,2})(?::(\d{1,2})(?:[.,](\d+))?)?)?(Z|[\+\-]\d\d:?\d\d)?)?)?)?)?$/;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/log.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/log.js
 	function outputLog(type, str, onlyOnce) {
 		if (hasConsole) {
 			if (onlyOnce) {
@@ -11421,7 +11399,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		hasConsole = typeof console !== "undefined" && console.warn && console.log;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/model.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/model.js
 	function interpolateNumber(p0, p1, percent) {
 		return (p1 - p0) * percent + p0;
 	}
@@ -11767,16 +11745,12 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			result.models = opt.useDefault && (firstCmpt = ecModel.getComponent(mainType)) ? [firstCmpt] : [];
 			return result;
 		}
-		if (indexOption === "none" || indexOption === false) {
-			if (opt.enableNone) {
-				result.models = [];
-				return result;
-			} else indexOption = -1;
-		}
-		if (indexOption === "all") {
-			if (opt.enableAll) indexOption = idOption = nameOption = null;
-			else indexOption = -1;
-		}
+		if (indexOption === "none" || indexOption === false) if (opt.enableNone) {
+			result.models = [];
+			return result;
+		} else indexOption = -1;
+		if (indexOption === "all") if (opt.enableAll) indexOption = idOption = nameOption = null;
+		else indexOption = -1;
 		result.models = ecModel.queryComponents({
 			mainType,
 			index: indexOption,
@@ -12055,7 +12029,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		onceUniqueIndex = getRandomIdBase();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/clazz.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/clazz.js
 	/**
 	* Notice, parseClassType('') should returns {main: '', sub: ''}
 	* @public
@@ -12254,7 +12228,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		classBase = Math.round(Math.random() * 10);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/makeStyleMapper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/makeStyleMapper.js
 	function makeStyleMapper(properties, ignoreParent) {
 		for (var i = 0; i < properties.length; i++) if (!properties[i][1]) properties[i][1] = properties[i][0];
 		ignoreParent = ignoreParent || false;
@@ -12273,7 +12247,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/areaStyle.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/areaStyle.js
 	var AREA_STYLE_KEY_MAP, getAreaStyle, AreaStyleMixin;
 	var init_areaStyle = __esmMin((() => {
 		init_makeStyleMapper();
@@ -12295,7 +12269,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/image.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/image.js
 	function findExistImage(newImageOrSrc) {
 		if (typeof newImageOrSrc === "string") {
 			var cachedImgObj = globalImageCache.get(newImageOrSrc);
@@ -12347,7 +12321,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		globalImageCache = new LRU(50);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/parseText.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/parseText.js
 	function truncateText2(out, text, containerWidth, font, ellipsis, options) {
 		if (!containerWidth) {
 			out.text = "";
@@ -12565,17 +12539,16 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						}
 					}
 					var remainTruncWidth = truncate && topWidth != null ? topWidth - lineWidth : null;
-					if (remainTruncWidth != null && remainTruncWidth < token.width) {
-						if (!tokenWidthNotSpecified || remainTruncWidth < paddingH) {
-							token.text = "";
-							token.width = token.contentWidth = 0;
-						} else {
-							truncateText2(tmpTruncateOut, token.text, remainTruncWidth - paddingH, font, style.ellipsis, { minChar: style.truncateMinChar });
-							token.text = tmpTruncateOut.text;
-							contentBlock.isTruncated = contentBlock.isTruncated || tmpTruncateOut.isTruncated;
-							token.width = token.contentWidth = measureWidth(ensureFontMeasureInfo(font), token.text);
-						}
-					} else token.contentWidth = measureWidth(ensureFontMeasureInfo(font), token.text);
+					if (remainTruncWidth != null && remainTruncWidth < token.width) if (!tokenWidthNotSpecified || remainTruncWidth < paddingH) {
+						token.text = "";
+						token.width = token.contentWidth = 0;
+					} else {
+						truncateText2(tmpTruncateOut, token.text, remainTruncWidth - paddingH, font, style.ellipsis, { minChar: style.truncateMinChar });
+						token.text = tmpTruncateOut.text;
+						contentBlock.isTruncated = contentBlock.isTruncated || tmpTruncateOut.isTruncated;
+						token.width = token.contentWidth = measureWidth(ensureFontMeasureInfo(font), token.text);
+					}
+					else token.contentWidth = measureWidth(ensureFontMeasureInfo(font), token.text);
 				}
 				token.width += paddingH;
 				lineWidth += token.width;
@@ -12677,41 +12650,38 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			var chWidth = measureCharWidth(fontMeasureInfo, ch.charCodeAt(0));
 			var inWord = isBreakAll ? false : !isWordBreakChar(ch);
 			if (!lines.length ? lastAccumWidth + accumWidth + chWidth > lineWidth : accumWidth + chWidth > lineWidth) {
-				if (!accumWidth) {
-					if (inWord) {
-						lines.push(currentWord);
-						linesWidths.push(currentWordWidth);
-						currentWord = ch;
-						currentWordWidth = chWidth;
-					} else {
-						lines.push(ch);
-						linesWidths.push(chWidth);
-					}
-				} else if (line || currentWord) {
-					if (inWord) {
-						if (!line) {
-							line = currentWord;
-							currentWord = "";
-							currentWordWidth = 0;
-							accumWidth = currentWordWidth;
-						}
-						lines.push(line);
-						linesWidths.push(accumWidth - currentWordWidth);
-						currentWord += ch;
-						currentWordWidth += chWidth;
-						line = "";
+				if (!accumWidth) if (inWord) {
+					lines.push(currentWord);
+					linesWidths.push(currentWordWidth);
+					currentWord = ch;
+					currentWordWidth = chWidth;
+				} else {
+					lines.push(ch);
+					linesWidths.push(chWidth);
+				}
+				else if (line || currentWord) if (inWord) {
+					if (!line) {
+						line = currentWord;
+						currentWord = "";
+						currentWordWidth = 0;
 						accumWidth = currentWordWidth;
-					} else {
-						if (currentWord) {
-							line += currentWord;
-							currentWord = "";
-							currentWordWidth = 0;
-						}
-						lines.push(line);
-						linesWidths.push(accumWidth);
-						line = ch;
-						accumWidth = chWidth;
 					}
+					lines.push(line);
+					linesWidths.push(accumWidth - currentWordWidth);
+					currentWord += ch;
+					currentWordWidth += chWidth;
+					line = "";
+					accumWidth = currentWordWidth;
+				} else {
+					if (currentWord) {
+						line += currentWord;
+						currentWord = "";
+						currentWordWidth = 0;
+					}
+					lines.push(line);
+					linesWidths.push(accumWidth);
+					line = ch;
+					accumWidth = chWidth;
 				}
 				continue;
 			}
@@ -12820,7 +12790,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Displayable.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Displayable.js
 	function isDisplayableCulled(el, width, height) {
 		tmpRect.copy(el.getBoundingRect());
 		if (el.transform) tmpRect.applyTransform(el.transform);
@@ -12995,41 +12965,37 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				var needsRestoreToNormal = !(state && keepCurrentStates);
 				var inHoverOnlyStyleChange = this.__inHover === 1;
 				var targetStyle;
-				if (state && state.style) {
-					if (transition) {
-						if (keepCurrentStates) targetStyle = state.style;
-						else {
-							targetStyle = this._mergeStyle(this.createStyle(), normalState.style);
-							this._mergeStyle(targetStyle, state.style);
-						}
-					} else {
-						targetStyle = this._mergeStyle(this.createStyle(), keepCurrentStates ? this.style : normalState.style);
-						this._mergeStyle(targetStyle, state.style);
-					}
-				} else if (needsRestoreToNormal) targetStyle = normalState.style;
-				if (targetStyle) {
-					if (transition) {
-						var sourceStyle = this.style;
-						this.style = this.createStyle(needsRestoreToNormal ? {} : sourceStyle);
-						if (needsRestoreToNormal) {
-							var changedKeys = keys(sourceStyle);
-							for (var i = 0; i < changedKeys.length; i++) {
-								var key = changedKeys[i];
-								if (key in targetStyle) {
-									targetStyle[key] = targetStyle[key];
-									this.style[key] = sourceStyle[key];
-								}
+				if (state && state.style) if (transition) if (keepCurrentStates) targetStyle = state.style;
+				else {
+					targetStyle = this._mergeStyle(this.createStyle(), normalState.style);
+					this._mergeStyle(targetStyle, state.style);
+				}
+				else {
+					targetStyle = this._mergeStyle(this.createStyle(), keepCurrentStates ? this.style : normalState.style);
+					this._mergeStyle(targetStyle, state.style);
+				}
+				else if (needsRestoreToNormal) targetStyle = normalState.style;
+				if (targetStyle) if (transition) {
+					var sourceStyle = this.style;
+					this.style = this.createStyle(needsRestoreToNormal ? {} : sourceStyle);
+					if (needsRestoreToNormal) {
+						var changedKeys = keys(sourceStyle);
+						for (var i = 0; i < changedKeys.length; i++) {
+							var key = changedKeys[i];
+							if (key in targetStyle) {
+								targetStyle[key] = targetStyle[key];
+								this.style[key] = sourceStyle[key];
 							}
 						}
-						var targetKeys = keys(targetStyle);
-						for (var i = 0; i < targetKeys.length; i++) {
-							var key = targetKeys[i];
-							this.style[key] = this.style[key];
-						}
-						this._transitionState(stateName, { style: targetStyle }, animationCfg, this.getAnimationStyleProps());
-					} else if (inHoverOnlyStyleChange) this._useHoverStyle(targetStyle);
-					else this.useStyle(targetStyle);
-				}
+					}
+					var targetKeys = keys(targetStyle);
+					for (var i = 0; i < targetKeys.length; i++) {
+						var key = targetKeys[i];
+						this.style[key] = this.style[key];
+					}
+					this._transitionState(stateName, { style: targetStyle }, animationCfg, this.getAnimationStyleProps());
+				} else if (inHoverOnlyStyleChange) this._useHoverStyle(targetStyle);
+				else this.useStyle(targetStyle);
 				if (!inHoverOnlyStyleChange) {
 					var statesKeys = this.__inHover ? PRIMARY_STATES_KEYS_IN_HOVER_LAYER : PRIMARY_STATES_KEYS;
 					for (var i = 0; i < statesKeys.length; i++) {
@@ -13082,7 +13048,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		viewRect = new BoundingRect(0, 0, 0, 0);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/bbox.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/bbox.js
 	function fromLine(x0, y0, x1, y1, min, max) {
 		min[0] = mathMin$5(x0, x1);
 		min[1] = mathMin$5(y0, y1);
@@ -13180,7 +13146,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		yDim = [];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/PathProxy.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/PathProxy.js
 	function modPI2(radian) {
 		return Math.round(radian / PI$4 * 1e8) / 1e8 % 2 * PI$4;
 	}
@@ -13492,6 +13458,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						case CMD$3.Z:
 							xi = x0;
 							yi = y0;
+							break;
 					}
 					min$1(min, min, min2);
 					max$1(max, max, max2);
@@ -13588,6 +13555,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 							l = Math.sqrt(dx * dx + dy * dy);
 							xi = x0;
 							yi = y0;
+							break;
 					}
 					if (l >= 0) {
 						pathSegLen[segCount++] = l;
@@ -13808,7 +13776,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/line.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/line.js
 	function containStroke$4(x0, y0, x1, y1, lineWidth, x, y) {
 		if (lineWidth === 0) return false;
 		var _l = lineWidth;
@@ -13824,7 +13792,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	}
 	var init_line = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/cubic.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/cubic.js
 	function containStroke$3(x0, y0, x1, y1, x2, y2, x3, y3, lineWidth, x, y) {
 		if (lineWidth === 0) return false;
 		var _l = lineWidth;
@@ -13835,7 +13803,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_curve();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/quadratic.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/quadratic.js
 	function containStroke$2(x0, y0, x1, y1, x2, y2, lineWidth, x, y) {
 		if (lineWidth === 0) return false;
 		var _l = lineWidth;
@@ -13846,7 +13814,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_curve();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/util.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/util.js
 	function normalizeRadian(angle) {
 		angle %= PI2$5;
 		if (angle < 0) angle += PI2$5;
@@ -13857,7 +13825,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		PI2$5 = Math.PI * 2;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/arc.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/arc.js
 	function containStroke$1(cx, cy, r, startAngle, endAngle, anticlockwise, lineWidth, x, y) {
 		if (lineWidth === 0) return false;
 		var _l = lineWidth;
@@ -13885,7 +13853,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		PI2$4 = Math.PI * 2;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/windingLine.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/windingLine.js
 	function windingLine(x0, y0, x1, y1, x, y) {
 		if (y > y0 && y > y1 || y < y0 && y < y1) return 0;
 		if (y1 === y0) return 0;
@@ -13897,7 +13865,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	}
 	var init_windingLine = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/path.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/contain/path.js
 	function isAroundEqual(a, b) {
 		return Math.abs(a - b) < EPSILON;
 	}
@@ -13925,11 +13893,10 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					y0_ = cubicAt(y0, y1, y2, y3, extrema[0]);
 					if (nExtrema > 1) y1_ = cubicAt(y0, y1, y2, y3, extrema[1]);
 				}
-				if (nExtrema === 2) {
-					if (t < extrema[0]) w += y0_ < y0 ? unit : -unit;
-					else if (t < extrema[1]) w += y1_ < y0_ ? unit : -unit;
-					else w += y3 < y1_ ? unit : -unit;
-				} else if (t < extrema[0]) w += y0_ < y0 ? unit : -unit;
+				if (nExtrema === 2) if (t < extrema[0]) w += y0_ < y0 ? unit : -unit;
+				else if (t < extrema[1]) w += y1_ < y0_ ? unit : -unit;
+				else w += y3 < y1_ ? unit : -unit;
+				else if (t < extrema[0]) w += y0_ < y0 ? unit : -unit;
 				else w += y3 < y0_ ? unit : -unit;
 			}
 			return w;
@@ -14092,6 +14059,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					} else w += windingLine(xi, yi, x0, y0, x, y);
 					xi = x0;
 					yi = y0;
+					break;
 			}
 		}
 		if (!isStroke && !isAroundEqual(yi, y0)) w += windingLine(xi, yi, x0, y0, x, y) || 0;
@@ -14123,7 +14091,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		extrema = [-1, -1];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Path.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Path.js
 	var DEFAULT_PATH_STYLE, DEFAULT_PATH_ANIMATION_PROPS, pathCopyParams, Path;
 	var init_Path = __esmMin((() => {
 		init_modules();
@@ -14203,10 +14171,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				for (var i = 0; i < keysArr.length; i++) {
 					var key = keysArr[i];
 					var value = props[key];
-					if (key === "style") {
-						if (!this.style) this.useStyle(value);
-						else extend(this.style, value);
-					} else if (key === "shape") extend(this.shape, value);
+					if (key === "style") if (!this.style) this.useStyle(value);
+					else extend(this.style, value);
+					else if (key === "shape") extend(this.shape, value);
 					else _super.prototype.attrKV.call(this, key, value);
 				}
 				if (!this.style) this.useStyle({});
@@ -14367,33 +14334,29 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				if (this.__inHover === 1) return;
 				var needsRestoreToNormal = !(state && keepCurrentStates);
 				var targetShape;
-				if (state && state.shape) {
-					if (transition) {
-						if (keepCurrentStates) targetShape = state.shape;
-						else {
-							targetShape = extend({}, normalState.shape);
-							extend(targetShape, state.shape);
-						}
-					} else {
-						targetShape = extend({}, keepCurrentStates ? this.shape : normalState.shape);
-						extend(targetShape, state.shape);
+				if (state && state.shape) if (transition) if (keepCurrentStates) targetShape = state.shape;
+				else {
+					targetShape = extend({}, normalState.shape);
+					extend(targetShape, state.shape);
+				}
+				else {
+					targetShape = extend({}, keepCurrentStates ? this.shape : normalState.shape);
+					extend(targetShape, state.shape);
+				}
+				else if (needsRestoreToNormal) targetShape = normalState.shape;
+				if (targetShape) if (transition) {
+					this.shape = extend({}, this.shape);
+					var targetShapePrimaryProps = {};
+					var shapeKeys = keys(targetShape);
+					for (var i = 0; i < shapeKeys.length; i++) {
+						var key = shapeKeys[i];
+						if (typeof targetShape[key] === "object") this.shape[key] = targetShape[key];
+						else targetShapePrimaryProps[key] = targetShape[key];
 					}
-				} else if (needsRestoreToNormal) targetShape = normalState.shape;
-				if (targetShape) {
-					if (transition) {
-						this.shape = extend({}, this.shape);
-						var targetShapePrimaryProps = {};
-						var shapeKeys = keys(targetShape);
-						for (var i = 0; i < shapeKeys.length; i++) {
-							var key = shapeKeys[i];
-							if (typeof targetShape[key] === "object") this.shape[key] = targetShape[key];
-							else targetShapePrimaryProps[key] = targetShape[key];
-						}
-						this._transitionState(stateName, { shape: targetShapePrimaryProps }, animationCfg);
-					} else {
-						this.shape = targetShape;
-						this.dirtyShape();
-					}
+					this._transitionState(stateName, { shape: targetShapePrimaryProps }, animationCfg);
+				} else {
+					this.shape = targetShape;
+					this.dirtyShape();
 				}
 			};
 			Path.prototype._mergeStates = function(states) {
@@ -14447,7 +14410,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Displayable);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/TSpan.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/TSpan.js
 	var DEFAULT_TSPAN_STYLE, TSpan;
 	var init_TSpan = __esmMin((() => {
 		init_modules();
@@ -14496,7 +14459,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		TSpan.prototype.type = "tspan";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Image.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Image.js
 	function isImageLike(source) {
 		return !!(source && typeof source !== "string" && source.width && source.height);
 	}
@@ -14558,7 +14521,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		ZRImage.prototype.type = "image";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/roundRect.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/roundRect.js
 	function buildPath$2(ctx, shape) {
 		var x = shape.x;
 		var y = shape.y;
@@ -14578,22 +14541,21 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			height = -height;
 		}
 		if (typeof r === "number") r1 = r2 = r3 = r4 = r;
-		else if (r instanceof Array) {
-			if (r.length === 1) r1 = r2 = r3 = r4 = r[0];
-			else if (r.length === 2) {
-				r1 = r3 = r[0];
-				r2 = r4 = r[1];
-			} else if (r.length === 3) {
-				r1 = r[0];
-				r2 = r4 = r[1];
-				r3 = r[2];
-			} else {
-				r1 = r[0];
-				r2 = r[1];
-				r3 = r[2];
-				r4 = r[3];
-			}
-		} else r1 = r2 = r3 = r4 = 0;
+		else if (r instanceof Array) if (r.length === 1) r1 = r2 = r3 = r4 = r[0];
+		else if (r.length === 2) {
+			r1 = r3 = r[0];
+			r2 = r4 = r[1];
+		} else if (r.length === 3) {
+			r1 = r[0];
+			r2 = r4 = r[1];
+			r3 = r[2];
+		} else {
+			r1 = r[0];
+			r2 = r[1];
+			r3 = r[2];
+			r4 = r[3];
+		}
+		else r1 = r2 = r3 = r4 = 0;
 		var total;
 		if (r1 + r2 > width) {
 			total = r1 + r2;
@@ -14628,7 +14590,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	}
 	var init_roundRect = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/subPixelOptimize.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/subPixelOptimize.js
 	function subPixelOptimizeLine$1(outputShape, inputShape, style) {
 		if (!inputShape) return;
 		var x1 = inputShape.x1;
@@ -14673,7 +14635,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		round = Math.round;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Rect.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Rect.js
 	var RectShape, subPixelOptimizeOutputShape$1, Rect;
 	var init_Rect = __esmMin((() => {
 		init_modules();
@@ -14728,7 +14690,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Rect.prototype.type = "rect";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Text.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Text.js
 	function parseFontSize(fontSize) {
 		if (typeof fontSize === "string" && (fontSize.indexOf("px") !== -1 || fontSize.indexOf("rem") !== -1 || fontSize.indexOf("em") !== -1)) return fontSize;
 		else if (!isNaN(+fontSize)) return fontSize + "px";
@@ -15195,7 +15157,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/innerStore.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/innerStore.js
 	var getECData, setCommonECData;
 	var init_innerStore = __esmMin((() => {
 		init_model();
@@ -15237,7 +15199,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		SERIES_LAYOUT_BY_COLUMN = "column";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/ExtensionAPI.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/ExtensionAPI.js
 	function getViewOfComponentOrSeries(api, componentOrSeries) {
 		return componentOrSeries.mainType === "series" ? api.getViewOfSeriesModel(componentOrSeries) : api.getViewOfComponentModel(componentOrSeries);
 	}
@@ -15272,7 +15234,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/states.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/states.js
 	function hasFillOrStroke(fillOrStroke) {
 		return fillOrStroke != null && fillOrStroke !== "none";
 	}
@@ -15754,7 +15716,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/tool/transformPath.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/tool/transformPath.js
 	function transformPath(path, m) {
 		if (!m) return;
 		var data = path.data;
@@ -15842,7 +15804,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		mathAtan2 = Math.atan2;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/tool/path.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/tool/path.js
 	function vMag(v) {
 		return Math.sqrt(v[0] * v[0] + v[1] * v[1]);
 	}
@@ -16071,6 +16033,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						cpy += p[off++];
 						cmd = CMD.A;
 						processArc(x1, y1, cpx, cpy, fa, fs, rx, ry, psi, cmd, path);
+						break;
 				}
 			}
 			if (cmdStr === "z" || cmdStr === "Z") {
@@ -16164,7 +16127,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Path);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Circle.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Circle.js
 	var CircleShape, Circle;
 	var init_Circle = __esmMin((() => {
 		init_modules();
@@ -16194,7 +16157,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Circle.prototype.type = "circle";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Ellipse.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Ellipse.js
 	var EllipseShape, Ellipse;
 	var init_Ellipse = __esmMin((() => {
 		init_modules();
@@ -16236,7 +16199,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Ellipse.prototype.type = "ellipse";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/roundSector.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/roundSector.js
 	function intersect(x0, y0, x1, y1, x2, y2, x3, y3) {
 		var dx10 = x1 - x0;
 		var dy10 = y1 - y0;
@@ -16448,7 +16411,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		e = 1e-4;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Sector.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Sector.js
 	var SectorShape, Sector;
 	var init_Sector = __esmMin((() => {
 		init_modules();
@@ -16486,7 +16449,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Sector.prototype.type = "sector";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Ring.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Ring.js
 	var RingShape, Ring;
 	var init_Ring = __esmMin((() => {
 		init_modules();
@@ -16522,7 +16485,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Ring.prototype.type = "ring";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/smoothBezier.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/smoothBezier.js
 	function smoothBezier(points, smooth, isLoop, constraint) {
 		var cps = [];
 		var v = [];
@@ -16583,7 +16546,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_vector();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/poly.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/helper/poly.js
 	function buildPath(ctx, shape, closePath) {
 		var smooth = shape.smooth;
 		var points = shape.points;
@@ -16609,7 +16572,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_smoothBezier();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Polygon.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Polygon.js
 	var PolygonShape, Polygon;
 	var init_Polygon = __esmMin((() => {
 		init_modules();
@@ -16639,7 +16602,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Polygon.prototype.type = "polygon";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Polyline.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Polyline.js
 	var PolylineShape, Polyline;
 	var init_Polyline = __esmMin((() => {
 		init_modules();
@@ -16676,7 +16639,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Polyline.prototype.type = "polyline";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Line.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Line.js
 	var subPixelOptimizeOutputShape, LineShape, Line;
 	var init_Line = __esmMin((() => {
 		init_modules();
@@ -16742,7 +16705,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Line.prototype.type = "line";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/BezierCurve.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/BezierCurve.js
 	function someVectorAt(shape, t, isTangent) {
 		var cpx2 = shape.cpx2;
 		var cpy2 = shape.cpy2;
@@ -16830,7 +16793,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		BezierCurve.prototype.type = "bezier-curve";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Arc.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/shape/Arc.js
 	var ArcShape, Arc;
 	var init_Arc = __esmMin((() => {
 		init_modules();
@@ -16877,7 +16840,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Arc.prototype.type = "arc";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/CompoundPath.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/CompoundPath.js
 	var CompoundPath;
 	var init_CompoundPath = __esmMin((() => {
 		init_modules();
@@ -16920,7 +16883,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Path);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Gradient.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/Gradient.js
 	var Gradient;
 	var init_Gradient = __esmMin((() => {
 		Gradient = function() {
@@ -16937,7 +16900,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/LinearGradient.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/LinearGradient.js
 	var LinearGradient;
 	var init_LinearGradient = __esmMin((() => {
 		init_modules();
@@ -16958,7 +16921,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Gradient);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/RadialGradient.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/RadialGradient.js
 	var RadialGradient;
 	var init_RadialGradient = __esmMin((() => {
 		init_modules();
@@ -16978,7 +16941,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Gradient);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/OrientedBoundingRect.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/OrientedBoundingRect.js
 	var mathMin$2, mathMax$2, mathAbs, _extent, _extent2, _intersectCtx, _minTv, _maxTv, OrientedBoundingRect;
 	var init_OrientedBoundingRect = __esmMin((() => {
 		init_Point();
@@ -17045,10 +17008,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						if (_intersectCtx.negativeSize || noMtv) return overlapped;
 						var dist0 = mathAbs(_extent2[0] - _extent[1]);
 						var dist1 = mathAbs(_extent[0] - _extent2[1]);
-						if (mathMin$2(dist0, dist1) > _maxTv.len()) {
-							if (dist0 < dist1) Point.scale(_maxTv, axis, -dist0 * inverse);
-							else Point.scale(_maxTv, axis, dist1 * inverse);
-						}
+						if (mathMin$2(dist0, dist1) > _maxTv.len()) if (dist0 < dist1) Point.scale(_maxTv, axis, -dist0 * inverse);
+						else Point.scale(_maxTv, axis, dist1 * inverse);
 					} else if (!noMtv) {
 						var dist0 = mathAbs(_extent2[0] - _extent[1]);
 						var dist1 = mathAbs(_extent[0] - _extent2[1]);
@@ -17085,10 +17046,10 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/types.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/types.js
 	var init_types = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/IncrementalDisplayable.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/graphic/IncrementalDisplayable.js
 	var m, IncrementalDisplayable;
 	var init_IncrementalDisplayable = __esmMin((() => {
 		init_modules();
@@ -17190,7 +17151,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Displayable);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/animation/basicTransition.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/animation/basicTransition.js
 	/**
 	* Return null if animation is disabled.
 	*/
@@ -17344,7 +17305,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		transitionStore = makeInner();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/graphic.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/graphic.js
 	var graphic_exports = /* @__PURE__ */ __exportAll({
 		Arc: () => Arc,
 		BezierCurve: () => BezierCurve,
@@ -17819,10 +17780,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		if (!stopped) el.traverse(cb);
 	}
 	function traverseElements(els, cb) {
-		if (els) {
-			if (isArray(els)) for (var i = 0; i < els.length; i++) traverseElement(els[i], cb);
-			else traverseElement(els, cb);
-		}
+		if (els) if (isArray(els)) for (var i = 0; i < els.length; i++) traverseElement(els[i], cb);
+		else traverseElement(els, cb);
 	}
 	/**
 	* After a boundingRect applying a `transform`, whether to be still parallel screen X and Y.
@@ -17995,7 +17954,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		registerShape("arc", Arc);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/labelStyle.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/labelStyle.js
 	function setLabelText(label, labelTexts) {
 		for (var i = 0; i < SPECIAL_STATES.length; i++) {
 			var stateName = SPECIAL_STATES[i];
@@ -18189,14 +18148,10 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		var fillColor = textStyleModel.getShallow("color");
 		var strokeColor = textStyleModel.getShallow("textBorderColor");
 		var opacity = retrieve2(textStyleModel.getShallow("opacity"), globalTextStyle.opacity);
-		if (fillColor === "inherit" || fillColor === "auto") {
-			if (inheritColor) fillColor = inheritColor;
-			else fillColor = null;
-		}
-		if (strokeColor === "inherit" || strokeColor === "auto") {
-			if (inheritColor) strokeColor = inheritColor;
-			else strokeColor = null;
-		}
+		if (fillColor === "inherit" || fillColor === "auto") if (inheritColor) fillColor = inheritColor;
+		else fillColor = null;
+		if (strokeColor === "inherit" || strokeColor === "auto") if (inheritColor) strokeColor = inheritColor;
+		else strokeColor = null;
 		if (!isAttached) {
 			fillColor = fillColor || globalTextStyle.color;
 			strokeColor = strokeColor || globalTextStyle.textBorderColor;
@@ -18326,7 +18281,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/textStyle.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/textStyle.js
 	var PATH_COLOR, textStyleParams, tmpText, TextStyleMixin;
 	var init_textStyle = __esmMin((() => {
 		init_labelStyle();
@@ -18380,7 +18335,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/lineStyle.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/lineStyle.js
 	var LINE_STYLE_KEY_MAP, getLineStyle, LineStyleMixin;
 	var init_lineStyle = __esmMin((() => {
 		init_makeStyleMapper();
@@ -18408,7 +18363,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/itemStyle.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/itemStyle.js
 	var ITEM_STYLE_KEY_MAP, getItemStyle, ItemStyleMixin;
 	var init_itemStyle = __esmMin((() => {
 		init_makeStyleMapper();
@@ -18437,7 +18392,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/Model.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/Model.js
 	var Model;
 	var init_Model = __esmMin((() => {
 		init_env();
@@ -18528,7 +18483,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		mixin(Model, TextStyleMixin);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/component.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/component.js
 	/**
 	* @public
 	* @param {string} type
@@ -18646,7 +18601,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		base = Math.round(Math.random() * 10);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/i18n/langEN.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/i18n/langEN.js
 	var langEN_default;
 	var init_langEN = __esmMin((() => {
 		langEN_default = {
@@ -18796,7 +18751,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/i18n/langZH.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/i18n/langZH.js
 	var langZH_default;
 	var init_langZH = __esmMin((() => {
 		langZH_default = {
@@ -18946,7 +18901,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/locale.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/locale.js
 	function registerLocale(locale, localeObj) {
 		locale = locale.toUpperCase();
 		localeModels[locale] = new Model(localeObj);
@@ -18984,7 +18939,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		registerLocale(LOCALE_ZH, langZH_default);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/break.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/break.js
 	function getScaleBreakHelper() {
 		return _impl$1;
 	}
@@ -19008,7 +18963,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		_impl$1 = null;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/time.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/time.js
 	function parseTimeAxisLabelFormatter(formatter) {
 		return !isString(formatter) && !isFunction(formatter) ? parseTimeAxisLabelFormatterDictionary(formatter) : formatter;
 	}
@@ -19309,7 +19264,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/format.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/format.js
 	/**
 	* Add a comma each three digit.
 	*/
@@ -19439,7 +19394,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/CoordinateSystem.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/CoordinateSystem.js
 	function canBeNonSeriesBoxCoordSys(coordSysType) {
 		return !!nonSeriesBoxCoordSysCreators[coordSysType];
 	}
@@ -19613,7 +19568,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		coordSysUseMap = createHashMap();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/layout.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/layout.js
 	function boxLayout(orient, group, gap, maxWidth, maxHeight) {
 		var x = 0;
 		var y = 0;
@@ -19720,10 +19675,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		if (isNaN(width)) width = containerWidth - right - horizontalMargin - left;
 		if (isNaN(height)) height = containerHeight - bottom - verticalMargin - top;
 		if (aspect != null) {
-			if (isNaN(width) && isNaN(height)) {
-				if (aspect > containerWidth / containerHeight) width = containerWidth * .8;
-				else height = containerHeight * .8;
-			}
+			if (isNaN(width) && isNaN(height)) if (aspect > containerWidth / containerHeight) width = containerWidth * .8;
+			else height = containerHeight * .8;
 			if (isNaN(width)) width = aspect * height;
 			if (isNaN(height)) height = width / aspect;
 		}
@@ -19733,14 +19686,18 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "center":
 				left = containerWidth / 2 - width / 2 - margin[3];
 				break;
-			case "right": left = containerWidth - width - horizontalMargin;
+			case "right":
+				left = containerWidth - width - horizontalMargin;
+				break;
 		}
 		switch (positionInfo.top || positionInfo.bottom) {
 			case "middle":
 			case "center":
 				top = containerHeight / 2 - height / 2 - margin[0];
 				break;
-			case "bottom": top = containerHeight - height - verticalMargin;
+			case "bottom":
+				top = containerHeight - height - verticalMargin;
+				break;
 		}
 		left = left || 0;
 		top = top || 0;
@@ -19994,7 +19951,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/Component.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/Component.js
 	function getDependencies(componentType) {
 		var deps = [];
 		each$4(ComponentModel.getClassesByMainType(componentType), function(clz) {
@@ -20175,7 +20132,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		enableTopologicalTravel(ComponentModel, getDependencies);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/tokens.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/tokens.js
 	var tokens, color$1, hex;
 	var init_tokens = __esmMin((() => {
 		init_util$1();
@@ -20290,7 +20247,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/globalDefault.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/globalDefault.js
 	var platform, decalColor, themeColor, lightThemeColor, globalDefault_default;
 	var init_globalDefault = __esmMin((() => {
 		init_color();
@@ -20389,7 +20346,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/sourceHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/sourceHelper.js
 	/**
 	* MUST be called before mergeOption of all series.
 	*/
@@ -20599,7 +20556,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		innerGlobalModel = makeInner();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/internalComponentCreator.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/internalComponentCreator.js
 	function concatInternalOptions(ecModel, mainType, newCmptOptionList) {
 		var internalOptionCreator = internalOptionCreatorMap.get(mainType);
 		if (!internalOptionCreator) return newCmptOptionList;
@@ -20613,7 +20570,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		internalOptionCreatorMap = createHashMap();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/palette.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/palette.js
 	function getNearestPalette(palettes, requestColorNum) {
 		var paletteNum = palettes.length;
 		for (var i = 0; i < paletteNum; i++) if (palettes[i].length > requestColorNum) return palettes[i];
@@ -20662,7 +20619,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/Global.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/Global.js
 	function isNotTargetSeries(seriesModel, payload) {
 		if (payload) {
 			var index = payload.seriesIndex;
@@ -21127,7 +21084,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		mixin(GlobalModel, PaletteMixin);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/OptionManager.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/OptionManager.js
 	/**
 	* [RAW_OPTION_PATTERNS]
 	* (Note: "series: []" represents all other props in `ECUnitOption`)
@@ -21333,7 +21290,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/preprocessor/helper/compatStyle.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/preprocessor/helper/compatStyle.js
 	function compatEC2ItemStyle(opt) {
 		var itemStyleOpt = opt && opt.itemStyle;
 		if (!itemStyleOpt) return;
@@ -21359,12 +21316,10 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		if (opt && opt[optType] && (opt[optType].normal || opt[optType].emphasis)) {
 			var normalOpt = opt[optType].normal;
 			var emphasisOpt = opt[optType].emphasis;
-			if (normalOpt) {
-				if (useExtend) {
-					opt[optType].normal = opt[optType].emphasis = null;
-					defaults(opt[optType], normalOpt);
-				} else opt[optType] = normalOpt;
-			}
+			if (normalOpt) if (useExtend) {
+				opt[optType].normal = opt[optType].emphasis = null;
+				defaults(opt[optType], normalOpt);
+			} else opt[optType] = normalOpt;
 			if (emphasisOpt) {
 				opt.emphasis = opt.emphasis || {};
 				opt.emphasis[optType] = emphasisOpt;
@@ -21552,7 +21507,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/preprocessor/backwardCompat.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/preprocessor/backwardCompat.js
 	function get(opt, path) {
 		var pathArr = path.split(",");
 		var obj = opt;
@@ -21698,7 +21653,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/processor/dataStack.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/processor/dataStack.js
 	function dataStack(ecModel) {
 		var stackInfoMap = createHashMap();
 		ecModel.eachSeries(function(seriesModel) {
@@ -21770,7 +21725,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		dataStackStageHandler = createSimpleOverallStageHandler2(dataStack);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/Source.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/Source.js
 	function isSourceInstance(val) {
 		return val instanceof SourceImpl;
 	}
@@ -21856,10 +21811,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		if (sourceFormat === "arrayRows") {
 			var dataArrayRows = data;
 			if (sourceHeader === "auto" || sourceHeader == null) arrayRowsTravelFirst(function(val) {
-				if (val != null && val !== "-") {
-					if (isString(val)) startIndex ??= 1;
-					else startIndex = 0;
-				}
+				if (val != null && val !== "-") if (isString(val)) startIndex ??= 1;
+				else startIndex = 0;
 			}, seriesLayoutBy, dataArrayRows, 10);
 			else startIndex = isNumber(sourceHeader) ? sourceHeader : sourceHeader ? 1 : 0;
 			if (!dimensionsDefine && startIndex === 1) {
@@ -21950,7 +21903,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/dataProvider.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/dataProvider.js
 	function getRawSourceItemGetter(sourceFormat, seriesLayoutBy) {
 		return rawSourceItemGetterMap[getMethodMapKey(sourceFormat, seriesLayoutBy)];
 	}
@@ -22028,10 +21981,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						provider.count = countForTypedArray;
 						provider.fillStorage = fillStorageForTypedArray;
 					} else {
-						var rawItemGetter = getRawSourceItemGetter(sourceFormat, seriesLayoutBy);
-						provider.getItem = bind$1(rawItemGetter, null, data, startIndex, dimsDef);
-						var rawCounter = getRawSourceDataCounter(sourceFormat, seriesLayoutBy);
-						provider.count = bind$1(rawCounter, null, data, startIndex, dimsDef);
+						provider.getItem = bind$1(getRawSourceItemGetter(sourceFormat, seriesLayoutBy), null, data, startIndex, dimsDef);
+						provider.count = bind$1(getRawSourceDataCounter(sourceFormat, seriesLayoutBy), null, data, startIndex, dimsDef);
 					}
 				};
 				var getItemForTypedArray = function(idx, out) {
@@ -22155,7 +22106,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}, _d$1[SOURCE_FORMAT_TYPED_ARRAY] = getRawValueSimply, _d$1);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/dataFormat.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/mixin/dataFormat.js
 	/**
 	* For backward compat, normalize the return from `formatTooltip`.
 	*/
@@ -22271,7 +22222,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/task.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/task.js
 	/**
 	* @param {Object} define
 	* @return See the return of `createTask`.
@@ -22441,7 +22392,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/dataValueHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/dataValueHelper.js
 	/**
 	* Convert raw the value in to inner value in List.
 	*
@@ -22591,7 +22542,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		})();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/transform.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/transform.js
 	function createExternalSource(internalSource, externalTransform) {
 		var extSource = new ExternalSource();
 		var data = internalSource.data;
@@ -22625,8 +22576,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			extSource.getRawData = bind$1(getRawData, null, internalSource);
 		}
 		extSource.cloneRawData = bind$1(cloneRawData, null, internalSource);
-		var rawCounter = getRawSourceDataCounter(sourceFormat, SERIES_LAYOUT_BY_COLUMN);
-		extSource.count = bind$1(rawCounter, null, data, sourceHeaderCount, dimensions);
+		extSource.count = bind$1(getRawSourceDataCounter(sourceFormat, SERIES_LAYOUT_BY_COLUMN), null, data, sourceHeaderCount, dimensions);
 		var rawValueGetter = getRawSourceValueGetter(sourceFormat);
 		extSource.retrieveValue = function(dataIndex, dimIndex) {
 			return retrieveValueFromItem(rawItemGetter(data, sourceHeaderCount, dimensions, dataIndex), dimIndex);
@@ -22804,7 +22754,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		externalTransformMap = createHashMap();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/DataStore.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/DataStore.js
 	function getIndicesCtor(rawCount) {
 		return rawCount > 65535 ? CtorUint32Array : CtorUint16Array;
 	}
@@ -23169,22 +23119,20 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						quickFinished = true;
 					}
 				}
-				if (!quickFinished) {
-					if (dimSize === 1) for (var i = 0; i < originalCount; i++) {
-						var rawIndex = newStore.getRawIndex(i);
-						var val = storeArr[dims[0]][rawIndex];
-						if (val >= min && val <= max || isNaN(val)) newIndices[offset++] = rawIndex;
+				if (!quickFinished) if (dimSize === 1) for (var i = 0; i < originalCount; i++) {
+					var rawIndex = newStore.getRawIndex(i);
+					var val = storeArr[dims[0]][rawIndex];
+					if (val >= min && val <= max || isNaN(val)) newIndices[offset++] = rawIndex;
+				}
+				else for (var i = 0; i < originalCount; i++) {
+					var keep = true;
+					var rawIndex = newStore.getRawIndex(i);
+					for (var k = 0; k < dimSize; k++) {
+						var dimk = dims[k];
+						var val = storeArr[dimk][rawIndex];
+						if (val < range[dimk][0] || val > range[dimk][1]) keep = false;
 					}
-					else for (var i = 0; i < originalCount; i++) {
-						var keep = true;
-						var rawIndex = newStore.getRawIndex(i);
-						for (var k = 0; k < dimSize; k++) {
-							var dimk = dims[k];
-							var val = storeArr[dimk][rawIndex];
-							if (val < range[dimk][0] || val > range[dimk][1]) keep = false;
-						}
-						if (keep) newIndices[offset++] = newStore.getRawIndex(i);
-					}
+					if (keep) newIndices[offset++] = newStore.getRawIndex(i);
 				}
 				if (offset < originalCount) newStore._indices = newIndices;
 				newStore._count = offset;
@@ -23365,10 +23313,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						frameSize = len - i;
 						frameValues.length = frameSize;
 					}
-					for (var k = 0; k < frameSize; k++) {
-						var dataIdx = this.getRawIndex(i + k);
-						frameValues[k] = dimStore[dataIdx];
-					}
+					for (var k = 0; k < frameSize; k++) frameValues[k] = dimStore[this.getRawIndex(i + k)];
 					var value = sampleValue(frameValues);
 					var sampleFrameIdx = this.getRawIndex(Math.min(i + sampleIndex(frameValues, value) || 0, len - 1));
 					dimStore[sampleFrameIdx] = value;
@@ -23522,7 +23467,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/sourceManager.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/sourceManager.js
 	function isSeries(sourceHost) {
 		return sourceHost.mainType === "series";
 	}
@@ -23738,7 +23683,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/tooltipMarkup.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/tooltipMarkup.js
 	function getTooltipLineHeight(textStyle) {
 		var lineHeight = textStyle.lineHeight;
 		if (lineHeight == null) return TOOLTIP_LINE_HEIGHT_CSS;
@@ -23980,7 +23925,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/seriesFormatTooltip.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/seriesFormatTooltip.js
 	function defaultSeriesFormatTooltip(opt) {
 		var series = opt.series;
 		var dataIndex = opt.dataIndex;
@@ -24065,7 +24010,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_model();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/Series.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/Series.js
 	function getSelectionKey(data, dataIndex) {
 		return data.getName(dataIndex) || data.getId(dataIndex);
 	}
@@ -24465,7 +24410,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		mountExtend(SeriesModel, ComponentModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/view/Component.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/view/Component.js
 	var ComponentView;
 	var init_Component = __esmMin((() => {
 		init_Group();
@@ -24503,7 +24448,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		enableClassManagement(ComponentView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/createRenderPlanner.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/createRenderPlanner.js
 	/**
 	* @return {string} If large mode changed, return string 'reset';
 	*/
@@ -24523,7 +24468,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_model();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/view/Chart.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/view/Chart.js
 	/**
 	* Set state of single element
 	*/
@@ -24647,7 +24592,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/throttle.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/throttle.js
 	/**
 	* @public
 	* @param {(Function)} fn
@@ -24758,7 +24703,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		THROTTLE_TYPE = "\0__throttleType";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/style.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/style.js
 	function getStyleMapper(seriesModel, stylePath) {
 		var styleMapper = seriesModel.visualStyleMapper || defaultStyleMappers[stylePath];
 		if (!styleMapper) {
@@ -24890,7 +24835,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/loading/default.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/loading/default.js
 	/**
 	* @param {module:echarts/ExtensionAPI} api
 	* @param {Object} [opts]
@@ -24998,7 +24943,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		PI$1 = Math.PI;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/Scheduler.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/Scheduler.js
 	function overallTaskReset(context) {
 		context.overallReset(context.ecModel, context.api, context.payload);
 	}
@@ -25301,7 +25246,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/theme/dark.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/theme/dark.js
 	var color, backgroundColor, axisCommon, matrixAxis, theme;
 	var init_dark = __esmMin((() => {
 		init_tokens();
@@ -25468,7 +25413,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		theme.categoryAxis.splitLine.show = false;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/ECEventProcessor.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/ECEventProcessor.js
 	var ECEventProcessor;
 	var init_ECEventProcessor = __esmMin((() => {
 		init_util$1();
@@ -25543,7 +25488,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/symbol.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/symbol.js
 	var SYMBOL_PROPS_WITH_CB, SYMBOL_PROPS, seriesSymbolTask, dataSymbolTask;
 	var init_symbol$1 = __esmMin((() => {
 		init_util$1();
@@ -25610,7 +25555,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/helper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/helper.js
 	/**
 	* AUTO-GENERATED FILE. DO NOT MODIFY.
 	*/
@@ -25621,6 +25566,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "symbol":
 			case "symbolSize":
 			case "liftZ": return data.getItemVisual(dataIndex, key);
+			default:
 		}
 	}
 	function getVisualFromData(data, key) {
@@ -25630,11 +25576,12 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "symbol":
 			case "symbolSize":
 			case "liftZ": return data.getVisual(key);
+			default:
 		}
 	}
 	var init_helper$4 = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/legacy/dataSelectAction.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/legacy/dataSelectAction.js
 	function createLegacyDataSelectAction(seriesType, ecRegisterAction) {
 		function getSeriesIndices(ecModel, payload) {
 			var seriesIndices = [];
@@ -25702,7 +25649,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_model();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/event.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/event.js
 	/**
 	* AUTO-GENERATED FILE. DO NOT MODIFY.
 	*/
@@ -25719,14 +25666,14 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	}
 	var init_event = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/lifecycle.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/lifecycle.js
 	var lifecycle;
 	var init_lifecycle = __esmMin((() => {
 		init_Eventful();
 		lifecycle = new Eventful();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/impl.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/impl.js
 	function registerImpl(name, impl) {
 		implsStore[name] = impl;
 	}
@@ -25738,7 +25685,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		implsStore = {};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/custom/customSeriesRegister.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/custom/customSeriesRegister.js
 	function registerCustomSeries(type, renderItem) {
 		customRenderers[type] = renderItem;
 	}
@@ -25750,7 +25697,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		customRenderers = {};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/cycleCache.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/cycleCache.js
 	/**
 	* CAVEAT: Can only be called by `echarts.ts`
 	*/
@@ -25808,7 +25755,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		ecModelCacheInner = makeInner();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/WeakMap.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/core/WeakMap.js
 	var wmUniqueIndex, supportDefineProperty, WeakMap$1;
 	var init_WeakMap = __esmMin((() => {
 		wmUniqueIndex = Math.round(Math.random() * 9);
@@ -25848,7 +25795,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/symbol.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/symbol.js
 	function symbolPathSetColor(color, innerColor) {
 		if (this.type !== "image") {
 			var symbolStyle = this.style;
@@ -26091,7 +26038,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		});
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/canvas/helper.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/canvas/helper.js
 	function isSafeNum(num) {
 		return isFinite(num);
 	}
@@ -26155,7 +26102,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	}
 	var init_helper$3 = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/canvas/dashStyle.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/canvas/dashStyle.js
 	function normalizeLineDash(lineType, lineWidth) {
 		if (!lineType || lineType === "solid" || !(lineWidth > 0)) return null;
 		return lineType === "dashed" ? [4 * lineWidth, 2 * lineWidth] : lineType === "dotted" ? [lineWidth] : isNumber(lineType) ? [lineType] : isArray(lineType) ? lineType : null;
@@ -26179,7 +26126,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/canvas/graphic.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/canvas/graphic.js
 	function styleHasStroke(style) {
 		var stroke = style.stroke;
 		return !(stroke == null || stroke === "none" || !(style.lineWidth > 0));
@@ -26261,15 +26208,11 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				el.__canvasStrokePattern = strokePattern;
 			}
 			if (hasFillGradient) ctx.fillStyle = fillGradient;
-			else if (hasFillPattern) {
-				if (fillPattern) ctx.fillStyle = fillPattern;
-				else hasFill = false;
-			}
+			else if (hasFillPattern) if (fillPattern) ctx.fillStyle = fillPattern;
+			else hasFill = false;
 			if (hasStrokeGradient) ctx.strokeStyle = strokeGradient;
-			else if (hasStrokePattern) {
-				if (strokePattern) ctx.strokeStyle = strokePattern;
-				else hasStroke = false;
-			}
+			else if (hasStrokePattern) if (strokePattern) ctx.strokeStyle = strokePattern;
+			else hasStroke = false;
 		}
 		var scale = el.getGlobalScale();
 		path.setScale(scale[0], scale[1], el.segmentIgnoreThreshold);
@@ -26294,15 +26237,14 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			ctx.setLineDash(lineDash);
 			ctx.lineDashOffset = lineDashOffset;
 		}
-		if (!canBatch) {
-			if (style.strokeFirst) {
-				if (hasStroke) doStrokePath(ctx, style);
-				if (hasFill) doFillPath(ctx, style);
-			} else {
-				if (hasFill) doFillPath(ctx, style);
-				if (hasStroke) doStrokePath(ctx, style);
-			}
+		if (!canBatch) if (style.strokeFirst) {
+			if (hasStroke) doStrokePath(ctx, style);
+			if (hasFill) doFillPath(ctx, style);
 		} else {
+			if (hasFill) doFillPath(ctx, style);
+			if (hasStroke) doStrokePath(ctx, style);
+		}
+		else {
 			scope.batchFill = hasFill;
 			scope.batchStroke = hasStroke;
 		}
@@ -26651,7 +26593,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		DRAW_TYPE_INCREMENTAL = 4;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/decal.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/decal.js
 	/**
 	* Create or update pattern image from decal options
 	*
@@ -26929,7 +26871,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/decal.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/decal.js
 	function decalVisual(ecModel, api) {
 		ecModel.eachRawSeries(function(seriesModel) {
 			if (ecModel.isSeriesFiltered(seriesModel)) return;
@@ -26955,7 +26897,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		decalVisualStageHandler = createSimpleOverallStageHandler2(decalVisual);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/echarts.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/core/echarts.js
 	function createRegisterEventWithLowercaseECharts(method) {
 		return function() {
 			var args = [];
@@ -27910,17 +27852,16 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					}
 					ecModel && ecModel.eachComponent(condition, function(model) {
 						if (excludeSeriesIdMap && excludeSeriesIdMap.get(model.id) != null) return;
-						if (isHighDownPayload(payload)) {
-							if (model instanceof SeriesModel) {
-								if (payload.type === "highlight" && !payload.notBlur && !model.get(["emphasis", "disabled"])) blurSeriesFromHighlightPayload(model, payload, ecIns._api);
-							} else {
-								var _a = findComponentHighDownDispatchers(model.mainType, model.componentIndex, payload.name, ecIns._api), focusSelf = _a.focusSelf, dispatchers = _a.dispatchers;
-								if (payload.type === "highlight" && focusSelf && !payload.notBlur) blurComponent(model.mainType, model.componentIndex, ecIns._api);
-								if (dispatchers) each$4(dispatchers, function(dispatcher) {
-									payload.type === "highlight" ? enterEmphasis(dispatcher) : leaveEmphasis(dispatcher);
-								});
-							}
-						} else if (isSelectChangePayload(payload)) {
+						if (isHighDownPayload(payload)) if (model instanceof SeriesModel) {
+							if (payload.type === "highlight" && !payload.notBlur && !model.get(["emphasis", "disabled"])) blurSeriesFromHighlightPayload(model, payload, ecIns._api);
+						} else {
+							var _a = findComponentHighDownDispatchers(model.mainType, model.componentIndex, payload.name, ecIns._api), focusSelf = _a.focusSelf, dispatchers = _a.dispatchers;
+							if (payload.type === "highlight" && focusSelf && !payload.notBlur) blurComponent(model.mainType, model.componentIndex, ecIns._api);
+							if (dispatchers) each$4(dispatchers, function(dispatcher) {
+								payload.type === "highlight" ? enterEmphasis(dispatcher) : leaveEmphasis(dispatcher);
+							});
+						}
+						else if (isSelectChangePayload(payload)) {
 							if (model instanceof SeriesModel) {
 								toggleSelectionFromPayload(model, payload, ecIns._api);
 								updateSeriesElementSelection(model);
@@ -27979,12 +27920,10 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						ecModel.eachComponent(function(mainType, componentModel) {
 							if (mainType === "series") return;
 							var componentView = ecIns.getViewOfComponentModel(componentModel);
-							if (componentView && componentView.__alive) {
-								if (componentView.updateTransform) {
-									var result = componentView.updateTransform(componentModel, ecModel, api, payload);
-									result && result.update && componentDirtyList.push(componentView);
-								} else componentDirtyList.push(componentView);
-							}
+							if (componentView && componentView.__alive) if (componentView.updateTransform) {
+								var result = componentView.updateTransform(componentModel, ecModel, api, payload);
+								result && result.update && componentDirtyList.push(componentView);
+							} else componentDirtyList.push(componentView);
 						});
 						var seriesDirtyMap = createHashMap();
 						ecModel.eachSeries(function(seriesModel) {
@@ -28589,7 +28528,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		registerTheme("dark", theme);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/DataDiffer.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/DataDiffer.js
 	/**
 	* AUTO-GENERATED FILE. DO NOT MODIFY.
 	*/
@@ -28767,7 +28706,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/dimensionHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/dimensionHelper.js
 	function summarizeDimensions(data, schema) {
 		var summary = {};
 		var encode = summary.encode = {};
@@ -28856,7 +28795,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/SeriesDimensionDefine.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/SeriesDimensionDefine.js
 	var SeriesDimensionDefine;
 	var init_SeriesDimensionDefine = __esmMin((() => {
 		init_util$1();
@@ -28906,7 +28845,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/SeriesDataSchema.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/SeriesDataSchema.js
 	function isSeriesDataSchema(schema) {
 		return schema instanceof SeriesDataSchema;
 	}
@@ -29044,7 +28983,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/SeriesData.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/SeriesData.js
 	var isObject, map, CtorInt32Array, ID_PREFIX, INDEX_NOT_FOUND, TRANSFERABLE_PROPERTIES, CLONE_PROPERTIES, prepareInvertedIndex, getId, getIdNameFromStore, normalizeDimensions, transferProperties, cloneListForMapAndSample, makeIdFromName, SeriesData;
 	var init_SeriesData = __esmMin((() => {
 		init_util$1();
@@ -29587,8 +29526,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			*/
 			SeriesData.prototype.getItemModel = function(idx) {
 				var hostModel = this.hostModel;
-				var dataItem = this.getRawDataItem(idx);
-				return new Model(dataItem, hostModel, hostModel && hostModel.ecModel);
+				return new Model(this.getRawDataItem(idx), hostModel, hostModel && hostModel.ecModel);
 			};
 			/**
 			* Create a data differ
@@ -29688,8 +29626,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			* Set graphic element relative to data. It can be set as null
 			*/
 			SeriesData.prototype.setItemGraphicEl = function(idx, el) {
-				var seriesIndex = this.hostModel && this.hostModel.seriesIndex;
-				setCommonECData(seriesIndex, this.dataType, idx, el);
+				setCommonECData(this.hostModel && this.hostModel.seriesIndex, this.dataType, idx, el);
 				this._graphicEls[idx] = el;
 			};
 			SeriesData.prototype.getItemGraphicEl = function(idx) {
@@ -29793,7 +29730,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/createDimensions.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/createDimensions.js
 	/**
 	* This method builds the relationship between:
 	* + "what the coord sys or series requires (see `coordDimensions`)",
@@ -29970,7 +29907,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_SeriesDataSchema();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/referHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/model/referHelper.js
 	function getCoordSysInfoBySeries(seriesModel) {
 		var coordSysName = seriesModel.get("coordinateSystem");
 		var result = new SeriesModelCoordSysInfo(coordSysName);
@@ -30067,7 +30004,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/dataStackHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/helper/dataStackHelper.js
 	/**
 	* Note that it is too complicated to support 3d stack by value
 	* (have to create two-dimension inverted index), so in 3d case
@@ -30185,7 +30122,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_SeriesDataSchema();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/createSeriesData.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/createSeriesData.js
 	function getCoordSysDimDefs(seriesModel, coordSysInfo) {
 		var coordSysName = seriesModel.get("coordinateSystem");
 		var registeredCoordSys = CoordinateSystemManager.get(coordSysName);
@@ -30280,7 +30217,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_types$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/Scale.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/Scale.js
 	var Scale;
 	var init_Scale = __esmMin((() => {
 		init_clazz();
@@ -30309,7 +30246,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		enableClassManagement(Scale);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/OrdinalMeta.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/data/OrdinalMeta.js
 	function getName(obj) {
 		if (isObject$2(obj) && obj.value != null) return obj.value;
 		else return obj + "";
@@ -30378,14 +30315,12 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				}
 				var map = this._getOrCreateMap();
 				index = map.get(category);
-				if (index == null) {
-					if (needCollect) {
-						index = this.categories.length;
-						this.categories[index] = category;
-						map.set(category, index);
-						this._onCollect && this._onCollect(category, index);
-					} else index = NaN;
-				}
+				if (index == null) if (needCollect) {
+					index = this.categories.length;
+					this.categories[index] = category;
+					map.set(category, index);
+					this._onCollect && this._onCollect(category, index);
+				} else index = NaN;
 				return index;
 			};
 			OrdinalMeta.prototype._getOrCreateMap = function() {
@@ -30395,7 +30330,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/scaleMapper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/scaleMapper.js
 	function initBreakOrLinearMapper(mapper, breakParsed, initialExtent) {
 		var brk;
 		mapper = mapper || {};
@@ -30513,7 +30448,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/helper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/helper.js
 	/**
 	* See also method `nice` in `src/util/number.ts`.
 	*/
@@ -30644,7 +30579,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_scaleMapper();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/Ordinal.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/Ordinal.js
 	var OrdinalScale;
 	var init_Ordinal = __esmMin((() => {
 		init_modules();
@@ -30804,7 +30739,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Scale.registerClass(OrdinalScale);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/minorTicks.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/minorTicks.js
 	function getMinorTicks(scale, splitNumber, breaks, scaleInterval) {
 		var ticks = scale.getTicks({ expandToNicedExtent: true });
 		var minorTicks = [];
@@ -30836,7 +30771,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_helper$2();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/Interval.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/Interval.js
 	var IntervalScale;
 	var init_Interval = __esmMin((() => {
 		init_modules();
@@ -30942,7 +30877,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Scale.registerClass(IntervalScale);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/Time.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/Time.js
 	function isPrimaryUnitValueAndGreaterSame(unit, valueA, valueB, isUTC) {
 		return roundTime(new Date(valueA), unit, isUTC).getTime() === roundTime(new Date(valueB), unit, isUTC).getTime();
 	}
@@ -31061,6 +30996,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						interval = getMillisecondsInterval(approxInterval);
 						getterName = millisecondsGetterName(isUTC);
 						setterName = millisecondsSetterName(isUTC);
+						break;
 				}
 				if (endTick >= extent[0] && startTick <= extent[1]) addTicksInSpan(interval, startTick, endTick, getterName, setterName, isDate, newAddedTicks);
 				if (unitName === "year" && levelTicks.length > 1 && i === 0) levelTicks.unshift({ value: levelTicks[0].value - interval });
@@ -31290,7 +31226,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Scale.registerClass(TimeScale);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/Log.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/scale/Log.js
 	var LOOKUP_IDX_EXTENT_START, LOOKUP_IDX_EXTENT_END, LOOKUP_IDX_BREAK_START, LogScale, tmpTransformOutOpt1, tmpTransformOutOpt2, tmpNotUsedArr;
 	var init_Log = __esmMin((() => {
 		init_modules();
@@ -31430,7 +31366,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		tmpNotUsedArr = [];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisCommonTypes.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisCommonTypes.js
 	var AXIS_TYPES;
 	var init_axisCommonTypes = __esmMin((() => {
 		AXIS_TYPES = {
@@ -31441,7 +31377,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisHelper.js
 	function determineAxisType(model) {
 		var type = model.get("type");
 		if (type == null || !hasOwn(AXIS_TYPES, type) && !Scale.getClass(type)) type = "value";
@@ -31603,7 +31539,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		axisInner$1 = makeInner();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisModelCommonMixin.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisModelCommonMixin.js
 	var AxisModelCommonMixin;
 	var init_axisModelCommonMixin = __esmMin((() => {
 		AxisModelCommonMixin = function() {
@@ -31620,7 +31556,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisStatistics.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisStatistics.js
 	function getAxisStatPerKeyPerAxis(axis, axisStatKey) {
 		var axisModel = axis.model;
 		var keyed = ecModelCacheFullUpdateInner(getCachePerECFullUpdate(axisModel.ecModel)).keyed;
@@ -31778,7 +31714,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		clientsForLookup = createHashMap();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/scaleRawExtentInfo.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/scaleRawExtentInfo.js
 	/**
 	* Should be called when a new extent is created or modified.
 	*/
@@ -32145,7 +32081,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		axisContainShapeHandlerMap = createHashMap();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisNiceTicks.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisNiceTicks.js
 	function calcNiceForIntervalOrLogScale(scale, opt) {
 		var isTargetLogScale = isLogScale(scale);
 		var intervalStub = isTargetLogScale ? scale.intervalStub : scale;
@@ -32250,7 +32186,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/extension.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/extension.js
 	function use(ext) {
 		if (isArray(ext)) {
 			each$4(ext, function(singleExt) {
@@ -32318,12 +32254,12 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/api/graphic.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/api/graphic.js
 	var init_graphic = __esmMin((() => {
 		init_graphic$2();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisTickLabelBuilder.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisTickLabelBuilder.js
 	function createAxisLabelsComputingContext(kind) {
 		return {
 			out: { noPxChangeTryDetermine: [] },
@@ -32576,7 +32512,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		ensureCategoryLabelCache = initAxisCacheMethod("axisLabel");
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisBand.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisBand.js
 	/**
 	* NOTICE:
 	*  - Require the axis pixel extent and the scale extent as inputs. But they
@@ -32651,7 +32587,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		FALLBACK_BAND_WIDTH_RATIO = .8;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/Axis.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/Axis.js
 	function makeExtentWithBands(axis) {
 		var extent = axis.getExtent();
 		if (axis.onBand) {
@@ -32849,7 +32785,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/api.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/api.js
 	var init_api = __esmMin((() => {
 		init_throttle();
 		init_extension();
@@ -32866,7 +32802,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_graphic$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/labelGuideHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/labelGuideHelper.js
 	function getCandidateAnchor(pos, distance, rect, outPt, outDir) {
 		var width = rect.width;
 		var height = rect.height;
@@ -32886,6 +32822,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "right":
 				outPt.set(rect.x + width + distance, rect.y + height / 2);
 				outDir.set(1, 0);
+				break;
 		}
 	}
 	function projectPointToArc(cx, cy, r, startAngle, endAngle, anticlockwise, x, y, out) {
@@ -33045,6 +32982,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					d = projectPointToLine(xi, yi, x0, y0, x, y, tmpPt, true);
 					xi = x0;
 					yi = y0;
+					break;
 			}
 			if (d < minDist) {
 				minDist = d;
@@ -33274,7 +33212,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		tmpProjPoint = new Point();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/labelLayoutHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/labelLayoutHelper.js
 	function setLabelLayoutDirty(labelGeometry, dirtyOrClear, dirtyBits) {
 		dirtyBits = dirtyBits || LABEL_LAYOUT_DIRTY_ALL;
 		dirtyOrClear ? labelGeometry.dirty |= dirtyBits : labelGeometry.dirty &= ~dirtyBits;
@@ -33603,7 +33541,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/LabelManager.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/LabelManager.js
 	function cloneArr(points) {
 		if (points) {
 			var newPoints = [];
@@ -33930,7 +33868,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/installLabelLayout.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/installLabelLayout.js
 	function installLabelLayout(registers) {
 		registers.registerUpdateLifecycle("series:beforeupdate", function(ecModel, api, params) {
 			var labelManager = getLabelManager(api).labelManager;
@@ -33955,18 +33893,21 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		getLabelManager = makeInner();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/core.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/core.js
 	var init_core$1 = __esmMin((() => {
 		init_echarts();
 		init_api();
+		init_extension();
+		init_installLabelLayout();
+		use(installLabelLayout);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/core.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/core.js
 	var init_core = __esmMin((() => {
 		init_core$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/LineSeries.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/LineSeries.js
 	var LineSeriesModel;
 	var init_LineSeries = __esmMin((() => {
 		init_modules();
@@ -34049,7 +33990,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(SeriesModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/labelHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/labelHelper.js
 	/**
 	* @return label string. Not null/undefined
 	*/
@@ -34080,7 +34021,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/Symbol.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/Symbol.js
 	function driftSymbol(dx, dy) {
 		this.parent.drift(dx, dy);
 	}
@@ -34338,7 +34279,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Group$2);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/SymbolDraw.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/SymbolDraw.js
 	function symbolNeedsDraw(data, point, idx, opt) {
 		return point && !isNaN(point[0]) && !isNaN(point[1]) && !(opt && opt.isIgnore && opt.isIgnore(idx)) && !(opt && opt.clipShape && !opt.clipShape.contain(point[0], point[1])) && data.getItemVisual(idx, "symbol") !== "none";
 	}
@@ -34493,7 +34434,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/helper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/helper.js
 	function prepareDataCoordInfo(coordSys, data, valueOrigin) {
 		var baseAxis = coordSys.getBaseAxis();
 		var valueAxis = coordSys.getOtherAxis(baseAxis);
@@ -34556,7 +34497,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/vendor.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/vendor.js
 	function createFloat32Array(capacity) {
 		return tryEnsureTypedArray({ ctor: Float32ArrayCtor }, capacity).arr;
 	}
@@ -34588,7 +34529,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		Float64ArrayCtor = typeof Float64Array !== "undefined" ? Float64Array : void 0;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/lineAnimationDiff.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/lineAnimationDiff.js
 	function diffData(oldData, newData) {
 		var diffResult = [];
 		newData.diff(oldData).add(function(idx) {
@@ -34700,7 +34641,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_vendor();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/poly.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/poly.js
 	/**
 	* Draw smoothed line in non-monotone, in may cause undesired curve in extreme
 	* situations. This should be used when points are non-monotone neither in x or
@@ -34925,6 +34866,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 							}
 							x0 = x3;
 							y0 = y3;
+							break;
 					}
 				}
 			};
@@ -34968,7 +34910,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Path);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/createClipPathFromCoordSys.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/createClipPathFromCoordSys.js
 	function createGridClipPath(cartesian, hasAnimation, seriesModel, done, during) {
 		var rect = cartesian.getArea();
 		var x = rect.x;
@@ -35057,7 +34999,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/CoordinateSystem.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/CoordinateSystem.js
 	/**
 	* AUTO-GENERATED FILE. DO NOT MODIFY.
 	*/
@@ -35066,7 +35008,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	}
 	var init_CoordinateSystem = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/styleCompat.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/styleCompat.js
 	/**
 	* Whether need to call `convertEC4CompatibleStyle`.
 	*/
@@ -35211,7 +35153,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_tokens();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/LineView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/LineView.js
 	function isPointsSame(points1, points2) {
 		if (points1.length !== points2.length) return;
 		for (var i = 0; i < points1.length; i++) if (points1[i] !== points2[i]) return;
@@ -35633,19 +35575,17 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 							return [points[idx * 2], points[idx * 2 + 1]];
 						}
 					});
-					if (!isPointsSame(this._stackedOnPoints, stackedOnPoints) || !isPointsSame(this._points, points)) {
-						if (hasAnimation) this._doUpdateAnimation(data, stackedOnPoints, coordSys, api, step, valueOrigin, connectNulls);
-						else {
-							if (step) {
-								if (stackedOnPoints) stackedOnPoints = turnPointsIntoStep(stackedOnPoints, points, coordSys, step, connectNulls);
-								points = turnPointsIntoStep(points, null, coordSys, step, connectNulls);
-							}
-							polyline.setShape({ points });
-							polygon && polygon.setShape({
-								points,
-								stackedOnPoints
-							});
+					if (!isPointsSame(this._stackedOnPoints, stackedOnPoints) || !isPointsSame(this._points, points)) if (hasAnimation) this._doUpdateAnimation(data, stackedOnPoints, coordSys, api, step, valueOrigin, connectNulls);
+					else {
+						if (step) {
+							if (stackedOnPoints) stackedOnPoints = turnPointsIntoStep(stackedOnPoints, points, coordSys, step, connectNulls);
+							points = turnPointsIntoStep(points, null, coordSys, step, connectNulls);
 						}
+						polyline.setShape({ points });
+						polygon && polygon.setShape({
+							points,
+							stackedOnPoints
+						});
 					}
 				}
 				var emphasisModel = seriesModel.getModel("emphasis");
@@ -35762,12 +35702,10 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				this._changePolyState("normal");
 				if (dataIndex != null && dataIndex >= 0) {
 					var symbol = data.getItemGraphicEl(dataIndex);
-					if (symbol) {
-						if (symbol.__temp) {
-							data.setItemGraphicEl(dataIndex, null);
-							this.group.remove(symbol);
-						} else symbol.downplay();
-					}
+					if (symbol) if (symbol.__temp) {
+						data.setItemGraphicEl(dataIndex, null);
+						this.group.remove(symbol);
+					} else symbol.downplay();
 				} else ChartView.prototype.downplay.call(this, seriesModel, ecModel, api, payload);
 			};
 			LineView.prototype._changePolyState = function(toState) {
@@ -35825,30 +35763,28 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 						var start = void 0;
 						var end = void 0;
 						var current = void 0;
-						if (clipShape) {
-							if (isCoordSysPolar) {
-								var polarClip = clipShape;
-								var coord = coordSys.pointToCoord(point);
-								if (isHorizontalOrRadial) {
-									start = polarClip.startAngle;
-									end = polarClip.endAngle;
-									current = -coord[1] / 180 * Math.PI;
-								} else {
-									start = polarClip.r0;
-									end = polarClip.r;
-									current = coord[0];
-								}
+						if (clipShape) if (isCoordSysPolar) {
+							var polarClip = clipShape;
+							var coord = coordSys.pointToCoord(point);
+							if (isHorizontalOrRadial) {
+								start = polarClip.startAngle;
+								end = polarClip.endAngle;
+								current = -coord[1] / 180 * Math.PI;
 							} else {
-								var gridClip = clipShape;
-								if (isHorizontalOrRadial) {
-									start = gridClip.x;
-									end = gridClip.x + gridClip.width;
-									current = symbol.x;
-								} else {
-									start = gridClip.y + gridClip.height;
-									end = gridClip.y;
-									current = symbol.y;
-								}
+								start = polarClip.r0;
+								end = polarClip.r;
+								current = coord[0];
+							}
+						} else {
+							var gridClip = clipShape;
+							if (isHorizontalOrRadial) {
+								start = gridClip.x;
+								end = gridClip.x + gridClip.width;
+								current = symbol.x;
+							} else {
+								start = gridClip.y + gridClip.height;
+								end = gridClip.y;
+								current = symbol.y;
 							}
 						}
 						var ratio = end === start ? 0 : (current - start) / (end - start);
@@ -36055,7 +35991,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ChartView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/layout/points.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/layout/points.js
 	function pointsLayout(seriesType, forceStoreInTypedArray) {
 		return {
 			seriesType,
@@ -36114,7 +36050,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_vendor();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/processor/dataSample.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/processor/dataSample.js
 	function dataSample(seriesType) {
 		return {
 			seriesType,
@@ -36179,7 +36115,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/line/install.js
 	function install$17(registers) {
 		registers.registerChartView(LineView);
 		registers.registerSeriesModel(LineSeriesModel);
@@ -36202,7 +36138,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_dataSample();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/Axis2D.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/Axis2D.js
 	var Axis2D;
 	var init_Axis2D = __esmMin((() => {
 		init_modules();
@@ -36255,7 +36191,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Axis);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/axisBreakHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/axisBreakHelper.js
 	function getAxisBreakHelper() {
 		return _impl;
 	}
@@ -36264,13 +36200,13 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		_impl = null;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/axisAction.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/axisAction.js
 	var AXIS_BREAK_EXPAND_ACTION_TYPE;
 	var init_axisAction = __esmMin((() => {
 		AXIS_BREAK_EXPAND_ACTION_TYPE = "expandAxisBreak";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/AxisBuilder.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/AxisBuilder.js
 	/**
 	* [CAUTION]
 	*  1. The call of this function must be after axisLabel overlap handlings
@@ -36400,10 +36336,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				outmostLabelLayout = newLabelLayoutWithGeometry({ marginForce }, outmostLabelLayout);
 				innerLabelLayout = newLabelLayoutWithGeometry({ marginForce }, innerLabelLayout);
 			}
-			if (labelIntersect(outmostLabelLayout, innerLabelLayout, null, { touchThreshold })) {
-				if (showMinMaxLabelOption) ignoreEl(innerLabelLayout.label);
-				else ignoreEl(outmostLabelLayout.label);
-			}
+			if (labelIntersect(outmostLabelLayout, innerLabelLayout, null, { touchThreshold })) if (showMinMaxLabelOption) ignoreEl(innerLabelLayout.label);
+			else ignoreEl(outmostLabelLayout.label);
 		}
 		var showMinLabelOption = axisModel.get(["axisLabel", "showMinLabel"]);
 		var showMaxLabelOption = axisModel.get(["axisLabel", "showMaxLabel"]);
@@ -37081,7 +37015,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		_tmpLayoutElReset = new Rect();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/cartesianAxisHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/cartesianAxisHelper.js
 	/**
 	* [__CAUTION__]
 	*  MUST guarantee: if only the input `rect` and `axis.extent` changed,
@@ -37180,7 +37114,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_helper$2();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisStatisticsMetricsImpl.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisStatisticsMetricsImpl.js
 	function registerMetricImplLiPosMinGap() {
 		registerMetricImpl("liPosMinGap", metricLiPosMinGapImpl);
 	}
@@ -37244,7 +37178,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		tmpValueBuffer = tryEnsureTypedArray({ ctor: Float64ArrayCtor }, 50);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/axisSnippets.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/axisSnippets.js
 	/**
 	* Require `requireAxisStatistics`.
 	*
@@ -37282,7 +37216,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_number();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/layout/barCommon.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/layout/barCommon.js
 	function requireAxisStatisticsForBaseBar(registers, axisStatKey, seriesType, coordSysType) {
 		requireAxisStatistics(registers, {
 			key: axisStatKey,
@@ -37299,7 +37233,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_axisStatistics();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/GridModel.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/GridModel.js
 	var OUTER_BOUNDS_DEFAULT, OUTER_BOUNDS_CLAMP_DEFAULT, COORD_SYS_TYPE_CARTESIAN_2D, GridModel;
 	var init_GridModel = __esmMin((() => {
 		init_modules();
@@ -37352,7 +37286,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/layout/barGrid.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/layout/barGrid.js
 	function getSeriesStackId(seriesModel) {
 		return seriesModel.get("stack") || STACK_PREFIX + seriesModel.seriesIndex;
 	}
@@ -37654,7 +37588,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		STACK_PREFIX = "__ec_stack_";
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/bar/BaseBarSeries.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/bar/BaseBarSeries.js
 	var BaseBarSeriesModel;
 	var init_BaseBarSeries = __esmMin((() => {
 		init_modules();
@@ -37746,7 +37680,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		SeriesModel.registerClass(BaseBarSeriesModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/bar/BarSeries.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/bar/BarSeries.js
 	var BarSeriesModel;
 	var init_BarSeries = __esmMin((() => {
 		init_modules();
@@ -37814,7 +37748,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(BaseBarSeriesModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/shape/sausage.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/util/shape/sausage.js
 	var SausageShape, SausagePath;
 	var init_sausage = __esmMin((() => {
 		init_modules();
@@ -37870,7 +37804,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Path);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/sectorLabel.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/label/sectorLabel.js
 	function createSectorCalculateTextPosition(positionMapping, opts) {
 		opts = opts || {};
 		var isRoundCap = opts.isRoundCap;
@@ -38016,7 +37950,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/sectorHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/sectorHelper.js
 	function getSectorCornerRadius(model, shape, zeroIfNull) {
 		var cornerRadius = model.get("borderRadius");
 		if (cornerRadius == null) return zeroIfNull ? { cornerRadius: 0 } : null;
@@ -38036,7 +37970,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_text();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/bar/BarView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/bar/BarView.js
 	function shouldRealtimeSort(seriesModel, coordSys) {
 		var realtimeSortOption = seriesModel.get("realtimeSort", true);
 		var baseAxis = coordSys.getBaseAxis();
@@ -38733,7 +38667,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}, 30, false);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/bar/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/bar/install.js
 	function install$16(registers) {
 		registers.registerChartView(BarView);
 		registers.registerSeriesModel(BarSeriesModel);
@@ -38772,7 +38706,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_barCommon();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/processor/dataFilter.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/processor/dataFilter.js
 	/**
 	* AUTO-GENERATED FILE. DO NOT MODIFY.
 	*/
@@ -38793,7 +38727,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	}
 	var init_dataFilter = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/createSeriesDataSimply.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/createSeriesDataSimply.js
 	/**
 	* [Usage]:
 	* (1)
@@ -38818,7 +38752,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/LegendVisualProvider.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/visual/LegendVisualProvider.js
 	var LegendVisualProvider;
 	var init_LegendVisualProvider = __esmMin((() => {
 		LegendVisualProvider = function() {
@@ -38985,7 +38919,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		});
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/pie/labelLayout.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/pie/labelLayout.js
 	function adjustSingleSide(list, cx, cy, r, dir, viewWidth, viewHeight, viewLeft, viewTop, farthestX) {
 		if (list.length < 2) return;
 		function recalculateXOnSemiToAlignOnEllipseCurve(semi) {
@@ -39058,13 +38992,11 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				var label = layout.label;
 				var linePoints = layout.linePoints;
 				var targetTextWidth = void 0;
-				if (layout.labelAlignTo === "edge") {
-					if (label.x < cx) targetTextWidth = linePoints[2][0] - layout.labelDistance - viewLeft - layout.edgeDistance;
-					else targetTextWidth = viewLeft + viewWidth - layout.edgeDistance - linePoints[2][0] - layout.labelDistance;
-				} else if (layout.labelAlignTo === "labelLine") {
-					if (label.x < cx) targetTextWidth = leftmostX - viewLeft - layout.bleedMargin;
-					else targetTextWidth = viewLeft + viewWidth - rightmostX - layout.bleedMargin;
-				} else if (label.x < cx) targetTextWidth = label.x - viewLeft - layout.bleedMargin;
+				if (layout.labelAlignTo === "edge") if (label.x < cx) targetTextWidth = linePoints[2][0] - layout.labelDistance - viewLeft - layout.edgeDistance;
+				else targetTextWidth = viewLeft + viewWidth - layout.edgeDistance - linePoints[2][0] - layout.labelDistance;
+				else if (layout.labelAlignTo === "labelLine") if (label.x < cx) targetTextWidth = leftmostX - viewLeft - layout.bleedMargin;
+				else targetTextWidth = viewLeft + viewWidth - rightmostX - layout.bleedMargin;
+				else if (label.x < cx) targetTextWidth = label.x - viewLeft - layout.bleedMargin;
 				else targetTextWidth = viewLeft + viewWidth - label.x - layout.bleedMargin;
 				layout.targetTextWidth = targetTextWidth;
 				constrainTextWidth(layout, targetTextWidth, false);
@@ -39083,10 +39015,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				var extraPaddingH = label.style.backgroundColor ? 0 : paddingH;
 				var realTextWidth = layout.rect.width + extraPaddingH;
 				var dist = linePoints[1][0] - linePoints[2][0];
-				if (isAlignToEdge) {
-					if (label.x < cx) linePoints[2][0] = viewLeft + layout.edgeDistance + realTextWidth + layout.labelDistance;
-					else linePoints[2][0] = viewLeft + viewWidth - layout.edgeDistance - realTextWidth - layout.labelDistance;
-				} else {
+				if (isAlignToEdge) if (label.x < cx) linePoints[2][0] = viewLeft + layout.edgeDistance + realTextWidth + layout.labelDistance;
+				else linePoints[2][0] = viewLeft + viewWidth - layout.edgeDistance - realTextWidth - layout.labelDistance;
+				else {
 					if (label.x < cx) linePoints[2][0] = label.x + layout.labelDistance;
 					else linePoints[2][0] = label.x - layout.labelDistance;
 					linePoints[1][0] = linePoints[2][0] + dist;
@@ -39332,7 +39263,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		_tmpLabelGeometry = {};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/pie/pieLayout.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/pie/pieLayout.js
 	function pieLayout(ecModel, api) {
 		ecModel.eachSeriesByType("pie", function(seriesModel) {
 			var data = seriesModel.getData();
@@ -39418,48 +39349,46 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				});
 				currentAngle = endAngle;
 			});
-			if (restAngle < PI2 && validDataCount) {
-				if (restAngle <= .001) {
-					var angle_1 = angleRange / validDataCount;
-					data.each(valueDim, function(value, idx) {
-						if (!isNaN(value)) {
-							var layout = data.getItemLayout(idx);
-							layout.angle = angle_1;
-							var actualStartAngle = 0;
-							var actualEndAngle = 0;
-							if (angle_1 < padAngle) {
-								actualStartAngle = startAngle + dir * (idx + 1 / 2) * angle_1;
-								actualEndAngle = actualStartAngle;
-							} else {
-								actualStartAngle = startAngle + dir * idx * angle_1 + halfPadAngle;
-								actualEndAngle = startAngle + dir * (idx + 1) * angle_1 - halfPadAngle;
-							}
-							layout.startAngle = actualStartAngle;
-							layout.endAngle = actualEndAngle;
+			if (restAngle < PI2 && validDataCount) if (restAngle <= .001) {
+				var angle_1 = angleRange / validDataCount;
+				data.each(valueDim, function(value, idx) {
+					if (!isNaN(value)) {
+						var layout = data.getItemLayout(idx);
+						layout.angle = angle_1;
+						var actualStartAngle = 0;
+						var actualEndAngle = 0;
+						if (angle_1 < padAngle) {
+							actualStartAngle = startAngle + dir * (idx + 1 / 2) * angle_1;
+							actualEndAngle = actualStartAngle;
+						} else {
+							actualStartAngle = startAngle + dir * idx * angle_1 + halfPadAngle;
+							actualEndAngle = startAngle + dir * (idx + 1) * angle_1 - halfPadAngle;
 						}
-					});
-				} else {
-					unitRadian = restAngle / valueSumLargerThanMinAngle;
-					currentAngle = startAngle;
-					data.each(valueDim, function(value, idx) {
-						if (!isNaN(value)) {
-							var layout = data.getItemLayout(idx);
-							var angle = layout.angle === minAndPadAngle ? minAndPadAngle : value * unitRadian;
-							var actualStartAngle = 0;
-							var actualEndAngle = 0;
-							if (angle < padAngle) {
-								actualStartAngle = currentAngle + dir * angle / 2;
-								actualEndAngle = actualStartAngle;
-							} else {
-								actualStartAngle = currentAngle + halfPadAngle;
-								actualEndAngle = currentAngle + dir * angle - halfPadAngle;
-							}
-							layout.startAngle = actualStartAngle;
-							layout.endAngle = actualEndAngle;
-							currentAngle += dir * angle;
+						layout.startAngle = actualStartAngle;
+						layout.endAngle = actualEndAngle;
+					}
+				});
+			} else {
+				unitRadian = restAngle / valueSumLargerThanMinAngle;
+				currentAngle = startAngle;
+				data.each(valueDim, function(value, idx) {
+					if (!isNaN(value)) {
+						var layout = data.getItemLayout(idx);
+						var angle = layout.angle === minAndPadAngle ? minAndPadAngle : value * unitRadian;
+						var actualStartAngle = 0;
+						var actualEndAngle = 0;
+						if (angle < padAngle) {
+							actualStartAngle = currentAngle + dir * angle / 2;
+							actualEndAngle = actualStartAngle;
+						} else {
+							actualStartAngle = currentAngle + halfPadAngle;
+							actualEndAngle = currentAngle + dir * angle - halfPadAngle;
 						}
-					});
-				}
+						layout.startAngle = actualStartAngle;
+						layout.endAngle = actualEndAngle;
+						currentAngle += dir * angle;
+					}
+				});
 			}
 		});
 	}
@@ -39476,7 +39405,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		getSeriesLayoutData = makeInner();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/pie/PieView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/pie/PieView.js
 	var PiePiece, PieView;
 	var init_PieView = __esmMin((() => {
 		init_modules();
@@ -39666,7 +39595,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ChartView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/processor/negativeDataFilter.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/processor/negativeDataFilter.js
 	function negativeDataFilter(seriesType) {
 		return {
 			seriesType,
@@ -39685,7 +39614,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/pie/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/pie/install.js
 	function install$15(registers) {
 		registers.registerChartView(PieView);
 		registers.registerSeriesModel(PieSeriesModel);
@@ -39703,7 +39632,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_pieLayout();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/scatter/ScatterSeries.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/scatter/ScatterSeries.js
 	var ScatterSeriesModel;
 	var init_ScatterSeries = __esmMin((() => {
 		init_modules();
@@ -39763,7 +39692,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(SeriesModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/LargeSymbolDraw.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/LargeSymbolDraw.js
 	var BOOST_SIZE_THRESHOLD, LargeSymbolPathShape, LargeSymbolPath, LargeSymbolDraw;
 	var init_LargeSymbolDraw = __esmMin((() => {
 		init_modules();
@@ -39991,7 +39920,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/scatter/ScatterView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/scatter/ScatterView.js
 	function createSymbolDrawOpt(seriesModel) {
 		return { clipShape: createCoordSysClipAreaSimply(seriesModel) };
 	}
@@ -40067,7 +39996,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ChartView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/AxisModel.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/AxisModel.js
 	var CartesianAxisModel;
 	var init_AxisModel = __esmMin((() => {
 		init_modules();
@@ -40089,7 +40018,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		mixin(CartesianAxisModel, AxisModelCommonMixin);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisDefault.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisDefault.js
 	var defaultOption, categoryAxis, valueAxis, timeAxis, logAxis, axisDefault_default;
 	var init_axisDefault = __esmMin((() => {
 		init_util$1();
@@ -40220,7 +40149,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisModelCreator.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisModelCreator.js
 	/**
 	* Generate sub axis model class
 	* @param axisName 'x' 'y' 'radius' 'angle' 'parallel' ...
@@ -40285,7 +40214,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_axisBreakHelper();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/Cartesian.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/Cartesian.js
 	var Cartesian;
 	var init_Cartesian = __esmMin((() => {
 		init_util$1();
@@ -40319,7 +40248,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/Cartesian2D.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/Cartesian2D.js
 	function canCalculateAffineTransform(scale) {
 		return (scale.type === "interval" || scale.type === "time") && !hasBreaks(scale);
 	}
@@ -40438,15 +40367,13 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				var yExtent = this.getAxis("y").getGlobalExtent();
 				var x = Math.min(xExtent[0], xExtent[1]) - tolerance;
 				var y = Math.min(yExtent[0], yExtent[1]) - tolerance;
-				var width = Math.max(xExtent[0], xExtent[1]) - x + tolerance;
-				var height = Math.max(yExtent[0], yExtent[1]) - y + tolerance;
-				return new BoundingRect(x, y, width, height);
+				return new BoundingRect(x, y, Math.max(xExtent[0], xExtent[1]) - x + tolerance, Math.max(yExtent[0], yExtent[1]) - y + tolerance);
 			};
 			return Cartesian2D;
 		}(Cartesian);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisAlignTicks.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/axisAlignTicks.js
 	/**
 	* NOTE: See the summary of the process of extent determination in the comment of `scaleMapper.setExtent`.
 	*
@@ -40584,7 +40511,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_scaleRawExtentInfo();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/Grid.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/Grid.js
 	/**
 	* Check if the axis is used in the specified grid.
 	*/
@@ -40633,10 +40560,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		var axisNeedsAlign = [];
 		for (var i = axesIndices.length - 1; i >= 0; i--) {
 			var axis = axes[+axesIndices[i]];
-			if (isIntervalOrLogScale(axis.scale) && retrieveAxisBreaksOption(axis.model, axis.type, true) == null) {
-				if (axis.model.get("alignTicks") && axis.model.get("interval") == null) axisNeedsAlign.push(axis);
-				else alignTo = axis;
-			}
+			if (isIntervalOrLogScale(axis.scale) && retrieveAxisBreaksOption(axis.model, axis.type, true) == null) if (axis.model.get("alignTicks") && axis.model.get("interval") == null) axisNeedsAlign.push(axis);
+			else alignTo = axis;
 		}
 		if (!alignTo) alignTo = axisNeedsAlign.pop();
 		if (alignTo) each$4(axisNeedsAlign, function(axis) {
@@ -40894,12 +40819,11 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				if (!beforeDataProcessing) {
 					var axisBuilderSharedCtx = createAxisBiulders(gridRect, coordsList, axesMap, optionContainLabel, api);
 					var noPxChange = void 0;
-					if (optionContainLabel) {
-						if (legacyLayOutGridByContainLabel) {
-							legacyLayOutGridByContainLabel(this._axesList, gridRect);
-							updateAllAxisExtentTransByGridRect(axesMap, gridRect);
-						} else noPxChange = layOutGridByOuterBounds(gridRect.clone(), "axisLabel", null, gridRect, axesMap, axisBuilderSharedCtx, layoutRef);
-					} else {
+					if (optionContainLabel) if (legacyLayOutGridByContainLabel) {
+						legacyLayOutGridByContainLabel(this._axesList, gridRect);
+						updateAllAxisExtentTransByGridRect(axesMap, gridRect);
+					} else noPxChange = layOutGridByOuterBounds(gridRect.clone(), "axisLabel", null, gridRect, axesMap, axisBuilderSharedCtx, layoutRef);
+					else {
 						var _a = prepareOuterBounds(gridModel, gridRect, layoutRef), outerBoundsRect = _a.outerBoundsRect, parsedOuterBoundsContain = _a.parsedOuterBoundsContain, outerBoundsClamp = _a.outerBoundsClamp;
 						if (outerBoundsRect) noPxChange = layOutGridByOuterBounds(outerBoundsRect, parsedOuterBoundsContain, outerBoundsClamp, gridRect, axesMap, axisBuilderSharedCtx, layoutRef);
 					}
@@ -41102,7 +41026,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/modelHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/modelHelper.js
 	function collect(ecModel, api) {
 		var result = {
 			/**
@@ -41298,7 +41222,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/AxisView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/AxisView.js
 	var axisPointerClazz, AxisView;
 	var init_AxisView = __esmMin((() => {
 		init_modules();
@@ -41361,7 +41285,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/axisSplitHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/axisSplitHelper.js
 	function rectCoordAxisBuildSplitArea(axisView, axisGroup, axisModel, gridModel) {
 		var axis = axisModel.axis;
 		if (axis.scale.isBlank()) return;
@@ -41437,7 +41361,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		inner$5 = makeInner();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/CartesianAxisView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axis/CartesianAxisView.js
 	var selfBuilderAttrs, CartesianAxisView, axisElementBuilders, CartesianXAxisView, CartesianYAxisView;
 	var init_CartesianAxisView = __esmMin((() => {
 		init_modules();
@@ -41606,7 +41530,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(CartesianAxisView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/grid/installSimple.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/grid/installSimple.js
 	function install$14(registers) {
 		registers.registerComponentView(GridView);
 		registers.registerComponentModel(GridModel);
@@ -41652,7 +41576,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		extraOption = { offset: 0 };
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/scatter/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/scatter/install.js
 	function install$13(registers) {
 		use(install$14);
 		registers.registerSeriesModel(ScatterSeriesModel);
@@ -41667,7 +41591,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_points();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/radar/backwardCompat.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/radar/backwardCompat.js
 	function radarBackwardCompat(option) {
 		var polarOptArr = option.polar;
 		if (polarOptArr) {
@@ -41691,7 +41615,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/radar/RadarSeries.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/radar/RadarSeries.js
 	var SERIES_TYPE_RADAR$1, RadarSeriesModel;
 	var init_RadarSeries = __esmMin((() => {
 		init_modules();
@@ -41773,7 +41697,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(SeriesModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/radar/RadarView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/radar/RadarView.js
 	var RadarView$1;
 	var init_RadarView$1 = __esmMin((() => {
 		init_modules();
@@ -41947,7 +41871,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ChartView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/radar/RadarModel.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/radar/RadarModel.js
 	function defaultsShow(opt, show) {
 		return defaults({ show }, opt);
 	}
@@ -42048,7 +41972,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/radar/RadarView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/radar/RadarView.js
 	var RadarView;
 	var init_RadarView = __esmMin((() => {
 		init_modules();
@@ -42181,7 +42105,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/radar/IndicatorAxis.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/radar/IndicatorAxis.js
 	var IndicatorAxis;
 	var init_IndicatorAxis = __esmMin((() => {
 		init_modules();
@@ -42199,7 +42123,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Axis);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/radar/Radar.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/radar/Radar.js
 	var Radar;
 	var init_Radar = __esmMin((() => {
 		init_IndicatorAxis();
@@ -42333,7 +42257,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/radar/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/radar/install.js
 	function install$12(registers) {
 		registers.registerCoordinateSystem("radar", Radar);
 		registers.registerComponentModel(RadarModel);
@@ -42355,7 +42279,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_Radar();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/radar/radarLayout.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/radar/radarLayout.js
 	function radarLayout(ecModel) {
 		ecModel.eachSeriesByType(SERIES_TYPE_RADAR$1, function(seriesModel) {
 			var data = seriesModel.getData();
@@ -42393,7 +42317,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		radarLayoutStageHandler = createSimpleOverallStageHandler(SERIES_TYPE_RADAR$1, radarLayout);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/radar/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/radar/install.js
 	function install$11(registers) {
 		use(install$12);
 		registers.registerChartView(RadarView$1);
@@ -42412,109 +42336,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_radarLayout();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/View.js
-	function inner$4(viewCoordSys) {
-		return viewCoordSys;
-	}
-	function viewCoordSysGetZoomOption(viewCoordSys) {
-		return inner$4(viewCoordSys).zoom;
-	}
-	function viewCoordSysCopyBoundingRect(out, viewCoordSys) {
-		return boundingRectCopy(out || boundingRectCreate(), inner$4(viewCoordSys).dataRect);
-	}
-	function viewCoordSysCopyViewRect(out, viewCoordSys) {
-		return boundingRectCopy(out || boundingRectCreate(), inner$4(viewCoordSys).viewRect);
-	}
-	function getCoordSys(finder) {
-		var seriesModel = finder.seriesModel;
-		return seriesModel ? seriesModel.coordinateSystem : null;
-	}
-	var VIEW_COORD_SYS_TYPE, tmpPixelRectForContain;
-	var init_View = __esmMin((() => {
-		init_modules();
-		init_BoundingRect();
-		init_Transformable();
-		init_matrix();
-		init_vector();
-		VIEW_COORD_SYS_TYPE = "view";
-		(function(_super) {
-			__extends(View, _super);
-			function View(invertY, legacyCenterBase, legacyGeo) {
-				var _this = _super.call(this) || this;
-				_this.type = VIEW_COORD_SYS_TYPE;
-				_this.dimensions = ["x", "y"];
-				var viewInner = inner$4(_this);
-				viewInner.invertY = invertY;
-				viewInner.lgCt = legacyCenterBase;
-				viewInner.lgGeo = legacyGeo;
-				var trans = viewInner.trans = [];
-				trans[0] = transformableCreate();
-				trans[1] = transformableCreate();
-				trans[2] = transformableCreate();
-				viewInner.mtRaw = create();
-				viewInner.mtRawInv = create();
-				viewInner.mtOverall = create();
-				viewInner.mtOverallInv = create();
-				viewInner.zoom = 1;
-				return _this;
-			}
-			/**
-			* @implements CoordinateSystem['getBoundingRect']
-			* @see VIEW_COORD_SYS_TRANS_RAW
-			*
-			* This is a rect in data space.
-			* For historicall reason, the name is `getBoundingRect` - preserve it for backward compatibility.
-			*/
-			View.prototype.getBoundingRect = function() {
-				return viewCoordSysCopyBoundingRect(null, this);
-			};
-			/**
-			* @implements CoordinateSystem['getViewRect']
-			* @see VIEW_COORD_SYS_TRANS_RAW
-			*/
-			View.prototype.getViewRect = function() {
-				return viewCoordSysCopyViewRect(null, this);
-			};
-			/**
-			* @implements CoordinateSystem['getRoamTransform']
-			*/
-			View.prototype.getRoamTransform = function() {
-				return transformableGetLocalTransform(inner$4(this).trans[1]);
-			};
-			View.prototype.dataToPoint = function(data, noRoam, out) {
-				var transform = noRoam ? inner$4(this).mtRaw : inner$4(this).mtOverall;
-				out = out || [];
-				return transform ? applyTransform$1(out, data, transform) : copy$1(out, data);
-			};
-			View.prototype.pointToData = function(point, reserved, out) {
-				out = out || [];
-				var invTransform = inner$4(this).mtOverallInv;
-				return invTransform ? applyTransform$1(out, point, invTransform) : copy$1(out, point);
-			};
-			View.prototype.convertToPixel = function(ecModel, finder, value) {
-				var coordSys = getCoordSys(finder);
-				return coordSys === this ? coordSys.dataToPoint(value) : null;
-			};
-			View.prototype.convertFromPixel = function(ecModel, finder, pixel) {
-				var coordSys = getCoordSys(finder);
-				return coordSys === this ? coordSys.pointToData(pixel) : null;
-			};
-			View.prototype.containPoint = function(point) {
-				var viewInner = inner$4(this);
-				boundingRectCopy(tmpPixelRectForContain, viewInner.dataRect);
-				boundingRectApplyTransform(tmpPixelRectForContain, tmpPixelRectForContain, viewInner.mtOverall);
-				return boundingRectContain(tmpPixelRectForContain, point[0], point[1]);
-			};
-			View.dimensions = ["x", "y"];
-			return View;
-		})(Transformable);
-		tmpPixelRectForContain = boundingRectCreate();
-		boundingRectCreate();
-		transformableCreate();
-		transformableCreate();
-	}));
-	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/whiskerBoxCommon.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/helper/whiskerBoxCommon.js
 	/**
 	* PENDING: We do not use zr Element clipPath due to performance consideration,
 	* although it may be further optimized.
@@ -42623,7 +42445,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/CandlestickSeries.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/CandlestickSeries.js
 	var SERIES_TYPE_CANDLESTICK, CandlestickSeriesModel;
 	var init_CandlestickSeries = __esmMin((() => {
 		init_modules();
@@ -42704,7 +42526,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		mixin(CandlestickSeriesModel, WhiskerBoxCommonMixin, true);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/candlestickVisual.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/candlestickVisual.js
 	function getColor(sign, model) {
 		return model.get(sign > 0 ? positiveColorQuery : negativeColorQuery);
 	}
@@ -42742,7 +42564,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/CandlestickView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/CandlestickView.js
 	function createNormalBox(itemLayout, dataIndex, constDim, isInit) {
 		var ends = itemLayout.ends;
 		return new NormalBoxPath({
@@ -43008,7 +42830,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Path);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/preprocessor.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/preprocessor.js
 	function candlestickPreprocessor(option) {
 		if (!option || !isArray(option.series)) return;
 		each$4(option.series, function(seriesItem) {
@@ -43020,7 +42842,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_CandlestickSeries();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/candlestickLayout.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/candlestickLayout.js
 	/**
 	* Get the sign of a single data.
 	*
@@ -43185,7 +43007,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/candlestick/install.js
 	function install$10(registers) {
 		registers.registerChartView(CandlestickView);
 		registers.registerSeriesModel(CandlestickSeriesModel);
@@ -43202,7 +43024,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_candlestickLayout();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/custom/CustomSeries.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/custom/CustomSeries.js
 	var STYLE_VISUAL_TYPE, NON_STYLE_VISUAL_PROPS, customInnerStore, CustomSeriesModel;
 	var init_CustomSeries = __esmMin((() => {
 		init_modules();
@@ -43261,7 +43083,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(SeriesModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/prepareCustom.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/cartesian/prepareCustom.js
 	function dataToCoordSize$3(dataSize, dataItem) {
 		dataItem = dataItem || [0, 0];
 		return map$1(["x", "y"], function(dim, dimIdx) {
@@ -43294,7 +43116,109 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_axisBand();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/geo/prepareCustom.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/View.js
+	function inner$4(viewCoordSys) {
+		return viewCoordSys;
+	}
+	function viewCoordSysGetZoomOption(viewCoordSys) {
+		return inner$4(viewCoordSys).zoom;
+	}
+	function viewCoordSysCopyBoundingRect(out, viewCoordSys) {
+		return boundingRectCopy(out || boundingRectCreate(), inner$4(viewCoordSys).dataRect);
+	}
+	function viewCoordSysCopyViewRect(out, viewCoordSys) {
+		return boundingRectCopy(out || boundingRectCreate(), inner$4(viewCoordSys).viewRect);
+	}
+	function getCoordSys(finder) {
+		var seriesModel = finder.seriesModel;
+		return seriesModel ? seriesModel.coordinateSystem : null;
+	}
+	var VIEW_COORD_SYS_TYPE, tmpPixelRectForContain;
+	var init_View = __esmMin((() => {
+		init_modules();
+		init_BoundingRect();
+		init_Transformable();
+		init_matrix();
+		init_vector();
+		VIEW_COORD_SYS_TYPE = "view";
+		(function(_super) {
+			__extends(View, _super);
+			function View(invertY, legacyCenterBase, legacyGeo) {
+				var _this = _super.call(this) || this;
+				_this.type = VIEW_COORD_SYS_TYPE;
+				_this.dimensions = ["x", "y"];
+				var viewInner = inner$4(_this);
+				viewInner.invertY = invertY;
+				viewInner.lgCt = legacyCenterBase;
+				viewInner.lgGeo = legacyGeo;
+				var trans = viewInner.trans = [];
+				trans[0] = transformableCreate();
+				trans[1] = transformableCreate();
+				trans[2] = transformableCreate();
+				viewInner.mtRaw = create();
+				viewInner.mtRawInv = create();
+				viewInner.mtOverall = create();
+				viewInner.mtOverallInv = create();
+				viewInner.zoom = 1;
+				return _this;
+			}
+			/**
+			* @implements CoordinateSystem['getBoundingRect']
+			* @see VIEW_COORD_SYS_TRANS_RAW
+			*
+			* This is a rect in data space.
+			* For historicall reason, the name is `getBoundingRect` - preserve it for backward compatibility.
+			*/
+			View.prototype.getBoundingRect = function() {
+				return viewCoordSysCopyBoundingRect(null, this);
+			};
+			/**
+			* @implements CoordinateSystem['getViewRect']
+			* @see VIEW_COORD_SYS_TRANS_RAW
+			*/
+			View.prototype.getViewRect = function() {
+				return viewCoordSysCopyViewRect(null, this);
+			};
+			/**
+			* @implements CoordinateSystem['getRoamTransform']
+			*/
+			View.prototype.getRoamTransform = function() {
+				return transformableGetLocalTransform(inner$4(this).trans[1]);
+			};
+			View.prototype.dataToPoint = function(data, noRoam, out) {
+				var transform = noRoam ? inner$4(this).mtRaw : inner$4(this).mtOverall;
+				out = out || [];
+				return transform ? applyTransform$1(out, data, transform) : copy$1(out, data);
+			};
+			View.prototype.pointToData = function(point, reserved, out) {
+				out = out || [];
+				var invTransform = inner$4(this).mtOverallInv;
+				return invTransform ? applyTransform$1(out, point, invTransform) : copy$1(out, point);
+			};
+			View.prototype.convertToPixel = function(ecModel, finder, value) {
+				var coordSys = getCoordSys(finder);
+				return coordSys === this ? coordSys.dataToPoint(value) : null;
+			};
+			View.prototype.convertFromPixel = function(ecModel, finder, pixel) {
+				var coordSys = getCoordSys(finder);
+				return coordSys === this ? coordSys.pointToData(pixel) : null;
+			};
+			View.prototype.containPoint = function(point) {
+				var viewInner = inner$4(this);
+				boundingRectCopy(tmpPixelRectForContain, viewInner.dataRect);
+				boundingRectApplyTransform(tmpPixelRectForContain, tmpPixelRectForContain, viewInner.mtOverall);
+				return boundingRectContain(tmpPixelRectForContain, point[0], point[1]);
+			};
+			View.dimensions = ["x", "y"];
+			return View;
+		})(Transformable);
+		tmpPixelRectForContain = boundingRectCreate();
+		boundingRectCreate();
+		transformableCreate();
+		transformableCreate();
+	}));
+	//#endregion
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/geo/prepareCustom.js
 	function dataToCoordSize$2(dataSize, dataItem) {
 		dataItem = dataItem || [0, 0];
 		return map$1([0, 1], function(dimIdx) {
@@ -43333,7 +43257,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_View();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/single/prepareCustom.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/single/prepareCustom.js
 	function dataToCoordSize$1(dataSize, dataItem) {
 		var axis = this.getAxis();
 		var val = dataItem instanceof Array ? dataItem[0] : dataItem;
@@ -43363,7 +43287,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/polar/prepareCustom.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/polar/prepareCustom.js
 	function dataToCoordSize(dataSize, dataItem) {
 		dataItem = dataItem || [0, 0];
 		return map$1(["Radius", "Angle"], function(dim, dimIdx) {
@@ -43406,7 +43330,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_axisBand();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/calendar/prepareCustom.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/calendar/prepareCustom.js
 	/**
 	* AUTO-GENERATED FILE. DO NOT MODIFY.
 	*/
@@ -43441,7 +43365,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	}
 	var init_prepareCustom$1 = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/matrix/prepareCustom.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/coord/matrix/prepareCustom.js
 	/**
 	* AUTO-GENERATED FILE. DO NOT MODIFY.
 	*/
@@ -43467,7 +43391,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	}
 	var init_prepareCustom = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/animation/customGraphicTransition.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/animation/customGraphicTransition.js
 	function getElementAnimationConfig(animationType, el, elOption, parentModel, dataIndex) {
 		var animationProp = animationType + "Animation";
 		var config = getAnimationConfig(animationType, parentModel, dataIndex) || {};
@@ -43518,20 +43442,18 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		propsToSet.style = styleOpt;
 		applyPropsDirectly(el, propsToSet, clearStyle);
 		applyMiscProps(el, elOption);
-		if (hasAnimation) {
-			if (isInit) {
-				var enterFromProps_1 = {};
-				each$4(ELEMENT_ANIMATABLE_PROPS, function(propName) {
-					var prop = propName ? elOption[propName] : elOption;
-					if (prop && prop.enterFrom) {
-						if (propName) enterFromProps_1[propName] = enterFromProps_1[propName] || {};
-						extend(propName ? enterFromProps_1[propName] : enterFromProps_1, prop.enterFrom);
-					}
-				});
-				var config = getElementAnimationConfig("enter", el, elOption, animatableModel, dataIndex);
-				if (config.duration > 0) el.animateFrom(enterFromProps_1, config);
-			} else applyPropsTransition(el, elOption, dataIndex || 0, animatableModel, transFromProps);
-		}
+		if (hasAnimation) if (isInit) {
+			var enterFromProps_1 = {};
+			each$4(ELEMENT_ANIMATABLE_PROPS, function(propName) {
+				var prop = propName ? elOption[propName] : elOption;
+				if (prop && prop.enterFrom) {
+					if (propName) enterFromProps_1[propName] = enterFromProps_1[propName] || {};
+					extend(propName ? enterFromProps_1[propName] : enterFromProps_1, prop.enterFrom);
+				}
+			});
+			var config = getElementAnimationConfig("enter", el, elOption, animatableModel, dataIndex);
+			if (config.duration > 0) el.animateFrom(enterFromProps_1, config);
+		} else applyPropsTransition(el, elOption, dataIndex || 0, animatableModel, transFromProps);
 		updateLeaveTo(el, elOption);
 		styleOpt ? el.dirty() : el.markRedraw();
 	}
@@ -43782,7 +43704,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/animation/customGraphicKeyframeAnimation.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/animation/customGraphicKeyframeAnimation.js
 	/**
 	* Stop previous keyframe animation and restore the attributes.
 	* Avoid new keyframe animation starts with wrong internal state when the percent: 0 is not set.
@@ -43854,7 +43776,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		];
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/custom/CustomView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/custom/CustomView.js
 	function isPath(el) {
 		return el instanceof Path;
 	}
@@ -44501,7 +44423,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ChartView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/custom/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/chart/custom/install.js
 	function install$9(registers) {
 		registers.registerChartView(CustomChartView);
 		registers.registerSeriesModel(CustomSeriesModel);
@@ -44511,115 +44433,23 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_CustomView();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/charts.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/charts.js
 	var init_charts$1 = __esmMin((() => {
 		init_install$13();
 		init_install$12();
 		init_install$11();
 		init_install$10();
 		init_install$8();
-		init_extension();
-		init_modules();
-		init_graphic$2();
-		init_util$1();
-		init_Eventful();
-		init_event$1();
-		init_echarts();
-		init_model();
-		init_states();
-		init_Group();
-		init_Image();
-		init_Circle();
-		init_Rect();
-		init_Ellipse();
-		init_Line();
-		init_Polygon();
-		init_Polyline();
-		init_path();
-		init_LinearGradient();
-		init_RadialGradient();
-		init_TSpan();
-		init_color();
-		init_BoundingRect();
-		init_vector();
-		init_windingLine();
-		init_component();
-		init_labelStyle();
-		init_innerStore();
-		init_decal$1();
-		init_View();
-		init_Displayable();
-		init_types$1();
-		init_Transformable();
-		init_Chart();
-		init_createSeriesDataSimply();
-		init_Series();
-		init_sourceHelper();
-		init_tooltipMarkup();
-		init_symbol();
-		init_CoordinateSystem$1();
-		init_tokens();
-		init_dataSelectAction();
-		init_Component$1();
-		init_Model();
-		init_log();
-		init_layout();
-		init_number();
-		init_Component();
-		init_Symbol();
-		init_bbox();
-		init_SeriesData();
-		init_createDimensions();
-		init_Path();
-		init_palette();
-		init_DataDiffer();
-		init_makeStyleMapper();
-		init_format();
-		init_createSeriesData();
-		init_LegendVisualProvider();
-		init_seriesFormatTooltip();
-		init_SymbolDraw();
-		init_curve();
-		init_sectorHelper();
-		init_basicTransition();
-		init_dataFilter();
-		init_PathProxy();
-		init_sausage();
-		init_labelGuideHelper();
-		init_throttle();
-		init_axisHelper();
-		init_Axis();
-		init_axisNiceTicks();
-		init_scaleRawExtentInfo();
-		init_axisStatistics();
-		init_axisModelCreator();
-		init_axisModelCommonMixin();
-		init_AxisBuilder();
-		init_whiskerBoxCommon();
-		init_createClipPathFromCoordSys();
-		init_axisBand();
-		init_axisSnippets();
 		init_install$7();
-		init_points();
-		init_quadratic();
-		init_createRenderPlanner();
-		init_platform();
-		init_labelHelper();
-		init_barCommon();
-		init_BaseBarSeries();
-		init_barGrid();
-		init_poly();
-		init_dimensionHelper();
-		init_util();
 		init_install$6();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/charts.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/charts.js
 	var init_charts = __esmMin((() => {
 		init_charts$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/BaseAxisPointer.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/BaseAxisPointer.js
 	function updateProps(animationModel, moveAnimation, el, props) {
 		if (!propsEqual(inner$3(el).lastProp, props)) {
 			inner$3(el).lastProp = props;
@@ -44922,7 +44752,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/viewHelper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/viewHelper.js
 	function buildElStyle(axisPointerModel) {
 		var axisPointerType = axisPointerModel.get("type");
 		var styleModel = axisPointerModel.getModel(axisPointerType + "Style");
@@ -45067,7 +44897,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_number();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/CartesianAxisPointer.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/CartesianAxisPointer.js
 	function getCartesian(grid, axis) {
 		var opt = {};
 		opt[axis.dim + "AxisIndex"] = axis.index;
@@ -45166,7 +44996,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		};
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/AxisPointerModel.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/AxisPointerModel.js
 	var AxisPointerModel;
 	var init_AxisPointerModel = __esmMin((() => {
 		init_modules();
@@ -45228,7 +45058,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/globalListener.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/globalListener.js
 	function register(key, api, handler) {
 		if (env.node) return;
 		var zr = api.getZr();
@@ -45303,7 +45133,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		each$1 = each$4;
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/AxisPointerView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/AxisPointerView.js
 	var AxisPointerView;
 	var init_AxisPointerView = __esmMin((() => {
 		init_modules();
@@ -45339,7 +45169,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/findPointFromSeries.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/findPointFromSeries.js
 	/**
 	* @param finder contains {seriesIndex, dataIndex, dataIndexInside}
 	* @param ecModel
@@ -45356,21 +45186,20 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		var el = data.getItemGraphicEl(dataIndex);
 		var coordSys = seriesModel.coordinateSystem;
 		if (seriesModel.getTooltipPosition) point = seriesModel.getTooltipPosition(dataIndex) || [];
-		else if (coordSys && coordSys.dataToPoint) {
-			if (finder.isStacked) {
-				var baseAxis = coordSys.getBaseAxis();
-				var valueAxisDim = coordSys.getOtherAxis(baseAxis).dim;
-				var baseAxisDim = baseAxis.dim;
-				var baseDataOffset = valueAxisDim === "x" || valueAxisDim === "radius" ? 1 : 0;
-				var baseDim = data.mapDimension(baseAxisDim);
-				var stackedData = [];
-				stackedData[baseDataOffset] = data.get(baseDim, dataIndex);
-				stackedData[1 - baseDataOffset] = data.get(data.getCalculationInfo("stackResultDimension"), dataIndex);
-				point = coordSys.dataToPoint(stackedData) || [];
-			} else point = coordSys.dataToPoint(data.getValues(map$1(coordSys.dimensions, function(dim) {
-				return data.mapDimension(dim);
-			}), dataIndex)) || [];
-		} else if (el) {
+		else if (coordSys && coordSys.dataToPoint) if (finder.isStacked) {
+			var baseAxis = coordSys.getBaseAxis();
+			var valueAxisDim = coordSys.getOtherAxis(baseAxis).dim;
+			var baseAxisDim = baseAxis.dim;
+			var baseDataOffset = valueAxisDim === "x" || valueAxisDim === "radius" ? 1 : 0;
+			var baseDim = data.mapDimension(baseAxisDim);
+			var stackedData = [];
+			stackedData[baseDataOffset] = data.get(baseDim, dataIndex);
+			stackedData[1 - baseDataOffset] = data.get(data.getCalculationInfo("stackResultDimension"), dataIndex);
+			point = coordSys.dataToPoint(stackedData) || [];
+		} else point = coordSys.dataToPoint(data.getValues(map$1(coordSys.dimensions, function(dim) {
+			return data.mapDimension(dim);
+		}), dataIndex)) || [];
+		else if (el) {
 			var rect = el.getBoundingRect().clone();
 			rect.applyTransform(el.transform);
 			point = [rect.x + rect.width / 2, rect.y + rect.height / 2];
@@ -45385,7 +45214,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_model();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/axisTrigger.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/axisTrigger.js
 	/**
 	* Basic logic: check all axis, if they do not demand show/highlight,
 	* then hide/downplay them.
@@ -45650,7 +45479,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		inner$1 = makeInner();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/axisPointer/install.js
 	function install$8(registers) {
 		AxisView.registerAxisPointerClass("CartesianAxisPointer", CartesianAxisPointer);
 		registers.registerComponentModel(AxisPointerModel);
@@ -45681,7 +45510,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_axisTrigger();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/grid/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/grid/install.js
 	function install$7(registers) {
 		use(install$14);
 		use(install$8);
@@ -45692,7 +45521,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_extension();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/graphic/GraphicModel.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/graphic/GraphicModel.js
 	function setKeyInfoToNewElOption(resultItem, newElOption) {
 		var existElOption = resultItem.existing;
 		newElOption.id = resultItem.keyInfo.id;
@@ -45715,18 +45544,17 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		var newElOptCopy = extend({}, newElOption);
 		var existElOption = existList[index];
 		var $action = newElOption.$action || "merge";
-		if ($action === "merge") {
-			if (existElOption) {
-				merge(existElOption, newElOptCopy, true);
-				mergeLayoutParam(existElOption, newElOptCopy, { ignoreSize: true });
-				copyLayoutParams(newElOption, existElOption);
-				copyTransitionInfo(newElOption, existElOption);
-				copyTransitionInfo(newElOption, existElOption, "shape");
-				copyTransitionInfo(newElOption, existElOption, "style");
-				copyTransitionInfo(newElOption, existElOption, "extra");
-				newElOption.clipPath = existElOption.clipPath;
-			} else existList[index] = newElOptCopy;
-		} else if ($action === "replace") existList[index] = newElOptCopy;
+		if ($action === "merge") if (existElOption) {
+			merge(existElOption, newElOptCopy, true);
+			mergeLayoutParam(existElOption, newElOptCopy, { ignoreSize: true });
+			copyLayoutParams(newElOption, existElOption);
+			copyTransitionInfo(newElOption, existElOption);
+			copyTransitionInfo(newElOption, existElOption, "shape");
+			copyTransitionInfo(newElOption, existElOption, "style");
+			copyTransitionInfo(newElOption, existElOption, "extra");
+			newElOption.clipPath = existElOption.clipPath;
+		} else existList[index] = newElOptCopy;
+		else if ($action === "replace") existList[index] = newElOptCopy;
 		else if ($action === "remove") existElOption && (existList[index] = null);
 	}
 	function copyTransitionInfo(target, source, targetProp) {
@@ -45839,7 +45667,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/graphic/GraphicView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/graphic/GraphicView.js
 	function newEl(graphicType) {
 		var el = new (hasOwn(nonShapeGraphicElements, graphicType) ? nonShapeGraphicElements[graphicType] : getShapeClass(graphicType))({});
 		inner(el).type = graphicType;
@@ -46112,16 +45940,15 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/graphic/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/graphic/install.js
 	function install$6(registers) {
 		registers.registerComponentModel(GraphicComponentModel);
 		registers.registerComponentView(GraphicComponentView);
 		registers.registerPreprocessor(function(option) {
 			var graphicOption = option.graphic;
-			if (isArray(graphicOption)) {
-				if (!graphicOption[0] || !graphicOption[0].elements) option.graphic = [{ elements: graphicOption }];
-				else option.graphic = [option.graphic[0]];
-			} else if (graphicOption && !graphicOption.elements) option.graphic = [{ elements: [graphicOption] }];
+			if (isArray(graphicOption)) if (!graphicOption[0] || !graphicOption[0].elements) option.graphic = [{ elements: graphicOption }];
+			else option.graphic = [option.graphic[0]];
+			else if (graphicOption && !graphicOption.elements) option.graphic = [{ elements: [graphicOption] }];
 		});
 	}
 	var init_install$3 = __esmMin((() => {
@@ -46130,30 +45957,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_GraphicView();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/helper/listComponent.js
-	function makeBackground(rect, componentModel) {
-		var padding = normalizeCssArray(componentModel.get("padding"));
-		var style = componentModel.getItemStyle(["color", "opacity"]);
-		style.fill = componentModel.get("backgroundColor");
-		return new Rect({
-			shape: {
-				x: rect.x - padding[3],
-				y: rect.y - padding[0],
-				width: rect.width + padding[1] + padding[3],
-				height: rect.height + padding[0] + padding[2],
-				r: componentModel.get("borderRadius")
-			},
-			style,
-			silent: true,
-			z2: -1
-		});
-	}
-	var init_listComponent = __esmMin((() => {
-		init_format();
-		init_graphic$2();
-	}));
-	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/TooltipModel.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/TooltipModel.js
 	var TooltipModel;
 	var init_TooltipModel = __esmMin((() => {
 		init_modules();
@@ -46214,7 +46018,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/helper.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/helper.js
 	function shouldTooltipConfine(tooltipModel) {
 		var confineOption = tooltipModel.get("confine");
 		return confineOption != null ? !!confineOption : tooltipModel.get("renderMode") === "richText";
@@ -46255,7 +46059,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		]);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/TooltipHTMLContent.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/TooltipHTMLContent.js
 	function mirrorPos(pos) {
 		pos = pos === "left" ? "right" : pos === "right" ? "left" : pos === "top" ? "bottom" : "top";
 		return pos;
@@ -46534,13 +46338,11 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				}, 500);
 			};
 			TooltipHTMLContent.prototype.hideLater = function(time) {
-				if (this._show && !(this._inContent && this._enterable) && !this._alwaysShowContent) {
-					if (time) {
-						this._hideDelay = time;
-						this._show = false;
-						this._hideTimeout = setTimeout(bind$1(this.hide, this), time);
-					} else this.hide();
-				}
+				if (this._show && !(this._inContent && this._enterable) && !this._alwaysShowContent) if (time) {
+					this._hideDelay = time;
+					this._show = false;
+					this._hideTimeout = setTimeout(bind$1(this.hide, this), time);
+				} else this.hide();
 			};
 			TooltipHTMLContent.prototype.isShow = function() {
 				return this._show;
@@ -46562,7 +46364,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/TooltipRichContent.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/TooltipRichContent.js
 	function mathMaxWith0(val) {
 		return Math.max(0, val);
 	}
@@ -46710,13 +46512,11 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				this._show = false;
 			};
 			TooltipRichContent.prototype.hideLater = function(time) {
-				if (this._show && !(this._inContent && this._enterable) && !this._alwaysShowContent) {
-					if (time) {
-						this._hideDelay = time;
-						this._show = false;
-						this._hideTimeout = setTimeout(bind$1(this.hide, this), time);
-					} else this.hide();
-				}
+				if (this._show && !(this._inContent && this._enterable) && !this._alwaysShowContent) if (time) {
+					this._hideDelay = time;
+					this._show = false;
+					this._hideTimeout = setTimeout(bind$1(this.hide, this), time);
+				} else this.hide();
 			};
 			TooltipRichContent.prototype.isShow = function() {
 				return this._show;
@@ -46728,7 +46528,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/TooltipView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/TooltipView.js
 	/**
 	* From top to bottom. (the last one should be globalTooltipModel);
 	*/
@@ -46756,14 +46556,10 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		var size = content.getSize();
 		var width = size[0];
 		var height = size[1];
-		if (gapH != null) {
-			if (x + width + gapH + 2 > viewWidth) x -= width + gapH;
-			else x += gapH;
-		}
-		if (gapV != null) {
-			if (y + height + gapV > viewHeight) y -= height + gapV;
-			else y += gapV;
-		}
+		if (gapH != null) if (x + width + gapH + 2 > viewWidth) x -= width + gapH;
+		else x += gapH;
+		if (gapV != null) if (y + height + gapV > viewHeight) y -= height + gapV;
+		else y += gapV;
 		return [x, y];
 	}
 	function confineTooltipPosition(x, y, content, viewWidth, viewHeight) {
@@ -47222,25 +47018,23 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				positionExpr = positionExpr || tooltipModel.get("position");
 				var html = defaultHtml;
 				var nearPointColor = this._getNearestPoint([x, y], params, tooltipModel.get("trigger"), tooltipModel.get("borderColor"), tooltipModel.get("defaultBorderColor", true)).color;
-				if (formatter) {
-					if (isString(formatter)) {
-						var useUTC = tooltipModel.ecModel.get("useUTC");
-						var params0 = isArray(params) ? params[0] : params;
-						var isTimeAxis = params0 && params0.axisType && params0.axisType.indexOf("time") >= 0;
-						html = formatter;
-						if (isTimeAxis) html = format(params0.axisValue, html, useUTC);
-						html = formatTpl(html, params, true);
-					} else if (isFunction(formatter)) {
-						var callback = bind$1(function(cbTicket, html) {
-							if (cbTicket === this._ticket) {
-								tooltipContent.setContent(html, markupStyleCreator, tooltipModel, nearPointColor, positionExpr);
-								this._updatePosition(tooltipModel, positionExpr, x, y, tooltipContent, params, el);
-							}
-						}, this);
-						this._ticket = asyncTicket;
-						html = formatter(params, asyncTicket, callback);
-					} else html = formatter;
-				}
+				if (formatter) if (isString(formatter)) {
+					var useUTC = tooltipModel.ecModel.get("useUTC");
+					var params0 = isArray(params) ? params[0] : params;
+					var isTimeAxis = params0 && params0.axisType && params0.axisType.indexOf("time") >= 0;
+					html = formatter;
+					if (isTimeAxis) html = format(params0.axisValue, html, useUTC);
+					html = formatTpl(html, params, true);
+				} else if (isFunction(formatter)) {
+					var callback = bind$1(function(cbTicket, html) {
+						if (cbTicket === this._ticket) {
+							tooltipContent.setContent(html, markupStyleCreator, tooltipModel, nearPointColor, positionExpr);
+							this._updatePosition(tooltipModel, positionExpr, x, y, tooltipContent, params, el);
+						}
+					}, this);
+					this._ticket = asyncTicket;
+					html = formatter(params, asyncTicket, callback);
+				} else html = formatter;
 				tooltipContent.setContent(html, markupStyleCreator, tooltipModel, nearPointColor, positionExpr);
 				tooltipContent.show(tooltipModel, nearPointColor);
 				this._updatePosition(tooltipModel, positionExpr, x, y, tooltipContent, params, el);
@@ -47347,7 +47141,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/tooltip/install.js
 	function install$5(registers) {
 		use(install$8);
 		registers.registerComponentModel(TooltipModel);
@@ -47379,7 +47173,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/title/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/title/install.js
 	function install$4(registers) {
 		registers.registerComponentModel(TitleModel);
 		registers.registerComponentView(TitleView);
@@ -47534,7 +47328,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/LegendModel.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/LegendModel.js
 	var getDefaultSelectorOptions, LegendModel;
 	var init_LegendModel = __esmMin((() => {
 		init_modules();
@@ -47768,7 +47562,30 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/LegendView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/helper/listComponent.js
+	function makeBackground(rect, componentModel) {
+		var padding = normalizeCssArray(componentModel.get("padding"));
+		var style = componentModel.getItemStyle(["color", "opacity"]);
+		style.fill = componentModel.get("backgroundColor");
+		return new Rect({
+			shape: {
+				x: rect.x - padding[3],
+				y: rect.y - padding[0],
+				width: rect.width + padding[1] + padding[3],
+				height: rect.height + padding[0] + padding[2],
+				r: componentModel.get("borderRadius")
+			},
+			style,
+			silent: true,
+			z2: -1
+		});
+	}
+	var init_listComponent = __esmMin((() => {
+		init_format();
+		init_graphic$2();
+	}));
+	//#endregion
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/LegendView.js
 	function getLegendStyle(iconType, legendItemModel, lineVisualStyle, itemVisualStyle, drawType, isSelected, api) {
 		/**
 		* Use series style if is inherit;
@@ -48169,7 +47986,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(ComponentView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/legendAction.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/legendAction.js
 	function legendSelectActionHandler(methodName, payload, ecModel) {
 		var isAllSelect = methodName === "allSelect" || methodName === "inverseSelect";
 		var selectedMap = {};
@@ -48239,7 +48056,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_util$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/legendFilter.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/legendFilter.js
 	function legendFilter(ecModel) {
 		var legendModels = ecModel.findComponents({ mainType: "legend" });
 		if (legendModels && legendModels.length) ecModel.filterSeries(function(series) {
@@ -48253,7 +48070,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		legendFilterStageHandler = createSimpleOverallStageHandler2(legendFilter);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/installLegendPlain.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/installLegendPlain.js
 	function install$3(registers) {
 		registers.registerComponentModel(LegendModel);
 		registers.registerComponentView(LegendView);
@@ -48270,7 +48087,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_legendFilter();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/ScrollableLegendModel.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/ScrollableLegendModel.js
 	function mergeAndNormalizeLayoutParams(legendModel, target, raw) {
 		var orient = legendModel.getOrient();
 		var ignoreSize = [1, 1];
@@ -48333,7 +48150,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(LegendModel);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/ScrollableLegendView.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/ScrollableLegendView.js
 	var Group, WH, XY, ScrollableLegendView;
 	var init_ScrollableLegendView = __esmMin((() => {
 		init_modules();
@@ -48451,10 +48268,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				var containerPos = [0, 0];
 				var controllerPos = [-controllerRect.x, -controllerRect.y];
 				var pageButtonGap = retrieve2(legendModel.get("pageButtonGap", true), legendModel.get("itemGap", true));
-				if (showController) {
-					if (legendModel.get("pageButtonPosition", true) === "end") controllerPos[orientIdx] += maxSize[wh] - controllerRect[wh];
-					else containerPos[orientIdx] += controllerRect[wh] + pageButtonGap;
-				}
+				if (showController) if (legendModel.get("pageButtonPosition", true) === "end") controllerPos[orientIdx] += maxSize[wh] - controllerRect[wh];
+				else containerPos[orientIdx] += controllerRect[wh] + pageButtonGap;
 				controllerPos[1 - orientIdx] += contentRect[hw] / 2 - controllerRect[hw] / 2;
 				contentGroup.setPosition(contentPos);
 				containerGroup.setPosition(containerPos);
@@ -48603,7 +48418,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(LegendView);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/scrollableLegendAction.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/scrollableLegendAction.js
 	/**
 	* AUTO-GENERATED FILE. DO NOT MODIFY.
 	*/
@@ -48627,7 +48442,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 	}
 	var init_scrollableLegendAction = __esmMin((() => {}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/installLegendScroll.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/installLegendScroll.js
 	function install$2(registers) {
 		use(install$3);
 		registers.registerComponentModel(ScrollableLegendModel);
@@ -48642,7 +48457,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_scrollableLegendAction();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/install.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/component/legend/install.js
 	function install$1(registers) {
 		use(install$3);
 		use(install$2);
@@ -48653,153 +48468,33 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_installLegendScroll();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/components.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/components.js
 	var init_components$1 = __esmMin((() => {
-		init_installSimple();
 		init_install$4();
-		init_modules();
-		init_extension();
-		init_AxisView();
-		init_BaseAxisPointer();
-		init_graphic$2();
-		init_viewHelper();
-		init_AxisBuilder();
-		init_install$5();
-		init_Component$1();
-		init_axisModelCreator();
-		init_util$1();
-		init_axisModelCommonMixin();
-		init_model();
-		init_Axis();
-		init_text();
-		init_number();
-		init_axisHelper();
-		init_layout();
-		init_axisNiceTicks();
-		init_scaleRawExtentInfo();
-		init_axisStatistics();
-		init_labelStyle();
-		init_Model();
-		init_innerStore();
-		init_Component();
-		init_dataStackHelper();
-		init_axisBand();
-		init_axisSnippets();
-		init_barCommon();
 		init_install$9();
-		init_View();
-		init_Group();
-		init_Image();
-		init_Circle();
-		init_Rect();
-		init_Ellipse();
-		init_Line();
-		init_Polygon();
-		init_Polyline();
-		init_path();
-		init_LinearGradient();
-		init_RadialGradient();
-		init_TSpan();
-		init_color();
-		init_BoundingRect();
-		init_vector();
-		init_windingLine();
-		init_log();
-		init_Transformable();
-		init_createSeriesDataSimply();
-		init_Series();
-		init_sourceHelper();
-		init_tooltipMarkup();
-		init_symbol();
-		init_CoordinateSystem$1();
-		init_tokens();
-		init_types$1();
-		init_Eventful();
-		init_event$1();
-		init_echarts();
-		init_states();
-		init_component();
-		init_decal$1();
-		init_Displayable();
-		init_axisSplitHelper();
-		init_axisBreakHelper();
-		init_throttle();
-		init_makeStyleMapper();
-		init_DataDiffer();
-		init_format();
-		init_locale();
-		init_Point();
-		init_OrdinalMeta();
-		init_Ordinal();
-		init_subPixelOptimize();
 		init_install$3();
-		init_cycleCache();
-		init_helper$2();
-		init_listComponent();
-		init_Text();
-		init_env();
-		init_cartesianAxisHelper();
-		init_internalComponentCreator();
 		init_install$2();
+		init_install$5();
 		init_install$1();
-		init_SeriesData();
-		init_dataFormat();
-		init_SymbolDraw();
-		init_dataValueHelper();
 		init_install();
-		init_installLegendScroll();
-		init_installLegendPlain();
-		init_palette();
-		init_sourceManager();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/components.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/components.js
 	var init_components = __esmMin((() => {
 		init_components$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/features.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/features.js
 	var init_features$1 = __esmMin((() => {
-		init_Series();
-		init_util$1();
-		init_curve();
-		init_Path();
-		init_vector();
-		init_path();
-		init_Transformable();
-		init_bbox();
-		init_BoundingRect();
-		init_Point();
-		init_Polygon();
-		init_Rect();
-		init_Sector();
-		init_PathProxy();
-		init_graphic$2();
-		init_basicTransition();
-		init_DataDiffer();
-		init_model();
-		init_log();
-		init_Displayable();
 		init_installLabelLayout();
-		init_break();
-		init_number();
-		init_scaleMapper();
-		init_axisAction();
-		init_subPixelOptimize();
-		init_labelLayoutHelper();
-		init_axisBreakHelper();
-		init_Grid();
-		init_Ordinal();
-		init_axisHelper();
-		init_install$10();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/features.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/features.js
 	var init_features = __esmMin((() => {
 		init_features$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/canvas/Layer.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/canvas/Layer.js
 	function createDom(id, painter, dpr) {
 		var newDom = platformApi.createCanvas();
 		var width = painter.getWidth();
@@ -49066,7 +48761,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}(Eventful);
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/canvas/Painter.js
+	//#region ../../../node_modules/.pnpm/zrender@6.1.0/node_modules/zrender/lib/canvas/Painter.js
 	function isLayerValid(layer) {
 		if (!layer) return false;
 		if (layer.__builtin__) return true;
@@ -49327,21 +49022,20 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			};
 			CanvasPainter.prototype._paintPerCursor = function(layer, layerCursor, list, repaintRects, contentRetained) {
 				var ctx = layer.ctx;
-				if (repaintRects) {
-					if (!repaintRects.length) layerCursor.drawIdx = layerCursor.endIdx;
-					else {
-						var dpr = this.dpr;
-						for (var r = 0; r < repaintRects.length; ++r) {
-							var rect = repaintRects[r];
-							ctx.save();
-							ctx.beginPath();
-							ctx.rect(rect.x * dpr, rect.y * dpr, rect.width * dpr, rect.height * dpr);
-							ctx.clip();
-							this._paintPerCursorInRect(layer, layerCursor, list, rect, contentRetained);
-							ctx.restore();
-						}
+				if (repaintRects) if (!repaintRects.length) layerCursor.drawIdx = layerCursor.endIdx;
+				else {
+					var dpr = this.dpr;
+					for (var r = 0; r < repaintRects.length; ++r) {
+						var rect = repaintRects[r];
+						ctx.save();
+						ctx.beginPath();
+						ctx.rect(rect.x * dpr, rect.y * dpr, rect.width * dpr, rect.height * dpr);
+						ctx.clip();
+						this._paintPerCursorInRect(layer, layerCursor, list, rect, contentRetained);
+						ctx.restore();
 					}
-				} else {
+				}
+				else {
 					ctx.save();
 					this._paintPerCursorInRect(layer, layerCursor, list, null, contentRetained);
 					ctx.restore();
@@ -49424,14 +49118,12 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					zl2: zlevel2
 				});
 				ensureLayerListInZLevel(internal, zlevel)[zlevel2] = layer;
-				if (!suppressDOMInsert && !layer.virtual) {
-					if (prevLayer) {
-						var prevDom = prevLayer.dom;
-						if (prevDom.nextSibling) domRoot.insertBefore(layer.dom, prevDom.nextSibling);
-						else domRoot.appendChild(layer.dom);
-					} else if (domRoot.firstChild) domRoot.insertBefore(layer.dom, domRoot.firstChild);
+				if (!suppressDOMInsert && !layer.virtual) if (prevLayer) {
+					var prevDom = prevLayer.dom;
+					if (prevDom.nextSibling) domRoot.insertBefore(layer.dom, prevDom.nextSibling);
 					else domRoot.appendChild(layer.dom);
-				}
+				} else if (domRoot.firstChild) domRoot.insertBefore(layer.dom, domRoot.firstChild);
+				else domRoot.appendChild(layer.dom);
 				layer.painter || (layer.painter = this);
 			};
 			CanvasPainter.prototype.eachLayer = function(cb, context) {
@@ -49668,7 +49360,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/renderer/installCanvasRenderer.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/renderer/installCanvasRenderer.js
 	function install(registers) {
 		registers.registerPainter("canvas", CanvasPainter);
 	}
@@ -49676,34 +49368,17 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_Painter();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/renderers.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/lib/export/renderers.js
 	var init_renderers$1 = __esmMin((() => {
-		init_helper$5();
-		init_Path();
-		init_Image();
-		init_text();
-		init_TSpan();
-		init_dashStyle();
-		init_util$1();
-		init_dom();
-		init_image();
-		init_Transformable();
-		init_PathProxy();
-		init_CompoundPath();
-		init_cubicEasing();
-		init_Text();
-		init_platform();
-		init_color();
-		init_zrender();
 		init_installCanvasRenderer();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/renderers.js
+	//#region ../../../node_modules/.pnpm/echarts@6.1.0/node_modules/echarts/renderers.js
 	var init_renderers = __esmMin((() => {
 		init_renderers$1();
 	}));
 	//#endregion
-	//#region node_modules/.pnpm/@aiden0z+pptx-renderer@1.2.4/node_modules/@aiden0z/pptx-renderer/dist/aiden0z-pptx-renderer.es.js
+	//#region ../../../node_modules/.pnpm/@aiden0z+pptx-renderer@1.2.4/node_modules/@aiden0z/pptx-renderer/dist/aiden0z-pptx-renderer.es.js
 	var aiden0z_pptx_renderer_es_exports = /* @__PURE__ */ __exportAll({
 		PptxRenderer: () => Xp,
 		PptxViewer: () => js,
@@ -51164,7 +50839,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				case s:
 					a = ((i - o) / h + 2) * 60;
 					break;
-				case i: a = ((o - s) / h + 4) * 60;
+				case i:
+					a = ((o - s) / h + 4) * 60;
+					break;
 			}
 		}
 		return {
@@ -52244,8 +51921,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		return Fh.has(n) ? n : `"${t.trim().replace(/\\/g, "\\\\").replace(/"/g, "\\\"")}"`;
 	}
 	function tr(t) {
-		const n = mo(t);
-		return Eh[n] ?? [t.trim()];
+		return Eh[mo(t)] ?? [t.trim()];
 	}
 	function mn(t) {
 		const n = Array.isArray(t) ? t.flatMap(tr) : tr(t), o = n.some((r) => wh.has(mo(r))) ? [...n, ...kh] : n, s = /* @__PURE__ */ new Set();
@@ -53621,7 +53297,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		}, g = (M, L, v) => {
 			const k = document.createElementNS(t, "circle");
 			k.setAttribute("cx", String(M)), k.setAttribute("cy", String(L)), k.setAttribute("r", String(v)), k.setAttribute("fill", a), u.appendChild(k), p = !0;
-		}, f = r / 2, y = r, m = `3,2`;
+		}, f = r / 2, y = r, m = `${r * 3},${r * 2}`;
 		let b = 0;
 		switch (s) {
 			case "pct5":
@@ -55140,7 +54816,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			case "pdf":
 				K0(i.data, o, n, e, s);
 				break;
-			case "bitmap": J0(i.imageData, o, e, s);
+			case "bitmap":
+				J0(i.imageData, o, e, s);
+				break;
 		}
 	}
 	function K0(t, n, e, o, s) {
@@ -57007,12 +56685,14 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 					orient: "vertical"
 				};
 				break;
-			default: a = {
-				...c,
-				right: "2%",
-				top: "middle",
-				orient: "vertical"
-			};
+			default:
+				a = {
+					...c,
+					right: "2%",
+					top: "middle",
+					orient: "vertical"
+				};
+				break;
 		}
 		return {
 			option: a,
@@ -57717,26 +57397,23 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 				} : b && !O.colorHex && M.length > 0 && (Bt = { color: M[Zt % M.length] });
 				let Ft;
 				if (Dt != null && Dt.deleted) Ft = { show: !1 };
-				else if (Dt) {
-					const H = {
-						showVal: (W == null ? void 0 : W.showVal) ?? !1,
-						showCatName: (W == null ? void 0 : W.showCatName) ?? !1,
-						showSerName: (W == null ? void 0 : W.showSerName) ?? !1,
-						showPercent: (W == null ? void 0 : W.showPercent) ?? !1,
-						position: W == null ? void 0 : W.position,
-						showLeaderLines: W == null ? void 0 : W.showLeaderLines,
-						manualLayout: W == null ? void 0 : W.manualLayout,
-						color: W == null ? void 0 : W.color,
-						fontSize: W == null ? void 0 : W.fontSize,
-						bold: W == null ? void 0 : W.bold,
-						backgroundColor: W == null ? void 0 : W.backgroundColor,
-						borderColor: W == null ? void 0 : W.borderColor,
-						borderWidth: W == null ? void 0 : W.borderWidth,
-						padding: W == null ? void 0 : W.padding,
-						...Dt
-					};
-					Ft = it(H);
-				}
+				else if (Dt) Ft = it({
+					showVal: (W == null ? void 0 : W.showVal) ?? !1,
+					showCatName: (W == null ? void 0 : W.showCatName) ?? !1,
+					showSerName: (W == null ? void 0 : W.showSerName) ?? !1,
+					showPercent: (W == null ? void 0 : W.showPercent) ?? !1,
+					position: W == null ? void 0 : W.position,
+					showLeaderLines: W == null ? void 0 : W.showLeaderLines,
+					manualLayout: W == null ? void 0 : W.manualLayout,
+					color: W == null ? void 0 : W.color,
+					fontSize: W == null ? void 0 : W.fontSize,
+					bold: W == null ? void 0 : W.bold,
+					backgroundColor: W == null ? void 0 : W.backgroundColor,
+					borderColor: W == null ? void 0 : W.borderColor,
+					borderWidth: W == null ? void 0 : W.borderWidth,
+					padding: W == null ? void 0 : W.padding,
+					...Dt
+				});
 				return !Bt && !Ft ? Ut : {
 					value: Ut,
 					...Bt ? { itemStyle: Bt } : {},
@@ -58180,8 +57857,8 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		const s = rn(n, e, o, 14), i = nn(n, o), r = i == null ? void 0 : i.option, c = {
 			fontSize: 10,
 			...(i == null ? void 0 : i.textStyle) ?? {}
-		}, l = Math.max(t.child("bubbleScale").numAttr("val") ?? 100, 0), a = G$ * (l / 100);
-		let d = -1 / 0;
+		}, a = G$ * (Math.max(t.child("bubbleScale").numAttr("val") ?? 100, 0) / 100);
+		let d = -Infinity;
 		for (const S of e) if (S.bubbleSizes) for (const w of S.bubbleSizes) w > d && (d = w);
 		const h = d > 0 ? d : 1, u = e.map((S) => {
 			const w = S.values.map((F, C) => {
@@ -58902,9 +58579,9 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		init_renderers();
 		Up = Object.freeze({
 			maxEntries: 4e3,
-			maxEntryUncompressedBytes: 33554432,
-			maxTotalUncompressedBytes: 268435456,
-			maxMediaBytes: 201326592,
+			maxEntryUncompressedBytes: 32 * 1024 * 1024,
+			maxTotalUncompressedBytes: 256 * 1024 * 1024,
+			maxMediaBytes: 192 * 1024 * 1024,
 			maxConcurrency: 8
 		});
 		Ea = class {
@@ -59033,8 +58710,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			"true",
 			"t",
 			"on"
-		]);
-		Wa = /* @__PURE__ */ new Set([
+		]), Wa = /* @__PURE__ */ new Set([
 			"0",
 			"false",
 			"f",
@@ -59062,8 +58738,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			"grpSp",
 			"graphicFrame",
 			"cxnSp"
-		]);
-		fd = [
+		]), fd = [
 			"nvSpPr",
 			"nvPicPr",
 			"nvGrpSpPr",
@@ -59223,17 +58898,14 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			"http:",
 			"https:",
 			"mailto:"
-		]);
-		Jd = /* @__PURE__ */ new Set(["http:", "https:"]);
+		]), Jd = /* @__PURE__ */ new Set(["http:", "https:"]);
 		jd = 128;
 		ch = 0;
-		Mh = /^\+(mj|mn)-(lt|ea|cs)$/;
-		Lh = {
+		Mh = /^\+(mj|mn)-(lt|ea|cs)$/, Lh = {
 			lt: "latin",
 			ea: "ea",
 			cs: "cs"
-		};
-		vh = [
+		}, vh = [
 			"Hans",
 			"Hant",
 			"Jpan",
@@ -59252,16 +58924,14 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			"emoji",
 			"math",
 			"fangsong"
-		]);
-		kh = [
+		]), kh = [
 			"PingFang SC",
 			"Hiragino Sans GB",
 			"Noto Sans CJK SC",
 			"Source Han Sans SC",
 			"Arial Unicode MS",
 			"sans-serif"
-		];
-		wh = /* @__PURE__ */ new Set([
+		], wh = /* @__PURE__ */ new Set([
 			"microsoft yahei",
 			"microsoft yahei ui",
 			"微软雅黑",
@@ -59270,8 +58940,7 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 			"simhei",
 			"黑体",
 			"heiti sc"
-		]);
-		Eh = {
+		]), Eh = {
 			calibri: [
 				"Calibri",
 				"Aptos",
@@ -62175,42 +61844,24 @@ while (n === a[++i] && n === a[++i] && n === a[++i] && n === a[++i] && n === a[+
 		});
 		eu = 1e5;
 		Oc = 36;
-		mu = 1.1;
-		bu = 1.25;
-		cs = 1;
-		Mu = .9;
-		Lu = .9;
-		Pu = 0;
-		Le = 0;
-		Xu = 2;
-		Yu = 4;
+		mu = 1.1, bu = 1.25, cs = 1, Mu = .9, Lu = .9;
+		Pu = 0, Le = 0;
+		Xu = 2, Yu = 4;
 		vr = /* @__PURE__ */ new WeakMap();
-		t0 = 14;
-		e0 = 70;
-		n0 = 81;
-		o0 = 1128875079;
-		s0 = 2;
-		i0 = 1073741828;
-		r0 = 1179469088;
-		c0 = [
+		t0 = 14, e0 = 70, n0 = 81, o0 = 1128875079, s0 = 2, i0 = 1073741828, r0 = 1179469088, c0 = [
 			37,
 			80,
 			68,
 			70
-		];
-		ls = [
+		], ls = [
 			37,
 			37,
 			69,
 			79,
 			70
-		];
-		l0 = 0;
-		a0 = 16777216;
-		p0 = "pdfjs-dist/build/pdf.min.mjs";
-		x0 = "pdfjs-dist/build/pdf.worker.min.mjs";
-		ro = null;
-		co = null;
+		], l0 = 0, a0 = 16777216;
+		p0 = "pdfjs-dist/build/pdf.min.mjs", x0 = "pdfjs-dist/build/pdf.worker.min.mjs";
+		ro = null, co = null;
 		M0 = `
 let pdfjsLib = null;
 
@@ -62257,9 +61908,7 @@ self.onmessage = async (e) => {
     self.postMessage({ id, error: String(err) });
   }
 };
-`;
-		L0 = 15e3;
-		v0 = 4;
+`, L0 = 15e3, v0 = 4;
 		gs = 0;
 		$o = [];
 		k0 = 0;
@@ -62338,8 +61987,7 @@ self.onmessage = async (e) => {
 			["{0660B408-B3CF-4A94-85FC-2B1E0A45F4A2}", ["Dark-Style-2", "accent1"]],
 			["{91EBBBCC-DAD2-459C-BE2E-F6DE35CF9A28}", ["Dark-Style-2", "accent3"]],
 			["{46F890A9-2807-4EBB-B81D-B2AA78EC7F39}", ["Dark-Style-2", "accent5"]]
-		]);
-		nf = "xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"";
+		]), nf = "xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\"";
 		xf = {
 			"Themed-Style-1": sf,
 			"Themed-Style-2": rf,
@@ -62352,8 +62000,7 @@ self.onmessage = async (e) => {
 			"Medium-Style-4": ff,
 			"Dark-Style-1": $f,
 			"Dark-Style-2": pf
-		};
-		Cr = /* @__PURE__ */ new Map();
+		}, Cr = /* @__PURE__ */ new Map();
 		jc.size;
 		po = 1e4;
 		use([
@@ -62374,21 +62021,15 @@ self.onmessage = async (e) => {
 			installLabelLayout,
 			install
 		]);
-		To = Symbol("pptxExplicitFontSize");
-		pn = "#000000";
-		Xf = 10;
-		bs = "#898989";
-		nl = {
+		To = Symbol("pptxExplicitFontSize"), pn = "#000000", Xf = 10, bs = "#898989", nl = {
 			color: bs,
 			width: 1,
 			type: "solid"
-		};
-		as = {
+		}, as = {
 			color: "#868686",
 			width: 1,
 			type: "solid"
-		};
-		Yf = [
+		}, Yf = [
 			"accent1",
 			"accent2",
 			"accent3",
@@ -62443,57 +62084,41 @@ self.onmessage = async (e) => {
 			"rect",
 			"triangle",
 			"circle"
-		];
-		Or = [
+		], Or = [
 			"diamond",
 			"square",
 			"triangle",
 			"circle"
-		];
-		$l = el(9);
-		Nr = $l;
-		G$ = 120;
+		], $l = el(9), Nr = $l, G$ = 120;
 		Jr = /* @__PURE__ */ new WeakMap();
 		xp = {
 			includeShapes: !0,
 			includeTables: !0,
 			includeGroups: !0
-		};
-		Ks = {
+		}, Ks = {
 			offsetX: 0,
 			offsetY: 0,
 			scaleX: 1,
 			scaleY: 1
-		};
-		yp = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-		Al = (t) => t ? t.paragraphs.map((n) => n.runs.map((e) => e.text).join("")).join(`
-`) : "";
-		gp = (t) => Al(t.textBody);
-		Sl = (t, n = Ks) => ({
+		}, yp = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), Al = (t) => t ? t.paragraphs.map((n) => n.runs.map((e) => e.text).join("")).join(`
+`) : "", gp = (t) => Al(t.textBody), Sl = (t, n = Ks) => ({
 			x: n.offsetX + t.position.x * n.scaleX,
 			y: n.offsetY + t.position.y * n.scaleY,
 			w: t.size.w * n.scaleX,
 			h: t.size.h * n.scaleY
-		});
-		Cl = (t) => t.trim().length > 0;
-		tc = (t) => t !== void 0 && /[A-Za-z0-9_]/.test(t);
-		mp = (t, n, e) => !tc(t[n - 1]) && !tc(t[e]);
-		bp = (t) => {
+		}), Cl = (t) => t.trim().length > 0, tc = (t) => t !== void 0 && /[A-Za-z0-9_]/.test(t), mp = (t, n, e) => !tc(t[n - 1]) && !tc(t[e]), bp = (t) => {
 			const n = (t % 360 + 360) % 360;
 			return Math.abs(n - 90) < 1e-4 || Math.abs(n - 270) < 1e-4;
-		};
-		Mp = (t, n, e, o) => {
+		}, Mp = (t, n, e, o) => {
 			const s = Math.max(0, n - o), i = Math.min(t.length, e + o), r = s > 0 ? "..." : "", c = i < t.length ? "..." : "";
 			return `${r}${t.slice(s, i)}${c}`;
-		};
-		Fl = (t, n, e = !1, o) => {
+		}, Fl = (t, n, e = !1, o) => {
 			const s = Nn(t, {
 				...n,
 				skipPlaceholders: e
 			});
 			return s && Bo(s, n.layout, n.master, { parentGroup: o }), s;
-		};
-		Lp = (t, n, e) => {
+		}, Lp = (t, n, e) => {
 			if (t.childExtent.w <= 0 || t.childExtent.h <= 0) return {
 				offsetX: e.offsetX + t.position.x * e.scaleX,
 				offsetY: e.offsetY + t.position.y * e.scaleY,
@@ -62522,8 +62147,7 @@ self.onmessage = async (e) => {
 				scaleX: e.scaleX * o,
 				scaleY: e.scaleY * s
 			};
-		};
-		vp = (t, n, e, o, s) => {
+		}, vp = (t, n, e, o, s) => {
 			const i = Al(e.textBody);
 			Cl(i) && t.push({
 				slideIndex: n,
@@ -62534,8 +62158,7 @@ self.onmessage = async (e) => {
 				text: i,
 				bounds: Sl(e, s)
 			});
-		};
-		Ap = (t, n, e, o, s) => {
+		}, Ap = (t, n, e, o, s) => {
 			e.rows.forEach((i, r) => {
 				i.cells.forEach((c, l) => {
 					const a = gp(c);
@@ -62552,8 +62175,7 @@ self.onmessage = async (e) => {
 					});
 				});
 			});
-		};
-		Js = (t, n, e, o, s, i, r = Ks, c = !1) => {
+		}, Js = (t, n, e, o, s, i, r = Ks, c = !1) => {
 			if (!(c && e.placeholder)) switch (e.nodeType) {
 				case "shape":
 					s.includeShapes && vp(t, n, e, o, r);
@@ -62569,25 +62191,22 @@ self.onmessage = async (e) => {
 							try {
 								const h = Fl(a, i, c, l);
 								if (!h) return;
-								const u = Lp(l, h, r), x = h.id || h.name || String(d);
-								Js(t, n, h, `${o}/children/${d}/${x}`, s, i, u, c);
+								const u = Lp(l, h, r);
+								Js(t, n, h, `${o}/children/${d}/${h.id || h.name || String(d)}`, s, i, u, c);
 							} catch {}
 						});
 					}
 					break;
 			}
-		};
-		ec = (t, n, e, o, s, i) => {
+		}, ec = (t, n, e, o, s, i) => {
 			e != null && e.exists() && e.allChildren().forEach((r, c) => {
 				if (!Cs(r)) try {
 					const l = Fl(r, i, !0);
 					if (!l) return;
-					const a = l.id || l.name || String(c);
-					Js(t, n, l, `slides/${n}/${o}/nodes/${a}`, s, i, Ks, !0);
+					Js(t, n, l, `slides/${n}/${o}/nodes/${l.id || l.name || String(c)}`, s, i, Ks, !0);
 				} catch {}
 			});
-		};
-		kl = (t, n) => {
+		}, kl = (t, n) => {
 			const e = {
 				...xp,
 				...n
@@ -62608,8 +62227,7 @@ self.onmessage = async (e) => {
 					layout: c,
 					master: a
 				})), s.nodes.forEach((d, h) => {
-					const u = d.id || d.name || String(h);
-					Js(o, i, d, `slides/${i}/nodes/${u}`, e, {
+					Js(o, i, d, `slides/${i}/nodes/${d.id || d.name || String(h)}`, e, {
 						rels: s.rels,
 						partPath: s.slidePath,
 						diagramDrawings: t.diagramDrawings,
@@ -62618,8 +62236,7 @@ self.onmessage = async (e) => {
 					});
 				});
 			}), o;
-		};
-		Sp = (t, n) => {
+		}, Sp = (t, n) => {
 			if (t instanceof RegExp) {
 				const s = new Set(t.flags.split(""));
 				return s.add("g"), new RegExp(t.source, [...s].join(""));
@@ -62627,8 +62244,7 @@ self.onmessage = async (e) => {
 			if (!t) return null;
 			const e = n.useRegex ? t : yp(t), o = n.matchCase ? "g" : "gi";
 			return new RegExp(e, o);
-		};
-		wl = (t, n, e = {}) => {
+		}, wl = (t, n, e = {}) => {
 			const o = Sp(n, e);
 			if (!o) return [];
 			const s = e.snippetRadius ?? 32, i = [];
@@ -62651,10 +62267,8 @@ self.onmessage = async (e) => {
 				}
 			}
 			return i;
-		};
-		_p = (t, n, e) => {
-			const o = kl(t, e);
-			return wl(o, n, e);
+		}, _p = (t, n, e) => {
+			return wl(kl(t, e), n, e);
 		};
 		js = class js extends EventTarget {
 			constructor(n, e) {
@@ -62865,8 +62479,7 @@ self.onmessage = async (e) => {
 			*/
 			searchText(n, e) {
 				if (!this.presentation) return [];
-				const o = this.getTextIndex(e);
-				return wl(o, n, e);
+				return wl(this.getTextIndex(e), n, e);
 			}
 			/**
 			* Render a scaled preview of a slide into an external container.
