@@ -93,8 +93,9 @@
   align-items: center;
   justify-content: flex-end;
   gap: 8px;
-  height: 60px;
-  padding: 8px 0 8px 4px;
+  /* Top band height matches the conversation header (45px). */
+  height: 45px;
+  padding: 5px 0 4px 4px;
   margin-bottom: 8px;
   box-sizing: border-box;
   overflow: hidden;
