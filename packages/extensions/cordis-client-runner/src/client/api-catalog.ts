@@ -101,6 +101,21 @@ export const SERVICE_API: readonly ServiceApiEntry[] = [
         description: 'Close the details panel.',
         parameters: [],
       },
+      {
+        signature: 'openPreview(): void',
+        description: 'Open the preview panel (no-op when already open).',
+        parameters: [],
+      },
+      {
+        signature: 'closePreview(): void',
+        description: 'Close the preview panel.',
+        parameters: [],
+      },
+      {
+        signature: 'togglePreview(): void',
+        description: 'Toggle the preview panel (closed \u27c4 contract default width).',
+        parameters: [],
+      },
     ],
   },
   {

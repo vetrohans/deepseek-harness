@@ -42,9 +42,20 @@
   border-left: 1px solid var(--dsw-alias-border-l2);
 }
 
-/* The details subtree stays mounted at zero width, so its border must not paint
-   a 1px seam. The collapsed sidebar instead retains a bordered compact rail. */
+.previewCol {
+  min-width: 0;
+  overflow: hidden;
+  border-left: 1px solid var(--dsw-alias-border-l2);
+}
+
+/* The details/preview subtrees stay mounted at zero width, so their borders
+   must not paint a 1px seam. The collapsed sidebar instead retains a bordered
+   compact rail. */
 .frame[data-details-collapsed] .detailsCol {
+  border-left: none;
+}
+
+.frame[data-preview-collapsed] .previewCol {
   border-left: none;
 }
 
@@ -103,6 +114,37 @@
 
 .handle[data-side='details']:hover::after,
 .handle[data-side='details'][data-dragging='true']::after {
+  background: var(--dsw-alias-button-floating-hover);
+  border-color: var(--dsw-alias-border-l3);
+}
+
+/* Preview handle: same pill affordance as details, keyed to its own column. */
+.handle[data-side='preview']::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 32px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: var(--dsw-alias-button-floating-fill);
+  border: 1px solid var(--dsw-alias-border-l2-darkmode-thin);
+  opacity: 0;
+  transition:
+    opacity var(--ds-transition-duration-slow) var(--ds-ease-in-out),
+    background var(--ds-transition-duration-slow) var(--ds-ease-in-out);
+}
+
+.previewCol:hover ~ .handle[data-side='preview']::after,
+.handle[data-side='preview']:hover::after,
+.handle[data-side='preview'][data-dragging='true']::after {
+  opacity: 1;
+}
+
+.handle[data-side='preview']:hover::after,
+.handle[data-side='preview'][data-dragging='true']::after {
   background: var(--dsw-alias-button-floating-hover);
   border-color: var(--dsw-alias-border-l3);
 }

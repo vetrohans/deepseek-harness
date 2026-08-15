@@ -5,8 +5,9 @@
  * the per-session active view dissolved into ui-conversation's session store
  * (its only consumer). What remains here is the contract other plugins'
  * apply worlds reach for panel transitions (sidebar toggle from ui-sidebar,
- * details open/close from ui-conversation) — writes stay inside the store's
- * declared action set, delivered as the registration's bound actions.
+ * details open/close from ui-conversation, preview open/close/toggle from
+ * UI hosts) — writes stay inside the store's declared action set, delivered
+ * as the registration's bound actions.
  */
 import type { BoundActions } from '@deepseek-ai/dsh-client-ui-slots'
 import type { createLayoutStore } from './stores.ts'
@@ -27,6 +28,12 @@ export interface ILayout {
   openDetails(): void
   /** Close the details panel. */
   closeDetails(): void
+  /** Open the preview panel (no-op when already open). */
+  openPreview(): void
+  /** Close the preview panel. */
+  closePreview(): void
+  /** Toggle the preview panel (closed ⟷ contract default width). */
+  togglePreview(): void
 }
 
 /** Cross-plugin panel-action face (ctx.layout). */
@@ -57,6 +64,21 @@ export class LayoutController implements ILayout {
   /** Close the details panel. */
   closeDetails(): void {
     this.#require().closeDetails()
+  }
+
+  /** Open the preview panel (no-op when already open). */
+  openPreview(): void {
+    this.#require().openPreview()
+  }
+
+  /** Close the preview panel. */
+  closePreview(): void {
+    this.#require().closePreview()
+  }
+
+  /** Toggle the preview panel (closed ⟷ contract default width). */
+  togglePreview(): void {
+    this.#require().togglePreview()
   }
 
   #require(): PanelActions {

@@ -180,6 +180,14 @@
     - id: ui-layout
       name: '@deepseek-ai/dsh-client-ui-layout'
 
+    # DSH Desktop UI overrides: right-side preview column panel (link popup +
+    # embedded iframe), the deepseek balance pill, and assorted UI tweaks.
+    # Client half consumes the layout package's root-scoped 'preview' slot
+    # (the fork's four-column layout port); node half registers
+    # /api/deepseek-balance.
+    - id: dsh-client-ui-preview
+      name: '@local/dsh-client-ui-preview'
+
     - id: ui-sidebar
       name: '@deepseek-ai/dsh-client-ui-sidebar'
 
