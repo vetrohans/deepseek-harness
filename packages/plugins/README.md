@@ -10,11 +10,9 @@
 ## 与上游约定的差异（有意为之）
 
 - 根 `.gitignore` 全局忽略 `lib/`（上游约定 lib 为构建产物、不入库）。
-- 但这两个插件是**预构建发布**（`tsdown.config.ts` 为 `{ entry: '' }`，跳过 workspace 构建）：
-  - `dsh-client-ui-preview` **没有源码**，lib 是唯一实现；
-  - `dsh-better-sidebar` 的完整构建配置保留在 `ui-overrides/dsh-better-sidebar/`（含 tests）。
-- 因此这里的 `lib/` 用 `git add -f` **强制入库**，保证 fresh clone 无需构建即可运行。
-- 更新上游/改插件后，如源码变化需要重打包 lib，请从 `ui-overrides/dsh-better-sidebar/` 跑 `pnpm install && pnpm build` 后同步回本目录。
+- `dsh-client-ui-preview` **没有源码**，lib 是唯一实现 → 用 `git add -f` **强制入库**。
+- `dsh-better-sidebar` 从源码构建（真实 tsdown 配置），lib 由 `pnpm run build` 生成、
+  **不入库**（与仓库其他包一致；不同构建模式的 CSS 哈希不稳定，入库会产生 churn）。
 
 ## 新增插件的检查清单
 
