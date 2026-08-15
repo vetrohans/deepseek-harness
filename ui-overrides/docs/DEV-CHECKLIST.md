@@ -31,3 +31,9 @@
 - [ ] 用到的注册是否都走 `ctx.*`（自动清理），非托管资源是否包了 `ctx.effect()`？
 - [ ] 新增配置是否进了 `Config` schema（不硬编码）？
 - [ ] 是否符合 bundle / profile / 层顺序约定？
+
+## 协作规则（用户明确要求）
+
+- **Git 使用**：默认只做**本地提交**（commit 到当前分支）；**除非用户明确说"push"，绝不推送到 GitHub**。
+- 提交前必须通过 pre-commit 钩子（lint / 第三方声明 / 空白检查）与 pre-push 门禁（typecheck）——push 时 pre-push 会自动跑 typecheck。
+- 涉及核心源码（如 `packages/client/ui-layout`）的改动：改完必须跑对应包的测试 + 全仓 typecheck。
