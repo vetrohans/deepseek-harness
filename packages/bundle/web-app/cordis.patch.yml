@@ -188,6 +188,13 @@
     - id: dsh-client-ui-preview
       name: '@local/dsh-client-ui-preview'
 
+    # DSH Desktop UI overrides: VSCode-style right sidebar workbench (file
+    # explorer / editor / terminal / git / browser / jobs). Registered as a
+    # direct plugin row (its own bundle layer is not in the shipped profile);
+    # node half + client bundles come from the prebuilt workspace package.
+    - id: better-sidebar
+      name: 'dsh-better-sidebar'
+
     - id: ui-sidebar
       name: '@deepseek-ai/dsh-client-ui-sidebar'
 

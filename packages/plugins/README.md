@@ -1,0 +1,26 @@
+# packages/plugins — DSH Desktop 二次开发插件
+
+本目录存放随 fork 源码构建的 dsh 插件（"everything is a plugin" 的落地）：
+
+| 包 | 说明 | 注册方式 |
+|---|---|---|
+| `dsh-client-ui-preview` | 右侧分栏预览 + 余额胶囊 + UI 微调（`@local/dsh-client-ui-preview`） | `packages/bundle/web-app/cordis.patch.yml` insert 行 |
+| `dsh-better-sidebar` | VSCode 风格右侧工作台（资源管理器/编辑器/终端/Git/浏览器） | 同上（insert 行；其自身 bundle 层未入 shipped profile，避免重复挂载） |
+
+## 与上游约定的差异（有意为之）
+
+- 根 `.gitignore` 全局忽略 `lib/`（上游约定 lib 为构建产物、不入库）。
+- 但这两个插件是**预构建发布**（`tsdown.config.ts` 为 `{ entry: '' }`，跳过 workspace 构建）：
+  - `dsh-client-ui-preview` **没有源码**，lib 是唯一实现；
+  - `dsh-better-sidebar` 的完整构建配置保留在 `ui-overrides/dsh-better-sidebar/`（含 tests）。
+- 因此这里的 `lib/` 用 `git add -f` **强制入库**，保证 fresh clone 无需构建即可运行。
+- 更新上游/改插件后，如源码变化需要重打包 lib，请从 `ui-overrides/dsh-better-sidebar/` 跑 `pnpm install && pnpm build` 后同步回本目录。
+
+## 新增插件的检查清单
+
+1. 包放 `packages/plugins/<name>/`，`package.json` 带 `dsh.client`/`dsh.bundle` 元数据与 `exports["./client"]`。
+2. 预构建发布 → `tsdown.config.ts` 写 `export default { entry: '' }`。
+3. `lib/` 用 `git add -f` 入库（根 .gitignore 默认忽略）。
+4. 在 `packages/bundle/web-app/cordis.patch.yml` 加 insert 行；若是 bundle 也记得在 `apps/cli`、`packages/bundle/web-app` 的 dependencies 加 `workspace:^`。
+5. `corepack pnpm install` → `corepack pnpm dsh web` 冒烟：日志无报错、`__DSH_BOOT__` 有该插件、`/plugins/<name>/client.js` 返回 200。
+6. 全仓 `corepack pnpm run typecheck`。

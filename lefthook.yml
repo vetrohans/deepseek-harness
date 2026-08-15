@@ -32,7 +32,9 @@ pre-commit:
       run: node_modules/.bin/tsx scripts/gen-third-party-notices.ts && git add THIRD_PARTY_NOTICES.md
 
     - name: whitespace (staged)
-      run: git diff --cached --check
+      # Prebuilt plugin bundles under packages/plugins (external packages) are
+      # exempt: generated lib/ files may carry trailing whitespace.
+      run: git diff --cached --check -- . ':(exclude)packages/plugins/**'
 
     - name: vendor manifest guard
       run: scripts/check-vendor-manifest.sh

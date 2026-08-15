@@ -1,10 +1,13 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "extends": ["./.oxlintrc.json"],
+  "extends": [
+    "./.oxlintrc.json"
+  ],
   "options": {
     "typeAware": false
   },
   "ignorePatterns": [
+    "packages/plugins/**",
     "**/lib/**",
     "**/node_modules/**",
     "**/.sessions/**",

@@ -103,7 +103,8 @@
     "@deepseek-ai/dsh-workspace": "workspace:^",
     "@deepseek-ai/schemastery": "workspace:^",
     "commander": "^15.0.0",
-    "@local/dsh-client-ui-preview": "workspace:^"
+    "@local/dsh-client-ui-preview": "workspace:^",
+    "dsh-better-sidebar": "workspace:^"
   },
   "peerDependencies": {
     "@deepseek-ai/cordis-plugin-loader": "workspace:^",
