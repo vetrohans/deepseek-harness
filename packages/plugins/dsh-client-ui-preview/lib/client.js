@@ -47,6 +47,12 @@ window.__ModuleLoader__.load({
 			// settings nav: force active/hover off the blue-gray, same #F3F3F3 as everywhere else (light theme only)
 			"body:not([data-ds-dark-theme]) .ky8sCq_navCell:hover,body:not([data-ds-dark-theme]) .ky8sCq_navCell.ky8sCq_active{background:#F3F3F3!important}",
 			"[data-conversation-scroll]{--dshqn-left:max(64px,calc((100% - var(--dsh-chat-content-width))/2));position:relative!important;--dsw-specific-bubble:#F3F3F3}",
+			// Align the message column and the stats line with the input card: override
+		// BOTH width vars to the composer width (780 = base 748 + 32) on the
+		// ConversationRoot, breaking the calc(+32) relation so the two never
+		// drift and no cycle forms. Value-coupled to the base width; re-tune
+		// after an upstream update.
+		"[data-phase]:has([data-conversation-scroll]){--dsh-chat-content-width:780px!important;--dsh-composer-card-max-width:780px!important}",
 			"body[data-ds-dark-theme] [data-conversation-scroll]{--dsw-specific-bubble:var(--dsw-static-neutral-bluish-800)}",
 			"[data-composer-card] ._4PgkvG_primary{background:#000!important;width:30.6px;height:30.6px}",
 			"[data-composer-card] ._4PgkvG_primary:hover:not(:disabled){background:#333!important}",
@@ -61,7 +67,6 @@ window.__ModuleLoader__.load({
 			"svg[width='24']{width:23px;height:23px}",
 			// --- content centered in the pane (narrow: keep 64px left of the rail);
 			// rail tracks the column's left edge ---
-			"[data-conversation-scroll] :has(> [data-chat-anchor-key]){margin-left:var(--dshqn-left)!important;width:min(calc(100% - var(--dshqn-left)),var(--dsh-chat-content-width))!important}",
 			"[data-phase=active] :has(> [data-composer-card]){align-items:flex-start!important;padding-left:var(--dshqn-left)!important}",
 			".zmN36a_toBottomSlot{padding-right:max(0px,calc((100% - var(--dsh-chat-content-width))/2))!important}",
 			"[data-queue-dock]{margin-left:calc(var(--dshqn-left) - 8px)!important}",
