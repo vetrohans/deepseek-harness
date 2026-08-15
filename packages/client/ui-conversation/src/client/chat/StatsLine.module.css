@@ -11,12 +11,20 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding: 4px calc(var(--dsh-composer-side-clearance) + 16px) 0px;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 11px;
+  line-height: 18px;
   color: var(--dsw-alias-label-tertiary);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  /* Hidden until hover: the strip stays in the layout (no jump) and
+     hovering the full-width row fades it in. */
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+.root:hover {
+  opacity: 1;
 }
 
 .sep {
