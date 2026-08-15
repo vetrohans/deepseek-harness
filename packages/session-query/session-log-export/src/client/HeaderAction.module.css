@@ -1,18 +1,23 @@
+/* merged square-terminal session menu trigger: bare icon button (no rounded
+   frame); hover keeps a soft fill only. */
 .sessionMenuButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  border: 1px solid var(--dsw-alias-border-l2);
-  border-radius: 10px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
   color: var(--dsw-alias-label-primary);
   background: transparent;
   cursor: pointer;
 }
 
 .sessionMenuButton:hover:not(:disabled) {
+  color: var(--dsw-alias-label-primary);
   background: var(--dsw-alias-interactive-bg-hover);
+  border-radius: 8px;
 }
 
 .sessionMenuButton:disabled {

@@ -490,7 +490,7 @@
   flex: none;
   display: flex;
   align-items: stretch;
-  height: 34px;
+  height: 28px;
   border-bottom: 1px solid var(--dsw-alias-border-l1);
   background: var(--dsw-alias-bg-layer-1);
 }
