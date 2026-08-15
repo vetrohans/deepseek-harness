@@ -67,7 +67,6 @@ window.__ModuleLoader__.load({
 			"svg[width='24']{width:23px;height:23px}",
 			// --- content centered in the pane (narrow: keep 64px left of the rail);
 			// rail tracks the column's left edge ---
-			"[data-phase=active] :has(> [data-composer-card]){align-items:flex-start!important;padding-left:var(--dshqn-left)!important}",
 			".zmN36a_toBottomSlot{padding-right:max(0px,calc((100% - var(--dsh-chat-content-width))/2))!important}",
 			"[data-queue-dock]{margin-left:calc(var(--dshqn-left) - 8px)!important}",
 			".vDJq1q_root{margin-left:var(--dshqn-left)!important}",
