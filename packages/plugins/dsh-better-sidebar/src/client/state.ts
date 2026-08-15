@@ -751,7 +751,11 @@ function loadState(sessionId: string, prefs: SidebarPrefs): SidebarState {
       // sanitize re-ids any duplicates the pre-seeding counter left behind.
       nextIdCounter = maxCounterId(parsed)
       const sanitized = sanitizeState(parsed)
-      if (sanitized !== undefined) return sanitized
+      if (sanitized !== undefined) {
+        // Product choice: the right panel starts closed on every load (app
+        // open / first view of a session) — the user opens it explicitly.
+        return { ...sanitized, panelOpen: false }
+      }
     }
   } catch {
     // Corrupt or unavailable storage: fall through to the default.
@@ -763,9 +767,9 @@ function loadState(sessionId: string, prefs: SidebarPrefs): SidebarState {
   // tab is skipped when the user disabled the explorer tab type. On a
   // NARROW viewport a brand-new session starts collapsed instead — the
   // panel is a full-screen drawer there, and auto-opening it on first
-  // paint would cover the conversation before the user asked. Only the
-  // first seeding is affected: once the user expands the drawer,
-  // `panelOpen: true` persists like any other state.
+  // paint would cover the conversation before the user asked. The panel
+  // starts closed by default (openByDefault defaults false and persisted
+  // restores force it closed); the user expands it explicitly.
   const viewport = typeof window !== 'undefined' ? window.innerWidth : undefined
   const width = viewport === undefined
     ? PANEL_DEFAULT
