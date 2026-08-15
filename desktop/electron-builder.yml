@@ -1,0 +1,27 @@
+appId: com.dsh.desktop
+productName: DSH Desktop
+directories:
+  output: release
+  buildResources: build
+files:
+  - src/**
+  - package.json
+extraResources:
+  - from: dsh-runtime
+    to: dsh-runtime
+    filter:
+      - "**/*"
+mac:
+  category: public.app-category.developer-tools
+  icon: build/icon.icns
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+  target:
+    - target: dmg
+    - target: zip
+dmg:
+  title: "DSH Desktop"
+  artifactName: "${productName}-${version}-${arch}.${ext}"
+npmRebuild: false
