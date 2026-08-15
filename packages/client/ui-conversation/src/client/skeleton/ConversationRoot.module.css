@@ -28,7 +28,8 @@
 .header {
   position: relative;
   flex: none;
-  padding: 12px 28px 0 20px;
+  /* Symmetric top/bottom pad centers the title row in the 45px band (6+32+6). */
+  padding: 6px 28px 6px 20px;
   border-bottom: 1px solid transparent;
 }
 
