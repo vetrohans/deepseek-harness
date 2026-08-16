@@ -179,6 +179,32 @@ cd desktop && pnpm dmg:x64      # = tauri build + 拷到 desktop/release/
 - 发新版本前同步三处 version：`desktop/package.json`、`desktop/src-tauri/Cargo.toml`、`desktop/src-tauri/tauri.conf.json`。
 - 密钥/凭据在 `~/.dsh/.credentials.yaml`（0600），不会进包；settings.yaml 只存引用名。
 
+## 用 GitHub Actions 出双架构 DMG（推荐）
+
+本仓库 `.github/workflows/build-dmg.yml` 在 Apple Silicon runner（`macos-latest`）上矩阵构建
+`x86_64-apple-darwin` 与 `aarch64-apple-darwin` 两个 DMG，手动在 GitHub → **Actions** →
+**build-dmg** → **Run workflow** 触发，产物以 artifact 下载：
+
+- `dmg-x86_64-apple-darwin` → `desktop/src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/*.dmg`
+- `dmg-aarch64-apple-darwin` → `desktop/src-tauri/target/aarch64-apple-darwin/release/bundle/dmg/*.dmg`
+
+CI 复现的本机命令（在一台 Apple Silicon Mac 上等价）：
+
+```bash
+pnpm run build                       # fork 构建（lib + apps/web/dist）
+pnpm --dir desktop install
+cd desktop && node scripts/prepare-runtime.mjs   # 闭包（保留 darwin-arm64 + darwin-x64 node-pty）
+node scripts/fetch-node.mjs darwin-arm64
+pnpm tauri build --target aarch64-apple-darwin
+node scripts/fetch-node.mjs darwin-x64
+pnpm tauri build --target x86_64-apple-darwin
+```
+
+关键前提是闭包能同时被 arm64 与 x64 消费：`prepare-runtime.mjs` 在 macOS 上保留
+`darwin-arm64 + darwin-x64` 两份 node-pty prebuild（默认只留宿主一份）。若 CI 报 node-pty
+原生模块缺失，先核对 workspace 的 node-pty `prebuilds/` 里有这两个架构，再用
+`DSH_SKIP_DEPLOY` 重跑。
+
 ## 打包命令
 
 前置（一次性，本机已满足 Node 24 / pnpm 11；Rust 需 ≥ 1.77.2，Tauri 2 要求）：
