@@ -33,6 +33,15 @@
 > `apply-patches.py` / `migrate-to-new-machine.sh`），仅历史遗留，当前源码模式
 > 不需要它们；`remap-css-hashes.mjs` 仍然有效。
 
+## 打包（桌面壳 -> DMG）
+
+桌面壳（Electron）的**轻量打包流程已固化**：生产依赖闭包 + 不内置 Node + 语言包裁剪，
+DMG 从全量 3.3GB 降到约 207MB。
+
+- 一键打包：`cd desktop && node scripts/pack.mjs`（先 `prepare-runtime.mjs` 再 `electron-builder --mac dmg`）
+- 完整流程 / 体积构成 / 关键坑 / 冒烟测试：见 [desktop/PACKAGING.md](desktop/PACKAGING.md)
+- 上游更新后：merge 上游 → `corepack pnpm run build`（重建 lib + web bundle）→ 重新 `pack.mjs` 即可
+
 ## 位置（历史）
 
 维护文件都在本目录：`~/.dsh/UI功能改动/`
