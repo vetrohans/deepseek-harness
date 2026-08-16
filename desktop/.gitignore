@@ -3,3 +3,5 @@ dist/
 release/
 dsh-runtime/
 *.log
+
+dsh-runtime*/

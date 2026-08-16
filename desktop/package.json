@@ -9,9 +9,10 @@
   "scripts": {
     "dev": "electron . --dev",
     "start": "electron .",
-    "pack": "electron-builder --mac dmg",
+    "pack": "node scripts/pack.mjs",
     "pack:dir": "electron-builder --mac dir",
-    "check:env": "node scripts/check-env.mjs"
+    "check:env": "node scripts/check-env.mjs",
+    "prepare:runtime": "node scripts/prepare-runtime.mjs"
   },
   "devDependencies": {
     "electron": "^40.0.0",

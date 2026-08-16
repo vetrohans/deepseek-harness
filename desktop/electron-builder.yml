@@ -1,4 +1,6 @@
 appId: com.dsh.desktop
+electronVersion: 40.10.6
+electronDist: node_modules/electron/dist
 productName: DSH Desktop
 directories:
   output: release
@@ -6,22 +8,48 @@ directories:
 files:
   - src/**
   - package.json
+  - "!node_modules/**/*"
+# The production closure is materialized separately (scripts/prepare-runtime.mjs)
+# and shipped outside app.asar: the runtime child reads its own files as
+# ordinary paths. electron-builder's extraResources skips any node_modules
+# directory it encounters while copying a source tree, so each top-level
+# runtime item is its own `from` entry — the node_modules source root is the
+# node_modules directory itself (bruc3van/dsh-desktop's approach).
 extraResources:
-  - from: dsh-runtime
-    to: dsh-runtime
-    filter:
-      - "**/*"
+  - from: dsh-runtime/node_modules
+    to: dsh-runtime/node_modules
+  - from: dsh-runtime/lib
+    to: dsh-runtime/lib
+  - from: dsh-runtime/config
+    to: dsh-runtime/config
+  - from: dsh-runtime/package.json
+    to: dsh-runtime/package.json
+  - from: src/runtime-launcher.mjs
+    to: runtime-launcher.mjs
+asar: true
+# The bundled runtime contains tens of thousands of files. Normal compression
+# keeps release time bounded; maximum compression buys little at big time cost.
+compression: normal
+npmRebuild: false
+# Chromium ships 55 locale packs (~45 MB on macOS); the client only needs zh
+# and en. Both spellings are required (zh-CN.pak on Windows, zh_CN.lproj on
+# macOS) — electron-builder matches with a reverse-prefix check.
+electronLanguages:
+  - zh-CN
+  - zh_CN
+  - en-US
+  - en
 mac:
   category: public.app-category.developer-tools
   icon: build/icon.icns
-  hardenedRuntime: true
+  # No Apple Developer ID: ad-hoc self-sign so Gatekeeper shows the normal
+  # "unidentified developer" prompt instead of "app is damaged".
+  identity: "-"
+  hardenedRuntime: false
   gatekeeperAssess: false
-  entitlements: build/entitlements.mac.plist
-  entitlementsInherit: build/entitlements.mac.plist
   target:
     - target: dmg
     - target: zip
 dmg:
   title: "DSH Desktop"
   artifactName: "${productName}-${version}-${arch}.${ext}"
-npmRebuild: false
