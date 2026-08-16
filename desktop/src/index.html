@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSH Desktop</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: #0b0e14;
+        color: #d7dce5;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+      .center {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      .spinner {
+        width: 36px;
+        height: 36px;
+        border: 3px solid rgba(255, 255, 255, 0.15);
+        border-top-color: #4d9fff;
+        border-radius: 50%;
+        animation: spin 0.9s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .status {
+        font-size: 14px;
+        opacity: 0.75;
+      }
+      .error {
+        display: none;
+        max-width: 560px;
+        padding: 12px 16px;
+        border: 1px solid rgba(255, 80, 80, 0.4);
+        border-radius: 8px;
+        background: rgba(255, 80, 80, 0.08);
+        color: #ff9b9b;
+        font-size: 13px;
+        line-height: 1.5;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="spinner"></div>
+      <div class="status">正在启动 DeepSeek Harness…</div>
+      <div class="error" id="error"></div>
+    </div>
+    <script>
+      // The Rust shell navigates this window to the dsh web URL once the
+      // sidecar prints its readiness line. No IPC bridge is exposed to the
+      // harness page (it is a pure remote page, like the browser version).
+      if (window.location.hash === "#error") {
+        document.querySelector(".status").textContent = "启动失败";
+        document.getElementById("error").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

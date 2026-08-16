@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!--
+    DSH Desktop macOS entitlements.
+
+    Sandbox policy: the app is deliberately NOT sandboxed (app-sandbox absent
+    or false). A sandboxed app is confined to its container and has no
+    entitlement that grants blanket read/write of ~/.dsh; that confinement is
+    what surfaces as EPERM during plugin installs. Without the sandbox the
+    shell can read/write ~/.dsh and ~/Library/Application Support/dsh-desktop
+    like any user process, so plugin installs and session data work.
+
+    Hardened Runtime stays ON. The Node.js sidecar's V8 needs JIT and
+    executable memory, so the three allow-* keys below must stay present —
+    Tauri re-signs the sidecar with this entitlements file.
+  -->
+  <key>com.apple.security.cs.allow-jit</key>
+  <true/>
+  <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
+  <true/>
+  <key>com.apple.security.cs.allow-dyld-environment-variables</key>
+  <true/>
+
+  <!-- Not sandboxed. Flip to <true/> only if you accept the container
+       confinement; then also uncomment the temporary-exception block below
+       (Developer ID builds only, never the App Store). -->
+  <key>com.apple.security.app-sandbox</key>
+  <false/>
+
+  <!-- File pickers (add-a-project-folder) work without the sandbox. -->
+  <key>com.apple.security.files.user-selected.read-write</key>
+  <true/>
+
+  <!-- Sandboxed fallback: grant the harness data directories explicitly.
+  <key>com.apple.security.temporary-exception.files.absolute-path.read-write</key>
+  <array>
+    <string>$(HOME)/.dsh</string>
+    <string>$(HOME)/Library/Application Support/dsh-desktop</string>
+  </array>
+  -->
+</dict>
+</plist>

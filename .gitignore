@@ -41,3 +41,7 @@ worktrees/
 
 # macOS AppleDouble metadata (external volumes)
 ._*
+
+# Local assets (repo-root only, not the desktop build icons)
+/ChatGPT-SVGs.zip
+/icon.icns

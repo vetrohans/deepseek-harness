@@ -1,0 +1,9 @@
+node_modules/
+release/
+dsh-runtime/
+dsh-runtime*/
+node-dist/
+src-tauri/target/
+src-tauri/gen/
+src-tauri/binaries/
+.node-cache/

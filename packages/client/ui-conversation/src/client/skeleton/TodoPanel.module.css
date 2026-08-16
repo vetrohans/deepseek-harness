@@ -1,36 +1,23 @@
-/* Todo strip in the composer context stack (Figma 1236:32276): tip surface,
-   status icons + secondary item labels. Its visible card aligns with the
-   GoalBar and the Queue panel inside their shared dock column: 12px radius,
-   36px collapsed row, 12px side padding, 14px tertiary leading glyph. */
+/* Todo strip in the composer context stack (Figma 1236:32276): status icons +
+   secondary item labels. Its visible card is centered on the same axis as the
+   input card and matches its width (--dsh-composer-card-max-width) so the two
+   panels share edges; the surface is the user-bubble fill so the task strip
+   reads as one capsule family with the message below. */
 
 .root {
   box-sizing: border-box;
   flex: none;
   overflow: hidden;
   margin: 0 auto;
-  width: calc(
-    100% -
-    var(--dsh-composer-side-clearance) -
-    var(--dsh-composer-side-clearance) -
-    var(--dsh-composer-dock-inset) -
-    var(--dsh-composer-dock-inset) -
-    var(--dsh-composer-dock-inset) -
-    var(--dsh-composer-dock-inset)
-  );
-  max-width: calc(
-    var(--dsh-composer-card-max-width) -
-    var(--dsh-composer-dock-inset) -
-    var(--dsh-composer-dock-inset) -
-    var(--dsh-composer-dock-inset) -
-    var(--dsh-composer-dock-inset)
-  );
+  width: 100%;
+  max-width: var(--dsh-composer-card-max-width);
   border: 1px solid var(--dsw-alias-border-l1);
   border-radius: 12px;
-  background: var(--dsw-specific-tip);
-  /* Elevated surface: `--dsw-specific-tip` is the same dark rung as the menu
-     surface, and `.list` scrolls inside this card, so the thumb takes the l2
-     elevation tokens. Declared here because the elevation belongs to the
-     surface, and the custom properties inherit down to `.list` (see ui-theme
+  background: var(--dsw-specific-bubble);
+  /* Elevated surface: `.list` scrolls inside this card, so the thumb takes the
+     l2 elevation tokens (the user-bubble fill reads as an elevated rung in
+     light theme). Declared here because the elevation belongs to the surface,
+     and the custom properties inherit down to `.list` (see ui-theme
      styles/scrollbar.css for the rebinding contract). */
   --dsh-scrollbar-thumb: var(--dsw-alias-scrollbar-bg-l2);
   --dsh-scrollbar-thumb-hover: var(--dsw-alias-scrollbar-hover-l2);

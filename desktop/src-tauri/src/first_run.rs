@@ -1,0 +1,151 @@
+//! First-launch provisioning: download-mode runtime fetch, the `node` shim,
+//! and preset plugin installs.
+//!
+//! Download mode (Sakana-yuyu strategy) ships a small installer; the runtime
+//! closure tarball is fetched on first launch from a manifest (GitHub
+//! Releases or a domestic mirror), SHA-256 verified, extracted into the
+//! app-data dir, and reused on every later start.
+
+use std::path::{Path, PathBuf};
+
+use serde::Deserialize;
+use sha2::{Digest, Sha256};
+use tauri::{AppHandle, Manager};
+
+use crate::sidecar::RuntimeConfig;
+use crate::Result;
+
+#[derive(Debug, Deserialize)]
+struct RuntimeManifest {
+    version: String,
+    file: String,
+    sha256: String,
+}
+
+/// Fetch (when needed) and return the downloaded runtime closure dir.
+pub async fn ensure_downloaded_runtime(app: &AppHandle, cfg: &RuntimeConfig) -> Result<PathBuf> {
+    let cache = app.path().app_data_dir()?.join("runtime");
+    let tag = crate::sidecar::node_dist_tag();
+
+    let manifest_url = cfg
+        .manifest_url
+        .clone()
+        .or_else(|| cfg.mirror_url.clone().map(|mirror| format!("{mirror}/runtime-manifest-{tag}.json")))
+        .ok_or("runtime.mode=download needs runtime.manifestUrl or runtime.mirrorUrl")?
+        .replace("${TARGET}", tag);
+
+    let manifest = {
+        let url = manifest_url.clone();
+        tauri::async_runtime::spawn_blocking(move || fetch_manifest(&url))
+            .await
+            .map_err(|err| format!("manifest fetch task failed: {err}"))??
+    };
+
+    let target = cache.join(&manifest.version);
+    if !target.join(".complete").exists() {
+        let base_url = manifest_url
+            .rsplit_once('/')
+            .map(|(base, _)| base.to_string())
+            .unwrap_or(manifest_url);
+        let cache_clone = cache.clone();
+        let target_clone = target.clone();
+        tauri::async_runtime::spawn_blocking(move || download_and_extract(&cache_clone, &target_clone, &base_url, &manifest))
+            .await
+            .map_err(|err| format!("runtime download task failed: {err}"))??;
+    }
+    Ok(target)
+}
+
+fn fetch_manifest(url: &str) -> Result<RuntimeManifest> {
+    let output = std::process::Command::new("curl")
+        .args(["-fsSL", "--max-time", "30", "--retry", "2", url])
+        .output()?;
+    if !output.status.success() {
+        return Err(format!("fetch manifest {url} failed: {}", output.status).into());
+    }
+    Ok(serde_json::from_slice(&output.stdout)?)
+}
+
+fn download_and_extract(cache: &Path, target: &Path, base_url: &str, manifest: &RuntimeManifest) -> Result<()> {
+    std::fs::create_dir_all(cache)?;
+
+    let archive = cache.join(&manifest.file);
+    let url = format!("{base_url}/{}", manifest.file);
+    let status = std::process::Command::new("curl")
+        .args(["-fL", "--retry", "3", "-o"])
+        .arg(&archive)
+        .arg(&url)
+        .status()?;
+    if !status.success() {
+        return Err(format!("download {url} failed: {status}").into());
+    }
+
+    let digest = sha256_of_file(&archive)?;
+    if !digest.eq_ignore_ascii_case(&manifest.sha256) {
+        return Err(format!("runtime sha256 mismatch: expected {}, got {}", manifest.sha256, digest).into());
+    }
+
+    let tmp = cache.join(format!(".tmp-{}", manifest.version));
+    if tmp.exists() {
+        std::fs::remove_dir_all(&tmp)?;
+    }
+    std::fs::create_dir_all(&tmp)?;
+
+    // bsdtar ships on macOS and Windows 10+ and reads .tar.gz directly.
+    let status = std::process::Command::new("tar")
+        .args(["-xzf"])
+        .arg(&archive)
+        .arg("-C")
+        .arg(&tmp)
+        .status()?;
+    if !status.success() {
+        return Err(format!("extract {} failed: {status}", manifest.file).into());
+    }
+
+    std::fs::write(tmp.join(".complete"), url.as_bytes())?;
+    if target.exists() {
+        std::fs::remove_dir_all(target)?;
+    }
+    std::fs::rename(&tmp, target)?;
+    let _ = std::fs::remove_file(&archive);
+    Ok(())
+}
+
+fn sha256_of_file(path: &Path) -> Result<String> {
+    let bytes = std::fs::read(path)?;
+    Ok(hex(&Sha256::digest(&bytes)))
+}
+
+fn hex(bytes: &[u8]) -> String {
+    let mut out = String::with_capacity(bytes.len() * 2);
+    for byte in bytes {
+        out.push_str(&format!("{byte:02x}"));
+    }
+    out
+}
+
+/// Write a `node` shim into the app-data bin dir so `env node` (used by the
+/// bundled npm/npx/corepack/pnpm scripts and by the harness's shells)
+/// resolves to the renamed sidecar. The sidecar lives inside the read-only
+/// bundle, so the shim must live in user-writable app data.
+pub fn ensure_node_shim(bin_dir: &Path, sidecar: &Path) -> Result<()> {
+    std::fs::create_dir_all(bin_dir)?;
+    #[cfg(target_os = "windows")]
+    {
+        let shim = bin_dir.join("node.cmd");
+        let body = format!("@echo off\r\n\"{}\" %*\r\nexit /b %ERRORLEVEL%\r\n", sidecar.display());
+        std::fs::write(shim, body)?;
+    }
+    #[cfg(not(target_os = "windows"))]
+    {
+        let shim = bin_dir.join("node");
+        let body = format!(
+            "#!/bin/sh\n# Generated by DSH Desktop: the bundled Node.js sidecar, named `node`.\nexec \"{}\" \"$@\"\n",
+            sidecar.display()
+        );
+        std::fs::write(&shim, body)?;
+        use std::os::unix::fs::PermissionsExt;
+        std::fs::set_permissions(&shim, std::fs::Permissions::from_mode(0o755))?;
+    }
+    Ok(())
+}

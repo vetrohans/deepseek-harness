@@ -1,0 +1,23 @@
+{
+  "name": "dsh-desktop",
+  "version": "0.1.0-rc.5",
+  "private": true,
+  "type": "module",
+  "description": "DSH Desktop — Tauri shell + bundled Node sidecar for the dsh web profile",
+  "scripts": {
+    "prepare:runtime": "node scripts/prepare-runtime.mjs",
+    "fetch:node": "node scripts/fetch-node.mjs",
+    "bundle:runtime": "node scripts/bundle-runtime.mjs",
+    "tauri": "tauri",
+    "build": "node scripts/prepare-runtime.mjs && node scripts/fetch-node.mjs && tauri build",
+    "build:macos": "node scripts/prepare-runtime.mjs && node scripts/fetch-node.mjs && tauri build --target aarch64-apple-darwin && tauri build --target x86_64-apple-darwin",
+    "build:macos:arm64": "node scripts/prepare-runtime.mjs && node scripts/fetch-node.mjs && tauri build --target aarch64-apple-darwin",
+    "build:macos:x64": "node scripts/prepare-runtime.mjs && node scripts/fetch-node.mjs && tauri build --target x86_64-apple-darwin",
+    "build:windows": "node scripts/prepare-runtime.mjs && node scripts/fetch-node.mjs && tauri build --target x86_64-pc-windows-msvc",
+    "update:app": "node scripts/update-app.mjs",
+    "dmg:x64": "pnpm tauri build --target x86_64-apple-darwin && mkdir -p release && cp \"src-tauri/target/x86_64-apple-darwin/release/bundle/dmg/DSH Desktop_$(node -p \"require('./package.json').version\")_x64.dmg\" release/"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.0"
+  }
+}

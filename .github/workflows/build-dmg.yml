@@ -1,0 +1,85 @@
+name: build-dmg
+
+# Build the macOS DMG installers for the Tauri desktop shell (desktop/).
+# The app's UI is a local fork of this repo (the official @deepseek-ai npm
+# packages lack the UI changes), so the packaged runtime closure must be
+# materialized from workspace source via desktop/scripts/prepare-runtime.mjs.
+# Runs on an Apple Silicon host (macos-latest); a single host ships both the
+# arm64 (native) and x64 (cross-compiled) DMGs because the closure now retains
+# darwin-arm64 + darwin-x64 node-pty prebuilds. Dispatch manually, or attach a
+# `build-dmg` label to a pull request.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  # Never report CI telemetry to the production endpoint.
+  DSH_TELEMETRY_DISABLED: '1'
+  # The bundled runtime resolves the npm registry at deploy time.
+  npm_config_registry: 'https://registry.npmjs.org'
+
+jobs:
+  build:
+    name: dmg-${{ matrix.target }}
+    # macos-latest is an Apple Silicon runner; x64 is produced by cross-compile.
+    runs-on: macos-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [x86_64-apple-darwin, aarch64-apple-darwin]
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Rust toolchain (host + cross targets)
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          # arm64 is native on this runner; x86_64-pc-windows is irrelevant here.
+          # Keep both Darwin targets so either matrix row can cross-build.
+          targets: x86_64-apple-darwin, aarch64-apple-darwin
+
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: pnpm
+
+      # Build the fork's web assets + lib/ first: prepare-runtime consumes
+      # apps/web/dist and the packages' built lib/ artifacts.
+      - name: Install root workspace
+        run: pnpm install --frozen-lockfile
+
+      - name: Build fork (lib + web dist)
+        run: pnpm run build
+
+      # desktop/ is an independent pnpm project, not a workspace member.
+      - name: Install desktop deps
+        run: pnpm --dir desktop install --frozen-lockfile
+
+      - name: Prepare runtime closure + fetch Node sidecar
+        env:
+          TARGET: ${{ matrix.target }}
+        run: |
+          set -euo pipefail
+          cd desktop
+          node scripts/prepare-runtime.mjs
+          case "$TARGET" in
+            aarch64-apple-darwin) tag=darwin-arm64 ;;
+            x86_64-apple-darwin)  tag=darwin-x64 ;;
+          esac
+          node scripts/fetch-node.mjs "$tag"
+
+      - name: Build DMG
+        env:
+          TARGET: ${{ matrix.target }}
+        run: pnpm --dir desktop tauri build --target "$TARGET"
+
+      - name: Upload DMG
+        uses: actions/upload-artifact@v7
+        with:
+          name: dmg-${{ matrix.target }}
+          path: desktop/src-tauri/target/*/release/bundle/dmg/*.dmg
+          if-no-files-found: error
+          retention-days: 14
