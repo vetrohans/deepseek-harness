@@ -19,7 +19,7 @@
    ```bash
    cp ui-overrides/lib/client.js packages/plugins/dsh-client-ui-preview/lib/client.js
    corepack pnpm run build          # 重建 lib + web bundle
-   # 重启桌面壳（desktop/）：corepack pnpm exec electron . --dev
+   # 桌面壳（Electron 已移除，Tauri 迁移中，启动方式后续更新）
    ```
 
 2. **布局 / 四列分栏**：已在源码 `packages/client/ui-layout`，直接改源码。
@@ -35,12 +35,7 @@
 
 ## 打包（桌面壳 -> DMG）
 
-桌面壳（Electron）的**轻量打包流程已固化**：生产依赖闭包 + 不内置 Node + 语言包裁剪，
-DMG 从全量 3.3GB 降到约 207MB。
-
-- 一键打包：`cd desktop && node scripts/pack.mjs`（先 `prepare-runtime.mjs` 再 `electron-builder --mac dmg`）
-- 完整流程 / 体积构成 / 关键坑 / 冒烟测试：见 [desktop/PACKAGING.md](desktop/PACKAGING.md)
-- 上游更新后：merge 上游 → `corepack pnpm run build`（重建 lib + web bundle）→ 重新 `pack.mjs` 即可
+> Electron 桌面壳已于 2026-08 移除（`desktop/` 全部删除），改为 **Tauri** 方案，打包流程待重建。
 
 ## 位置（历史）
 
