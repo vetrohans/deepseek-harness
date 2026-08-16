@@ -35,7 +35,9 @@
 
 ## 打包（桌面壳 -> DMG）
 
-> Electron 桌面壳已于 2026-08 移除（`desktop/` 全部删除），改为 **Tauri** 方案，打包流程待重建。
+> Electron 桌面壳已于 2026-08 移除，改为 **Tauri** 方案（见 `desktop/README.md`）。
+> 打包时 `desktop/scripts/prepare-runtime.mjs` 会自动执行 `remap-css-hashes.mjs`
+> （进入闭包前重映射，`DSH_SKIP_REMAP=1` 跳过）。
 
 ## 位置（历史）
 
