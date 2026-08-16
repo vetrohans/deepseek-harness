@@ -10,6 +10,10 @@ name: build-dmg
 # `build-dmg` label to a pull request.
 on:
   workflow_dispatch:
+  # Auto-run while the CI branch lives; merge the workflow into the default
+  # branch (or drop this block) once it is established.
+  push:
+    branches: [codex/desktop-ci]
 
 permissions:
   contents: read
@@ -56,7 +60,9 @@ jobs:
 
       # desktop/ is an independent pnpm project, not a workspace member.
       - name: Install desktop deps
-        run: pnpm --dir desktop install --frozen-lockfile
+        # desktop/ is NOT a workspace member; --ignore-workspace stops pnpm
+        # from absorbing the install into the root workspace (which installs nothing here).
+        run: pnpm --dir desktop install --ignore-workspace --frozen-lockfile
 
       - name: Prepare runtime closure + fetch Node sidecar
         env:

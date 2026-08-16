@@ -123,6 +123,13 @@ if (!process.env.DSH_SKIP_DEPLOY) {
   let wsText = readFileSync(ws, 'utf8')
     .replace(/overrides:\n(?:  '[^']+': 'link:[^\n]*'\n)+/g, '')
     .replace(/linkWorkspacePackages: true/, 'linkWorkspacePackages: true\ninjectWorkspacePackages: true')
+  // One closure serves both macOS architectures (single-host CI cross-bundle,
+  // and node-pty already ships every darwin prebuild): install both darwin cpu
+  // variants of platform-gated optional deps (sharp/koffi/reflink/
+  // node-addon-require-builtin) so either DMG arch resolves the right .node.
+  if (process.platform === 'darwin') {
+    wsText += '\nsupportedArchitectures:\n  os: [darwin]\n  cpu: [x64, arm64]\n'
+  }
   writeFileSync(ws, wsText)
   const rootPj = join(work, 'package.json')
   const rootJson = JSON.parse(readFileSync(rootPj, 'utf8'))
