@@ -107,5 +107,6 @@ jobs:
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: dmg/*.dmg
+          # download-artifact preserves the nested bundle path; recurse.
+          files: dmg/**/*.dmg
           generate_release_notes: true
